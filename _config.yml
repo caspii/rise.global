@@ -1,0 +1,35 @@
+# Jekyll configuration for rise.global
+title: Rise Global - Score Tracking Solutions
+description: Professional score tracking and leaderboard management platform for competitions, games, and events
+author: Rise Global
+url: https://www.rise.global
+baseurl: ""
+
+# SEO and metadata
+tagline: Keep score, track progress, manage competitions
+keywords: score tracking, leaderboard, competition management, game scoring, tournament tracker, score keeper, point tracking, team scores
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Collections
+collections:
+  features:
+    output: false
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Exclude files from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .gitignore
