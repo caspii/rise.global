@@ -7,9 +7,15 @@ permalink: /404.html
 <div class="error-page">
     <h1>404</h1>
     <h2>Page Not Found</h2>
-    <p>The page you're looking for doesn't exist.</p>
-    <p>You'll be redirected to our main platform shortly.</p>
-    <a href="https://keepthescore.com?utm_source=rise.global&utm_medium=referral&utm_campaign=404_page" class="cta-button">Go to KeepTheScore</a>
+    <div class="error-content">
+        <p><strong>Rise Global has discontinued its service.</strong></p>
+        <p>The page you're looking for no longer exists as our score tracking platform shut down on May 28th, 2025.</p>
+        <p>You'll be redirected to KeepTheScore in 5 seconds, or you can:</p>
+    </div>
+    <div class="error-actions">
+        <a href="/" class="secondary-button">Return to Homepage</a>
+        <a href="https://keepthescore.com?utm_source=rise.global&utm_medium=referral&utm_campaign=404_page" class="primary-cta">Go to KeepTheScore</a>
+    </div>
 </div>
 
 <style>
@@ -36,7 +42,40 @@ permalink: /404.html
 
 .error-page p {
     color: var(--text-light);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+
+.error-content {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.error-content p {
+    line-height: 1.6;
+}
+
+.error-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.secondary-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.secondary-button:hover {
+    background-color: var(--primary-color);
+    color: white;
 }
 </style>
 
