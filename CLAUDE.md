@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Jekyll static website that serves as a landing page for the discontinued rise.global service. The site informs visitors about the service shutdown and recommends KeepTheScore as an alternative.
+This is a Jekyll static website that serves as a landing page for the discontinued rise.global service. The site informs visitors about the service shutdown and recommends Leaderboarded as an alternative.
 
 Some links on the internet point to pages which no longer exist.
 
@@ -29,7 +29,7 @@ The site is a single-page Jekyll application with:
 - Custom 404 page with 5-second delayed redirect
 - SEO optimization via jekyll-seo-tag and jekyll-sitemap plugins
 - Analytics tracking (Fathom and Ahrefs)
-- UTM parameters on all outbound links to KeepTheScore
+- UTM parameters on all outbound links to Leaderboarded
 
 ## Deployment
 

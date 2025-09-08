@@ -1,6 +1,6 @@
 # Rise Global - Landing Page
 
-A Jekyll-based landing page for rise.global domain, informing visitors about the service discontinuation and recommending KeepTheScore as an alternative.
+A Jekyll-based landing page for rise.global domain, informing visitors about the service discontinuation and recommending Leaderboarded as an alternative.
 
 ## Overview
 
@@ -12,7 +12,7 @@ This repository contains the source code for the Rise Global landing page, built
 - SEO-optimized content to maintain search rankings
 - Mobile-responsive layout
 - Automatic deployment via GitHub Actions
-- No automatic redirects - visitors choose when to visit KeepTheScore
+- No automatic redirects - visitors choose when to visit Leaderboarded
 
 ## Local Development
 
