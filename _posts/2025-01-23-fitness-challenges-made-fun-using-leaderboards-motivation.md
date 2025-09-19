@@ -35,7 +35,7 @@ Studies on fitness gamification reveal impressive results:
 - **71% of participants** report exercising harder with leaderboard competition
 - **89% completion rates** for challenges with leaderboards vs. 23% without
 
-Dr. Michelle Segar, behavioral scientist at University of Michigan, explains: "Leaderboards transform exercise from a 'should' into a 'want to.' When fitness becomes social and competitive, it activates the same reward centers as playing games—making it inherently more enjoyable."
+Dr. Michelle Segar, behavioral scientist at University of Michigan, explains: "Leaderboards transform exercise from a 'should' into a 'want to.' When fitness becomes social and competitive, it activates the same reward centers as playing games—making it inherently more enjoyable." The science behind [why leaderboards work so effectively](/2025/01/25/psychology-of-competition-why-leaderboards-work/) reveals how competition triggers dopamine and motivation centers in our brains.
 
 ## Types of Fitness Challenges That Thrive with Leaderboards
 
@@ -55,7 +55,7 @@ Step challenges are the most accessible entry point to fitness gamification:
 - **Team Relays**: Combined steps to reach destinations
 - **Daily Battles**: Highest step count wins the day
 
-**Success Story**: Microsoft's global step challenge involved 70,000 employees across 70 countries. Participants averaged 11,000 steps daily (up from 6,000), with 73% maintaining increased activity levels six months later.
+**Success Story**: Microsoft's global step challenge involved 70,000 employees across 70 countries. Participants averaged 11,000 steps daily (up from 6,000), with 73% maintaining increased activity levels six months later. This demonstrates how [corporate gamification strategies](/2025/01/22/corporate-gamification-boosting-employee-performance-leaderboards/) can extend beyond productivity to employee wellness.
 
 ### Running Challenges: Building Endurance Together
 

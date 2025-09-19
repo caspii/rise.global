@@ -9,7 +9,7 @@ excerpt: "Discover the psychology behind why leaderboards work and how they tran
 
 Every thriving online community shares a common challenge: keeping members engaged over time. Whether it's a Discord server for gamers, a Slack workspace for remote teams, or an educational platform for students, maintaining active participation requires more than just good content. It requires understanding what motivates people to contribute, compete, and connect.
 
-Enter the leaderboard—a deceptively simple tool that taps into fundamental human psychology to transform passive lurkers into active community members.
+Enter the leaderboard—a deceptively simple tool that taps into fundamental human psychology to transform passive lurkers into active community members. The science behind [why leaderboards work so effectively](/2025/01/25/psychology-of-competition-why-leaderboards-work/) lies deep in our evolutionary wiring and neurochemistry.
 
 ![Digital leaderboard display showing rankings](/assets/images/blog/digital-leaderboard.jpg)
 
@@ -193,6 +193,8 @@ Continuous refinement:
 - **Classcraft**: Full RPG experience for classrooms
 - **ClassDojo**: Behavior and achievement tracking
 - **Kahoot**: Quiz-based competitive learning
+
+For a comprehensive comparison of these and other educational platforms, check out our guide to [top gamification tools for schools](/2025/01/26/top-10-gamification-tools-schools-work-communities/).
 
 ### For Custom Solutions
 Building your own? Consider these factors:

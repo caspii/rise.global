@@ -15,7 +15,7 @@ Remember the last time you couldn't put down your phone because you were "just o
 
 Gamification is the application of game-design elements and game principles in non-game contexts. Simply put, it's taking the fun, engaging parts of games—like points, levels, challenges, and rewards—and applying them to everyday activities to make them more motivating and enjoyable.
 
-But gamification isn't just about slapping points on everything and calling it a day. Effective gamification taps into fundamental human psychology: our desire for achievement, recognition, competition, and progress.
+But gamification isn't just about slapping points on everything and calling it a day. Effective gamification taps into fundamental human psychology: our desire for achievement, recognition, competition, and progress. Understanding [the psychology behind why leaderboards work](/2025/01/25/psychology-of-competition-why-leaderboards-work/) is crucial to implementing successful gamification systems.
 
 ## The Psychology Behind Why Gamification Works
 
@@ -78,7 +78,7 @@ Teachers increasingly use gamification to engage students:
 - Digital badges for mastering specific skills
 - [Classroom leaderboards](https://leaderboarded.com?utm_source=rise.global&utm_medium=blog&utm_campaign=gamification) tracking various achievements
 
-**Why it works**: Students are already familiar with game mechanics from video games. Gamification speaks their language and makes academic progress visible and rewarding.
+**Why it works**: Students are already familiar with game mechanics from video games. Gamification speaks their language and makes academic progress visible and rewarding. Learn more about [how teachers effectively use points and leaderboards in education](/2025/01/21/gamification-in-education-teachers-use-points-leaderboards/).
 
 ## Core Elements of Gamification
 

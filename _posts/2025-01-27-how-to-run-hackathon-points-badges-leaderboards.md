@@ -13,7 +13,7 @@ Now imagine a different scene: It's 2 AM and teams are strategically planning th
 
 The difference? Gamification done right.
 
-After analyzing 200+ hackathons and interviewing organizers from Google, Microsoft, and top universities, we've identified the gamification strategies that transform hackathons from exhausting marathons into engaging competitions that participants actually want to finish.
+After analyzing 200+ hackathons and interviewing organizers from Google, Microsoft, and top universities, we've identified the gamification strategies that transform hackathons from exhausting marathons into engaging competitions that participants actually want to finish. These strategies leverage [the fundamental psychology of competition](/2025/01/25/psychology-of-competition-why-leaderboards-work/) to maintain motivation throughout the event.
 
 ![Hackathon leaderboard display](/assets/images/blog/hackathon_leaderboard.jpg)
 
@@ -144,6 +144,8 @@ Instead of one overall ranking, show multiple leaderboards:
 - [Leaderboarded](https://leaderboarded.com?utm_source=rise.global&utm_medium=blog&utm_campaign=hackathon) for simple visual leaderboards
 - DevPost for comprehensive hackathon management
 - Custom solution using Google Sheets + website
+
+For a comprehensive comparison of gamification platforms, see our [guide to top gamification tools](/2025/01/26/top-10-gamification-tools-schools-work-communities/).
 
 **Design Your System**:
 1. Define point categories aligned with hackathon goals

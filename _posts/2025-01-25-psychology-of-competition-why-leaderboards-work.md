@@ -358,7 +358,7 @@ Protect mental health while maintaining competition:
 
 ### Workplace Psychology
 
-Leaderboards in professional settings must balance competition with collaboration:
+Leaderboards in professional settings must balance competition with collaboration. For detailed implementation strategies, see our guide on [corporate gamification and employee performance](/2025/01/22/corporate-gamification-boosting-employee-performance-leaderboards/).
 
 **Effective Strategies**:
 - Rotate metrics monthly to prevent burnout
@@ -377,7 +377,7 @@ Microsoft's forced ranking system (2000-2013) required managers to rate employee
 
 ### Educational Psychology
 
-Student leaderboards require special consideration:
+Student leaderboards require special consideration. For comprehensive implementation strategies, read about [how teachers effectively use gamification in education](/2025/01/21/gamification-in-education-teachers-use-points-leaderboards/).
 
 **Age-Appropriate Design**:
 - Elementary: Focus on effort and improvement
