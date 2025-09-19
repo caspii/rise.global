@@ -1,0 +1,164 @@
+---
+layout: default
+title: Blog - Rise Global
+description: Updates and insights from the Rise Global team
+permalink: /blog/
+---
+
+<section class="blog-hero">
+    <div class="container">
+        <h1>Blog</h1>
+        <p>Updates and insights from our journey</p>
+    </div>
+</section>
+
+<section class="blog-list">
+    <div class="container">
+        {% for post in site.posts %}
+        <article class="blog-card">
+            <h2 class="blog-card-title">
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h2>
+            <div class="blog-card-meta">
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+                {% if post.author %}
+                <span class="blog-card-author">by {{ post.author }}</span>
+                {% endif %}
+            </div>
+            {% if post.excerpt %}
+            <p class="blog-card-excerpt">{{ post.excerpt }}</p>
+            {% endif %}
+            <a href="{{ post.url | relative_url }}" class="blog-card-link">Read more →</a>
+        </article>
+        {% endfor %}
+
+        {% if site.posts.size == 0 %}
+        <p class="no-posts">No posts yet. Check back soon!</p>
+        {% endif %}
+    </div>
+</section>
+
+<style>
+    .blog-hero {
+        background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
+        color: white;
+        padding: 80px 0;
+        text-align: center;
+    }
+
+    .blog-hero h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 3rem;
+        font-weight: 700;
+        margin: 0 0 10px;
+    }
+
+    .blog-hero p {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 1.25rem;
+        opacity: 0.9;
+        margin: 0;
+    }
+
+    .blog-list {
+        padding: 60px 0;
+        background: #f9fafb;
+        min-height: 400px;
+    }
+
+    .blog-card {
+        background: white;
+        border-radius: 12px;
+        padding: 30px;
+        margin-bottom: 30px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s;
+    }
+
+    .blog-card:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .blog-card-title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.75rem;
+        font-weight: 600;
+        margin: 0 0 10px;
+    }
+
+    .blog-card-title a {
+        color: #1f2937;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+
+    .blog-card-title a:hover {
+        color: #8b5cf6;
+    }
+
+    .blog-card-meta {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 0.9rem;
+        color: #6b7280;
+        margin-bottom: 15px;
+    }
+
+    .blog-card-meta time {
+        margin-right: 10px;
+    }
+
+    .blog-card-excerpt {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #374151;
+        margin: 15px 0 20px;
+    }
+
+    .blog-card-link {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 1rem;
+        color: #8b5cf6;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s;
+    }
+
+    .blog-card-link:hover {
+        color: #a855f7;
+    }
+
+    .no-posts {
+        text-align: center;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 1.125rem;
+        color: #6b7280;
+        padding: 40px 0;
+    }
+
+    @media (max-width: 768px) {
+        .blog-hero {
+            padding: 60px 0;
+        }
+
+        .blog-hero h1 {
+            font-size: 2rem;
+        }
+
+        .blog-hero p {
+            font-size: 1rem;
+        }
+
+        .blog-list {
+            padding: 40px 0;
+        }
+
+        .blog-card {
+            padding: 20px;
+        }
+
+        .blog-card-title {
+            font-size: 1.5rem;
+        }
+    }
+</style>

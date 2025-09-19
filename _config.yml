@@ -20,6 +20,9 @@ collections:
   features:
     output: false
 
+# Permalink structure for blog posts
+permalink: /:year/:month/:day/:title/
+
 # Defaults
 defaults:
   - scope:
