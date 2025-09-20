@@ -5,6 +5,8 @@ date: 2024-12-15 09:00:00
 categories: education
 author: Rise Global Team
 excerpt: "Transform your classroom with proven gamification strategies. Learn how teachers worldwide use points, badges, and leaderboards to boost student engagement, motivation, and academic achievement."
+redirect_from:
+  - /2024/12/15/gamification-in-education-how-teachers-use-points-and-leaderboards/
 ---
 
 Picture this: It's Monday morning, and instead of groans about homework, your students are excitedly checking their progress on the class leaderboard. They're comparing badges, strategizing how to earn more points, and actually asking for extra challenges. Sound impossible? Welcome to the world of educational gamification.

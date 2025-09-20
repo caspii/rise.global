@@ -5,6 +5,8 @@ date: 2025-02-01 09:00:00
 categories: business
 author: Rise Global Team
 excerpt: "Discover how forward-thinking companies use gamification to transform workplace culture, boost productivity by up to 50%, and create engaged, motivated teams. Learn proven strategies from Microsoft, Deloitte, and innovative startups."
+redirect_from:
+  - /2025/02/01/corporate-gamification-boosting-employee-performance-with-leaderboards/
 ---
 
 In 2019, Microsoft Japan experimented with a 4-day work week and saw productivity jump 40%. But here's what wasn't widely reported: they also gamified the initiative, with teams competing to maintain productivity levels while working fewer hours. The combination of reduced hours and gamified goals created a perfect storm of engagement and efficiency.

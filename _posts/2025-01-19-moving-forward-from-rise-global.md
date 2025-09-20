@@ -5,6 +5,8 @@ date: 2025-01-19
 categories: announcement
 author: Rise Global Team
 excerpt: "After years of serving our community, Rise Global has concluded its journey. Here's our story and how Leaderboarded can help you continue yours."
+redirect_from:
+  - /2025/01/19/moving-forward-from-rise-global-our-journey-and-your-next-steps/
 ---
 
 When we launched Rise Global, we set out with a simple mission: to make tracking and sharing achievements accessible to everyone. Over the years, we've been privileged to serve thousands of users who trusted us with their important metrics, competitions, and team rankings.
