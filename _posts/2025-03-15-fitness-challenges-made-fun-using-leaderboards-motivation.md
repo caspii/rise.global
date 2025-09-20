@@ -5,6 +5,8 @@ date: 2025-03-15 09:00:00
 categories: health
 author: Rise Global Team
 excerpt: "Transform your fitness journey with the power of friendly competition. Learn how fitness leaderboards boost motivation by 48%, create lasting healthy habits, and make working out something you actually look forward to."
+redirect_from:
+  - /2025/03/15/fitness-challenges-made-fun-using-leaderboards-for-motivation/
 ---
 
 Remember when fitness meant lonely gym sessions, boring treadmill runs, and constantly falling off the wagon? That was before Sarah's office started their "Steps Around the World" challenge. In 90 days, her team virtually walked from New York to Tokyo, lost a collective 180 pounds, and something unexpected happened—they actually had fun doing it.

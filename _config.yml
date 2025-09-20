@@ -14,6 +14,7 @@ markdown: kramdown
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 # Collections
 collections:
@@ -37,3 +38,4 @@ exclude:
   - README.md
   - .gitignore
   - CLAUDE.md
+  - posts-todo.md

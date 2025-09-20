@@ -5,6 +5,8 @@ date: 2025-05-01 09:00:00
 categories: gaming
 author: Rise Global Team
 excerpt: "Discover how professional esports teams and streamers use leaderboards and overlays to build engaged communities, boost viewership by 300%, and turn casual viewers into loyal fans."
+redirect_from:
+  - /2025/05/01/how-esports-and-streaming-communities-use-score-overlays-and-leaderboards/
 ---
 
 When Tyler "Ninja" Blevins streams Fortnite, millions don't just watch him play—they watch him climb. Every elimination updates his position on the leaderboard. Every victory adds to his win counter. Every achievement triggers on-screen celebrations that viewers share in real-time. This isn't just gaming; it's performance art powered by data visualization.

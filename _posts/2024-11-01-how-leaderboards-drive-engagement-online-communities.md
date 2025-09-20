@@ -5,6 +5,8 @@ date: 2024-11-01 09:00:00
 categories: guide
 author: Rise Global Team
 excerpt: "Discover the psychology behind why leaderboards work and how they transform passive members into active community contributors. Learn proven strategies from successful gaming, corporate, and educational communities."
+redirect_from:
+  - /2024/11/01/how-leaderboards-drive-engagement-in-online-communities/
 ---
 
 Every thriving online community shares a common challenge: keeping members engaged over time. Whether it's a Discord server for gamers, a Slack workspace for remote teams, or an educational platform for students, maintaining active participation requires more than just good content. It requires understanding what motivates people to contribute, compete, and connect.

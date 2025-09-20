@@ -5,6 +5,8 @@ date: 2025-09-15 09:00:00
 categories: events
 author: Rise Global Team
 excerpt: "Learn how to organize an engaging hackathon using gamification. From scoring systems to real-time leaderboards, discover proven strategies that top tech companies use to run successful hackathons."
+redirect_from:
+  - /2025/09/15/how-to-run-a-hackathon-with-points-badges-and-leaderboards/
 ---
 
 It's 2 AM at your hackathon. Half the teams have given up, mentors are nowhere to be found, and the energy that started so strong 14 hours ago has evaporated. Sound familiar?
