@@ -13,7 +13,7 @@ You're sold on gamification. You've seen the statistics—48% increase in engage
 
 Here's the truth: there is no perfect gamification tool. The best choice depends on your specific context, audience, technical capabilities, and budget. What works brilliantly for a high school classroom might fail spectacularly in a corporate sales team.
 
-This guide cuts through the marketing noise to give you an honest, practical comparison of the top 10 gamification tools across education, workplace, and community settings. We'll cover costs, strengths, limitations, and most importantly—who should actually use each tool. To understand why these tools are so effective, first read about [the psychology behind gamification and leaderboards](/2025/01/25/psychology-of-competition-why-leaderboards-work/).
+This guide cuts through the marketing noise to give you an honest, practical comparison of the top 10 gamification tools across education, workplace, and community settings. We'll cover costs, strengths, limitations, and most importantly—who should actually use each tool. To understand why these tools are so effective, first read about [the psychology behind gamification and leaderboards](/2025/06/15/psychology-of-competition-why-leaderboards-work/).
 
 ![Digital classroom with gamification](/assets/images/blog/digital_classroom.jpg)
 
@@ -405,7 +405,7 @@ The best gamification tool isn't the one with the most features or the highest p
 
 Start with one tool that addresses your most pressing need. Get comfortable with it, see results, then expand thoughtfully. Remember: gamification is a means to an end, not the end itself. The goal is engagement, learning, and achievement—the tool is just the vehicle.
 
-Whether you're a teacher trying to motivate students, a manager boosting team performance, or a community leader building engagement, there's a gamification tool that fits. For specific use cases, explore our guides on [educational gamification](/2025/01/21/gamification-in-education-teachers-use-points-leaderboards/) and [corporate gamification strategies](/2025/01/22/corporate-gamification-boosting-employee-performance-leaderboards/). The key is starting somewhere and iterating based on what works.
+Whether you're a teacher trying to motivate students, a manager boosting team performance, or a community leader building engagement, there's a gamification tool that fits. For specific use cases, explore our guides on [educational gamification](/2024/12/15/gamification-in-education-teachers-use-points-leaderboards/) and [corporate gamification strategies](/2025/02/01/corporate-gamification-boosting-employee-performance-leaderboards/). The key is starting somewhere and iterating based on what works.
 
 The game is on. Choose your tool and start playing.
 

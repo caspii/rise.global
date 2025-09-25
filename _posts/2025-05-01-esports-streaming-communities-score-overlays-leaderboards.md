@@ -39,7 +39,7 @@ In competitive gaming, leaderboards serve multiple critical functions:
 **For Sponsors**: Measuring reach, identifying talent, justifying investments
 **For Organizers**: Creating storylines, building hype, structuring competitions
 
-The psychology is simple but powerful: humans crave hierarchy and context. A kill in a random match means little. A kill that moves you from Diamond to Master, displayed for 50,000 viewers, becomes legendary. This taps into [the fundamental psychology of competition](/2025/01/25/psychology-of-competition-why-leaderboards-work/) that drives all human competitive behavior.
+The psychology is simple but powerful: humans crave hierarchy and context. A kill in a random match means little. A kill that moves you from Diamond to Master, displayed for 50,000 viewers, becomes legendary. This taps into [the fundamental psychology of competition](/2025/06/15/psychology-of-competition-why-leaderboards-work/) that drives all human competitive behavior.
 
 ## The Anatomy of Esports Leaderboards
 
@@ -289,7 +289,7 @@ Teams invest millions in players discovered through ladder rankings. Faker, the 
 - Battlefy for comprehensive tournament management
 - Discord bots for automated tracking
 
-For a detailed comparison of these and other gamification platforms, check out our [comprehensive guide to gamification tools](/2025/01/26/top-10-gamification-tools-schools-work-communities/).
+For a detailed comparison of these and other gamification platforms, check out our [comprehensive guide to gamification tools](/2025/08/01/top-10-gamification-tools-schools-work-communities/).
 
 **Engagement Strategies**:
 - Start with low-stakes fun competitions

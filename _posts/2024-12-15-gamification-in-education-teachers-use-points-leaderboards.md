@@ -19,7 +19,7 @@ Across the globe, teachers are discovering that the same mechanics that make vid
 
 ### The Science Behind Student Engagement
 
-Educational psychologists have long known that motivation is the key to learning. But traditional methods—grades, detention, gold stars—often fall short. Gamification succeeds because it addresses multiple psychological needs simultaneously, tapping into [the fundamental psychology of competition](/2025/01/25/psychology-of-competition-why-leaderboards-work/) that drives human behavior:
+Educational psychologists have long known that motivation is the key to learning. But traditional methods—grades, detention, gold stars—often fall short. Gamification succeeds because it addresses multiple psychological needs simultaneously, tapping into [the fundamental psychology of competition](/2025/06/15/psychology-of-competition-why-leaderboards-work/) that drives human behavior:
 
 **Autonomy**: Students choose their learning paths and strategies for earning points
 **Mastery**: Clear progression systems show skill development over time
@@ -263,7 +263,7 @@ Start small and build gradually:
 - Week 3: Introduce one special challenge
 - Week 4: Create first badges
 
-Many teachers report spending less time on classroom management after gamification, as students self-regulate to earn points. If you're exploring different platforms for your classroom, our [comparison of top gamification tools](/2025/01/26/top-10-gamification-tools-schools-work-communities/) can help you choose the right solution.
+Many teachers report spending less time on classroom management after gamification, as students self-regulate to earn points. If you're exploring different platforms for your classroom, our [comparison of top gamification tools](/2025/08/01/top-10-gamification-tools-schools-work-communities/) can help you choose the right solution.
 
 ### "What About Grades?"
 
