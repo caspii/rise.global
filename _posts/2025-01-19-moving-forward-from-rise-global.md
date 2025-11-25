@@ -24,6 +24,9 @@ Throughout our journey, we've seen incredible use cases:
 
 Each of these stories reminded us why we started - to bring people together through friendly competition and shared goals.
 
+![Rise Global Community](/assets/images/rise-global-community.png)
+*Thank you to our amazing community for years of shared achievements and friendly competition*
+
 ## Why We're Closing
 
 The decision to close Rise Global wasn't easy. As the digital landscape evolved, so did the demands on our platform. Rather than compromising on the quality and reliability you've come to expect, we've made the difficult decision to sunset our service.
@@ -40,6 +43,9 @@ We're pleased to recommend [Leaderboarded](https://leaderboarded.com?utm_source=
 - **Data export** options to maintain control
 
 The team at Leaderboarded shares our commitment to simplicity and reliability, making them the ideal successor to Rise Global.
+
+![Path to the Future](/assets/images/rise-global-future.png)
+*Your journey continues with new tools and endless possibilities*
 
 ## Thank You
 

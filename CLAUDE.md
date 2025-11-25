@@ -45,3 +45,47 @@ Deployment is automated via GitHub Actions:
 - Mobile-responsive design using CSS Grid
 - No JavaScript framework - pure HTML/CSS
 - Professional shutdown messaging without automatic redirects
+
+## Content Writing Guidelines
+
+When creating blog posts or content for this site:
+
+**Writing Style:**
+- Prefer narrative, flowing prose over excessive enumerations
+- Avoid enumeration-heavy content with long lists of bullet points or numbered items
+- Use bullet points sparingly and only when they genuinely improve readability
+- Transform lists into coherent paragraphs that connect ideas naturally
+- Keep the text professional, readable, and engaging
+
+**When Lists Are Acceptable:**
+- Short, essential lists (3-4 items max) where enumeration adds clarity
+- Technical specifications or requirements where precision matters
+- Direct comparisons that benefit from parallel structure
+
+**General Approach:**
+- Write in a conversational yet professional tone
+- Connect ideas with transitions rather than separating them into lists
+- Group related concepts into flowing paragraphs
+- Use subheadings to organize content instead of relying on numbered sections
+
+## Image Generation Guidelines
+
+When generating images for blog posts or content:
+
+**Visual Style:**
+- Always use a bright, colorful cartoon illustration style
+- Use clean lines and vibrant colors
+- Set style to "vivid" for all image generations
+- Maintain consistency across all images on the site
+
+**Image Specifications:**
+- Size: 1792x1024 (landscape format)
+- Quality: HD
+- Style: vivid
+- Save all images to `/assets/images/` directory
+
+**Content Guidelines:**
+- Images should be relevant to the blog post topic
+- Include diverse representation when showing people
+- Use motivational and positive atmospheres
+- Keep designs clean and professional despite cartoonish style
