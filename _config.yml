@@ -39,3 +39,4 @@ exclude:
   - .gitignore
   - CLAUDE.md
   - posts-todo.md
+  - test

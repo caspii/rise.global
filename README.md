@@ -1,18 +1,18 @@
-# Rise Global - Landing Page
+# Rise Global - Free Online Tools
 
-A Jekyll-based landing page for rise.global domain, informing visitors about the service discontinuation and recommending Leaderboarded as an alternative.
+A Jekyll-based site hosting free, client-side tools for teams, teachers, and event organizers. Built to leverage rise.global's existing domain authority.
 
 ## Overview
 
-This repository contains the source code for the Rise Global landing page, built with Jekyll and designed to be hosted on GitHub Pages.
+This repository contains the source code for rise.global, which provides free browser-based tools including a Random Team Generator, Spin the Wheel, and Tournament Bracket Generator.
 
 ## Features
 
-- Clean, professional design with shutdown notice
-- SEO-optimized content to maintain search rankings
+- Three free client-side tools (no server required)
+- SEO-optimized pages with JSON-LD FAQ schema
 - Mobile-responsive layout
 - Automatic deployment via GitHub Actions
-- No automatic redirects - visitors choose when to visit Leaderboarded
+- Fathom and Ahrefs analytics with event tracking
 
 ## Local Development
 
@@ -20,12 +20,13 @@ This repository contains the source code for the Rise Global landing page, built
 
 - Ruby (version 2.5 or higher)
 - Bundler gem (`gem install bundler`)
+- Node.js (for running tests)
 
 ### Setup
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/[your-username]/rise.global.git
+   git clone https://github.com/caspii/rise.global.git
    cd rise.global
    ```
 
@@ -41,32 +42,50 @@ This repository contains the source code for the Rise Global landing page, built
 
 4. Open your browser to http://localhost:4000
 
+## Testing
+
+The test suite uses Node.js's built-in test runner (no additional dependencies needed). Tests cover the Jekyll build output, HTML structure, CSS, and JavaScript tool logic.
+
+```bash
+# Run all tests
+node --test test/*.test.js
+```
+
+### Test files
+
+- `test/build.test.js` — Builds the Jekyll site and verifies all pages, assets, navigation, footer, 404, SEO elements, and analytics are correctly generated
+- `test/tools-common.test.js` — Unit tests for shared JS utilities (parseNames, shuffleArray, URL state encoding, trackEvent)
+- `test/team-generator.test.js` — Unit tests for random team generator logic (team distribution, balancing, edge cases, HTML escaping)
+- `test/bracket-generator.test.js` — Unit tests for tournament bracket generator (bracket structure, byes, winner selection, downstream clearing, zoom, SVG rendering)
+
 ## Deployment
 
 The site is configured to automatically deploy to GitHub Pages when changes are pushed to the `main` branch.
-
-1. Push your changes to GitHub
-2. Go to Settings → Pages in your repository
-3. Select "GitHub Actions" as the source
-4. The site will be available at `https://[your-username].github.io/rise.global/`
-
-To use with the custom domain:
-1. Add a `CNAME` file with `www.rise.global` as its content
-2. Configure your domain's DNS settings to point to GitHub Pages
 
 ## Structure
 
 ```
 ├── _config.yml          # Jekyll configuration
-├── _layouts/            # Page layouts
-├── _includes/           # Reusable components
+├── _layouts/            # Page layouts (default, post, tool)
+├── _includes/           # Reusable components (nav, footer)
 ├── assets/
-│   └── css/
-│       └── main.css     # Main stylesheet
+│   ├── css/
+│   │   ├── main.css     # Main stylesheet
+│   │   └── tools.css    # Tool page styles
+│   └── js/
+│       ├── tools-common.js      # Shared JS utilities
+│       ├── team-generator.js    # Random team generator
+│       ├── spin-wheel.js        # Spin the wheel
+│       └── bracket-generator.js # Tournament bracket generator
+├── tools/
+│   ├── index.html                       # Tools listing page
+│   ├── random-team-generator/index.html
+│   ├── spin-the-wheel/index.html
+│   └── tournament-bracket-generator/index.html
+├── test/                # Test suite
 ├── index.html           # Homepage
-├── 404.html            # 404 error page
-├── robots.txt          # SEO robots file
-└── Gemfile             # Ruby dependencies
+├── 404.html             # 404 error page
+└── Gemfile              # Ruby dependencies
 ```
 
 ## Technologies
@@ -76,6 +95,7 @@ To use with the custom domain:
 - GitHub Actions for CI/CD
 - Poppins & DM Sans fonts
 - Responsive CSS Grid
+- Vanilla JavaScript (no frameworks)
 
 ## License
 
