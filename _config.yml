@@ -1,13 +1,13 @@
 # Jekyll configuration for rise.global
-title: Rise Global - Score Tracking Solutions
-description: Professional score tracking and leaderboard management platform for competitions, games, and events
+title: Rise Global - Free Online Tools
+description: Free online tools for teams, teachers, and event organizers. Random team generator, spin the wheel, tournament bracket maker, and more.
 author: Rise Global
 url: https://rise.global
 baseurl: ""
 
 # SEO and metadata
-tagline: Keep score, track progress, manage competitions
-keywords: score tracking, leaderboard, competition management, game scoring, tournament tracker, score keeper, point tracking, team scores
+tagline: Free online tools for teams, teachers, and event organizers
+keywords: free online tools, random team generator, spin the wheel, tournament bracket generator, group maker, team builder, competition tools
 
 # Build settings
 markdown: kramdown

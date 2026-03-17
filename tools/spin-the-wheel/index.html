@@ -1,0 +1,76 @@
+---
+layout: tool
+title: Spin the Wheel - Free Online Random Picker
+description: Free online spin the wheel tool. Add your options, spin the colorful wheel, and let chance decide. Perfect for classrooms, games, and decisions.
+tool_js: /assets/js/spin-wheel.js
+image: /assets/images/spin-wheel-og.png
+faqs:
+  - q: Is this spin the wheel tool free?
+    a: Yes, it's completely free with no signup or downloads required. It runs entirely in your browser.
+  - q: Can I customize the options on the wheel?
+    a: Absolutely! Just type your options in the text box, one per line or separated by commas. You can add as many options as you like.
+  - q: Is the spin result truly random?
+    a: Yes. The wheel uses a random spin force and physics-based deceleration to determine where it stops. Each option has an equal probability of being selected.
+  - q: Can I use this for classroom activities?
+    a: Definitely! Teachers use spin the wheel for picking students to answer questions, assigning topics, choosing activities, and making group decisions fun and fair.
+  - q: Does the wheel keep a history of results?
+    a: Yes, all spin results are tracked in a history panel below the wheel during your session so you can see previous outcomes.
+seo_content: |
+  ## How to Use Spin the Wheel
+
+  Enter your choices in the text box — one option per line or separated by commas — and click the Spin button. The wheel will spin with realistic physics and gradually slow down until it lands on a random result. It's that simple, and every spin is completely random.
+
+  ### Classroom and Teaching Uses
+
+  Teachers around the world use spin the wheel tools to add excitement to their lessons. Pick a student to answer a question, choose discussion topics, select reading material, or decide which activity the class does next. The visual spinning animation keeps students engaged and makes random selection feel fair and fun.
+
+  ### Decision Making Made Fun
+
+  Can't decide where to eat for lunch? Torn between movie options? Use the wheel to make everyday decisions more enjoyable. Adding a visual, gamified element to choices removes overthinking and adds a bit of excitement to routine decisions.
+
+  ### Games and Parties
+
+  Spin the wheel is a party favorite. Use it for truth or dare, assigning dares in drinking games, picking prizes, or creating custom game show experiences. The colorful animation and suspenseful spin make it a crowd-pleaser at any gathering.
+
+  ### How the Physics Work
+
+  The wheel uses a physics-based animation model with randomized initial velocity and friction-based deceleration. This creates a natural, realistic spinning motion where each segment has an equal chance of being selected, ensuring truly random results every time.
+
+  ### Tips for Best Results
+
+  Keep your options concise for better readability on the wheel. For repeated use, the history feature lets you track all previous results. You can also share your wheel configuration with others using the Share Link button.
+---
+
+<div class="tool-container">
+    <div class="tool-input-area">
+        <label for="options-input">Enter Options</label>
+        <textarea id="options-input" placeholder="Enter options, one per line or separated by commas&#10;&#10;Example:&#10;Pizza&#10;Sushi&#10;Tacos&#10;Burgers">Pizza
+Sushi
+Tacos
+Burgers
+Salad
+Pasta</textarea>
+
+        <div class="tool-generate-row">
+            <button class="tool-button tool-button-secondary" onclick="updateWheel()">Update Wheel</button>
+        </div>
+    </div>
+
+    <div class="wheel-wrapper">
+        <div class="wheel-canvas-container">
+            <div class="wheel-pointer"></div>
+            <canvas id="wheel-canvas" width="400" height="400"></canvas>
+        </div>
+        <div class="wheel-result" id="wheel-result"></div>
+        <button class="tool-button tool-button-primary spin-button" id="spin-btn" onclick="spinWheel()">Spin!</button>
+    </div>
+
+    <div class="tool-actions" style="justify-content:center">
+        <button class="tool-button tool-button-secondary" onclick="shareWheelLink()">Share Link</button>
+    </div>
+
+    <div class="spin-history" id="spin-history" style="display:none">
+        <h3>Spin History</h3>
+        <ol id="history-list"></ol>
+    </div>
+</div>

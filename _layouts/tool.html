@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    {% seo %}
+
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/tools.css' | relative_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+{% include navigation.html %}
+
+<main class="main-content">
+    <section class="tool-hero">
+        <div class="container">
+            <h1 class="tool-hero-title">{{ page.title }}</h1>
+            <p class="tool-hero-subtitle">{{ page.description }}</p>
+        </div>
+    </section>
+
+    <section class="tool-section">
+        <div class="container">
+            {{ content }}
+        </div>
+    </section>
+
+    {% if page.seo_content %}
+    <section class="tool-seo-content">
+        <div class="container">
+            {{ page.seo_content | markdownify }}
+        </div>
+    </section>
+    {% endif %}
+
+    <section class="tool-cta">
+        <div class="container">
+            <h2>Need Full Leaderboard Management?</h2>
+            <p>If you need persistent leaderboards, score tracking, and competition management, check out Leaderboarded.</p>
+            <a href="https://leaderboarded.com?utm_source=rise.global&utm_medium=referral&utm_campaign=tool_cta" class="hero-primary-cta">Try Leaderboarded Free</a>
+        </div>
+    </section>
+
+    <section class="tool-cross-links">
+        <div class="container">
+            <h2>You Might Also Like</h2>
+            <div class="cross-links-grid">
+                {% if page.url != '/tools/random-team-generator/' %}
+                <a href="/tools/random-team-generator/" class="cross-link-card">
+                    <span class="cross-link-icon">&#x1F46B;</span>
+                    <h3>Random Team Generator</h3>
+                    <p>Split any group into random teams instantly</p>
+                </a>
+                {% endif %}
+                {% if page.url != '/tools/spin-the-wheel/' %}
+                <a href="/tools/spin-the-wheel/" class="cross-link-card">
+                    <span class="cross-link-icon">&#x1F3A1;</span>
+                    <h3>Spin the Wheel</h3>
+                    <p>Make random selections with a fun spinning wheel</p>
+                </a>
+                {% endif %}
+                {% if page.url != '/tools/tournament-bracket-generator/' %}
+                <a href="/tools/tournament-bracket-generator/" class="cross-link-card">
+                    <span class="cross-link-icon">&#x1F3C6;</span>
+                    <h3>Tournament Bracket Generator</h3>
+                    <p>Create and manage elimination tournament brackets</p>
+                </a>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+</main>
+
+{% if page.faqs %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {% for faq in page.faqs %}
+        {
+            "@type": "Question",
+            "name": {{ faq.q | jsonify }},
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": {{ faq.a | jsonify }}
+            }
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ]
+}
+</script>
+{% endif %}
+
+{% include footer.html %}
+
+<script src="{{ '/assets/js/tools-common.js' | relative_url }}"></script>
+{% if page.tool_js %}
+<script src="{{ page.tool_js | relative_url }}"></script>
+{% endif %}
+
+<!-- Fathom - beautiful, simple website analytics -->
+<script src="https://analytics.ahrefs.com/analytics.js" data-key="fYwC53lNoWsYnFcydM1JNw" async></script>
+<script src="https://cdn.usefathom.com/script.js" data-site="NBGFDAWZ" defer></script>
+<!-- / Fathom -->
+</body>
+</html>

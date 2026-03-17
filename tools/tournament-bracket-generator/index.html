@@ -1,0 +1,80 @@
+---
+layout: tool
+title: Tournament Bracket Generator - Free Online Bracket Maker
+description: Free online tournament bracket generator. Create single or double elimination brackets, track winners interactively, and export or print your brackets.
+tool_js: /assets/js/bracket-generator.js
+image: /assets/images/bracket-generator-og.png
+faqs:
+  - q: Is this tournament bracket generator free?
+    a: Yes, it's completely free. No signup, no downloads. Everything runs in your browser and your data stays private.
+  - q: How many participants can the bracket handle?
+    a: The tool supports brackets from 2 to 128 participants. For non-power-of-2 numbers, byes are automatically calculated so the bracket remains balanced.
+  - q: Can I track match results in the bracket?
+    a: Yes! Click on a participant's name in any match to select them as the winner. They'll automatically advance to the next round.
+  - q: Can I print the bracket?
+    a: Absolutely. Use the Print button or press Ctrl+P. The bracket is optimized for printing with clean formatting.
+  - q: What bracket formats are supported?
+    a: Currently the tool supports single elimination brackets with optional seeded or random ordering. Double elimination support is coming soon.
+seo_content: |
+  ## How to Use the Tournament Bracket Generator
+
+  Enter your participant or team names in the text box, choose your bracket settings, and click Generate Bracket. The tool creates a clean, interactive SVG bracket that you can use to track your tournament from start to finish.
+
+  ### Perfect For Sports Tournaments
+
+  Whether you're organizing a local tennis tournament, a company ping-pong championship, or a neighborhood basketball league, this bracket generator handles all the details. It automatically calculates byes for non-power-of-2 participant counts, ensuring a fair and balanced bracket structure.
+
+  ### Great For Esports and Gaming
+
+  Esports tournament organizers use bracket generators to structure competitive gaming events. From Smash Bros. locals to League of Legends tournaments, a clean visual bracket keeps players and spectators informed about matchups and progression.
+
+  ### Classroom and Educational Use
+
+  Teachers use tournament brackets for spelling bees, debate tournaments, science fair judging, and academic competitions. The visual format makes it easy for students to understand the competition structure and track their progress.
+
+  ### Interactive Winner Selection
+
+  Unlike static bracket images, this tool lets you click on participants to select match winners. Winners automatically advance to the next round, making it easy to run your tournament in real-time. Just click a name to select the winner of each match.
+
+  ### Export and Sharing Options
+
+  Export your bracket as a PNG image for sharing on social media or in group chats. Use the Print function for a clean, formatted printout perfect for posting at your venue. Share a link so participants can view the bracket online.
+---
+
+<div class="tool-container">
+    <div class="tool-input-area">
+        <label for="bracket-names-input">Enter Participants</label>
+        <textarea id="bracket-names-input" placeholder="Enter participant or team names, one per line or separated by commas&#10;&#10;Example:&#10;Team Alpha&#10;Team Beta&#10;Team Gamma&#10;Team Delta"></textarea>
+
+        <div class="tool-options">
+            <div class="tool-option-group">
+                <label for="bracket-order">Order:</label>
+                <select id="bracket-order">
+                    <option value="random">Random</option>
+                    <option value="seeded">Seeded (as entered)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="tool-generate-row">
+            <button class="tool-button tool-button-primary" onclick="generateBracket()">Generate Bracket</button>
+        </div>
+    </div>
+
+    <div class="tool-output-area" id="bracket-output" style="display:none">
+        <div class="bracket-controls">
+            <div class="tool-actions" style="margin-bottom:0">
+                <button class="tool-button tool-button-secondary" onclick="exportBracketImage()">Export as Image</button>
+                <button class="tool-button tool-button-secondary" onclick="printBracket()">Print</button>
+                <button class="tool-button tool-button-secondary" onclick="shareBracketLink()">Share Link</button>
+                <button class="tool-button tool-button-secondary" onclick="resetBracket()">Reset Winners</button>
+            </div>
+            <div class="bracket-zoom-controls">
+                <button onclick="zoomBracket(-1)" title="Zoom out">&minus;</button>
+                <span id="zoom-level">100%</span>
+                <button onclick="zoomBracket(1)" title="Zoom in">+</button>
+            </div>
+        </div>
+        <div class="bracket-container" id="bracket-container"></div>
+    </div>
+</div>
