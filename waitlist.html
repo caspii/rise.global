@@ -1,0 +1,148 @@
+---
+layout: default
+title: "Join the Waitlist — Get Early Access to Rise Pro"
+description: "Be the first to get live scoreboards, streaming overlays, custom themes, and more. Join the Rise waitlist for early access to Pro features."
+keywords: "rise waitlist, tournament bracket pro, bracket maker early access"
+permalink: /waitlist/
+---
+
+<style>
+.waitlist-hero {
+    padding: 6rem 0 3rem;
+    text-align: center;
+}
+.waitlist-hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 2.75rem;
+    color: var(--text-dark);
+    margin-bottom: 1.25rem;
+}
+.waitlist-hero p {
+    font-size: 1.15rem;
+    color: var(--text-light);
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.7;
+}
+
+/* Early Access List */
+.early-access {
+    padding: 3rem 0 5rem;
+    background: var(--bg-light);
+}
+.early-access-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+    max-width: 800px;
+    margin: 2rem auto 0;
+}
+.early-access-item {
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+.early-access-item .ea-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+.early-access-item h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-dark);
+    margin-bottom: 0.25rem;
+}
+.early-access-item p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .waitlist-hero h1 {
+        font-size: 2rem;
+    }
+    .early-access-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<main class="main-content">
+    <section class="waitlist-hero">
+        <div class="container">
+            <h1>Join the Rise Waitlist</h1>
+            <p>We're building the tournament platform we always wished existed — live scoreboards, streaming overlays, custom themes, and more. Get on the list and you'll be the first to try each feature as it ships.</p>
+
+            {% include waitlist-form.html heading="" %}
+        </div>
+    </section>
+
+    <section class="early-access">
+        <div class="container">
+            <h2 class="section-title">What Waitlist Subscribers Get First</h2>
+            <p class="section-intro">Every feature below is actively being built. Waitlist members get early access before anyone else.</p>
+
+            <div class="early-access-grid">
+                <div class="early-access-item">
+                    <span class="ea-icon">&#x1F4CA;</span>
+                    <div>
+                        <h3>Live Scoreboards</h3>
+                        <p>Real-time scoring for every match, with automatic bracket advancement.</p>
+                    </div>
+                </div>
+                <div class="early-access-item">
+                    <span class="ea-icon">&#x1F3AC;</span>
+                    <div>
+                        <h3>Streaming Overlays</h3>
+                        <p>Transparent bracket overlays for OBS, vMix, and XSplit.</p>
+                    </div>
+                </div>
+                <div class="early-access-item">
+                    <span class="ea-icon">&#x1F3A8;</span>
+                    <div>
+                        <h3>Custom Themes</h3>
+                        <p>Colors, fonts, dark mode, and branding options for every bracket.</p>
+                    </div>
+                </div>
+                <div class="early-access-item">
+                    <span class="ea-icon">&#x1F504;</span>
+                    <div>
+                        <h3>Double Elimination &amp; Round Robin</h3>
+                        <p>New tournament formats beyond single elimination.</p>
+                    </div>
+                </div>
+                <div class="early-access-item">
+                    <span class="ea-icon">&#x1F4FA;</span>
+                    <div>
+                        <h3>TV Display Mode</h3>
+                        <p>Full-screen kiosk mode for venue screens and projectors.</p>
+                    </div>
+                </div>
+                <div class="early-access-item">
+                    <span class="ea-icon">&#x1F310;</span>
+                    <div>
+                        <h3>Embeddable Brackets</h3>
+                        <p>Drop a live bracket into your website with a single embed code.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="final-cta">
+        <div class="container">
+            <h2>Don't Need Pro Yet?</h2>
+            <p>The free bracket maker is ready to go right now. Jump in and start competing.</p>
+            <div class="hero-cta-group">
+                <a href="/tools/tournament-bracket-generator/" class="hero-primary-cta">Create a Bracket</a>
+            </div>
+        </div>
+    </section>
+</main>

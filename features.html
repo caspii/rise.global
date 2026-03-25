@@ -1,0 +1,324 @@
+---
+layout: default
+title: "Features — Free Bracket Maker & What's Coming"
+description: "See what Rise can do today and what's on the roadmap. Single elimination brackets, export, print, share — plus upcoming live scoreboards, streaming overlays, and more."
+keywords: "bracket maker features, tournament bracket features, free bracket generator, live scoreboard, streaming overlay, double elimination"
+permalink: /features/
+---
+
+<style>
+.features-page-hero {
+    padding: 5rem 0 3rem;
+    text-align: center;
+}
+.features-page-hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 2.75rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+.features-page-hero p {
+    font-size: 1.15rem;
+    color: var(--text-light);
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* Available Now */
+.available-now {
+    padding: 3rem 0 5rem;
+}
+.available-now-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+    margin-top: 2rem;
+}
+.available-feature {
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+.available-feature .feature-check {
+    color: var(--success-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+}
+.available-feature h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-dark);
+    margin-bottom: 0.25rem;
+}
+.available-feature p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+.available-cta {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+/* Coming Soon */
+.coming-soon-section {
+    padding: 5rem 0;
+    background-color: var(--bg-light);
+}
+.coming-soon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.25rem;
+    margin-top: 2rem;
+}
+.coming-soon-feature {
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    overflow: hidden;
+}
+.coming-soon-feature img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 0.75rem;
+}
+.coming-soon-feature .feature-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+.coming-soon-feature h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+.coming-soon-feature p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Waitlist Section */
+.features-waitlist {
+    padding: 5rem 0;
+    background: var(--gradient-hero);
+    color: var(--white);
+    text-align: center;
+}
+.features-waitlist .section-title {
+    color: var(--white);
+}
+
+@media (max-width: 768px) {
+    .features-page-hero h1 {
+        font-size: 2rem;
+    }
+    .available-now-grid,
+    .coming-soon-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<main class="main-content">
+    <section class="features-page-hero">
+        <div class="container">
+            <h1>Features</h1>
+            <p>Rise is already a fast, modern bracket maker. Here's what it does today and what we're building next.</p>
+        </div>
+    </section>
+
+    <!-- Available Now -->
+    <section class="available-now">
+        <div class="container">
+            <h2 class="section-title">Available Now</h2>
+            <p class="section-intro">Everything you need to run a single elimination tournament, right in your browser.</p>
+
+            <div class="available-now-grid">
+                <div class="available-feature">
+                    <span class="feature-check">&#x2713;</span>
+                    <div>
+                        <h3>Single Elimination Brackets</h3>
+                        <p>The classic tournament format. One loss and you're out.</p>
+                    </div>
+                </div>
+                <div class="available-feature">
+                    <span class="feature-check">&#x2713;</span>
+                    <div>
+                        <h3>Random &amp; Seeded Ordering</h3>
+                        <p>Randomize matchups or seed players by rank for fair pairings.</p>
+                    </div>
+                </div>
+                <div class="available-feature">
+                    <span class="feature-check">&#x2713;</span>
+                    <div>
+                        <h3>Click to Advance</h3>
+                        <p>Click a winner to advance them through the bracket instantly.</p>
+                    </div>
+                </div>
+                <div class="available-feature">
+                    <span class="feature-check">&#x2713;</span>
+                    <div>
+                        <h3>Export as Image</h3>
+                        <p>Download your bracket as a high-quality PNG to share anywhere.</p>
+                    </div>
+                </div>
+                <div class="available-feature">
+                    <span class="feature-check">&#x2713;</span>
+                    <div>
+                        <h3>Print</h3>
+                        <p>Print-optimized layouts that look great on paper.</p>
+                    </div>
+                </div>
+                <div class="available-feature">
+                    <span class="feature-check">&#x2713;</span>
+                    <div>
+                        <h3>Share Link</h3>
+                        <p>Share your bracket with a unique link. No login needed to view.</p>
+                    </div>
+                </div>
+                <div class="available-feature">
+                    <span class="feature-check">&#x2713;</span>
+                    <div>
+                        <h3>Automatic Byes</h3>
+                        <p>Odd number of players? Rise handles byes automatically.</p>
+                    </div>
+                </div>
+                <div class="available-feature">
+                    <span class="feature-check">&#x2713;</span>
+                    <div>
+                        <h3>2 to 128 Participants</h3>
+                        <p>Works for head-to-head matches all the way up to large tournaments.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="available-cta">
+                <a href="/tools/tournament-bracket-generator/" class="hero-primary-cta" style="background: var(--gradient-hero); color: var(--white); border-radius: 50px;">Create a Bracket</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coming Soon -->
+    <section class="coming-soon-section">
+        <div class="container">
+            <h2 class="section-title">Coming Soon</h2>
+            <p class="section-intro">We're actively building these features. Join the waitlist to get early access as they ship.</p>
+
+            <div class="coming-soon-grid">
+                <div class="coming-soon-feature">
+                    <img src="/assets/images/mockups/mockup-03-double-elimination.png" alt="Double elimination bracket with winners and losers brackets" loading="lazy">
+                    <div class="feature-header">
+                        <h3>Double Elimination</h3>
+                        {% include coming-soon-badge.html %}
+                    </div>
+                    <p>Winners and losers brackets with a grand final. Give every team a second chance.</p>
+                </div>
+                <div class="coming-soon-feature">
+                    <img src="/assets/images/mockups/mockup-06-round-robin.png" alt="Round robin schedule with standings table" loading="lazy">
+                    <div class="feature-header">
+                        <h3>Round Robin</h3>
+                        {% include coming-soon-badge.html %}
+                    </div>
+                    <p>Everyone plays everyone. Automatic standings and tiebreakers.</p>
+                </div>
+                <div class="coming-soon-feature">
+                    <img src="/assets/images/mockups/mockup-04-custom-themes.png" alt="Four different bracket visual themes" loading="lazy">
+                    <div class="feature-header">
+                        <h3>Custom Themes</h3>
+                        {% include coming-soon-badge.html %}
+                    </div>
+                    <p>Custom colors, fonts, and dark mode. Make brackets match your brand.</p>
+                </div>
+                <div class="coming-soon-feature">
+                    <div class="feature-header">
+                        <h3>Save &amp; Share</h3>
+                        {% include coming-soon-badge.html %}
+                    </div>
+                    <p>Persistent brackets saved to the cloud. Edit and share from any device.</p>
+                </div>
+                <div class="coming-soon-feature">
+                    <div class="feature-header">
+                        <h3>Third-Place Match</h3>
+                        {% include coming-soon-badge.html %}
+                    </div>
+                    <p>Optional consolation final between semifinal losers.</p>
+                </div>
+                <div class="coming-soon-feature">
+                    <img src="/assets/images/mockups/mockup-01-live-scoreboard.png" alt="Live scoreboard integrated with tournament bracket" loading="lazy">
+                    <div class="feature-header">
+                        <h3>Live Scoreboard Integration</h3>
+                        {% include coming-soon-badge.html %}
+                    </div>
+                    <p>Each match becomes a live scoreboard. Scores update the bracket in real time.</p>
+                </div>
+                <div class="coming-soon-feature">
+                    <img src="/assets/images/mockups/mockup-02-obs-overlay.png" alt="Tournament bracket overlay on esports stream" loading="lazy">
+                    <div class="feature-header">
+                        <h3>OBS Streaming Overlays</h3>
+                        {% include coming-soon-badge.html %}
+                    </div>
+                    <p>Transparent bracket overlays for OBS, vMix, and XSplit.</p>
+                </div>
+                <div class="coming-soon-feature">
+                    <img src="/assets/images/mockups/mockup-05-tv-display.png" alt="Tournament bracket in full-screen TV kiosk mode" loading="lazy">
+                    <div class="feature-header">
+                        <h3>TV Display Mode</h3>
+                        {% include coming-soon-badge.html %}
+                    </div>
+                    <p>Full-screen kiosk mode for venue screens and projectors.</p>
+                </div>
+                <div class="coming-soon-feature">
+                    <img src="/assets/images/mockups/mockup-08-team-logos.png" alt="Tournament bracket with team logo avatars" loading="lazy">
+                    <div class="feature-header">
+                        <h3>Team Logos</h3>
+                        {% include coming-soon-badge.html %}
+                    </div>
+                    <p>Upload logos that appear next to team names throughout the bracket.</p>
+                </div>
+                <div class="coming-soon-feature">
+                    <img src="/assets/images/mockups/mockup-09-registration.png" alt="Tournament registration page with sign-up form" loading="lazy">
+                    <div class="feature-header">
+                        <h3>Registration Pages</h3>
+                        {% include coming-soon-badge.html %}
+                    </div>
+                    <p>Let participants sign up directly. No spreadsheets required.</p>
+                </div>
+                <div class="coming-soon-feature">
+                    <img src="/assets/images/mockups/mockup-10-embeddable.png" alt="Tournament bracket widget embedded on a website" loading="lazy">
+                    <div class="feature-header">
+                        <h3>Embeddable Brackets</h3>
+                        {% include coming-soon-badge.html %}
+                    </div>
+                    <p>Embed live brackets on your website with a simple iframe.</p>
+                </div>
+                <div class="coming-soon-feature">
+                    <img src="/assets/images/mockups/mockup-07-group-to-knockout.png" alt="Group stage flowing into knockout bracket" loading="lazy">
+                    <div class="feature-header">
+                        <h3>Group Stage to Knockout</h3>
+                        {% include coming-soon-badge.html %}
+                    </div>
+                    <p>Run a group stage first, then feed top teams into a knockout bracket.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waitlist -->
+    <section class="features-waitlist">
+        <div class="container">
+            {% include waitlist-form.html heading="Get early access to new features" %}
+        </div>
+    </section>
+</main>

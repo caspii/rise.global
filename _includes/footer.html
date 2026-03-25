@@ -2,16 +2,17 @@
     <div class="container">
         <div class="footer-content">
             <div class="footer-section">
-                <h4>About Rise Global</h4>
-                <p>Rise Global provides free online tools for teams, teachers, and event organizers. Previously a score tracking platform, we now focus on simple, browser-based tools anyone can use.</p>
+                <h4>About Rise</h4>
+                <p>Rise is a modern tournament bracket platform. Create single elimination, double elimination, and round robin brackets in seconds — free and ready when you are.</p>
+                <p><a href="{{ site.powered_by_url }}" class="footer-link">{{ site.powered_by_text }}</a></p>
             </div>
 
             <div class="footer-section">
-                <h4>Free Tools</h4>
+                <h4>Bracket Tools</h4>
                 <ul class="footer-list">
-                    <li><a href="/tools/random-team-generator/" class="footer-link">Random Team Generator</a></li>
-                    <li><a href="/tools/spin-the-wheel/" class="footer-link">Spin the Wheel</a></li>
                     <li><a href="/tools/tournament-bracket-generator/" class="footer-link">Tournament Bracket Generator</a></li>
+                    <li><a href="/features/" class="footer-link">Double Elimination {% include coming-soon-badge.html %}</a></li>
+                    <li><a href="/features/" class="footer-link">Round Robin {% include coming-soon-badge.html %}</a></li>
                     <li><a href="/tools/" class="footer-link">All Tools</a></li>
                 </ul>
             </div>
@@ -19,22 +20,24 @@
             <div class="footer-section">
                 <h4>Resources</h4>
                 <ul class="footer-list">
-                    <li><a href="/blog" class="footer-link">Blog</a></li>
-                    <li><a href="https://leaderboarded.com?utm_source=rise.global&utm_medium=referral&utm_campaign=footer_text" class="footer-link">Leaderboarded</a> - Full leaderboard management</li>
+                    <li><a href="/features/" class="footer-link">Features</a></li>
+                    <li><a href="/pricing/" class="footer-link">Pricing</a></li>
+                    <li><a href="/blog/" class="footer-link">Blog</a></li>
                 </ul>
             </div>
 
             <div class="footer-section">
-                <h4>Other Projects</h4>
+                <h4>Other Tools</h4>
                 <ul class="footer-list">
-                    <li><a href="https://costcam.app/" class="footer-link">Costcam.app</a> - Instant price estimates from photos</li>
-                    <li><a href="https://zip1.io/" class="footer-link">Zip1.io</a> - URL shortener for developers</li>
+                    <li><a href="/tools/random-team-generator/" class="footer-link">Random Team Generator</a></li>
+                    <li><a href="/tools/spin-the-wheel/" class="footer-link">Spin the Wheel</a></li>
                 </ul>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 Rise Global. All rights reserved.</p>
+            <p>&copy; {{ site.time | date: '%Y' }} Rise Global. All rights reserved.</p>
+            <p><a href="{{ site.powered_by_url }}" class="footer-link" style="font-size: 0.85em; opacity: 0.7;">{{ site.powered_by_text }}</a></p>
         </div>
     </div>
 </footer>

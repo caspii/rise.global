@@ -31,7 +31,7 @@ layout: default
     }
 
     .post-header {
-        background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
+        background: var(--gradient-hero);
         color: white;
         padding: 80px 0 60px;
         margin-bottom: 40px;
@@ -44,7 +44,7 @@ layout: default
     }
 
     .post-title {
-        font-family: 'Poppins', sans-serif;
+        font-family: var(--font-display);
         font-size: 2.5rem;
         font-weight: 700;
         margin: 0 0 20px;
@@ -52,7 +52,7 @@ layout: default
     }
 
     .post-meta {
-        font-family: 'DM Sans', sans-serif;
+        font-family: var(--font-body);
         font-size: 1.1rem;
         opacity: 0.9;
     }
@@ -62,7 +62,7 @@ layout: default
     }
 
     .post-content {
-        font-family: 'DM Sans', sans-serif;
+        font-family: var(--font-body);
         font-size: 1.125rem;
         line-height: 1.8;
         color: #374151;
@@ -72,7 +72,7 @@ layout: default
     }
 
     .post-content h2 {
-        font-family: 'Poppins', sans-serif;
+        font-family: var(--font-display);
         font-size: 2rem;
         font-weight: 600;
         margin: 40px 0 20px;
@@ -80,7 +80,7 @@ layout: default
     }
 
     .post-content h3 {
-        font-family: 'Poppins', sans-serif;
+        font-family: var(--font-display);
         font-size: 1.5rem;
         font-weight: 600;
         margin: 30px 0 15px;
@@ -101,13 +101,13 @@ layout: default
     }
 
     .post-content a {
-        color: #8b5cf6;
+        color: var(--secondary-color);
         text-decoration: underline;
         transition: color 0.2s;
     }
 
     .post-content a:hover {
-        color: #a855f7;
+        color: var(--secondary-color);
     }
 
     .post-content strong {
@@ -121,7 +121,7 @@ layout: default
     }
 
     .post-content blockquote {
-        border-left: 4px solid #8b5cf6;
+        border-left: 4px solid var(--primary-color);
         padding-left: 20px;
         margin: 30px 0;
         font-style: italic;
@@ -151,8 +151,8 @@ layout: default
     }
 
     .back-link {
-        color: #8b5cf6;
-        font-family: 'DM Sans', sans-serif;
+        color: var(--secondary-color);
+        font-family: var(--font-body);
         font-size: 1rem;
         text-decoration: none;
         display: inline-flex;
@@ -161,7 +161,7 @@ layout: default
     }
 
     .back-link:hover {
-        color: #a855f7;
+        color: var(--secondary-color);
     }
 
     @media (max-width: 768px) {

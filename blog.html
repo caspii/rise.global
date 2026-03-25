@@ -40,125 +40,82 @@ permalink: /blog/
 
 <style>
     .blog-hero {
-        background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
-        color: white;
+        background: var(--gradient-hero);
+        color: var(--white);
         padding: 80px 0;
         text-align: center;
     }
-
     .blog-hero h1 {
-        font-family: 'Poppins', sans-serif;
+        font-family: var(--font-display);
         font-size: 3rem;
+        font-weight: 800;
+        margin: 0 0 10px;
+        letter-spacing: -0.03em;
+    }
+    .blog-hero p {
+        font-size: 1.15rem;
+        opacity: 0.6;
+        margin: 0;
+    }
+    .blog-list {
+        padding: 60px 0;
+        background: var(--bg-light);
+        min-height: 400px;
+    }
+    .blog-card {
+        background: var(--white);
+        border-radius: var(--radius-lg);
+        padding: 30px;
+        margin-bottom: 20px;
+        border: 1px solid var(--border-color);
+        transition: border-color 0.25s, transform 0.25s;
+    }
+    .blog-card:hover {
+        border-color: var(--secondary-color);
+        transform: translateY(-2px);
+    }
+    .blog-card-title {
+        font-family: var(--font-display);
+        font-size: 1.5rem;
         font-weight: 700;
         margin: 0 0 10px;
     }
-
-    .blog-hero p {
-        font-family: 'DM Sans', sans-serif;
-        font-size: 1.25rem;
-        opacity: 0.9;
-        margin: 0;
-    }
-
-    .blog-list {
-        padding: 60px 0;
-        background: #f9fafb;
-        min-height: 400px;
-    }
-
-    .blog-card {
-        background: white;
-        border-radius: 12px;
-        padding: 30px;
-        margin-bottom: 30px;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        transition: box-shadow 0.3s;
-    }
-
-    .blog-card:hover {
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    }
-
-    .blog-card-title {
-        font-family: 'Poppins', sans-serif;
-        font-size: 1.75rem;
-        font-weight: 600;
-        margin: 0 0 10px;
-    }
-
     .blog-card-title a {
-        color: #1f2937;
+        color: var(--text-dark);
         text-decoration: none;
-        transition: color 0.2s;
     }
-
     .blog-card-title a:hover {
-        color: #8b5cf6;
+        color: var(--secondary-color);
     }
-
     .blog-card-meta {
-        font-family: 'DM Sans', sans-serif;
-        font-size: 0.9rem;
-        color: #6b7280;
-        margin-bottom: 15px;
+        font-size: 0.85rem;
+        color: var(--text-muted);
+        margin-bottom: 12px;
     }
-
-    .blog-card-meta time {
-        margin-right: 10px;
-    }
-
+    .blog-card-meta time { margin-right: 10px; }
     .blog-card-excerpt {
-        font-family: 'DM Sans', sans-serif;
-        font-size: 1rem;
-        line-height: 1.6;
-        color: #374151;
-        margin: 15px 0 20px;
+        font-size: 0.95rem;
+        line-height: 1.65;
+        color: var(--text-light);
+        margin: 12px 0 16px;
     }
-
     .blog-card-link {
-        font-family: 'DM Sans', sans-serif;
-        font-size: 1rem;
-        color: #8b5cf6;
+        font-family: var(--font-display);
+        font-size: 0.9rem;
+        color: var(--secondary-color);
         text-decoration: none;
-        font-weight: 500;
-        transition: color 0.2s;
+        font-weight: 700;
     }
-
-    .blog-card-link:hover {
-        color: #a855f7;
-    }
-
+    .blog-card-link:hover { opacity: 0.8; }
     .no-posts {
         text-align: center;
-        font-family: 'DM Sans', sans-serif;
-        font-size: 1.125rem;
-        color: #6b7280;
+        font-size: 1.1rem;
+        color: var(--text-muted);
         padding: 40px 0;
     }
-
     @media (max-width: 768px) {
-        .blog-hero {
-            padding: 60px 0;
-        }
-
-        .blog-hero h1 {
-            font-size: 2rem;
-        }
-
-        .blog-hero p {
-            font-size: 1rem;
-        }
-
-        .blog-list {
-            padding: 40px 0;
-        }
-
-        .blog-card {
-            padding: 20px;
-        }
-
-        .blog-card-title {
-            font-size: 1.5rem;
-        }
+        .blog-hero { padding: 60px 0; }
+        .blog-hero h1 { font-size: 2rem; }
+        .blog-card-title { font-size: 1.25rem; }
     }
 </style>

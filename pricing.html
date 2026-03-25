@@ -1,0 +1,252 @@
+---
+layout: default
+title: "Pricing — Free Bracket Maker with Pro Features Coming Soon"
+description: "Rise is free to use today. See what's included and what's coming with Rise Pro — double elimination, custom themes, live scoreboards, and more."
+keywords: "bracket maker pricing, free bracket maker, tournament bracket pricing, rise pro"
+permalink: /pricing/
+---
+
+<style>
+.pricing-hero {
+    padding: 5rem 0 3rem;
+    text-align: center;
+}
+.pricing-hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 2.75rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+.pricing-hero p {
+    font-size: 1.15rem;
+    color: var(--text-light);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Pricing Cards */
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 0 5rem;
+}
+.pricing-card {
+    background: var(--white);
+    border: 2px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.pricing-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+.pricing-card.featured {
+    border-color: var(--primary-color);
+}
+.pricing-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25em 0.75em;
+    border-radius: 999px;
+    margin-bottom: 1rem;
+}
+.pricing-badge.free-badge {
+    background: #d1fae5;
+    color: #065f46;
+}
+.pricing-badge.pro-badge {
+    background: #f3e8ff;
+    color: #7c3aed;
+}
+.pricing-card h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+.pricing-amount {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 0.25rem;
+}
+.pricing-amount-sub {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+.pricing-features {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+.pricing-features li {
+    padding: 0.5rem 0;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+}
+.pricing-features li span.pf-check {
+    color: var(--success-color);
+    font-weight: 700;
+    flex-shrink: 0;
+}
+.pricing-features li span.pf-soon {
+    color: var(--warning-color);
+    font-weight: 600;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+}
+.pricing-card .pricing-cta {
+    display: inline-block;
+    padding: 0.85rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+.pricing-cta.cta-primary {
+    background: var(--gradient-hero);
+    color: var(--white);
+}
+.pricing-cta.cta-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+.pricing-cta.cta-outline {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    background: transparent;
+}
+.pricing-cta.cta-outline:hover {
+    background: var(--primary-color);
+    color: var(--bg-dark);
+}
+
+/* Pricing FAQ */
+.pricing-faq {
+    padding: 4rem 0 5rem;
+    background: var(--bg-light);
+}
+.pricing-faq-grid {
+    max-width: 700px;
+    margin: 2rem auto 0;
+    display: grid;
+    gap: 1.5rem;
+}
+.pricing-faq-item {
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1.75rem;
+}
+.pricing-faq-item h4 {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    margin-bottom: 0.75rem;
+}
+.pricing-faq-item p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .pricing-hero h1 {
+        font-size: 2rem;
+    }
+    .pricing-cards {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+    }
+    .pricing-amount {
+        font-size: 2rem;
+    }
+}
+</style>
+
+<main class="main-content">
+    <section class="pricing-hero">
+        <div class="container">
+            <h1>Simple, Honest Pricing</h1>
+            <p>Rise is free today and the free tier isn't going anywhere. When Pro launches, you'll get powerful extras without losing what you already have.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="pricing-cards">
+                <!-- Free Tier -->
+                <div class="pricing-card">
+                    <span class="pricing-badge free-badge">Free Forever</span>
+                    <h2>Free</h2>
+                    <div class="pricing-amount">$0</div>
+                    <div class="pricing-amount-sub">No credit card needed</div>
+
+                    <ul class="pricing-features">
+                        <li><span class="pf-check">&#x2713;</span> Single elimination brackets</li>
+                        <li><span class="pf-check">&#x2713;</span> Unlimited brackets</li>
+                        <li><span class="pf-check">&#x2713;</span> 2 to 128 participants</li>
+                        <li><span class="pf-check">&#x2713;</span> Export as image</li>
+                        <li><span class="pf-check">&#x2713;</span> Print-friendly layout</li>
+                        <li><span class="pf-check">&#x2713;</span> Shareable links</li>
+                        <li><span class="pf-check">&#x2713;</span> Ready in seconds</li>
+                    </ul>
+
+                    <a href="/tools/tournament-bracket-generator/" class="pricing-cta cta-primary">Create a Bracket</a>
+                </div>
+
+                <!-- Pro Tier -->
+                <div class="pricing-card featured">
+                    <span class="pricing-badge pro-badge">Coming Soon</span>
+                    <h2>Pro</h2>
+                    <div class="pricing-amount" style="font-size: 1.5rem; padding: 0.5rem 0;">Coming Soon</div>
+                    <div class="pricing-amount-sub">Join the waitlist for early pricing</div>
+
+                    <ul class="pricing-features">
+                        <li><span class="pf-check">&#x2713;</span> Everything in Free</li>
+                        <li><span class="pf-soon">&#x25CB;</span> Double elimination</li>
+                        <li><span class="pf-soon">&#x25CB;</span> Round robin</li>
+                        <li><span class="pf-soon">&#x25CB;</span> Custom themes &amp; dark mode</li>
+                        <li><span class="pf-soon">&#x25CB;</span> Live scoreboards</li>
+                        <li><span class="pf-soon">&#x25CB;</span> Streaming overlays (OBS)</li>
+                        <li><span class="pf-soon">&#x25CB;</span> Embeddable brackets</li>
+                        <li><span class="pf-soon">&#x25CB;</span> Persistent save &amp; share</li>
+                    </ul>
+
+                    <a href="/waitlist/" class="pricing-cta cta-outline">Join the Waitlist</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-faq">
+        <div class="container">
+            <h2 class="section-title">Pricing FAQ</h2>
+
+            <div class="pricing-faq-grid">
+                <div class="pricing-faq-item">
+                    <h4>When will Pro launch?</h4>
+                    <p>We're building Pro features right now. We don't have a fixed launch date yet, but waitlist subscribers will be the first to know — and the first to get access. We'll announce pricing before launch so there are no surprises.</p>
+                </div>
+                <div class="pricing-faq-item">
+                    <h4>Will the free tier stay free?</h4>
+                    <p>Yes, always. The free tier includes everything that's available today — single elimination brackets, unlimited usage, export, print, and sharing. We're not going to pull features out of free and put them behind a paywall. Pro is about adding new capabilities on top of what already works.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

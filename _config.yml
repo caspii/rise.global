@@ -1,13 +1,20 @@
 # Jekyll configuration for rise.global
-title: Rise Global - Free Online Tools
-description: Free online tools for teams, teachers, and event organizers. Random team generator, spin the wheel, tournament bracket maker, and more.
+title: "Rise — Free Tournament Bracket Maker"
+description: "Create beautiful tournament brackets in seconds. Free, no signup required. Single elimination, double elimination, and round robin formats."
 author: Rise Global
 url: https://rise.global
 baseurl: ""
 
 # SEO and metadata
-tagline: Free online tools for teams, teachers, and event organizers
-keywords: free online tools, random team generator, spin the wheel, tournament bracket generator, group maker, team builder, competition tools
+tagline: "The modern tournament bracket maker — free, fast, and built for live competition."
+keywords: "bracket maker, tournament bracket generator, free bracket maker, double elimination bracket, round robin generator, tournament bracket, bracket creator"
+
+# Waitlist
+waitlist_form_action: "https://buttondown.com/api/emails/embed-subscribe/riseglobal"
+
+# Branding
+powered_by_text: "Powered by KeepTheScore"
+powered_by_url: "https://keepthescore.com?utm_source=rise.global&utm_medium=referral&utm_campaign=powered_by"
 
 # Build settings
 markdown: kramdown
@@ -38,5 +45,8 @@ exclude:
   - README.md
   - .gitignore
   - CLAUDE.md
+  - POSITIONING.md
+  - IMAGE-PROMPTS.md
+  - MOCKUPS.md
   - posts-todo.md
   - test

@@ -2,14 +2,15 @@
     <div class="container">
         <div class="nav-wrapper">
             <a href="/" class="nav-logo">
-                <span class="logo-text">Rise Global</span>
+                <span class="logo-text">Rise</span>
             </a>
 
             <ul class="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/tools/">Tools</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="https://leaderboarded.com?utm_source=rise.global&utm_medium=referral&utm_campaign=nav_cta" class="nav-link-cta">Leaderboarded</a></li>
+                <li><a href="/tools/tournament-bracket-generator/"{% if page.url == '/tools/tournament-bracket-generator/' %} class="active"{% endif %}>Bracket Maker</a></li>
+                <li><a href="/features/"{% if page.url == '/features/' %} class="active"{% endif %}>Features</a></li>
+                <li><a href="/pricing/"{% if page.url == '/pricing/' %} class="active"{% endif %}>Pricing</a></li>
+                <li><a href="/blog/"{% if page.url == '/blog/' %} class="active"{% endif %}>Blog</a></li>
+                <li><a href="/waitlist/" class="nav-cta">Join Waitlist</a></li>
             </ul>
 
             <button class="mobile-menu-toggle" aria-label="Toggle menu">
