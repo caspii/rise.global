@@ -4,6 +4,7 @@ title: "How Esports and Streaming Communities Use Score Overlays and Leaderboard
 date: 2025-05-01 09:00:00
 categories: gaming
 author: Rise Global Team
+image: /assets/images/blog-esports-overlays.jpg
 excerpt: "Discover how professional esports teams and streamers use leaderboards and overlays to build engaged communities, boost viewership by 300%, and turn casual viewers into loyal fans."
 redirect_from:
   - /2025/05/01/how-esports-and-streaming-communities-use-score-overlays-and-leaderboards/

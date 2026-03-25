@@ -5,6 +5,7 @@ date: 2025-11-15 11:00:00
 categories: guide
 lang: de
 author: Rise Global Team
+image: /assets/images/blog-gamification-unternehmen.jpg
 excerpt: "Gamification ist mehr als nur ein Buzzword – es ist eine der effektivsten Methoden, um Mitarbeiter zu motivieren und die Produktivität zu steigern. Entdecke die besten Beispiele und wie du sie in deinem Unternehmen umsetzt."
 ---
 

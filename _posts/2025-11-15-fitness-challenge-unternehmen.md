@@ -5,6 +5,7 @@ date: 2025-11-15 10:00:00
 categories: guide
 lang: de
 author: Rise Global Team
+image: /assets/images/blog-fitness-unternehmen.jpg
 excerpt: "Eine Fitness Challenge im Unternehmen ist mehr als nur ein Health-Trend – es ist Team-Building, Gesundheitsförderung und Motivation in einem. Entdecke die besten Ideen und wie du eine erfolgreiche Fitness Challenge organisierst."
 ---
 

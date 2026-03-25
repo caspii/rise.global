@@ -4,6 +4,7 @@ title: "How to Run a Hackathon with Points, Badges, and Leaderboards"
 date: 2025-09-15 09:00:00
 categories: events
 author: Rise Global Team
+image: /assets/images/blog-hackathon-leaderboards.jpg
 excerpt: "Learn how to organize an engaging hackathon using gamification. From scoring systems to real-time leaderboards, discover proven strategies that top tech companies use to run successful hackathons."
 redirect_from:
   - /2025/09/15/how-to-run-a-hackathon-with-points-badges-and-leaderboards/

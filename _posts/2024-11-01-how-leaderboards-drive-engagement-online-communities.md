@@ -4,6 +4,7 @@ title: "How Leaderboards Drive Engagement in Online Communities"
 date: 2024-11-01 09:00:00
 categories: guide
 author: Rise Global Team
+image: /assets/images/blog-leaderboards-communities.jpg
 excerpt: "Discover the psychology behind why leaderboards work and how they transform passive members into active community contributors. Learn proven strategies from successful gaming, corporate, and educational communities."
 redirect_from:
   - /2024/11/01/how-leaderboards-drive-engagement-in-online-communities/

@@ -4,6 +4,7 @@ title: "Gamification in Education: How Teachers Use Points and Leaderboards"
 date: 2024-12-15 09:00:00
 categories: education
 author: Rise Global Team
+image: /assets/images/blog-gamification-education.jpg
 excerpt: "Transform your classroom with proven gamification strategies. Learn how teachers worldwide use points, badges, and leaderboards to boost student engagement, motivation, and academic achievement."
 redirect_from:
   - /2024/12/15/gamification-in-education-how-teachers-use-points-and-leaderboards/

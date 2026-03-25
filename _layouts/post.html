@@ -15,6 +15,12 @@ layout: default
         </div>
     </header>
 
+    {% if page.image %}
+    <div class="post-hero-image container">
+        <img src="{{ page.image }}" alt="{{ page.title }}" loading="lazy">
+    </div>
+    {% endif %}
+
     <div class="post-content container">
         {{ content }}
     </div>
@@ -28,6 +34,17 @@ layout: default
     .blog-post {
         padding: 0 0 60px;
         background: #fff;
+    }
+
+    .post-hero-image {
+        max-width: 800px;
+        margin: -30px auto 40px;
+        padding: 0 20px;
+    }
+    .post-hero-image img {
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
     }
 
     .post-header {

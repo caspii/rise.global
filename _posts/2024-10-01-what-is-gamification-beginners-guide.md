@@ -4,6 +4,7 @@ title: "What Is Gamification? A Beginner's Guide with Real-World Examples"
 date: 2024-10-01 10:00:00
 categories: guide
 author: Rise Global Team
+image: /assets/images/blog-gamification-guide.jpg
 excerpt: "Discover what gamification is, how it works, and why companies from Apple to Duolingo use game elements to boost engagement. Learn practical ways to implement gamification in your workplace, classroom, or personal goals."
 redirect_from:
   - /2024/10/01/what-is-gamification-a-beginner/
