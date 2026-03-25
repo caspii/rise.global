@@ -42,7 +42,7 @@ At this size, you need a digital solution. Not optional. The coordination of 32 
 
 ### 64 Teams
 
-The [64-team bracket](/64-team-bracket/) is March Madness territory. Six rounds, 63 matches. You're running a multi-day event with dedicated tournament directors, probably streaming key matches, and definitely not using a PDF printout from the internet.
+The [64-team bracket](/64-team-bracket/) is [March Madness](https://en.wikipedia.org/wiki/NCAA_Division_I_men%27s_basketball_tournament) territory. Six rounds, 63 matches. You're running a multi-day event with dedicated tournament directors, probably streaming key matches, and definitely not using a PDF printout from the internet.
 
 ![Tournament bracket on a TV screen at a venue](/assets/images/mockups/mockup-05-tv-display-v2.png)
 
@@ -50,7 +50,7 @@ The [64-team bracket](/64-team-bracket/) is March Madness territory. Six rounds,
 
 The bracket size tells you scale. The format tells you structure.
 
-### Single Elimination
+### [Single Elimination](https://en.wikipedia.org/wiki/Single-elimination_tournament)
 
 One loss and you're out. Fast, dramatic, occasionally brutal. The best format when time is limited or the field is large. The worst format when you want the "true" best team to win — a single bad game and your top seed goes home.
 
@@ -72,7 +72,7 @@ Best for: leagues that run over weeks, events with 6-8 teams and plenty of time,
 
 ### Group Stage to Knockout
 
-The hybrid approach. Split your field into groups of 4, run a round robin within each group, then take the top 2 from each group into a single or double elimination bracket. It's how FIFA runs the World Cup, and the format works just as well for your 16-team [volleyball tournament](/volleyball-tournament-bracket/) or [ping pong bracket](/ping-pong-tournament-bracket/).
+The hybrid approach. Split your field into groups of 4, run a round robin within each group, then take the top 2 from each group into a single or double elimination bracket. It's how FIFA runs the [World Cup](https://en.wikipedia.org/wiki/FIFA_World_Cup), and the format works just as well for your 16-team [volleyball tournament](/volleyball-tournament-bracket/) or [ping pong bracket](/ping-pong-tournament-bracket/).
 
 ![Group stage flowing into knockout bracket](/assets/images/mockups/mockup-07-group-to-knockout.png)
 

@@ -14,7 +14,7 @@ That's the fundamental tension between these two formats. One prioritizes time. 
 
 ## Round Robin: The Fair One
 
-In a round robin, every team plays every other team. No draws of fate, no bracket luck. The team with the best record wins. If you want to know who's *actually* the best, this is how you find out.
+In a [round robin](https://en.wikipedia.org/wiki/Round-robin_tournament), every team plays every other team. No draws of fate, no bracket luck. The team with the best record wins. If you want to know who's *actually* the best, this is how you find out.
 
 The cost is time. Eight teams means 28 matches. Running three at a time on parallel courts, that's still 9-10 rounds. An afternoon disappears fast.
 
@@ -30,9 +30,9 @@ Six to eight teams with a full day or multiple weeks. League formats where stand
 
 More than 10 teams in a single day. You physically won't finish. Twelve teams is 66 matches. Even running four at a time, that's a 16-round gauntlet nobody signed up for.
 
-## Single Elimination: The Fast One
+## [Single Elimination](https://en.wikipedia.org/wiki/Single-elimination_tournament): The Fast One
 
-One loss and you're done. Harsh? Absolutely. But there's a reason March Madness is the most exciting tournament in American sports and the NBA regular season is background noise until the playoffs.
+One loss and you're done. Harsh? Absolutely. But there's a reason [March Madness](https://en.wikipedia.org/wiki/NCAA_Division_I_men%27s_basketball_tournament) is the most exciting tournament in American sports and the NBA regular season is background noise until the playoffs.
 
 Single elimination creates stakes that round robin can't match. Every game matters completely. There's no "we'll make it up next round." That pressure produces drama, upsets, and moments people remember.
 

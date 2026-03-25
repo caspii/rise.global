@@ -18,7 +18,7 @@ Running a great cornhole tournament isn't about cornhole. It's about logistics. 
 
 This decision drives everything else — how long the event runs, how many boards you need, and whether anyone goes home angry.
 
-**Double elimination** is the standard for competitive cornhole, and the ACL (American Cornhole League) uses it for a reason. Every team gets a second chance. One bad game doesn't end your day. If you've got 16 teams and a full day, [double elimination](/double-elimination-bracket/) is the move. Expect about 30 matches.
+**[Double elimination](https://en.wikipedia.org/wiki/Double-elimination_tournament)** is the standard for competitive cornhole, and the [ACL (American Cornhole League)](https://www.iplaycornhole.com/) uses it for a reason. Every team gets a second chance. One bad game doesn't end your day. If you've got 16 teams and a full day, [double elimination](/double-elimination-bracket/) is the move. Expect about 30 matches.
 
 **Single elimination** works for casual events and large fields. Got 32 teams at a charity fundraiser? You don't have time for double elimination. An [8-team bracket](/8-team-bracket/) runs 7 matches. Quick, clean, done.
 
@@ -28,7 +28,7 @@ This decision drives everything else — how long the event runs, how many board
 
 Bag on the board: 1 point. Bag in the hole: 3 points. Game goes to 21 points.
 
-Here's the part people mess up: cancellation scoring. You don't add up both teams' points each round. You *cancel* them. If Team A scores 5 and Team B scores 3, only Team A gets 2 points added to the running total.
+Here's the part people mess up: [cancellation scoring](https://en.wikipedia.org/wiki/Cornhole#Scoring). You don't add up both teams' points each round. You *cancel* them. If Team A scores 5 and Team B scores 3, only Team A gets 2 points added to the running total.
 
 Demonstrate this before the first match. Literally walk up to a board, throw a few bags, and show everyone how the math works. You'll save yourself 45 minutes of mid-game arguments.
 

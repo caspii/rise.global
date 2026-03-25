@@ -6,9 +6,9 @@ author: Rise Team
 image: /assets/images/mockups/mockup-03-double-elimination.png
 ---
 
-Your best team just lost in round one. In single elimination, they're done — packing up, heading home, spending the rest of the day bitter about a bad call. In double elimination, they drop to the losers bracket, rip through four straight matches, and meet the team that beat them in the grand final. That's the magic of the format.
+Your best team just lost in round one. In single elimination, they're done — packing up, heading home, spending the rest of the day bitter about a bad call. In [double elimination](https://en.wikipedia.org/wiki/Double-elimination_tournament), they drop to the losers bracket, rip through four straight matches, and meet the team that beat them in the grand final. That's the magic of the format.
 
-Double elimination tournaments give every competitor a second chance without turning your event into an all-week affair. They're the standard for competitive cornhole, fighting game communities, beer pong leagues, and pretty much any scene that cares about finding the *actually* best team — not just the luckiest.
+Double elimination tournaments give every competitor a second chance without turning your event into an all-week affair. They're the standard for competitive cornhole, [fighting game communities](https://en.wikipedia.org/wiki/Fighting_game_community), beer pong leagues, and pretty much any scene that cares about finding the *actually* best team — not just the luckiest.
 
 Here's how to run one without losing your mind.
 

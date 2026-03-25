@@ -14,7 +14,7 @@ That's what happens without seeding. And it's entirely preventable.
 
 ## What Seeding Actually Does
 
-Seeding assigns positions in the bracket based on how good each team is. The best team gets the #1 seed. The worst gets the #8 seed. Then you place them so the strongest teams are as far apart as possible, meaning they can only meet in the later rounds.
+[Seeding](https://en.wikipedia.org/wiki/Seed_(sports)) assigns positions in the bracket based on how good each team is. The best team gets the #1 seed. The worst gets the #8 seed. Then you place them so the strongest teams are as far apart as possible, meaning they can only meet in the later rounds.
 
 In a standard 8-team bracket, the matchups look like this:
 
@@ -45,7 +45,7 @@ The most objective method. Use last tournament's results, league standings, or h
 
 ### By ranking or rating
 
-If your sport has an Elo rating, a national ranking, or any kind of official standing — use it. This is how tennis does it, how chess does it, how most esports do it. Transparent and consistent.
+If your sport has an [Elo rating](https://en.wikipedia.org/wiki/Elo_rating_system), a national ranking, or any kind of official standing — use it. This is how tennis does it, how chess does it, how most esports do it. Transparent and consistent.
 
 ### By committee
 

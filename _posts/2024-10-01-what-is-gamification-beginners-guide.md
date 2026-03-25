@@ -54,7 +54,7 @@ What Duolingo gets right that most apps don't: failure feels temporary. Get an a
 
 ### Sales Floors: Where Gamification Gets Serious
 
-Walk into a modern sales floor and you'll see giant screens with real-time leaderboards. But the smart companies have moved past "most deals closed" as the only metric. The best [sales gamification](/blog/posts/sales-gamification/) systems now track the entire pipeline--calls made, meetings booked, proposals sent--so newer reps can compete on effort while they build their skills.
+Walk into a modern sales floor and you'll see giant screens with real-time leaderboards. But the smart companies have moved past "most deals closed" as the only metric. The best [sales gamification](https://leaderboarded.com/blog/posts/sales-gamification/) systems now track the entire pipeline--calls made, meetings booked, proposals sent--so newer reps can compete on effort while they build their skills.
 
 ![Competition leaderboard display](/assets/images/blog/competition_leaderboard.jpg)
 

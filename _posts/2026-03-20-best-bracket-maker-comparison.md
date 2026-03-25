@@ -12,7 +12,7 @@ Here's what's actually out there, what each tool does well, and where each one f
 
 ![Old bracket maker vs modern Rise interface](/assets/images/mockups/blog-old-vs-new.png)
 
-## Challonge
+## [Challonge](https://challonge.com)
 
 Challonge is the incumbent. It's been around since 2009, it has massive brand recognition in the esports and fighting game community, and it was one of the first tools to offer online bracket management. If you've played in any kind of competitive gaming event, you've probably used Challonge.
 
@@ -28,7 +28,7 @@ Real-time features are limited. There's no TV display mode, no live spectator vi
 
 For online tournaments and esports, Challonge works. For in-person events where presentation matters, it's showing its age.
 
-## BracketHQ
+## [BracketHQ](https://brackethq.com)
 
 BracketHQ takes a completely different approach. It's focused on printable brackets — clean, well-designed PDFs you can download and fill in by hand. If you want a physical bracket to post on a wall, BracketHQ does that well.
 
@@ -44,7 +44,7 @@ BracketHQ also has an online bracket feature, but it's basic — more of an afte
 
 If you need a one-time printable bracket and you're not managing an ongoing event, BracketHQ is perfectly fine. But it won't grow with you.
 
-## Common Ninja
+## [Common Ninja](https://www.commoninja.com)
 
 Common Ninja sells embeddable widgets for websites. Their bracket widget lets you embed a tournament bracket directly into your site — useful for gaming communities, event pages, and organizations that want brackets integrated into their existing web presence.
 
