@@ -4,9 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Jekyll static website that serves as a landing page for the discontinued rise.global service. The site informs visitors about the service shutdown and recommends Leaderboarded as an alternative.
-
-Some links on the internet point to pages which no longer exist.
+This is a Jekyll static website for **Rise** (rise.global), a pre-launch/waitlist site for a modern tournament bracket platform. The primary CTA is the waitlist at `/waitlist/`, with a secondary CTA pointing to the free bracket tool. Brand voice is energetic, not corporate: "Rise. Compete. Win."
 
 ## Development Commands
 
@@ -23,13 +21,34 @@ bundle exec jekyll build
 
 ## Architecture
 
-The site is a single-page Jekyll application with:
 - Main configuration in `_config.yml`
 - Homepage content in `index.html`
-- Custom 404 page with 5-second delayed redirect
+- Custom 404 page
 - SEO optimization via jekyll-seo-tag and jekyll-sitemap plugins
 - Analytics tracking (Fathom and Ahrefs)
-- UTM parameters on all outbound links to Leaderboarded
+
+### Design System
+
+- Fonts: Outfit (headings) + Plus Jakarta Sans (body text)
+- Palette: dark navy, lime, coral
+- CSS variables defined in `assets/css/main.css`
+- Fonts imported in `_layouts/default.html` and `_layouts/tool.html`
+
+### Reusable Includes
+
+- `waitlist-form.html` — waitlist signup form
+- `coming-soon-badge.html` — "coming soon" badge component
+
+### Documentation
+
+These files are excluded from the Jekyll build:
+- `POSITIONING.md` — brand positioning and messaging
+- `MOCKUPS.md` — page mockup descriptions
+- `IMAGE-PROMPTS.md` — image generation prompts
+
+### Redirects
+
+Old backlinked URLs that no longer exist are handled via redirect pages in `/redirects/`.
 
 ## Deployment
 
@@ -38,31 +57,26 @@ Deployment is automated via GitHub Actions:
 - Site is served via GitHub Pages at rise.global
 - No manual deployment steps required
 
-## Key Implementation Details
-
-- All styling is in `assets/css/main.css`
-- Fonts: Poppins (headings) and DM Sans (body text)
-- Mobile-responsive design using CSS Grid
-- No JavaScript framework - pure HTML/CSS
-- Professional shutdown messaging without automatic redirects
-
 ## Content Writing Guidelines
 
 When creating blog posts or content for this site:
 
-**Writing Style:**
+### Writing Style
+
 - Prefer narrative, flowing prose over excessive enumerations
 - Avoid enumeration-heavy content with long lists of bullet points or numbered items
 - Use bullet points sparingly and only when they genuinely improve readability
 - Transform lists into coherent paragraphs that connect ideas naturally
 - Keep the text professional, readable, and engaging
 
-**When Lists Are Acceptable:**
+### When Lists Are Acceptable
+
 - Short, essential lists (3-4 items max) where enumeration adds clarity
 - Technical specifications or requirements where precision matters
 - Direct comparisons that benefit from parallel structure
 
-**General Approach:**
+### General Approach
+
 - Write in a conversational yet professional tone
 - Connect ideas with transitions rather than separating them into lists
 - Group related concepts into flowing paragraphs
@@ -72,19 +86,22 @@ When creating blog posts or content for this site:
 
 When generating images for blog posts or content:
 
-**Visual Style:**
+### Visual Style
+
 - Always use a bright, colorful cartoon illustration style
 - Use clean lines and vibrant colors
 - Set style to "vivid" for all image generations
 - Maintain consistency across all images on the site
 
-**Image Specifications:**
+### Image Specifications
+
 - Size: 1792x1024 (landscape format)
 - Quality: HD
 - Style: vivid
 - Save all images to `/assets/images/` directory
 
-**Content Guidelines:**
+### Content Guidelines
+
 - Images should be relevant to the blog post topic
 - Include diverse representation when showing people
 - Use motivational and positive atmospheres
