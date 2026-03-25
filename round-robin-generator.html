@@ -1,0 +1,260 @@
+---
+layout: default
+title: "Round Robin Generator — Coming Soon"
+description: "Generate round robin tournament schedules automatically. Everyone plays everyone. Coming soon to Rise — join the waitlist."
+keywords: "round robin generator, round robin tournament, round robin schedule, round robin bracket"
+permalink: /round-robin-generator/
+---
+
+<style>
+.rr-hero {
+    padding: 7rem 0 3rem;
+    background: var(--gradient-hero);
+    position: relative;
+    overflow: hidden;
+}
+.rr-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(200, 255, 0, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+}
+.rr-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 77, 106, 0.06) 0%, transparent 60%);
+    pointer-events: none;
+}
+.rr-hero-mockup {
+    margin-top: 3rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rr-hero-mockup img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5), 0 0 40px rgba(200, 255, 0, 0.08);
+}
+.rr-content-section {
+    padding: 5rem 0;
+    background: var(--white);
+}
+.rr-content-section.alt {
+    background: var(--bg-light);
+}
+.rr-content-section h2 {
+    font-family: var(--font-display);
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+}
+.rr-content-section p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+    max-width: 760px;
+}
+.rr-content-section p a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.rr-content-section p a:hover {
+    text-decoration: underline;
+}
+.rr-showcase-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+.rr-showcase-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 12px 40px rgba(10, 14, 26, 0.12);
+    border: 1px solid var(--border-color);
+}
+.rr-showcase-text h2 {
+    margin-bottom: 1rem;
+}
+.rr-showcase-text p {
+    max-width: 100%;
+}
+.rr-waitlist {
+    padding: 5rem 0;
+    background: var(--gradient-hero);
+    color: var(--white);
+    text-align: center;
+}
+.rr-waitlist .section-title {
+    color: var(--white);
+}
+@media (max-width: 768px) {
+    .rr-hero {
+        padding: 4rem 0 2rem;
+    }
+    .rr-content-section h2 {
+        font-size: 1.75rem;
+    }
+    .rr-showcase-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .rr-hero-mockup {
+        margin-top: 2rem;
+    }
+}
+</style>
+
+<main class="main-content">
+    <!-- Hero -->
+    <section class="rr-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Round Robin Tournament Generator</h1>
+                <p class="hero-subtitle">Everyone plays everyone. Automatic schedules, live standings, and tiebreakers — the fairest format, coming soon to Rise.</p>
+                <div class="hero-cta-group">
+                    <a href="/waitlist/" class="hero-primary-cta">Join the Waitlist</a>
+                    <a href="/tools/tournament-bracket-generator/" class="hero-secondary-cta">Try Single Elimination</a>
+                </div>
+                <div class="rr-hero-mockup">
+                    <img src="/assets/images/mockups/mockup-06-round-robin.png" alt="Round robin tournament schedule with automatic standings table and match results" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Round Robin? -->
+    <section class="rr-content-section">
+        <div class="container">
+            <h2>What is Round Robin?</h2>
+            <p>A round robin tournament is a format where every team or player plays against every other team or player. There are no eliminations along the way — everyone is guaranteed a full schedule of games, and the final standings are determined by wins, losses, and tiebreaker rules. It's the format that produces the most complete picture of who's actually the best.</p>
+            <p>The schedule for a round robin tournament is generated automatically based on the number of participants. With 6 teams, for example, you get 15 total games spread across 5 rounds, with each team playing exactly one game per round. If there's an odd number of teams, one team gets a bye each round — they sit out while everyone else plays. The math is straightforward: for N teams, the total number of games is N times (N minus 1) divided by 2.</p>
+            <p>Standings in a round robin are typically determined by total wins, with tiebreaker rules kicking in when two or more teams have identical records. Common tiebreakers include head-to-head results (who won when those tied teams played each other), point differential (the total margin of victory across all games), and points scored. Rise will support configurable tiebreaker rules so you can match whatever convention your sport or competition uses.</p>
+            <p>Round robin is the format of choice for leagues, pool play in multi-stage tournaments, and any competition where giving everyone equal playing time matters more than finishing quickly. It takes longer than elimination formats — significantly longer for larger groups — but the results are unambiguous. There's no luck of the draw, no bracket seeding controversy, and no question about whether the standings reflect the true pecking order.</p>
+        </div>
+    </section>
+
+    <!-- Round Robin vs Single Elimination -->
+    <section class="rr-content-section alt">
+        <div class="container">
+            <h2>Round Robin vs Single Elimination</h2>
+            <p>The fundamental difference between these two formats comes down to how much data you want. A <a href="/tools/tournament-bracket-generator/">single elimination bracket</a> is designed to find a winner as quickly as possible — every game cuts the field in half, and the whole thing wraps up in a handful of rounds. It's dramatic and efficient, but it also means a team could go home after just one game. A round robin, by contrast, guarantees every team a full slate of matches, and the standings reflect performance across all of them.</p>
+            <p>Single elimination works beautifully for casual events, time-limited tournaments, and any situation where the bracket drama is part of the fun. A bar running a beer pong bracket on a Saturday night doesn't need a round robin — they need a <a href="/8-team-bracket/">quick 8-team bracket</a> that crowns a champion before closing time. But a recreational soccer league that meets every week for a season? Round robin is the only format that makes sense. Every team gets the same number of games, and the standings tell a clear story.</p>
+            <p>There's also a middle ground worth mentioning. Many tournaments use round robin for pool play in the early stages, then feed the top teams from each group into a <a href="/double-elimination-bracket/">single or double elimination bracket</a> for the knockout phase. This combines the fairness of round robin with the excitement of elimination play. Rise will support this group-to-knockout format natively — you'll be able to configure how many teams advance from each pool and have them automatically placed into the bracket.</p>
+        </div>
+    </section>
+
+    <!-- Showcase Row: Group to Knockout -->
+    <section class="rr-content-section">
+        <div class="container">
+            <div class="rr-showcase-row">
+                <div class="rr-showcase-image">
+                    <img src="/assets/images/mockups/mockup-07-group-to-knockout.png" alt="Group stage round robin feeding into a knockout elimination bracket" loading="lazy">
+                </div>
+                <div class="rr-showcase-text">
+                    <h2>Group Stage Meets Knockout Bracket</h2>
+                    <p>The most popular tournament structure in professional sports combines both formats. Run round robin pools first, then advance the top teams into an elimination bracket. Rise will handle the entire flow — from generating balanced groups and round robin schedules to automatically seeding the knockout bracket based on group standings.</p>
+                    <p>This hybrid format is standard in FIFA World Cup, UEFA Champions League, and countless esports events. Whether you're running a local volleyball league or a regional gaming tournament, you'll be able to set it up in minutes. <a href="/features/">Explore all planned features</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waitlist -->
+    <section class="rr-waitlist">
+        <div class="container">
+            {% include waitlist-form.html heading="Get notified when round robin launches" %}
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How does a round robin tournament work?</h4>
+                    <p>In a round robin, every team plays against every other team. The schedule is divided into rounds so that each team plays one match per round. After all matches are complete, standings are determined by total wins, with tiebreakers applied when teams have identical records. No one is eliminated until the very end.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How many games in a 6-team round robin?</h4>
+                    <p>A 6-team round robin has 15 games total. The formula is N x (N - 1) / 2, where N is the number of teams. Each team plays 5 matches (one against every other team), and the schedule spans 5 rounds. With an even number of teams, every team plays in every round with no byes.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I combine round robin with elimination brackets?</h4>
+                    <p>Yes — that's one of the formats we're building for Rise. You'll be able to run round robin group stages that automatically feed top finishers into a single or <a href="/double-elimination-bracket/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">double elimination bracket</a>. This hybrid format is used in everything from the World Cup to local recreational leagues.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>When will the round robin feature launch?</h4>
+                    <p>Round robin is on our 2026 roadmap. Join the waitlist to be first in line when it launches. In the meantime, you can <a href="/tools/tournament-bracket-generator/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">create single elimination brackets</a> for free with Rise's bracket maker — no account required.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>The Fairest Format, Beautifully Built</h2>
+            <p>Round robin tournaments with automatic schedules, live standings, and configurable tiebreakers — coming to Rise.</p>
+            <div class="hero-cta-group">
+                <a href="/waitlist/" class="hero-primary-cta">Join the Waitlist</a>
+                <a href="/tools/tournament-bracket-generator/" class="hero-secondary-cta">Try the Free Bracket Maker</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "How does a round robin tournament work?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In a round robin, every team plays against every other team. The schedule is divided into rounds so that each team plays one match per round. After all matches are complete, standings are determined by total wins, with tiebreakers applied when teams have identical records. No one is eliminated until the very end."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How many games in a 6-team round robin?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A 6-team round robin has 15 games total. The formula is N x (N - 1) / 2, where N is the number of teams. Each team plays 5 matches (one against every other team), and the schedule spans 5 rounds. With an even number of teams, every team plays in every round with no byes."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I combine round robin with elimination brackets?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — that's one of the formats we're building for Rise. You'll be able to run round robin group stages that automatically feed top finishers into a single or double elimination bracket. This hybrid format is used in everything from the World Cup to local recreational leagues."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "When will the round robin feature launch?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Round robin is on our 2026 roadmap. Join the waitlist to be first in line when it launches. In the meantime, you can create single elimination brackets for free with Rise's bracket maker — no account required."
+            }
+        }
+    ]
+}
+</script>

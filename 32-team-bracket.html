@@ -1,0 +1,288 @@
+---
+layout: default
+title: "32 Team Bracket — Free Tournament Bracket Maker"
+description: "Generate a balanced 32-team single elimination bracket in seconds. 5 rounds, 31 games, automatic seeding and byes. Free bracket maker from Rise."
+keywords: "32 team bracket, 32 team tournament bracket, 32 player bracket, 32 team single elimination"
+permalink: /32-team-bracket/
+---
+
+<style>
+.bracket-hero {
+    padding: 7rem 0 3rem;
+    background: var(--gradient-hero);
+    position: relative;
+    overflow: hidden;
+}
+.bracket-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(200, 255, 0, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+}
+.bracket-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 77, 106, 0.06) 0%, transparent 60%);
+    pointer-events: none;
+}
+.bracket-hero-mockup {
+    margin-top: 3rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bracket-hero-mockup img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5), 0 0 40px rgba(200, 255, 0, 0.08);
+}
+.quick-facts {
+    padding: 3rem 0;
+    background: var(--bg-light);
+}
+.quick-facts-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.quick-fact {
+    text-align: center;
+    padding: 1.5rem 2rem;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    min-width: 160px;
+}
+.quick-fact-value {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    display: block;
+    letter-spacing: -0.02em;
+}
+.quick-fact-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-weight: 500;
+    margin-top: 0.25rem;
+}
+.bracket-content-section {
+    padding: 5rem 0;
+    background: var(--white);
+}
+.bracket-content-section.alt {
+    background: var(--bg-light);
+}
+.bracket-content-section h2 {
+    font-family: var(--font-display);
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+}
+.bracket-content-section p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+    max-width: 760px;
+}
+.bracket-content-section p a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.bracket-content-section p a:hover {
+    text-decoration: underline;
+}
+.bracket-waitlist {
+    padding: 5rem 0;
+    background: var(--gradient-hero);
+    color: var(--white);
+    text-align: center;
+}
+.bracket-waitlist .section-title {
+    color: var(--white);
+}
+@media (max-width: 768px) {
+    .bracket-hero {
+        padding: 4rem 0 2rem;
+    }
+    .bracket-content-section h2 {
+        font-size: 1.75rem;
+    }
+    .bracket-hero-mockup {
+        margin-top: 2rem;
+    }
+    .quick-facts-row {
+        gap: 1rem;
+    }
+    .quick-fact {
+        min-width: 130px;
+        padding: 1.25rem 1.5rem;
+    }
+}
+</style>
+
+<main class="main-content">
+    <!-- Hero -->
+    <section class="bracket-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">32-Team Bracket</h1>
+                <p class="hero-subtitle">Generate a balanced 32-team single elimination bracket in seconds. Five rounds of competition, one champion.</p>
+                <div class="hero-cta-group">
+                    <a href="/waitlist/" class="hero-primary-cta">Join the Waitlist</a>
+                    <a href="/tools/tournament-bracket-generator/" class="hero-secondary-cta">Create 32-Team Bracket</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Facts -->
+    <section class="quick-facts">
+        <div class="container">
+            <div class="quick-facts-row">
+                <div class="quick-fact">
+                    <span class="quick-fact-value">32</span>
+                    <span class="quick-fact-label">Teams</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">5</span>
+                    <span class="quick-fact-label">Rounds</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">31</span>
+                    <span class="quick-fact-label">Games</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">SE</span>
+                    <span class="quick-fact-label">Single Elimination</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mockup -->
+    <section class="bracket-content-section">
+        <div class="container" style="text-align: center;">
+            <div class="bracket-hero-mockup" style="margin-top: 0;">
+                <img src="/assets/images/mockups/mockup-03-double-elimination.png" alt="Large tournament bracket showing multiple rounds of competition across a 32-team field" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Bracket Structure -->
+    <section class="bracket-content-section alt">
+        <div class="container">
+            <h2>How a 32-Team Bracket Works</h2>
+            <p>A 32-team bracket is the format of choice for serious competitions. It runs over 5 rounds with 31 total games: 16 first-round matches that cut the field in half, followed by 8 second-round matches, 4 quarterfinals, 2 semifinals, and the championship final. This is the bracket structure used in the NFL playoffs (expanded format), many national collegiate championships, and countless esports regionals. Because 32 is a power of 2, every team plays from the first round — no byes, no uneven matchups.</p>
+            <p>Seeding at this scale follows the same principles as smaller brackets, just with more precision required. The 1-seed plays the 32-seed, the 2-seed plays the 31-seed, and the bracket is drawn so that the top 8 seeds are distributed evenly across 8 sections. Getting the seeding right matters — with 5 rounds of play, a poorly seeded bracket can produce lopsided matchups and anticlimactic finals. Rise generates proper seeded brackets automatically, so you don't need to manually figure out the placement math.</p>
+            <p>At 31 games, a 32-team bracket is still realistic for a single day if you have multiple playing areas and can run matches in parallel. With 4 courts or stations running simultaneously, you'd need roughly 8 time slots to finish the entire bracket. For events that can afford a more extended schedule, <a href="/double-elimination-bracket/">double elimination</a> with 32 teams (61-63 games) gives everyone a second chance. You could also split the 32 teams into <a href="/round-robin-generator/">round robin groups</a> of 4 or 8 before running a <a href="/16-team-bracket/">16-team</a> or <a href="/8-team-bracket/">8-team knockout bracket</a> with the group winners.</p>
+        </div>
+    </section>
+
+    <!-- Popular Uses -->
+    <section class="bracket-content-section">
+        <div class="container">
+            <h2>Popular Uses for 32-Team Brackets</h2>
+            <p>A 32-team bracket signals that your event has real scale. This is the size you see at gaming cafe LAN tournaments, regional esports qualifiers, multi-location company tournaments, large intramural sports leagues, and community sporting events. It's also the natural bracket size when you're running a tournament at a conference, festival, or expo — you have a large pool of participants, limited time, and need a format that produces a clear winner without dragging on for days. Competitive fighting game events, Smash Bros locals, and amateur chess tournaments frequently use 32-team brackets as well. Need fewer participants? A <a href="/16-team-bracket/">16-team bracket</a> halves the field. Going even larger? The <a href="/64-team-bracket/">64-team bracket</a> is the next step up.</p>
+        </div>
+    </section>
+
+    <!-- Waitlist -->
+    <section class="bracket-waitlist">
+        <div class="container">
+            {% include waitlist-form.html heading="Get early access to Rise's full tournament platform" %}
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How many games in a 32-team bracket?</h4>
+                    <p>A 32-team single elimination bracket has 31 games total: 16 in the first round, 8 in the second round, 4 quarterfinals, 2 semifinals, and 1 final. With an optional third-place match, the total reaches 32. A <a href="/double-elimination-bracket/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">double elimination format</a> with 32 teams requires 61 to 63 games.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How many rounds in a 32-team bracket?</h4>
+                    <p>A 32-team bracket has 5 rounds. The first round (Round of 32) has 16 games, followed by the Round of 16 (8 games), quarterfinals (4 games), semifinals (2 games), and the final (1 game). If you can run first-round matches in parallel, the entire tournament can finish in 5 time slots.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What if I have 24 or 30 teams?</h4>
+                    <p>Rise handles non-power-of-2 team counts automatically with byes. With 24 teams, the top 8 seeds receive first-round byes and enter the bracket in the second round, while the remaining 16 teams play first-round matches. With 30 teams, only the top 2 seeds get byes. The bracket adjusts seamlessly for any number from 2 to 128.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I create a 32-team bracket right now?</h4>
+                    <p>Yes. Rise's <a href="/tools/tournament-bracket-generator/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">free bracket maker</a> lets you create a 32-team single elimination bracket instantly. Add your team names, choose seeded or random ordering, and share or export the bracket — no account required.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Create Your 32-Team Bracket</h2>
+            <p>Free, fast, and ready to go. No signup required.</p>
+            <div class="hero-cta-group">
+                <a href="/tools/tournament-bracket-generator/" class="hero-primary-cta">Create Bracket</a>
+                <a href="/waitlist/" class="hero-secondary-cta">Join the Waitlist</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "How many games in a 32-team bracket?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A 32-team single elimination bracket has 31 games total: 16 in the first round, 8 in the second round, 4 quarterfinals, 2 semifinals, and 1 final. With an optional third-place match, the total reaches 32. A double elimination format with 32 teams requires 61 to 63 games."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How many rounds in a 32-team bracket?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A 32-team bracket has 5 rounds. The first round (Round of 32) has 16 games, followed by the Round of 16 (8 games), quarterfinals (4 games), semifinals (2 games), and the final (1 game). If you can run first-round matches in parallel, the entire tournament can finish in 5 time slots."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What if I have 24 or 30 teams?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Rise handles non-power-of-2 team counts automatically with byes. With 24 teams, the top 8 seeds receive first-round byes and enter the bracket in the second round, while the remaining 16 teams play first-round matches. With 30 teams, only the top 2 seeds get byes. The bracket adjusts seamlessly for any number from 2 to 128."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I create a 32-team bracket right now?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Rise's free bracket maker lets you create a 32-team single elimination bracket instantly. Add your team names, choose seeded or random ordering, and share or export the bracket — no account required."
+            }
+        }
+    ]
+}
+</script>

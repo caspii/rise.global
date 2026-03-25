@@ -1,0 +1,288 @@
+---
+layout: default
+title: "64 Team Bracket — Free Tournament Bracket Maker"
+description: "Generate a balanced 64-team single elimination bracket in seconds. 6 rounds, 63 games, automatic seeding. Free bracket maker from Rise."
+keywords: "64 team bracket, 64 team tournament bracket, 64 player bracket, 64 team single elimination, march madness bracket"
+permalink: /64-team-bracket/
+---
+
+<style>
+.bracket-hero {
+    padding: 7rem 0 3rem;
+    background: var(--gradient-hero);
+    position: relative;
+    overflow: hidden;
+}
+.bracket-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(200, 255, 0, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+}
+.bracket-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 77, 106, 0.06) 0%, transparent 60%);
+    pointer-events: none;
+}
+.bracket-hero-mockup {
+    margin-top: 3rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bracket-hero-mockup img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5), 0 0 40px rgba(200, 255, 0, 0.08);
+}
+.quick-facts {
+    padding: 3rem 0;
+    background: var(--bg-light);
+}
+.quick-facts-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.quick-fact {
+    text-align: center;
+    padding: 1.5rem 2rem;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    min-width: 160px;
+}
+.quick-fact-value {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    display: block;
+    letter-spacing: -0.02em;
+}
+.quick-fact-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-weight: 500;
+    margin-top: 0.25rem;
+}
+.bracket-content-section {
+    padding: 5rem 0;
+    background: var(--white);
+}
+.bracket-content-section.alt {
+    background: var(--bg-light);
+}
+.bracket-content-section h2 {
+    font-family: var(--font-display);
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+}
+.bracket-content-section p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+    max-width: 760px;
+}
+.bracket-content-section p a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.bracket-content-section p a:hover {
+    text-decoration: underline;
+}
+.bracket-waitlist {
+    padding: 5rem 0;
+    background: var(--gradient-hero);
+    color: var(--white);
+    text-align: center;
+}
+.bracket-waitlist .section-title {
+    color: var(--white);
+}
+@media (max-width: 768px) {
+    .bracket-hero {
+        padding: 4rem 0 2rem;
+    }
+    .bracket-content-section h2 {
+        font-size: 1.75rem;
+    }
+    .bracket-hero-mockup {
+        margin-top: 2rem;
+    }
+    .quick-facts-row {
+        gap: 1rem;
+    }
+    .quick-fact {
+        min-width: 130px;
+        padding: 1.25rem 1.5rem;
+    }
+}
+</style>
+
+<main class="main-content">
+    <!-- Hero -->
+    <section class="bracket-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">64-Team Bracket</h1>
+                <p class="hero-subtitle">Generate a balanced 64-team single elimination bracket in seconds. Six rounds of March Madness-scale competition.</p>
+                <div class="hero-cta-group">
+                    <a href="/waitlist/" class="hero-primary-cta">Join the Waitlist</a>
+                    <a href="/tools/tournament-bracket-generator/" class="hero-secondary-cta">Create 64-Team Bracket</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Facts -->
+    <section class="quick-facts">
+        <div class="container">
+            <div class="quick-facts-row">
+                <div class="quick-fact">
+                    <span class="quick-fact-value">64</span>
+                    <span class="quick-fact-label">Teams</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">6</span>
+                    <span class="quick-fact-label">Rounds</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">63</span>
+                    <span class="quick-fact-label">Games</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">SE</span>
+                    <span class="quick-fact-label">Single Elimination</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mockup -->
+    <section class="bracket-content-section">
+        <div class="container" style="text-align: center;">
+            <div class="bracket-hero-mockup" style="margin-top: 0;">
+                <img src="/assets/images/mockups/situational-05-school-gym.png" alt="Large 64-team tournament bracket projected on a screen in a school gymnasium" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Bracket Structure -->
+    <section class="bracket-content-section alt">
+        <div class="container">
+            <h2>How a 64-Team Bracket Works</h2>
+            <p>A 64-team bracket is the gold standard for large-scale tournament play — it's the same format used by the NCAA March Madness basketball tournament, one of the most watched sporting events in the world. The bracket runs over 6 rounds with 63 total games: 32 first-round matches, 16 second-round matches, 8 in the Sweet Sixteen, 4 in the Elite Eight, 2 semifinals (the Final Four), and 1 championship game. Because 64 is a perfect power of 2, every team plays from round one with no byes needed.</p>
+            <p>At this scale, seeding and bracket structure become critically important. The standard 64-team bracket divides teams into 4 regions of 16, with each region seeded 1 through 16. The 1-seed plays the 16-seed, the 2-seed plays the 15-seed, and so on. Region winners advance to a Final Four, and the bracket is drawn so that the overall top seed and second seed can only meet in the championship. Getting this structure right means the bracket produces competitive matchups throughout the tournament, not just in the early rounds.</p>
+            <p>Running a 64-team single elimination tournament takes real logistical planning. With 63 games to complete, you'll want multiple playing areas running in parallel. If you can run 8 matches simultaneously, the entire bracket finishes in about 8 time slots — still achievable in a single long day or a weekend event. For an even larger field, Rise supports brackets up to 128 participants. If 64 teams is more than you need, check out the <a href="/32-team-bracket/">32-team bracket</a> or the <a href="/16-team-bracket/">16-team bracket</a> for a faster-paced event.</p>
+        </div>
+    </section>
+
+    <!-- Popular Uses -->
+    <section class="bracket-content-section">
+        <div class="container">
+            <h2>Popular Uses for 64-Team Brackets</h2>
+            <p>A 64-team bracket is for events with real ambition. This is the format for major esports tournaments and gaming conventions, large-scale corporate team-building events, multi-school athletic championships, and community sports festivals. It's also the perfect size for March Madness prediction brackets — print out a blank 64-team bracket and let everyone in the office fill in their picks. Gaming communities frequently run 64-player brackets for fighting games, battle royale qualifiers, and speedrun races. If you're organizing an event at this scale, you need a bracket tool that can handle it without getting cluttered or confusing, and that's exactly what Rise is built for.</p>
+        </div>
+    </section>
+
+    <!-- Waitlist -->
+    <section class="bracket-waitlist">
+        <div class="container">
+            {% include waitlist-form.html heading="Get early access to Rise's full tournament platform" %}
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How many games in a 64-team bracket?</h4>
+                    <p>A 64-team single elimination bracket has 63 games: 32 in the first round, 16 in the second, 8 in the third (Sweet Sixteen), 4 quarterfinals (Elite Eight), 2 semifinals (Final Four), and 1 final. An optional third-place match brings the total to 64. A <a href="/double-elimination-bracket/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">double elimination format</a> with 64 teams would require 125 to 127 games.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How many rounds in a 64-team bracket?</h4>
+                    <p>A 64-team bracket has 6 rounds. Using March Madness terminology: the Round of 64, the Round of 32, the Sweet Sixteen, the Elite Eight, the Final Four, and the Championship. If first-round matches run in parallel across multiple venues or stations, the entire tournament can finish in just 6 time slots.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What if I have 48 or 50 teams?</h4>
+                    <p>Rise handles any participant count from 2 to 128 with automatic bye calculation. With 48 teams, the top 16 seeds receive first-round byes, while the remaining 32 teams play opening-round matches. With 50 teams, 14 teams get byes. You don't need to figure out the bye math — just enter your participants and Rise generates the correct bracket structure.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I create a 64-team bracket right now?</h4>
+                    <p>Yes. Rise's <a href="/tools/tournament-bracket-generator/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">free bracket maker</a> supports brackets up to 128 participants, so creating a 64-team bracket is straightforward. Add your team names, choose seeded or random ordering, and share or export the bracket — no account required.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Create Your 64-Team Bracket</h2>
+            <p>Free, fast, and ready to go. No signup required.</p>
+            <div class="hero-cta-group">
+                <a href="/tools/tournament-bracket-generator/" class="hero-primary-cta">Create Bracket</a>
+                <a href="/waitlist/" class="hero-secondary-cta">Join the Waitlist</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "How many games in a 64-team bracket?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A 64-team single elimination bracket has 63 games: 32 in the first round, 16 in the second, 8 in the third (Sweet Sixteen), 4 quarterfinals (Elite Eight), 2 semifinals (Final Four), and 1 final. An optional third-place match brings the total to 64. A double elimination format with 64 teams would require 125 to 127 games."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How many rounds in a 64-team bracket?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A 64-team bracket has 6 rounds. Using March Madness terminology: the Round of 64, the Round of 32, the Sweet Sixteen, the Elite Eight, the Final Four, and the Championship. If first-round matches run in parallel across multiple venues or stations, the entire tournament can finish in just 6 time slots."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What if I have 48 or 50 teams?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Rise handles any participant count from 2 to 128 with automatic bye calculation. With 48 teams, the top 16 seeds receive first-round byes, while the remaining 32 teams play opening-round matches. With 50 teams, 14 teams get byes. You don't need to figure out the bye math — just enter your participants and Rise generates the correct bracket structure."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I create a 64-team bracket right now?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Rise's free bracket maker supports brackets up to 128 participants, so creating a 64-team bracket is straightforward. Add your team names, choose seeded or random ordering, and share or export the bracket — no account required."
+            }
+        }
+    ]
+}
+</script>

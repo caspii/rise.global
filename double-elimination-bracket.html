@@ -1,0 +1,260 @@
+---
+layout: default
+title: "Double Elimination Bracket Generator — Coming Soon"
+description: "Create double elimination tournament brackets with winners and losers brackets. Coming soon to Rise — join the waitlist for early access."
+keywords: "double elimination bracket, double elimination bracket generator, double elimination tournament, losers bracket"
+permalink: /double-elimination-bracket/
+---
+
+<style>
+.de-hero {
+    padding: 7rem 0 3rem;
+    background: var(--gradient-hero);
+    position: relative;
+    overflow: hidden;
+}
+.de-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(200, 255, 0, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+}
+.de-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 77, 106, 0.06) 0%, transparent 60%);
+    pointer-events: none;
+}
+.de-hero-mockup {
+    margin-top: 3rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.de-hero-mockup img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5), 0 0 40px rgba(200, 255, 0, 0.08);
+}
+.de-content-section {
+    padding: 5rem 0;
+    background: var(--white);
+}
+.de-content-section.alt {
+    background: var(--bg-light);
+}
+.de-content-section h2 {
+    font-family: var(--font-display);
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+}
+.de-content-section p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+    max-width: 760px;
+}
+.de-content-section p a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.de-content-section p a:hover {
+    text-decoration: underline;
+}
+.de-showcase-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+.de-showcase-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 12px 40px rgba(10, 14, 26, 0.12);
+    border: 1px solid var(--border-color);
+}
+.de-showcase-text h2 {
+    margin-bottom: 1rem;
+}
+.de-showcase-text p {
+    max-width: 100%;
+}
+.de-waitlist {
+    padding: 5rem 0;
+    background: var(--gradient-hero);
+    color: var(--white);
+    text-align: center;
+}
+.de-waitlist .section-title {
+    color: var(--white);
+}
+@media (max-width: 768px) {
+    .de-hero {
+        padding: 4rem 0 2rem;
+    }
+    .de-content-section h2 {
+        font-size: 1.75rem;
+    }
+    .de-showcase-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .de-hero-mockup {
+        margin-top: 2rem;
+    }
+}
+</style>
+
+<main class="main-content">
+    <!-- Hero -->
+    <section class="de-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Double Elimination Bracket Generator</h1>
+                <p class="hero-subtitle">The fairest tournament format is coming to Rise. Winners bracket, losers bracket, grand final — all managed automatically.</p>
+                <div class="hero-cta-group">
+                    <a href="/waitlist/" class="hero-primary-cta">Join the Waitlist</a>
+                    <a href="/tools/tournament-bracket-generator/" class="hero-secondary-cta">Try Single Elimination</a>
+                </div>
+                <div class="de-hero-mockup">
+                    <img src="/assets/images/mockups/mockup-03-double-elimination.png" alt="Double elimination bracket interface showing winners and losers brackets with automatic advancement" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Double Elimination? -->
+    <section class="de-content-section">
+        <div class="container">
+            <h2>What is Double Elimination?</h2>
+            <p>Double elimination is a tournament format where every team or player must lose twice before being knocked out. The bracket splits into two parallel paths after the first round: a winners bracket for teams that haven't lost yet, and a losers bracket that catches anyone who drops their first match. It's the format of choice for competitive events where a single bad game shouldn't end someone's tournament run.</p>
+            <p>Here's how it works in practice. Everyone starts in the winners bracket, just like a normal single elimination tournament. When a team loses in the winners bracket, they drop down into the losers bracket instead of going home. Teams in the losers bracket keep playing, and if they lose again, they're eliminated for good. The winners bracket eventually produces a finalist, and the losers bracket produces its own finalist — someone who lost once earlier but fought their way back through every opponent in the lower bracket.</p>
+            <p>The tournament culminates in a grand final between the winners bracket champion and the losers bracket champion. Because the winners bracket champion has never lost, many tournaments give them an advantage in the grand final — typically, the losers bracket champion must win two sets while the winners bracket champion only needs one. This rewards consistency throughout the entire event, not just in the final match.</p>
+            <p>The result is a tournament that feels genuinely fair. A team that drew a tough first-round matchup still gets a meaningful path to the title. Upsets are more exciting because the favorite can still recover. And the eventual champion has been thoroughly tested — there are no lingering questions about whether the best team really won.</p>
+        </div>
+    </section>
+
+    <!-- Why Double Elimination? -->
+    <section class="de-content-section alt">
+        <div class="container">
+            <h2>Why Double Elimination?</h2>
+            <p>The case for double elimination comes down to competitive integrity. In a <a href="/tools/tournament-bracket-generator/">single elimination bracket</a>, one off game — a bad start, a referee call, a lucky shot — can end a team's entire tournament. That works fine for casual events where speed matters more than fairness, but for any competition where the participants have invested real time and effort, giving everyone at least two chances to prove themselves makes the outcome far more credible.</p>
+            <p>Double elimination is the standard format in fighting game tournaments, competitive gaming leagues, and many college-level athletic events precisely because it produces more reliable results. The tradeoff is time: a double elimination tournament requires roughly twice as many games as single elimination for the same number of teams. An <a href="/8-team-bracket/">8-team single elimination bracket</a> finishes in 7 games, while an 8-team double elimination bracket needs 14 or 15 games depending on the grand final.</p>
+            <p>Choose double elimination when your participants care about the result and you have the schedule to accommodate the extra games. Choose <a href="/tools/tournament-bracket-generator/">single elimination</a> when you need a fast, dramatic format that works well for social events, office tournaments, or any situation where time is limited. If you want every team to play a guaranteed number of games regardless of results, consider <a href="/round-robin-generator/">round robin</a> instead — it's the ultimate fairness format, though it takes even longer to complete.</p>
+        </div>
+    </section>
+
+    <!-- Showcase Row: Live Scoring -->
+    <section class="de-content-section">
+        <div class="container">
+            <div class="de-showcase-row">
+                <div class="de-showcase-image">
+                    <img src="/assets/images/mockups/mockup-01-live-scoreboard.png" alt="Live scoreboard integrated into a tournament bracket match" loading="lazy">
+                </div>
+                <div class="de-showcase-text">
+                    <h2>Live Scoring in Every Match</h2>
+                    <p>Rise won't just generate your double elimination bracket — it will let you run it in real time. Every match in the winners and losers brackets becomes a live scoreboard where you can track points, set scores, and game progress. When a match ends, the winner advances automatically and the loser drops to the correct position in the losers bracket.</p>
+                    <p>No more manually updating brackets in a spreadsheet or on a whiteboard. No more confusion about which losers bracket match feeds into which round. Rise handles all the routing logic so you can focus on the competition itself. <a href="/features/">See all planned features</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waitlist -->
+    <section class="de-waitlist">
+        <div class="container">
+            {% include waitlist-form.html heading="Get notified when double elimination launches" %}
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How does double elimination work?</h4>
+                    <p>Every participant starts in the winners bracket. When you lose a match in the winners bracket, you drop to the losers bracket. Lose again in the losers bracket and you're eliminated. The winners bracket champion and the losers bracket champion meet in a grand final. The format ensures that no one is eliminated after just a single loss.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How many games are in an 8-team double elimination tournament?</h4>
+                    <p>An 8-team double elimination tournament has 14 or 15 games. The winners bracket has 7 games (same as single elimination), the losers bracket adds 6 more, and the grand final is 1 game — or 2 if the losers bracket champion wins the first grand final match, since the winners bracket champion hasn't lost yet.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>When will the double elimination feature launch?</h4>
+                    <p>We're actively building double elimination for Rise and expect to launch it in 2026. Join the waitlist to be notified the moment it's available. In the meantime, you can <a href="/tools/tournament-bracket-generator/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">create single elimination brackets</a> for free right now.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I use single elimination right now?</h4>
+                    <p>Yes. Rise's <a href="/tools/tournament-bracket-generator/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">free bracket maker</a> supports single elimination brackets for 2 to 128 participants, with automatic seeding, random ordering, byes, export to image, and shareable links. It's completely free with no account required.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Don't Miss the Launch</h2>
+            <p>Double elimination, live scoreboards, streaming overlays, and more — all coming to Rise.</p>
+            <div class="hero-cta-group">
+                <a href="/waitlist/" class="hero-primary-cta">Join the Waitlist</a>
+                <a href="/tools/tournament-bracket-generator/" class="hero-secondary-cta">Try the Free Bracket Maker</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "How does double elimination work?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Every participant starts in the winners bracket. When you lose a match in the winners bracket, you drop to the losers bracket. Lose again in the losers bracket and you're eliminated. The winners bracket champion and the losers bracket champion meet in a grand final. The format ensures that no one is eliminated after just a single loss."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How many games are in an 8-team double elimination tournament?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "An 8-team double elimination tournament has 14 or 15 games. The winners bracket has 7 games (same as single elimination), the losers bracket adds 6 more, and the grand final is 1 game — or 2 if the losers bracket champion wins the first grand final match, since the winners bracket champion hasn't lost yet."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "When will the double elimination feature launch?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We're actively building double elimination for Rise and expect to launch it in 2026. Join the waitlist to be notified the moment it's available. In the meantime, you can create single elimination brackets for free right now."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I use single elimination right now?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Rise's free bracket maker supports single elimination brackets for 2 to 128 participants, with automatic seeding, random ordering, byes, export to image, and shareable links. It's completely free with no account required."
+            }
+        }
+    ]
+}
+</script>
