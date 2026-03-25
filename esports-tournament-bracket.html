@@ -1,0 +1,346 @@
+---
+layout: default
+title: "Esports Tournament Bracket — Free Bracket Maker"
+description: "Create an esports tournament bracket for Smash Bros, Valorant, Rocket League, and more. Double elimination, OBS overlays, team logos. Free from Rise."
+keywords: "esports tournament bracket, esports bracket maker, gaming tournament bracket, smash bracket, valorant tournament bracket"
+permalink: /esports-tournament-bracket/
+---
+
+<style>
+.sport-hero {
+    padding: 7rem 0 3rem;
+    background: var(--gradient-hero);
+    position: relative;
+    overflow: hidden;
+}
+.sport-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(200, 255, 0, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+}
+.sport-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 77, 106, 0.06) 0%, transparent 60%);
+    pointer-events: none;
+}
+.sport-hero-mockup {
+    margin-top: 3rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sport-hero-mockup img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5), 0 0 40px rgba(200, 255, 0, 0.08);
+}
+.quick-facts {
+    padding: 3rem 0;
+    background: var(--bg-light);
+}
+.quick-facts-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.quick-fact {
+    text-align: center;
+    padding: 1.5rem 2rem;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    min-width: 160px;
+}
+.quick-fact-value {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    display: block;
+    letter-spacing: -0.02em;
+}
+.quick-fact-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-weight: 500;
+    margin-top: 0.25rem;
+}
+.sport-content-section {
+    padding: 5rem 0;
+    background: var(--white);
+}
+.sport-content-section.alt {
+    background: var(--bg-light);
+}
+.sport-content-section h2 {
+    font-family: var(--font-display);
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+}
+.sport-content-section p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+    max-width: 760px;
+}
+.sport-content-section p a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.sport-content-section p a:hover {
+    text-decoration: underline;
+}
+.sport-showcase-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+.sport-showcase-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 12px 40px rgba(10, 14, 26, 0.12);
+    border: 1px solid var(--border-color);
+}
+.sport-showcase-text h2 {
+    margin-bottom: 1rem;
+}
+.sport-showcase-text p {
+    max-width: 100%;
+}
+.sport-waitlist {
+    padding: 5rem 0;
+    background: var(--gradient-hero);
+    color: var(--white);
+    text-align: center;
+}
+.sport-waitlist .section-title {
+    color: var(--white);
+}
+.sport-cross-links {
+    padding: 3rem 0;
+    background: var(--bg-light);
+    text-align: center;
+}
+.sport-cross-links p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    max-width: 760px;
+    margin: 0 auto;
+    line-height: 1.75;
+}
+.sport-cross-links p a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.sport-cross-links p a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .sport-hero {
+        padding: 4rem 0 2rem;
+    }
+    .sport-content-section h2 {
+        font-size: 1.75rem;
+    }
+    .sport-hero-mockup {
+        margin-top: 2rem;
+    }
+    .quick-facts-row {
+        gap: 1rem;
+    }
+    .quick-fact {
+        min-width: 130px;
+        padding: 1.25rem 1.5rem;
+    }
+    .sport-showcase-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+</style>
+
+<main class="main-content">
+    <!-- Hero -->
+    <section class="sport-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Esports Tournament Bracket Maker</h1>
+                <p class="hero-subtitle">Double elimination brackets built for competitive gaming. Team logos, OBS streaming overlays, and a bracket your audience can follow in real time.</p>
+                <div class="hero-cta-group">
+                    <a href="/waitlist/" class="hero-primary-cta">Join the Waitlist</a>
+                    <a href="/tools/tournament-bracket-generator/" class="hero-secondary-cta">Try the Free Bracket Maker</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Situational Image -->
+    <section class="sport-content-section">
+        <div class="container" style="text-align: center;">
+            <div class="sport-hero-mockup" style="margin-top: 0;">
+                <img src="/assets/images/mockups/situational-03-streamer-desk.png" alt="Esports streamer at a gaming desk running an online tournament" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Run -->
+    <section class="sport-content-section alt">
+        <div class="container">
+            <h2>How to Run an Esports Tournament</h2>
+            <p>Esports tournaments come in every shape and size — from a 16-player Super Smash Bros. bracket at a local game shop to a 64-team Valorant qualifier with thousands of viewers on Twitch. The unifying thread across every competitive gaming community is the format: <a href="/double-elimination-bracket/">double elimination</a> has been the standard in fighting games since the arcade era, and it's become the default for most esports genres. The logic is simple — in a game where a single lag spike, a bad spawn, or a moment of nerves can cost a match, giving every competitor a second chance produces a more legitimate champion.</p>
+            <p>A typical esports tournament runs 16 to 64 players or teams. Smaller community events often cap at 16 or 32 to keep the event manageable for a single organizer, while larger events scale to 64 or 128 with dedicated staff for each bracket pool. The bracket structure follows standard double elimination rules: everyone starts in the winners bracket, a loss drops you to the losers bracket, and a second loss eliminates you. The winners bracket champion meets the losers bracket champion in a grand final, with the losers bracket player typically needing to win two sets to take the title since the winners bracket player hasn't lost yet.</p>
+            <p>Match length varies dramatically by game. A best-of-3 set in a fighting game takes 10 to 20 minutes, while a best-of-3 in a MOBA or tactical shooter can take 90 minutes or more. Plan your schedule accordingly — a <a href="/32-team-bracket/">32-player double elimination bracket</a> in Smash Bros. can finish in 4 to 5 hours, while the same bracket in League of Legends might span an entire weekend. Most tournaments use best-of-3 for early rounds and switch to best-of-5 for winners finals, losers finals, and grand finals to give the deeper matches more weight.</p>
+            <p>The operational side of esports tournaments has its own considerations. Player check-in is critical — set a check-in window (usually 15 to 30 minutes before the start) and disqualify no-shows to keep the bracket moving. Seeding should follow the game's ranking system when one exists (SR in Overwatch, LP in League, Elo in chess-based games) or community power rankings for grassroots events. For online tournaments, establish rules about connection requirements, disconnects, and proof of match results (screenshots or automated reporting). For in-person LAN events, standardize hardware and settings across all stations to eliminate equipment complaints.</p>
+        </div>
+    </section>
+
+    <!-- Recommended Format -->
+    <section class="quick-facts">
+        <div class="container">
+            <div class="quick-facts-row">
+                <div class="quick-fact">
+                    <span class="quick-fact-value">16–64</span>
+                    <span class="quick-fact-label">Players / Teams</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">DE</span>
+                    <span class="quick-fact-label">Double Elimination</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">5–7</span>
+                    <span class="quick-fact-label">Rounds</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">Varies</span>
+                    <span class="quick-fact-label">By Game</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="sport-content-section">
+        <div class="container">
+            <div class="sport-showcase-row">
+                <div class="sport-showcase-image">
+                    <img src="/assets/images/mockups/mockup-08-team-logos.png" alt="Esports tournament bracket with team logos and branding" loading="lazy">
+                </div>
+                <div class="sport-showcase-text">
+                    <h2>Built for Streaming and Spectators</h2>
+                    <p>Rise is building the tournament bracket that esports deserves. Upload team logos and they'll appear right in the bracket — giving your event a professional look whether it's a local weekly or a major qualifier. The bracket updates in real time as matches finish, so your audience never has to refresh to see who's advancing through winners and losers.</p>
+                    <p>We're also building an OBS-compatible streaming overlay that lets you display the bracket directly on your Twitch or YouTube stream. Commentators and viewers can see the full bracket state without switching away from the gameplay. Combined with Rise's shareable bracket link, your entire community can follow the tournament's progress from anywhere. <a href="/features/">See all planned features</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cross-links -->
+    <section class="sport-cross-links">
+        <div class="container">
+            <p>Explore more bracket formats: <a href="/double-elimination-bracket/">Double Elimination Brackets</a> · <a href="/32-team-bracket/">32-Team Bracket</a> · <a href="/64-team-bracket/">64-Team Bracket</a> · <a href="/16-team-bracket/">16-Team Bracket</a> · <a href="/round-robin-generator/">Round Robin Generator</a> · <a href="/ping-pong-tournament-bracket/">Ping Pong Bracket</a></p>
+        </div>
+    </section>
+
+    <!-- Waitlist -->
+    <section class="sport-waitlist">
+        <div class="container">
+            {% include waitlist-form.html heading="Get early access to Rise's esports tournament tools" %}
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>What's the best bracket format for esports?</h4>
+                    <p><a href="/double-elimination-bracket/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">Double elimination</a> is the industry standard for competitive esports because it ensures no player or team is eliminated after a single loss. It's been the default format in the fighting game community since the 1990s and has been adopted by most other esports genres. Single elimination is sometimes used for large online qualifiers where speed matters more than fairness.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How do you run an online esports tournament?</h4>
+                    <p>Set up the bracket in advance, open player check-in 15 to 30 minutes before start time, and DQ no-shows. Establish clear rules about connection issues, disconnects, and match reporting. Use a shared bracket link so all participants can see their matchups and report results. For games without built-in tournament features, require players to submit screenshots as proof of match outcomes.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Single vs double elimination — when to use each?</h4>
+                    <p>Use double elimination when competitive integrity matters — league nights, ranked events, prize pools. It roughly doubles the number of matches but produces a far more credible champion. Use single elimination for large-scale open brackets (64+ entrants) where you need to filter the field quickly, or for casual community events where time is limited.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I create an esports bracket right now?</h4>
+                    <p>Yes. Rise's <a href="/tools/tournament-bracket-generator/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">free bracket maker</a> lets you create a single elimination bracket for up to 128 players instantly. Double elimination, team logos, and streaming overlays are coming soon — join the waitlist to be the first to use them.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Build Your Esports Bracket</h2>
+            <p>Free, instant, and built for competitive gaming. No signup required.</p>
+            <div class="hero-cta-group">
+                <a href="/tools/tournament-bracket-generator/" class="hero-primary-cta">Create Bracket</a>
+                <a href="/waitlist/" class="hero-secondary-cta">Join the Waitlist</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "What's the best bracket format for esports?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Double elimination is the industry standard for competitive esports because it ensures no player or team is eliminated after a single loss. It's been the default format in the fighting game community since the 1990s and has been adopted by most other esports genres. Single elimination is sometimes used for large online qualifiers where speed matters more than fairness."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How do you run an online esports tournament?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Set up the bracket in advance, open player check-in 15 to 30 minutes before start time, and DQ no-shows. Establish clear rules about connection issues, disconnects, and match reporting. Use a shared bracket link so all participants can see their matchups and report results. For games without built-in tournament features, require players to submit screenshots as proof of match outcomes."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Single vs double elimination — when to use each?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Use double elimination when competitive integrity matters — league nights, ranked events, prize pools. It roughly doubles the number of matches but produces a far more credible champion. Use single elimination for large-scale open brackets (64+ entrants) where you need to filter the field quickly, or for casual community events where time is limited."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I create an esports bracket right now?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Rise's free bracket maker lets you create a single elimination bracket for up to 128 players instantly. Double elimination, team logos, and streaming overlays are coming soon — join the waitlist to be the first to use them."
+            }
+        }
+    ]
+}
+</script>

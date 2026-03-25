@@ -1,0 +1,346 @@
+---
+layout: default
+title: "Volleyball Tournament Bracket — Free Bracket Maker"
+description: "Create a volleyball tournament bracket with pool play, single elimination, or both. Indoor and beach volleyball formats. Free bracket maker from Rise."
+keywords: "volleyball tournament bracket, volleyball bracket maker, beach volleyball bracket, volleyball pool play bracket"
+permalink: /volleyball-tournament-bracket/
+---
+
+<style>
+.sport-hero {
+    padding: 7rem 0 3rem;
+    background: var(--gradient-hero);
+    position: relative;
+    overflow: hidden;
+}
+.sport-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(200, 255, 0, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+}
+.sport-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 77, 106, 0.06) 0%, transparent 60%);
+    pointer-events: none;
+}
+.sport-hero-mockup {
+    margin-top: 3rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sport-hero-mockup img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5), 0 0 40px rgba(200, 255, 0, 0.08);
+}
+.quick-facts {
+    padding: 3rem 0;
+    background: var(--bg-light);
+}
+.quick-facts-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.quick-fact {
+    text-align: center;
+    padding: 1.5rem 2rem;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    min-width: 160px;
+}
+.quick-fact-value {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    display: block;
+    letter-spacing: -0.02em;
+}
+.quick-fact-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-weight: 500;
+    margin-top: 0.25rem;
+}
+.sport-content-section {
+    padding: 5rem 0;
+    background: var(--white);
+}
+.sport-content-section.alt {
+    background: var(--bg-light);
+}
+.sport-content-section h2 {
+    font-family: var(--font-display);
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+}
+.sport-content-section p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+    max-width: 760px;
+}
+.sport-content-section p a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.sport-content-section p a:hover {
+    text-decoration: underline;
+}
+.sport-showcase-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+.sport-showcase-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 12px 40px rgba(10, 14, 26, 0.12);
+    border: 1px solid var(--border-color);
+}
+.sport-showcase-text h2 {
+    margin-bottom: 1rem;
+}
+.sport-showcase-text p {
+    max-width: 100%;
+}
+.sport-waitlist {
+    padding: 5rem 0;
+    background: var(--gradient-hero);
+    color: var(--white);
+    text-align: center;
+}
+.sport-waitlist .section-title {
+    color: var(--white);
+}
+.sport-cross-links {
+    padding: 3rem 0;
+    background: var(--bg-light);
+    text-align: center;
+}
+.sport-cross-links p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    max-width: 760px;
+    margin: 0 auto;
+    line-height: 1.75;
+}
+.sport-cross-links p a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.sport-cross-links p a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .sport-hero {
+        padding: 4rem 0 2rem;
+    }
+    .sport-content-section h2 {
+        font-size: 1.75rem;
+    }
+    .sport-hero-mockup {
+        margin-top: 2rem;
+    }
+    .quick-facts-row {
+        gap: 1rem;
+    }
+    .quick-fact {
+        min-width: 130px;
+        padding: 1.25rem 1.5rem;
+    }
+    .sport-showcase-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+</style>
+
+<main class="main-content">
+    <!-- Hero -->
+    <section class="sport-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Volleyball Tournament Bracket Maker</h1>
+                <p class="hero-subtitle">Pool play into knockout brackets, straight elimination, or round robin — build the perfect volleyball tournament format for your event.</p>
+                <div class="hero-cta-group">
+                    <a href="/waitlist/" class="hero-primary-cta">Join the Waitlist</a>
+                    <a href="/tools/tournament-bracket-generator/" class="hero-secondary-cta">Try the Free Bracket Maker</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Situational Image -->
+    <section class="sport-content-section">
+        <div class="container" style="text-align: center;">
+            <div class="sport-hero-mockup" style="margin-top: 0;">
+                <img src="/assets/images/mockups/situational-05-school-gym.png" alt="School gym with projected tournament bracket for a volleyball event" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Run -->
+    <section class="sport-content-section alt">
+        <div class="container">
+            <h2>How to Run a Volleyball Tournament</h2>
+            <p>Volleyball tournaments — indoor and beach — almost always use a format that's distinct from most other sports: pool play followed by a knockout bracket. This two-phase structure is the gold standard for volleyball because it solves a problem unique to the sport. Volleyball matches take a variable amount of time depending on whether they go 2 sets or 3, and a straight elimination bracket with byes can leave teams sitting around for unpredictable stretches. Pool play guarantees every team a minimum number of matches, creates natural seeding for the elimination round, and keeps all courts active throughout the day.</p>
+            <p>Here's how a typical volleyball tournament works. Divide your teams into pools of 3 to 5 teams each. Every team in a pool plays every other team in their pool — that's the round robin phase. Pool play sets are often shortened to 25 points (rally scoring) with a 15-point cap on the deciding set to keep games moving. After pool play, rank teams within each pool by match record, then by set record as a tiebreaker, then by point differential. The top finishers from each pool advance into a single elimination bracket where the seeding is determined by pool performance.</p>
+            <p>For a tournament with 8 teams, split them into two pools of 4. Each pool plays 6 matches (every team plays 3 games), then the top 2 from each pool advance to a 4-team elimination bracket. That's 12 pool matches plus 3 bracket matches — a full day of volleyball on two courts. For 16 teams, use four pools of 4 with the same structure, feeding into an <a href="/8-team-bracket/">8-team elimination bracket</a>. If you have limited time or just want simplicity, skip pool play entirely and run a straight <a href="/16-team-bracket/">16-team single elimination bracket</a> — you'll crown a champion faster, but some teams may only play one match.</p>
+            <p>Court logistics are the biggest planning challenge for volleyball tournaments. Each match takes 45 to 75 minutes depending on the number of sets, so plan your schedule with buffer time between matches. You'll need at least 2 courts for a smooth 8-team event and 3 to 4 courts for 16 teams. Assign court monitors to each court to keep games starting on time and report results back to the tournament organizer. A digital bracket that updates in real time saves an enormous amount of coordination compared to a paper bracket and a megaphone.</p>
+        </div>
+    </section>
+
+    <!-- Recommended Format -->
+    <section class="quick-facts">
+        <div class="container">
+            <div class="quick-facts-row">
+                <div class="quick-fact">
+                    <span class="quick-fact-value">8–16</span>
+                    <span class="quick-fact-label">Teams</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">Pool + SE</span>
+                    <span class="quick-fact-label">Pool Play + Elimination</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">4–6</span>
+                    <span class="quick-fact-label">Rounds Total</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">3–4 hrs</span>
+                    <span class="quick-fact-label">Estimated Time</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="sport-content-section">
+        <div class="container">
+            <div class="sport-showcase-row">
+                <div class="sport-showcase-image">
+                    <img src="/assets/images/mockups/mockup-05-tv-display-v2.png" alt="Tournament bracket displayed on a TV screen in full-screen kiosk mode" loading="lazy">
+                </div>
+                <div class="sport-showcase-text">
+                    <h2>From Pool Play to Knockout — All in One Place</h2>
+                    <p>Rise is building a tournament engine designed for multi-phase formats like volleyball. Start with round robin pool play, let the platform calculate standings and tiebreakers automatically, then generate a seeded elimination bracket from the results. No spreadsheets, no manual calculations, no confusion about who finished where in their pool.</p>
+                    <p>Display the bracket and pool standings on a TV at the venue or share the link so every team can check results from their phone between matches. When the bracket is live and updating in real time, the whole tournament runs smoother — teams know when and where they play next without anyone shouting across the gym. <a href="/features/">See all planned features</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cross-links -->
+    <section class="sport-cross-links">
+        <div class="container">
+            <p>Explore more bracket formats: <a href="/round-robin-generator/">Round Robin Generator</a> · <a href="/double-elimination-bracket/">Double Elimination</a> · <a href="/8-team-bracket/">8-Team Bracket</a> · <a href="/16-team-bracket/">16-Team Bracket</a> · <a href="/basketball-tournament-bracket/">Basketball Bracket</a> · <a href="/cornhole-tournament-bracket/">Cornhole Bracket</a></p>
+        </div>
+    </section>
+
+    <!-- Waitlist -->
+    <section class="sport-waitlist">
+        <div class="container">
+            {% include waitlist-form.html heading="Get early access to Rise's tournament platform" %}
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>Should I use pool play or straight elimination?</h4>
+                    <p>Pool play into elimination is the standard for volleyball tournaments because it guarantees every team multiple matches and creates fair seeding for the knockout round. Use straight single elimination only when time is extremely limited. For casual events with 6 or fewer teams, a full <a href="/round-robin-generator/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">round robin</a> works well since every team plays every other team.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How many courts do I need for a volleyball tournament?</h4>
+                    <p>For 8 teams in two pools, plan on 2 courts running simultaneously. For 16 teams in four pools, you'll want 3 to 4 courts to keep the schedule moving. Each match takes 45 to 75 minutes depending on whether it goes to a third set. Build 10-15 minutes of buffer between scheduled matches to account for overruns.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What's the best format for beach volleyball?</h4>
+                    <p>Beach volleyball tournaments almost always use pool play into single elimination, just like indoor. The main difference is that beach matches are best of 3 sets to 21 (with a deciding set to 15), so they tend to be shorter. With 8 teams on 2 courts, expect to finish in about 3 hours. For larger events with 16+ teams, plan a full day.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I create a volleyball bracket right now?</h4>
+                    <p>Yes. Rise's <a href="/tools/tournament-bracket-generator/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">free bracket maker</a> lets you create a single elimination volleyball bracket instantly. For pool play formats, the full group-stage-to-knockout feature is coming soon — join the waitlist to be notified when it launches.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Build Your Volleyball Bracket</h2>
+            <p>Free, fast, and built for tournament day. No signup required.</p>
+            <div class="hero-cta-group">
+                <a href="/tools/tournament-bracket-generator/" class="hero-primary-cta">Create Bracket</a>
+                <a href="/waitlist/" class="hero-secondary-cta">Join the Waitlist</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Should I use pool play or straight elimination?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pool play into elimination is the standard for volleyball tournaments because it guarantees every team multiple matches and creates fair seeding for the knockout round. Use straight single elimination only when time is extremely limited. For casual events with 6 or fewer teams, a full round robin works well since every team plays every other team."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How many courts do I need for a volleyball tournament?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For 8 teams in two pools, plan on 2 courts running simultaneously. For 16 teams in four pools, you'll want 3 to 4 courts to keep the schedule moving. Each match takes 45 to 75 minutes depending on whether it goes to a third set. Build 10-15 minutes of buffer between scheduled matches to account for overruns."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What's the best format for beach volleyball?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Beach volleyball tournaments almost always use pool play into single elimination, just like indoor. The main difference is that beach matches are best of 3 sets to 21 (with a deciding set to 15), so they tend to be shorter. With 8 teams on 2 courts, expect to finish in about 3 hours. For larger events with 16+ teams, plan a full day."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I create a volleyball bracket right now?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Rise's free bracket maker lets you create a single elimination volleyball bracket instantly. For pool play formats, the full group-stage-to-knockout feature is coming soon — join the waitlist to be notified when it launches."
+            }
+        }
+    ]
+}
+</script>

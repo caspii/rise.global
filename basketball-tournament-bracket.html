@@ -1,0 +1,346 @@
+---
+layout: default
+title: "Basketball Tournament Bracket — Free Bracket Maker"
+description: "Create a basketball tournament bracket for your league, school, or 3-on-3 event. 8-16 teams, single or double elimination, live scoreboard. Free from Rise."
+keywords: "basketball tournament bracket, basketball bracket maker, 3 on 3 basketball bracket, basketball bracket generator"
+permalink: /basketball-tournament-bracket/
+---
+
+<style>
+.sport-hero {
+    padding: 7rem 0 3rem;
+    background: var(--gradient-hero);
+    position: relative;
+    overflow: hidden;
+}
+.sport-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(200, 255, 0, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+}
+.sport-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 77, 106, 0.06) 0%, transparent 60%);
+    pointer-events: none;
+}
+.sport-hero-mockup {
+    margin-top: 3rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sport-hero-mockup img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5), 0 0 40px rgba(200, 255, 0, 0.08);
+}
+.quick-facts {
+    padding: 3rem 0;
+    background: var(--bg-light);
+}
+.quick-facts-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.quick-fact {
+    text-align: center;
+    padding: 1.5rem 2rem;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    min-width: 160px;
+}
+.quick-fact-value {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    display: block;
+    letter-spacing: -0.02em;
+}
+.quick-fact-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-weight: 500;
+    margin-top: 0.25rem;
+}
+.sport-content-section {
+    padding: 5rem 0;
+    background: var(--white);
+}
+.sport-content-section.alt {
+    background: var(--bg-light);
+}
+.sport-content-section h2 {
+    font-family: var(--font-display);
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+}
+.sport-content-section p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+    max-width: 760px;
+}
+.sport-content-section p a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.sport-content-section p a:hover {
+    text-decoration: underline;
+}
+.sport-showcase-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+.sport-showcase-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 12px 40px rgba(10, 14, 26, 0.12);
+    border: 1px solid var(--border-color);
+}
+.sport-showcase-text h2 {
+    margin-bottom: 1rem;
+}
+.sport-showcase-text p {
+    max-width: 100%;
+}
+.sport-waitlist {
+    padding: 5rem 0;
+    background: var(--gradient-hero);
+    color: var(--white);
+    text-align: center;
+}
+.sport-waitlist .section-title {
+    color: var(--white);
+}
+.sport-cross-links {
+    padding: 3rem 0;
+    background: var(--bg-light);
+    text-align: center;
+}
+.sport-cross-links p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    max-width: 760px;
+    margin: 0 auto;
+    line-height: 1.75;
+}
+.sport-cross-links p a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.sport-cross-links p a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .sport-hero {
+        padding: 4rem 0 2rem;
+    }
+    .sport-content-section h2 {
+        font-size: 1.75rem;
+    }
+    .sport-hero-mockup {
+        margin-top: 2rem;
+    }
+    .quick-facts-row {
+        gap: 1rem;
+    }
+    .quick-fact {
+        min-width: 130px;
+        padding: 1.25rem 1.5rem;
+    }
+    .sport-showcase-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+</style>
+
+<main class="main-content">
+    <!-- Hero -->
+    <section class="sport-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Basketball Tournament Bracket Maker</h1>
+                <p class="hero-subtitle">Build your basketball bracket in seconds — from school gyms to 3-on-3 streetball events. Live scoring, automatic advancement, and a bracket everyone can follow.</p>
+                <div class="hero-cta-group">
+                    <a href="/waitlist/" class="hero-primary-cta">Join the Waitlist</a>
+                    <a href="/tools/tournament-bracket-generator/" class="hero-secondary-cta">Try the Free Bracket Maker</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Situational Image -->
+    <section class="sport-content-section">
+        <div class="container" style="text-align: center;">
+            <div class="sport-hero-mockup" style="margin-top: 0;">
+                <img src="/assets/images/mockups/situational-05-school-gym.png" alt="School gym with projected tournament bracket on screen" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Run -->
+    <section class="sport-content-section alt">
+        <div class="container">
+            <h2>How to Run a Basketball Tournament</h2>
+            <p>Basketball tournaments are a staple of school athletics, community rec leagues, charity fundraisers, and summer streetball events. The format you choose depends on how many teams you have, how many courts are available, and how long your event can run. A one-day tournament with a single gym and 8 teams looks very different from a weekend-long invitational with 16 teams and multiple courts. Understanding those constraints upfront makes the difference between a well-run event and a chaotic one.</p>
+            <p>For a one-day tournament, single elimination is the most practical format. An <a href="/8-team-bracket/">8-team single elimination bracket</a> requires just 7 games to crown a champion, and with 20-minute halves and short breaks between games, you can finish in about 4 hours on a single court. A <a href="/16-team-bracket/">16-team bracket</a> needs 15 games and works best with two courts running simultaneously. If you want to give every team a second chance, <a href="/double-elimination-bracket/">double elimination</a> roughly doubles the game count — plan accordingly.</p>
+            <p>Seeding is critical in basketball tournaments because the talent gap between the best and worst teams can be enormous. If you have regular-season records, use winning percentage to seed teams. If not, use coaches' rankings, prior tournament results, or any available data. The standard bracket structure places the 1-seed against the 8-seed, the 2-seed against the 7-seed, and so on, with the top two seeds on opposite sides of the bracket. Good seeding keeps the early rounds competitive and builds toward the most exciting possible semifinals and finals.</p>
+            <p>Game length is the variable that most affects your tournament timeline. Full 4-quarter games with standard high school timing (8-minute quarters) take about 50 minutes including stoppages. For tournaments, many organizers shorten games to two 15-minute running-clock halves, which keeps each game to roughly 35 minutes and avoids the event dragging into the evening. For 3-on-3 tournaments, games are typically played to 21 points or 10 minutes, whichever comes first, making them fast enough to run a large bracket on half-court setups. Whatever format you choose, communicate the game length and clock rules to all teams before the event starts.</p>
+        </div>
+    </section>
+
+    <!-- Recommended Format -->
+    <section class="quick-facts">
+        <div class="container">
+            <div class="quick-facts-row">
+                <div class="quick-fact">
+                    <span class="quick-fact-value">8–16</span>
+                    <span class="quick-fact-label">Teams</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">SE / DE</span>
+                    <span class="quick-fact-label">Single or Double Elim</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">3–4</span>
+                    <span class="quick-fact-label">Rounds</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">Varies</span>
+                    <span class="quick-fact-label">By Game Length</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="sport-content-section">
+        <div class="container">
+            <div class="sport-showcase-row">
+                <div class="sport-showcase-image">
+                    <img src="/assets/images/mockups/mockup-01-live-scoreboard.png" alt="Live scoreboard integrated into a tournament bracket match" loading="lazy">
+                </div>
+                <div class="sport-showcase-text">
+                    <h2>Live Scoring for Every Game</h2>
+                    <p>Rise doesn't just generate your bracket — it lets you track every game in real time. Each match in the bracket becomes a live scoreboard where you can update the score as the game progresses. When the final buzzer sounds, enter the result and the winner advances automatically to the next round.</p>
+                    <p>Project the bracket on the gym wall so players, coaches, and spectators can follow the tournament's progress. The shareable link means parents in the bleachers can pull up the bracket on their phones, and teams that aren't at the venue yet can check when their game is coming up. <a href="/features/">See all planned features</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cross-links -->
+    <section class="sport-cross-links">
+        <div class="container">
+            <p>Explore more bracket formats: <a href="/8-team-bracket/">8-Team Bracket</a> · <a href="/16-team-bracket/">16-Team Bracket</a> · <a href="/double-elimination-bracket/">Double Elimination</a> · <a href="/round-robin-generator/">Round Robin Generator</a> · <a href="/volleyball-tournament-bracket/">Volleyball Bracket</a> · <a href="/ping-pong-tournament-bracket/">Ping Pong Bracket</a></p>
+        </div>
+    </section>
+
+    <!-- Waitlist -->
+    <section class="sport-waitlist">
+        <div class="container">
+            {% include waitlist-form.html heading="Get early access to Rise's tournament platform" %}
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How do you seed a basketball tournament bracket?</h4>
+                    <p>Use regular-season winning percentage if available. If not, coaches' rankings or prior head-to-head results work well. Place the top seed against the lowest seed in the first round, and structure the bracket so the 1-seed and 2-seed are on opposite sides — they should only meet in the final. Rise lets you drag and drop teams into seeded positions or randomize the bracket.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What's the best format for a one-day basketball tournament?</h4>
+                    <p>Single elimination with shortened game times is the most practical choice. Use two 15-minute running-clock halves instead of standard quarters to keep each game under 35 minutes. With an <a href="/8-team-bracket/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">8-team bracket</a> and 7 games, you can finish in about 4 hours on a single court. Two courts cut that time roughly in half.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>3-on-3 or 5-on-5 — which format should I use?</h4>
+                    <p>5-on-5 is the standard for school and league tournaments with established rosters. 3-on-3 is ideal for pickup-style events, streetball tournaments, and situations where you have more players than court space. 3-on-3 games are shorter (played to 21 or with a 10-minute clock), so you can run a much larger bracket in the same amount of time.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I create a basketball bracket right now?</h4>
+                    <p>Yes. Rise's <a href="/tools/tournament-bracket-generator/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">free bracket maker</a> lets you create a single elimination basketball bracket instantly. Add your team names, choose seeded or random ordering, and share the bracket with coaches and players — no account required.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Build Your Basketball Bracket</h2>
+            <p>Free, fast, and ready for tip-off. No signup required.</p>
+            <div class="hero-cta-group">
+                <a href="/tools/tournament-bracket-generator/" class="hero-primary-cta">Create Bracket</a>
+                <a href="/waitlist/" class="hero-secondary-cta">Join the Waitlist</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "How do you seed a basketball tournament bracket?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Use regular-season winning percentage if available. If not, coaches' rankings or prior head-to-head results work well. Place the top seed against the lowest seed in the first round, and structure the bracket so the 1-seed and 2-seed are on opposite sides — they should only meet in the final. Rise lets you drag and drop teams into seeded positions or randomize the bracket."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What's the best format for a one-day basketball tournament?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Single elimination with shortened game times is the most practical choice. Use two 15-minute running-clock halves instead of standard quarters to keep each game under 35 minutes. With an 8-team bracket and 7 games, you can finish in about 4 hours on a single court. Two courts cut that time roughly in half."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "3-on-3 or 5-on-5 — which format should I use?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "5-on-5 is the standard for school and league tournaments with established rosters. 3-on-3 is ideal for pickup-style events, streetball tournaments, and situations where you have more players than court space. 3-on-3 games are shorter (played to 21 or with a 10-minute clock), so you can run a much larger bracket in the same amount of time."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I create a basketball bracket right now?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Rise's free bracket maker lets you create a single elimination basketball bracket instantly. Add your team names, choose seeded or random ordering, and share the bracket with coaches and players — no account required."
+            }
+        }
+    ]
+}
+</script>

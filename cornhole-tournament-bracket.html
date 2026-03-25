@@ -1,0 +1,346 @@
+---
+layout: default
+title: "Cornhole Tournament Bracket — Free Bracket Maker"
+description: "Create a cornhole tournament bracket in seconds. Double elimination, 8-16 teams, ACL-style seeding. Free bracket maker from Rise."
+keywords: "cornhole bracket, cornhole tournament bracket, cornhole double elimination bracket, ACL cornhole bracket"
+permalink: /cornhole-tournament-bracket/
+---
+
+<style>
+.sport-hero {
+    padding: 7rem 0 3rem;
+    background: var(--gradient-hero);
+    position: relative;
+    overflow: hidden;
+}
+.sport-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(200, 255, 0, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+}
+.sport-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 77, 106, 0.06) 0%, transparent 60%);
+    pointer-events: none;
+}
+.sport-hero-mockup {
+    margin-top: 3rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sport-hero-mockup img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5), 0 0 40px rgba(200, 255, 0, 0.08);
+}
+.quick-facts {
+    padding: 3rem 0;
+    background: var(--bg-light);
+}
+.quick-facts-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.quick-fact {
+    text-align: center;
+    padding: 1.5rem 2rem;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    min-width: 160px;
+}
+.quick-fact-value {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    display: block;
+    letter-spacing: -0.02em;
+}
+.quick-fact-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-weight: 500;
+    margin-top: 0.25rem;
+}
+.sport-content-section {
+    padding: 5rem 0;
+    background: var(--white);
+}
+.sport-content-section.alt {
+    background: var(--bg-light);
+}
+.sport-content-section h2 {
+    font-family: var(--font-display);
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+}
+.sport-content-section p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+    max-width: 760px;
+}
+.sport-content-section p a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.sport-content-section p a:hover {
+    text-decoration: underline;
+}
+.sport-showcase-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+.sport-showcase-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 12px 40px rgba(10, 14, 26, 0.12);
+    border: 1px solid var(--border-color);
+}
+.sport-showcase-text h2 {
+    margin-bottom: 1rem;
+}
+.sport-showcase-text p {
+    max-width: 100%;
+}
+.sport-waitlist {
+    padding: 5rem 0;
+    background: var(--gradient-hero);
+    color: var(--white);
+    text-align: center;
+}
+.sport-waitlist .section-title {
+    color: var(--white);
+}
+.sport-cross-links {
+    padding: 3rem 0;
+    background: var(--bg-light);
+    text-align: center;
+}
+.sport-cross-links p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    max-width: 760px;
+    margin: 0 auto;
+    line-height: 1.75;
+}
+.sport-cross-links p a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.sport-cross-links p a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .sport-hero {
+        padding: 4rem 0 2rem;
+    }
+    .sport-content-section h2 {
+        font-size: 1.75rem;
+    }
+    .sport-hero-mockup {
+        margin-top: 2rem;
+    }
+    .quick-facts-row {
+        gap: 1rem;
+    }
+    .quick-fact {
+        min-width: 130px;
+        padding: 1.25rem 1.5rem;
+    }
+    .sport-showcase-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+</style>
+
+<main class="main-content">
+    <!-- Hero -->
+    <section class="sport-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Cornhole Tournament Bracket Maker</h1>
+                <p class="hero-subtitle">Build your cornhole bracket in seconds — double elimination, ACL-style seeding, and a TV display mode that's perfect for outdoor events.</p>
+                <div class="hero-cta-group">
+                    <a href="/waitlist/" class="hero-primary-cta">Join the Waitlist</a>
+                    <a href="/tools/tournament-bracket-generator/" class="hero-secondary-cta">Try the Free Bracket Maker</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Situational Image -->
+    <section class="sport-content-section">
+        <div class="container" style="text-align: center;">
+            <div class="sport-hero-mockup" style="margin-top: 0;">
+                <img src="/assets/images/mockups/situational-02-cornhole-phone.png" alt="Outdoor cornhole tournament with bracket displayed on phone and screen" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Run -->
+    <section class="sport-content-section alt">
+        <div class="container">
+            <h2>How to Run a Cornhole Tournament</h2>
+            <p>Cornhole has exploded from a backyard pastime into a legitimate competitive sport with the American Cornhole League running nationally televised events. Whether you're organizing a charity fundraiser, a tailgate throwdown, or a neighborhood league night, the tournament format you choose matters. Most competitive cornhole events use double elimination because it rewards consistency — a single bad game against a hot opponent shouldn't send a strong team home. Casual events often run single elimination to keep things moving, especially when you have limited daylight or venue time.</p>
+            <p>A standard cornhole tournament works best with 8 to 16 teams. Each team is a pair of players, one at each end of the lane. Games are played to 21 points using cancellation scoring, where only the team that scored more in a round earns the net difference. Boards should be set 27 feet apart (front edge to front edge), and you'll want at least two sets of boards running simultaneously to keep the bracket moving. If you're running a 16-team double elimination bracket, expect around 30 games total — having two or three lanes active at once cuts your event time dramatically.</p>
+            <p>Seeding matters more in cornhole than people realize. If you have returning players with known records, seed them by win percentage or head-to-head results. The top seed should face the lowest seed in the first round, with the bracket structured so the strongest teams meet as late as possible. For a casual event with no rankings, randomize the bracket and let the games sort themselves out. Either way, post the bracket where everyone can see it — a TV screen at the venue or a shared link on everyone's phone keeps the whole event running smoothly.</p>
+            <p>One detail that trips up first-time organizers: decide on your rules before the event starts and communicate them clearly. Are you playing with four-bag or eight-bag rounds? Is the foul line at the front of the board or behind it? Can bags slide off the board and still count if they went through the hole first? The ACL uses a specific ruleset that most players are familiar with, and defaulting to those rules avoids arguments. Print a one-page rules summary and post it at each lane.</p>
+        </div>
+    </section>
+
+    <!-- Recommended Format -->
+    <section class="quick-facts">
+        <div class="container">
+            <div class="quick-facts-row">
+                <div class="quick-fact">
+                    <span class="quick-fact-value">8–16</span>
+                    <span class="quick-fact-label">Teams (pairs)</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">DE</span>
+                    <span class="quick-fact-label">Double Elimination</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">4–5</span>
+                    <span class="quick-fact-label">Rounds</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">2–3 hrs</span>
+                    <span class="quick-fact-label">Estimated Time</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="sport-content-section">
+        <div class="container">
+            <div class="sport-showcase-row">
+                <div class="sport-showcase-image">
+                    <img src="/assets/images/mockups/mockup-05-tv-display-v2.png" alt="Tournament bracket displayed on a TV screen in full-screen kiosk mode" loading="lazy">
+                </div>
+                <div class="sport-showcase-text">
+                    <h2>TV Display Mode for Outdoor Events</h2>
+                    <p>Cornhole tournaments happen outdoors — at tailgates, backyards, parks, and brewery patios. Rise's TV display mode lets you cast the live bracket to any screen at your venue, so every team can see where they stand without crowding around a single phone. The display updates in real time as you enter match results, and the full-screen kiosk layout is readable from across the yard.</p>
+                    <p>No more whiteboard brackets that smear in the humidity or paper printouts that blow away. Share the bracket link and every player can check their next matchup from their own phone while they grab a drink between games. <a href="/features/">See all planned features</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cross-links -->
+    <section class="sport-cross-links">
+        <div class="container">
+            <p>Explore more bracket formats: <a href="/double-elimination-bracket/">Double Elimination Brackets</a> · <a href="/round-robin-generator/">Round Robin Generator</a> · <a href="/8-team-bracket/">8-Team Bracket</a> · <a href="/16-team-bracket/">16-Team Bracket</a> · <a href="/beer-pong-bracket/">Beer Pong Bracket</a> · <a href="/esports-tournament-bracket/">Esports Bracket</a></p>
+        </div>
+    </section>
+
+    <!-- Waitlist -->
+    <section class="sport-waitlist">
+        <div class="container">
+            {% include waitlist-form.html heading="Get early access to Rise's tournament platform" %}
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How do you seed a cornhole bracket?</h4>
+                    <p>If you have player rankings or past results, seed teams by win percentage so the strongest teams are placed on opposite sides of the bracket. The 1-seed faces the lowest seed, the 2-seed faces the second-lowest, and so on. For casual events without established rankings, Rise can randomize the bracket for you — just enter team names and let the draw sort itself out.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How many games in a cornhole double elimination bracket?</h4>
+                    <p>A <a href="/double-elimination-bracket/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">double elimination bracket</a> with 8 teams requires 14-15 games. With 16 teams, expect 30-31 games. Double elimination is the standard format in competitive cornhole because it ensures no team goes home after a single loss. Running two or three lanes simultaneously keeps the event to a manageable 2-3 hours.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What's the best format for backyard cornhole?</h4>
+                    <p>For a casual backyard event with 8 or fewer teams, single elimination is the fastest and simplest option — everyone understands it, and you can finish in about an hour. If you have competitive players who want a fairer result, double elimination gives everyone a second chance. For very small groups of 4-6 teams, a <a href="/round-robin-generator/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">round robin</a> lets everyone play everyone, which maximizes game time.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I create a cornhole bracket right now?</h4>
+                    <p>Yes. Rise's <a href="/tools/tournament-bracket-generator/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">free bracket maker</a> lets you create a single elimination cornhole bracket instantly. Add your team names, choose seeded or random ordering, and share the bracket link with every player — no account required.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Build Your Cornhole Bracket</h2>
+            <p>Free, fast, and ready for game day. No signup required.</p>
+            <div class="hero-cta-group">
+                <a href="/tools/tournament-bracket-generator/" class="hero-primary-cta">Create Bracket</a>
+                <a href="/waitlist/" class="hero-secondary-cta">Join the Waitlist</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "How do you seed a cornhole bracket?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "If you have player rankings or past results, seed teams by win percentage so the strongest teams are placed on opposite sides of the bracket. The 1-seed faces the lowest seed, the 2-seed faces the second-lowest, and so on. For casual events without established rankings, Rise can randomize the bracket for you — just enter team names and let the draw sort itself out."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How many games in a cornhole double elimination bracket?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A double elimination bracket with 8 teams requires 14-15 games. With 16 teams, expect 30-31 games. Double elimination is the standard format in competitive cornhole because it ensures no team goes home after a single loss. Running two or three lanes simultaneously keeps the event to a manageable 2-3 hours."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What's the best format for backyard cornhole?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For a casual backyard event with 8 or fewer teams, single elimination is the fastest and simplest option — everyone understands it, and you can finish in about an hour. If you have competitive players who want a fairer result, double elimination gives everyone a second chance. For very small groups of 4-6 teams, a round robin lets everyone play everyone, which maximizes game time."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I create a cornhole bracket right now?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Rise's free bracket maker lets you create a single elimination cornhole bracket instantly. Add your team names, choose seeded or random ordering, and share the bracket link with every player — no account required."
+            }
+        }
+    ]
+}
+</script>

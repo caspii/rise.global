@@ -1,0 +1,346 @@
+---
+layout: default
+title: "Ping Pong Tournament Bracket — Free Bracket Maker"
+description: "Create a ping pong tournament bracket for your office, club, or league. 8-16 players, singles or doubles, ITTF scoring. Free bracket maker from Rise."
+keywords: "ping pong tournament bracket, table tennis tournament bracket, office ping pong bracket, ping pong bracket"
+permalink: /ping-pong-tournament-bracket/
+---
+
+<style>
+.sport-hero {
+    padding: 7rem 0 3rem;
+    background: var(--gradient-hero);
+    position: relative;
+    overflow: hidden;
+}
+.sport-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(200, 255, 0, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+}
+.sport-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 77, 106, 0.06) 0%, transparent 60%);
+    pointer-events: none;
+}
+.sport-hero-mockup {
+    margin-top: 3rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sport-hero-mockup img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5), 0 0 40px rgba(200, 255, 0, 0.08);
+}
+.quick-facts {
+    padding: 3rem 0;
+    background: var(--bg-light);
+}
+.quick-facts-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.quick-fact {
+    text-align: center;
+    padding: 1.5rem 2rem;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    min-width: 160px;
+}
+.quick-fact-value {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    display: block;
+    letter-spacing: -0.02em;
+}
+.quick-fact-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-weight: 500;
+    margin-top: 0.25rem;
+}
+.sport-content-section {
+    padding: 5rem 0;
+    background: var(--white);
+}
+.sport-content-section.alt {
+    background: var(--bg-light);
+}
+.sport-content-section h2 {
+    font-family: var(--font-display);
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+}
+.sport-content-section p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+    max-width: 760px;
+}
+.sport-content-section p a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.sport-content-section p a:hover {
+    text-decoration: underline;
+}
+.sport-showcase-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+.sport-showcase-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 12px 40px rgba(10, 14, 26, 0.12);
+    border: 1px solid var(--border-color);
+}
+.sport-showcase-text h2 {
+    margin-bottom: 1rem;
+}
+.sport-showcase-text p {
+    max-width: 100%;
+}
+.sport-waitlist {
+    padding: 5rem 0;
+    background: var(--gradient-hero);
+    color: var(--white);
+    text-align: center;
+}
+.sport-waitlist .section-title {
+    color: var(--white);
+}
+.sport-cross-links {
+    padding: 3rem 0;
+    background: var(--bg-light);
+    text-align: center;
+}
+.sport-cross-links p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    max-width: 760px;
+    margin: 0 auto;
+    line-height: 1.75;
+}
+.sport-cross-links p a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.sport-cross-links p a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .sport-hero {
+        padding: 4rem 0 2rem;
+    }
+    .sport-content-section h2 {
+        font-size: 1.75rem;
+    }
+    .sport-hero-mockup {
+        margin-top: 2rem;
+    }
+    .quick-facts-row {
+        gap: 1rem;
+    }
+    .quick-fact {
+        min-width: 130px;
+        padding: 1.25rem 1.5rem;
+    }
+    .sport-showcase-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+</style>
+
+<main class="main-content">
+    <!-- Hero -->
+    <section class="sport-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Ping Pong Tournament Bracket Maker</h1>
+                <p class="hero-subtitle">The office tournament bracket everyone's been asking for. Set up singles or doubles, seed by skill level, and display the bracket on the break room TV.</p>
+                <div class="hero-cta-group">
+                    <a href="/waitlist/" class="hero-primary-cta">Join the Waitlist</a>
+                    <a href="/tools/tournament-bracket-generator/" class="hero-secondary-cta">Try the Free Bracket Maker</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Situational Image -->
+    <section class="sport-content-section">
+        <div class="container" style="text-align: center;">
+            <div class="sport-hero-mockup" style="margin-top: 0;">
+                <img src="/assets/images/mockups/situational-04-office-pingpong.png" alt="Office break room with ping-pong table and laptop showing tournament bracket" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Run -->
+    <section class="sport-content-section alt">
+        <div class="container">
+            <h2>How to Run a Ping Pong Tournament</h2>
+            <p>Ping pong tournaments are one of the most popular workplace competitions in the world, and for good reason. The game is fast, the rules are simple, anyone can play, and a full tournament fits into a lunch break or after-work hour. Whether you're organizing an office championship, a rec center league, or a friendly competition at a family reunion, the key to a smooth event is picking the right format for your group size and time constraints.</p>
+            <p>For most office tournaments with 8 to 16 players, single elimination is the fastest path to a champion. Each match is best of 3 games (or best of 5 for semifinals and finals), with each game played to 11 points. Players must win by 2 points, and service alternates every 2 points. These are the standard ITTF rules that most recreational players already know, and sticking to them avoids the inevitable "we play to 21 at my house" debates. A 16-player single elimination bracket produces a champion in just 15 matches, which is comfortably doable in 2 hours even with a single table.</p>
+            <p>If fairness matters more than speed, consider a round robin group stage followed by a knockout bracket. Split your players into groups of 4, have everyone in each group play everyone else, then advance the top 2 from each group into a single elimination bracket. This hybrid format ensures that no one gets knocked out by a single unlucky draw, and it gives weaker players more games — which matters a lot for office morale. The tradeoff is time: a 16-player round robin group stage alone requires 24 matches before the knockout round even begins.</p>
+            <p>Seeding makes a noticeable difference in ping pong brackets because skill gaps in table tennis tend to be wide. If you have any sense of who the strong players are — from previous tournaments, informal rankings, or just office reputation — seed them so the top players are on opposite sides of the bracket. This prevents the two best players from meeting in the first round and gives everyone else a shot at advancing past the opening match. Rise lets you drag and drop players into seeded positions or randomize the bracket entirely.</p>
+        </div>
+    </section>
+
+    <!-- Recommended Format -->
+    <section class="quick-facts">
+        <div class="container">
+            <div class="quick-facts-row">
+                <div class="quick-fact">
+                    <span class="quick-fact-value">8–16</span>
+                    <span class="quick-fact-label">Players</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">SE / RR</span>
+                    <span class="quick-fact-label">Single Elim or Round Robin</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">3–4</span>
+                    <span class="quick-fact-label">Rounds</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">1–2 hrs</span>
+                    <span class="quick-fact-label">Estimated Time</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="sport-content-section">
+        <div class="container">
+            <div class="sport-showcase-row">
+                <div class="sport-showcase-image">
+                    <img src="/assets/images/mockups/mockup-05-tv-display-v2.png" alt="Tournament bracket displayed on a TV in full-screen kiosk mode" loading="lazy">
+                </div>
+                <div class="sport-showcase-text">
+                    <h2>The Break Room TV Bracket</h2>
+                    <p>Every office with a ping pong table has a TV nearby. Rise's full-screen display mode turns that TV into a live tournament bracket that updates as you enter results. Players can see their next matchup at a glance, and the whole office can follow the action without huddling around a single laptop.</p>
+                    <p>The bracket also lives at a shareable link, so remote employees or anyone away from the break room can check results from their desk or phone. When the tournament wraps up, the completed bracket becomes a permanent record of who took the crown — and who they beat to get there. <a href="/features/">See all planned features</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cross-links -->
+    <section class="sport-cross-links">
+        <div class="container">
+            <p>Explore more bracket formats: <a href="/8-team-bracket/">8-Team Bracket</a> · <a href="/16-team-bracket/">16-Team Bracket</a> · <a href="/round-robin-generator/">Round Robin Generator</a> · <a href="/double-elimination-bracket/">Double Elimination</a> · <a href="/beer-pong-bracket/">Beer Pong Bracket</a> · <a href="/basketball-tournament-bracket/">Basketball Bracket</a></p>
+        </div>
+    </section>
+
+    <!-- Waitlist -->
+    <section class="sport-waitlist">
+        <div class="container">
+            {% include waitlist-form.html heading="Get early access to Rise's tournament platform" %}
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>What's the best format for an office ping pong tournament?</h4>
+                    <p>Single elimination is the fastest — a <a href="/16-team-bracket/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">16-player bracket</a> finishes in about 90 minutes. If you want a fairer result, use a <a href="/round-robin-generator/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">round robin</a> group stage to seed players, then finish with a knockout bracket. The hybrid approach takes longer but gives everyone more games and produces a more credible champion.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How do you seed a ping pong bracket?</h4>
+                    <p>If you have previous results or informal rankings, place the strongest players at the top seeds so they land on opposite sides of the bracket. The 1-seed and 2-seed should only be able to meet in the final. For a first-time tournament with no rankings, randomize the draw and use the results to seed future events.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Should I run singles or doubles?</h4>
+                    <p>Singles is more common for office tournaments because it's simpler to organize and requires only one table. Doubles adds a fun team dynamic and works well when you have a large number of sign-ups — pair a strong player with a weaker one to balance the field. Both formats use the same bracket structure, so the choice comes down to your group's preference.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I create a ping pong bracket right now?</h4>
+                    <p>Yes. Rise's <a href="/tools/tournament-bracket-generator/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">free bracket maker</a> lets you create a single elimination ping pong bracket instantly. Add your player names, choose seeded or random ordering, and share the bracket with the office — no account required.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Build Your Ping Pong Bracket</h2>
+            <p>Free, instant, and ready for the break room. No signup required.</p>
+            <div class="hero-cta-group">
+                <a href="/tools/tournament-bracket-generator/" class="hero-primary-cta">Create Bracket</a>
+                <a href="/waitlist/" class="hero-secondary-cta">Join the Waitlist</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "What's the best format for an office ping pong tournament?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Single elimination is the fastest — a 16-player bracket finishes in about 90 minutes. If you want a fairer result, use a round robin group stage to seed players, then finish with a knockout bracket. The hybrid approach takes longer but gives everyone more games and produces a more credible champion."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How do you seed a ping pong bracket?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "If you have previous results or informal rankings, place the strongest players at the top seeds so they land on opposite sides of the bracket. The 1-seed and 2-seed should only be able to meet in the final. For a first-time tournament with no rankings, randomize the draw and use the results to seed future events."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Should I run singles or doubles?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Singles is more common for office tournaments because it's simpler to organize and requires only one table. Doubles adds a fun team dynamic and works well when you have a large number of sign-ups — pair a strong player with a weaker one to balance the field. Both formats use the same bracket structure, so the choice comes down to your group's preference."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I create a ping pong bracket right now?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Rise's free bracket maker lets you create a single elimination ping pong bracket instantly. Add your player names, choose seeded or random ordering, and share the bracket with the office — no account required."
+            }
+        }
+    ]
+}
+</script>

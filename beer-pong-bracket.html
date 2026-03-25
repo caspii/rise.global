@@ -1,0 +1,346 @@
+---
+layout: default
+title: "Beer Pong Bracket — Free Tournament Bracket Maker"
+description: "Create a beer pong tournament bracket in seconds. Single elimination, 8-16 teams of 2, shareable bracket link for the whole bar. Free from Rise."
+keywords: "beer pong bracket, beer pong tournament bracket, beer pong tournament, bar tournament bracket"
+permalink: /beer-pong-bracket/
+---
+
+<style>
+.sport-hero {
+    padding: 7rem 0 3rem;
+    background: var(--gradient-hero);
+    position: relative;
+    overflow: hidden;
+}
+.sport-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(200, 255, 0, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+}
+.sport-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 77, 106, 0.06) 0%, transparent 60%);
+    pointer-events: none;
+}
+.sport-hero-mockup {
+    margin-top: 3rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sport-hero-mockup img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5), 0 0 40px rgba(200, 255, 0, 0.08);
+}
+.quick-facts {
+    padding: 3rem 0;
+    background: var(--bg-light);
+}
+.quick-facts-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.quick-fact {
+    text-align: center;
+    padding: 1.5rem 2rem;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    min-width: 160px;
+}
+.quick-fact-value {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    display: block;
+    letter-spacing: -0.02em;
+}
+.quick-fact-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-weight: 500;
+    margin-top: 0.25rem;
+}
+.sport-content-section {
+    padding: 5rem 0;
+    background: var(--white);
+}
+.sport-content-section.alt {
+    background: var(--bg-light);
+}
+.sport-content-section h2 {
+    font-family: var(--font-display);
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+}
+.sport-content-section p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+    max-width: 760px;
+}
+.sport-content-section p a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.sport-content-section p a:hover {
+    text-decoration: underline;
+}
+.sport-showcase-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+.sport-showcase-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 12px 40px rgba(10, 14, 26, 0.12);
+    border: 1px solid var(--border-color);
+}
+.sport-showcase-text h2 {
+    margin-bottom: 1rem;
+}
+.sport-showcase-text p {
+    max-width: 100%;
+}
+.sport-waitlist {
+    padding: 5rem 0;
+    background: var(--gradient-hero);
+    color: var(--white);
+    text-align: center;
+}
+.sport-waitlist .section-title {
+    color: var(--white);
+}
+.sport-cross-links {
+    padding: 3rem 0;
+    background: var(--bg-light);
+    text-align: center;
+}
+.sport-cross-links p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    max-width: 760px;
+    margin: 0 auto;
+    line-height: 1.75;
+}
+.sport-cross-links p a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.sport-cross-links p a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .sport-hero {
+        padding: 4rem 0 2rem;
+    }
+    .sport-content-section h2 {
+        font-size: 1.75rem;
+    }
+    .sport-hero-mockup {
+        margin-top: 2rem;
+    }
+    .quick-facts-row {
+        gap: 1rem;
+    }
+    .quick-fact {
+        min-width: 130px;
+        padding: 1.25rem 1.5rem;
+    }
+    .sport-showcase-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+</style>
+
+<main class="main-content">
+    <!-- Hero -->
+    <section class="sport-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Beer Pong Bracket Maker</h1>
+                <p class="hero-subtitle">Set up your beer pong tournament in seconds. Share the bracket link so everyone at the bar can follow along on their phone.</p>
+                <div class="hero-cta-group">
+                    <a href="/waitlist/" class="hero-primary-cta">Join the Waitlist</a>
+                    <a href="/tools/tournament-bracket-generator/" class="hero-secondary-cta">Try the Free Bracket Maker</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Situational Image -->
+    <section class="sport-content-section">
+        <div class="container" style="text-align: center;">
+            <div class="sport-hero-mockup" style="margin-top: 0;">
+                <img src="/assets/images/mockups/situational-01-bar-tv.png" alt="Bar with TV showing a tournament bracket for a beer pong event" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Run -->
+    <section class="sport-content-section alt">
+        <div class="container">
+            <h2>How to Run a Beer Pong Tournament</h2>
+            <p>Beer pong tournaments are the heartbeat of bar nights, house parties, tailgates, and college events. The format is simple: teams of two face off across a table, tossing ping pong balls into cups arranged in a triangle. The team that sinks all of their opponent's cups first wins the game. String those games together in a bracket, and you've got a tournament that keeps an entire venue entertained for hours.</p>
+            <p>Single elimination is the go-to format for beer pong tournaments because it keeps the energy high and the event moving. With 8 teams, you're looking at 7 games and roughly an hour of play. With 16 teams, you'll need 15 games and closer to two hours. Double elimination is an option if your crowd wants more games, but most beer pong events lean toward single elimination — the sudden-death stakes are part of the fun, and nobody wants a five-hour beer pong marathon.</p>
+            <p>The biggest challenge in running a beer pong tournament isn't the bracket structure — it's the house rules. Every group has their own take on re-racks, bounce shots, island calls, heating up, and redemption. The single most important thing you can do as an organizer is decide on the rules before the first cup is filled and announce them to everyone. Write them on a whiteboard, text them to the group chat, or post them wherever the bracket is displayed. Common tournament rules include two re-racks per game (at 6 cups and 3 cups), bounce shots count as two cups but can be swatted, and no leaning past the table edge.</p>
+            <p>Registration is easy — have teams sign up as pairs and give each team a name. Seed randomly unless you're running a recurring league where players have established rankings. Once you've got your list, plug the team names into a bracket generator and you're ready to start. Share the bracket link so every team can check their matchup from their phone instead of elbowing through the crowd to see a paper bracket taped to the wall.</p>
+        </div>
+    </section>
+
+    <!-- Recommended Format -->
+    <section class="quick-facts">
+        <div class="container">
+            <div class="quick-facts-row">
+                <div class="quick-fact">
+                    <span class="quick-fact-value">8–16</span>
+                    <span class="quick-fact-label">Teams (pairs)</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">SE</span>
+                    <span class="quick-fact-label">Single Elimination</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">3–4</span>
+                    <span class="quick-fact-label">Rounds</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">1–2 hrs</span>
+                    <span class="quick-fact-label">Estimated Time</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="sport-content-section">
+        <div class="container">
+            <div class="sport-showcase-row">
+                <div class="sport-showcase-image">
+                    <img src="/assets/images/mockups/mockup-01-live-scoreboard.png" alt="Live scoreboard integrated into a tournament bracket" loading="lazy">
+                </div>
+                <div class="sport-showcase-text">
+                    <h2>Share the Bracket with the Whole Bar</h2>
+                    <p>The best part of a beer pong tournament is the crowd watching the bracket unfold. Rise gives you a shareable link that anyone can open on their phone to see the live bracket, check upcoming matchups, and track results in real time. Throw it up on the bar's TV in full-screen mode and the whole venue becomes part of the event.</p>
+                    <p>No more paper brackets that get spilled on. No more arguments about who plays next. Every match result updates the bracket instantly, and the next round's matchups are visible to everyone as soon as the previous round wraps up. <a href="/features/">See all planned features</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cross-links -->
+    <section class="sport-cross-links">
+        <div class="container">
+            <p>Explore more bracket formats: <a href="/8-team-bracket/">8-Team Bracket</a> · <a href="/16-team-bracket/">16-Team Bracket</a> · <a href="/double-elimination-bracket/">Double Elimination</a> · <a href="/cornhole-tournament-bracket/">Cornhole Bracket</a> · <a href="/ping-pong-tournament-bracket/">Ping Pong Bracket</a> · <a href="/esports-tournament-bracket/">Esports Bracket</a></p>
+        </div>
+    </section>
+
+    <!-- Waitlist -->
+    <section class="sport-waitlist">
+        <div class="container">
+            {% include waitlist-form.html heading="Get early access to Rise's tournament platform" %}
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How many teams do you need for a beer pong tournament?</h4>
+                    <p>You can run a beer pong tournament with as few as 4 teams, but 8 to 16 teams is the sweet spot. An <a href="/8-team-bracket/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">8-team bracket</a> finishes in about an hour with 7 games, while a <a href="/16-team-bracket/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">16-team bracket</a> takes closer to two hours with 15 games. More than 16 teams and you'll want multiple tables running simultaneously.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What's the best format for a beer pong tournament?</h4>
+                    <p>Single elimination is the most popular format for beer pong tournaments because it's fast, dramatic, and easy to understand. Every game is win-or-go-home, which keeps the energy high. If you want to give teams a second chance, <a href="/double-elimination-bracket/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">double elimination</a> works well but roughly doubles the number of games and the event length.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How do you handle house rules in a tournament?</h4>
+                    <p>Decide on one set of rules before the tournament starts and communicate them to every team. Common tournament rules include two re-racks per game, bounce shots count as two cups but can be swatted, no leaning past the table edge, and redemption (the losing team gets one last turn after the final cup). Post the rules alongside the bracket so there are no surprises.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I create a beer pong bracket right now?</h4>
+                    <p>Yes. Rise's <a href="/tools/tournament-bracket-generator/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">free bracket maker</a> lets you create a single elimination beer pong bracket instantly. Add your team names, randomize or seed the draw, and share the bracket link with every player — no account required.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Build Your Beer Pong Bracket</h2>
+            <p>Free, instant, and shareable. No signup required.</p>
+            <div class="hero-cta-group">
+                <a href="/tools/tournament-bracket-generator/" class="hero-primary-cta">Create Bracket</a>
+                <a href="/waitlist/" class="hero-secondary-cta">Join the Waitlist</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "How many teams do you need for a beer pong tournament?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can run a beer pong tournament with as few as 4 teams, but 8 to 16 teams is the sweet spot. An 8-team bracket finishes in about an hour with 7 games, while a 16-team bracket takes closer to two hours with 15 games. More than 16 teams and you'll want multiple tables running simultaneously."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What's the best format for a beer pong tournament?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Single elimination is the most popular format for beer pong tournaments because it's fast, dramatic, and easy to understand. Every game is win-or-go-home, which keeps the energy high. If you want to give teams a second chance, double elimination works well but roughly doubles the number of games and the event length."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How do you handle house rules in a tournament?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Decide on one set of rules before the tournament starts and communicate them to every team. Common tournament rules include two re-racks per game, bounce shots count as two cups but can be swatted, no leaning past the table edge, and redemption (the losing team gets one last turn after the final cup). Post the rules alongside the bracket so there are no surprises."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I create a beer pong bracket right now?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Rise's free bracket maker lets you create a single elimination beer pong bracket instantly. Add your team names, randomize or seed the draw, and share the bracket link with every player — no account required."
+            }
+        }
+    ]
+}
+</script>
