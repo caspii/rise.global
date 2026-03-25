@@ -12,6 +12,8 @@ Thirty minutes later, someone asks what happens if there's a tie. Then a team dr
 
 Templates are fine. But the right template depends on three things: how many teams you have, how much time you've got, and whether you care more about fairness or speed.
 
+![Four bracket themes showing different visual styles](/assets/images/mockups/mockup-04-custom-themes.png)
+
 ## Picking Your Bracket Size
 
 ### 4 Teams
@@ -42,6 +44,8 @@ At this size, you need a digital solution. Not optional. The coordination of 32 
 
 The [64-team bracket](/64-team-bracket/) is March Madness territory. Six rounds, 63 matches. You're running a multi-day event with dedicated tournament directors, probably streaming key matches, and definitely not using a PDF printout from the internet.
 
+![Tournament bracket on a TV screen at a venue](/assets/images/mockups/mockup-05-tv-display-v2.png)
+
 ## Choosing Your Format
 
 The bracket size tells you scale. The format tells you structure.
@@ -69,6 +73,8 @@ Best for: leagues that run over weeks, events with 6-8 teams and plenty of time,
 ### Group Stage to Knockout
 
 The hybrid approach. Split your field into groups of 4, run a round robin within each group, then take the top 2 from each group into a single or double elimination bracket. It's how FIFA runs the World Cup, and the format works just as well for your 16-team [volleyball tournament](/volleyball-tournament-bracket/) or [ping pong bracket](/ping-pong-tournament-bracket/).
+
+![Group stage flowing into knockout bracket](/assets/images/mockups/mockup-07-group-to-knockout.png)
 
 ## Why PDF Templates Fall Short
 

@@ -10,6 +10,8 @@ Your best team lost their opening match because their star player was stuck in t
 
 That's the fundamental tension between these two formats. One prioritizes time. The other prioritizes fairness. Neither is wrong, but picking the wrong one for your situation will make everyone miserable.
 
+![Round robin schedule with standings table](/assets/images/mockups/mockup-06-round-robin.png)
+
 ## Round Robin: The Fair One
 
 In a round robin, every team plays every other team. No draws of fate, no bracket luck. The team with the best record wins. If you want to know who's *actually* the best, this is how you find out.
@@ -46,6 +48,8 @@ Large fields (16+ teams), limited time, or events where the experience matters m
 
 When people travel significant distances or pay entry fees. Getting knocked out in one game after a two-hour drive feels terrible, and it should — because it *is* terrible.
 
+![Double elimination bracket with winners and losers brackets](/assets/images/mockups/mockup-03-double-elimination.png)
+
 ## The Middle Ground: Double Elimination
 
 Can't decide? There's a third option, and honestly, it's the best one for most competitive events.
@@ -55,6 +59,8 @@ Can't decide? There's a third option, and honestly, it's the best one for most c
 The team that loses in round one because their star was late? They get to come back. The underdog that got a fluky win? They have to prove it wasn't a fluke. And the grand final almost always features the two best teams because you need *two* bad performances to get knocked out.
 
 For competitive play — anything with rankings, entry fees, or real prizes — double elimination is the better format. Full stop.
+
+![Group stage flowing into knockout bracket](/assets/images/mockups/mockup-07-group-to-knockout.png)
 
 ## The Decision in 30 Seconds
 

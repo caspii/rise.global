@@ -12,6 +12,8 @@ Double elimination tournaments give every competitor a second chance without tur
 
 Here's how to run one without losing your mind.
 
+![Double elimination bracket showing winners and losers brackets](/assets/images/mockups/mockup-03-double-elimination.png)
+
 ## The Two-Bracket System
 
 A [double elimination bracket](/double-elimination-bracket/) splits into two parallel paths after round one. Winners stay in the winners bracket. Losers drop to the losers bracket. Lose twice and you're out.
@@ -56,11 +58,15 @@ Speed things up by running winners and losers bracket matches on separate statio
 
 ## Bracket Management
 
+![Live scoreboard integrated with tournament bracket](/assets/images/mockups/mockup-01-live-scoreboard.png)
+
 Managing a double elimination bracket on paper is doable with 8 teams. At 16 it's annoying. At [32](/32-team-bracket/) it's a full-time job. You need to track which teams drop to the losers bracket after each round, slot them into the correct matchup, and keep the whole thing visible to participants.
 
 This is exactly the kind of thing we're building [Rise](/features/) to handle. The bracket updates live as you enter scores, participants see their next match on their phones, and the crossovers between winners and losers brackets happen automatically.
 
 [Join the waitlist](/waitlist/) if you want to try it.
+
+![Tournament bracket displayed on a TV at a venue](/assets/images/mockups/mockup-05-tv-display-v2.png)
 
 ## Quick Seeding Note
 

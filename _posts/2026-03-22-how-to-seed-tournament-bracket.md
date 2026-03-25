@@ -10,6 +10,8 @@ Picture this: you randomize an [8-team bracket](/8-team-bracket/) and the draw p
 
 That's what happens without seeding. And it's entirely preventable.
 
+![Seeding diagram showing seed placement in an 8-team bracket](/assets/images/mockups/blog-seeding-diagram.png)
+
 ## What Seeding Actually Does
 
 Seeding assigns positions in the bracket based on how good each team is. The best team gets the #1 seed. The worst gets the #8 seed. Then you place them so the strongest teams are as far apart as possible, meaning they can only meet in the later rounds.
@@ -52,6 +54,8 @@ A panel of organizers or coaches ranks the teams based on whatever information t
 ### By regular season record
 
 If your bracket is the playoff at the end of a league season, the seeding is already done. Best regular season record gets #1. This is the cleanest approach because the teams seeded themselves through weeks of competition.
+
+![Professional bracket with team logos](/assets/images/mockups/mockup-08-team-logos.png)
 
 ## A Concrete Example
 

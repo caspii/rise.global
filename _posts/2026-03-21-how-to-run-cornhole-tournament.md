@@ -12,6 +12,8 @@ Then 24 teams show up, you have 4 sets of boards, nobody remembers cancellation 
 
 Running a great cornhole tournament isn't about cornhole. It's about logistics. The throwing part takes care of itself.
 
+![Outdoor cornhole tournament setup with boards and bean bags](/assets/images/mockups/blog-cornhole-setup.png)
+
 ## Choose Your Format First
 
 This decision drives everything else — how long the event runs, how many boards you need, and whether anyone goes home angry.
@@ -44,6 +46,8 @@ For 32 teams: 6-8 sets. At this scale, you also need dedicated scorekeepers or a
 
 If you're buying boards, regulation size is 2 feet by 4 feet, set 27 feet apart (front to front). Don't skimp on this distance. Twenty feet apart plays completely differently and your experienced players will notice immediately.
 
+![Person controlling bracket from phone at cornhole tournament](/assets/images/mockups/situational-02-cornhole-phone.png)
+
 ## Time Management
 
 The killer of cornhole tournaments isn't bad weather or missing equipment. It's dead time between matches.
@@ -63,6 +67,8 @@ Registration should happen online before the event if possible. Day-of registrat
 Assign someone other than yourself to handle disputes. You'll be too busy managing the bracket. Pick someone who knows the rules and whose authority people will accept — ideally a respected player who isn't competing.
 
 Have bags available to borrow. Someone always forgets theirs. Regulation bags are 6 inches square and weigh 15-16 ounces. Having a few backup sets prevents delays.
+
+![Tournament bracket on TV display at an event](/assets/images/mockups/mockup-05-tv-display-v2.png)
 
 ## Keep People Engaged Between Matches
 

@@ -10,6 +10,8 @@ We're building a bracket maker, so take this comparison with whatever grain of s
 
 Here's what's actually out there, what each tool does well, and where each one falls short.
 
+![Old bracket maker vs modern Rise interface](/assets/images/mockups/blog-old-vs-new.png)
+
 ## Challonge
 
 Challonge is the incumbent. It's been around since 2009, it has massive brand recognition in the esports and fighting game community, and it was one of the first tools to offer online bracket management. If you've played in any kind of competitive gaming event, you've probably used Challonge.
@@ -76,6 +78,8 @@ Setup takes time. ScoreLeader is built for long-running leagues, so the onboardi
 
 Pricing is higher than bracket-only tools — plans run $10-30/month — which makes sense for leagues that use it every week but is hard to justify for occasional events.
 
+![Rise live scoreboard integrated with tournament bracket](/assets/images/mockups/mockup-01-live-scoreboard.png)
+
 ## Rise
 
 Full disclosure: this is us. Rise is a bracket maker we're currently building, and it isn't publicly available yet. We're including ourselves because pretending we don't exist in a comparison post on our own blog would be weird.
@@ -91,6 +95,8 @@ We're focused on making brackets that look great and require zero technical skil
 We're pre-launch. You can't use Rise today. That's obviously a significant limitation compared to tools you can sign up for right now. We don't have the years of battle-testing that Challonge has. We don't have the embed ecosystem that Common Ninja has.
 
 We're building in public and letting early users in through our [waitlist](/waitlist/). If what we're describing sounds like the tool you wish existed, [sign up](/waitlist/) and you'll be among the first to try it.
+
+![Esports bracket with team logos](/assets/images/mockups/mockup-08-team-logos.png)
 
 ## So Which One Should You Use?
 
