@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Best Bracket Maker Tools in 2026: An Honest Comparison"
-description: "An honest comparison of the best bracket maker tools in 2026 — Challonge, BracketHQ, Common Ninja, ScoreLeader, and Rise. What each does well, what it doesn't, and what it costs."
+description: "An honest comparison of the best bracket maker tools in 2026 — Challonge, BracketHQ, Common Ninja, ScoreLeader, and Rise. What each does well and what it costs."
 author: Rise Team
 image: /assets/images/mockups/mockup-01-live-scoreboard.png
 ---

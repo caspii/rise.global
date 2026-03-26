@@ -5,7 +5,7 @@ date: 2024-10-01 10:00:00
 categories: guide
 author: Rise Global Team
 image: /assets/images/blog-gamification-guide.jpg
-excerpt: "Discover what gamification is, how it works, and why companies from Apple to Duolingo use game elements to boost engagement. Learn practical ways to implement gamification in your workplace, classroom, or personal goals."
+excerpt: "Discover what gamification is and why companies use game elements to boost engagement. Learn how to implement gamification in your workplace or classroom."
 redirect_from:
   - /2024/10/01/what-is-gamification-a-beginner/
 ---
@@ -54,7 +54,7 @@ What Duolingo gets right that most apps don't: failure feels temporary. Get an a
 
 ### Sales Floors: Where Gamification Gets Serious
 
-Walk into a modern sales floor and you'll see giant screens with real-time leaderboards. But the smart companies have moved past "most deals closed" as the only metric. The best [sales gamification](https://leaderboarded.com/blog/posts/sales-gamification/) systems now track the entire pipeline--calls made, meetings booked, proposals sent--so newer reps can compete on effort while they build their skills.
+Walk into a modern sales floor and you'll see giant screens with real-time leaderboards. But the smart companies have moved past "most deals closed" as the only metric. The best [sales gamification](/2025/02/01/corporate-gamification-boosting-employee-performance-leaderboards/) systems now track the entire pipeline--calls made, meetings booked, proposals sent--so newer reps can compete on effort while they build their skills.
 
 ![Competition leaderboard display](/assets/images/blog/competition_leaderboard.jpg)
 

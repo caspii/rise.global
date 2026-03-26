@@ -6,7 +6,7 @@ categories: guide
 lang: de
 author: Rise Global Team
 image: /assets/images/blog-gamification-unternehmen.jpg
-excerpt: "Gamification ist mehr als nur ein Buzzword – es ist eine der effektivsten Methoden, um Mitarbeiter zu motivieren und die Produktivität zu steigern. Entdecke die besten Beispiele und wie du sie in deinem Unternehmen umsetzt."
+excerpt: "Gamification motiviert Mitarbeiter und steigert die Produktivität. Entdecke die besten Beispiele und wie du Gamification in deinem Unternehmen umsetzt."
 ---
 
 Gamification hat ein Image-Problem. Das Wort klingt nach Startup-Bingo und nach Chefs, die glauben, ein Badge löse alle Motivationsprobleme. Aber wenn du es richtig machst -- nicht als Gimmick, sondern als echtes Werkzeug -- funktioniert es verdammt gut.
@@ -32,7 +32,7 @@ Mit [Leaderboarded](https://leaderboarded.com/de/) hast du so eine Rangliste in 
 
 Aber Achtung: Klare Regeln sind Pflicht. Was bringt wie viele Punkte? Wann wird aktualisiert? Wenn das unklar ist, entsteht Frust statt Motivation. Und feiere Erfolge öffentlich -- ein kurzer Shoutout in Slack nach einem großen Deal kostet nichts und wirkt viel.
 
-![Sales-Team schaut begeistert auf Rangliste](/assets/images/gamification-sales-leaderboard.png)
+![Sales-Team schaut begeistert auf Rangliste](/assets/images/gamification-sales-leaderboard.jpg)
 *Echtzeit-Ranglisten schaffen gesunden Wettbewerb und steigern die Motivation im Team*
 
 ### Onboarding mit Level-System

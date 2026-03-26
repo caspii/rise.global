@@ -5,7 +5,7 @@ date: 2025-06-15 09:00:00
 categories: psychology
 author: Rise Global Team
 image: /assets/images/blog-psychology-competition.jpg
-excerpt: "Uncover the neuroscience and psychology behind why leaderboards are so effective. From dopamine hits to social comparison theory, learn the science that makes gamification irresistible."
+excerpt: "Uncover the neuroscience behind why leaderboards work. From dopamine hits to social comparison theory, learn the science that makes gamification irresistible."
 redirect_from:
   - /2025/06/15/the-psychology-of-competition-why-leaderboards-work/
 ---

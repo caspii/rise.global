@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Run a Cornhole Tournament That People Actually Enjoy"
-description: "Everything you need to run a cornhole tournament — format selection, scoring rules, how many boards to bring, time management, and bracket display. Practical advice from setup to trophy."
+description: "Everything you need to run a cornhole tournament — format selection, scoring rules, how many boards to bring, time management, and bracket display."
 author: Rise Team
 image: /assets/images/mockups/situational-02-cornhole-phone.png
 ---
@@ -12,7 +12,7 @@ Then 24 teams show up, you have 4 sets of boards, nobody remembers cancellation 
 
 Running a great cornhole tournament isn't about cornhole. It's about logistics. The throwing part takes care of itself.
 
-![Outdoor cornhole tournament setup with boards and bean bags](/assets/images/mockups/blog-cornhole-setup.png)
+![Outdoor cornhole tournament setup with boards and bean bags](/assets/images/mockups/blog-cornhole-setup.jpg)
 
 ## Choose Your Format First
 

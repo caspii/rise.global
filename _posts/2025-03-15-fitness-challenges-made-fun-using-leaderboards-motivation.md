@@ -5,7 +5,7 @@ date: 2025-03-15 09:00:00
 categories: health
 author: Rise Global Team
 image: /assets/images/blog-fitness-leaderboards.jpg
-excerpt: "Transform your fitness journey with the power of friendly competition. Learn how fitness leaderboards boost motivation by 48%, create lasting healthy habits, and make working out something you actually look forward to."
+excerpt: "Transform your fitness journey with friendly competition. Learn how fitness leaderboards boost motivation by 48% and create lasting healthy habits."
 redirect_from:
   - /2025/03/15/fitness-challenges-made-fun-using-leaderboards-for-motivation/
 ---

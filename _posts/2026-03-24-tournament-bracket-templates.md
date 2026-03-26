@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tournament Bracket Templates for Every Format"
-description: "Find the right tournament bracket template for your event — from 4-team single elimination to 64-team double elimination and round robin. Plus why you probably don't need a PDF."
+description: "Find the right tournament bracket template for your event — from 4-team single elimination to 64-team double elimination and round robin."
 author: Rise Team
 image: /assets/images/mockups/mockup-04-custom-themes.png
 ---
