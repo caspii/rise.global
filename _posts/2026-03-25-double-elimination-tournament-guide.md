@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Run a Double Elimination Tournament"
-description: "A practical guide to running a double elimination tournament — from explaining the format to participants, to handling the grand final reset. No spreadsheet nightmares required."
+description: "A practical guide to running a double elimination tournament — from explaining the format to participants to handling the grand final reset."
 author: Rise Team
 image: /assets/images/mockups/mockup-03-double-elimination.png
 ---

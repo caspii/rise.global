@@ -1,5 +1,5 @@
 # Jekyll configuration for rise.global
-title: "Rise — Free Tournament Bracket Maker"
+title: "Rise"
 description: "Create beautiful tournament brackets in seconds. Free, no signup required. Single elimination, double elimination, and round robin formats."
 author: Rise Global
 url: https://rise.global
@@ -37,6 +37,7 @@ defaults:
       path: ""
     values:
       layout: "default"
+      image: /assets/images/mockups/mockup-01-live-scoreboard.png
 
 # Exclude files from build
 exclude:
