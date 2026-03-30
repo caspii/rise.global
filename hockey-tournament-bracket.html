@@ -1,0 +1,346 @@
+---
+layout: default
+title: "Hockey Tournament Bracket — Free Bracket Maker"
+description: "Build a hockey tournament bracket for your beer league, rec division, or playoff series. Single and double elimination, live scoring, automatic advancement. Free from Rise."
+keywords: "hockey tournament bracket, hockey bracket maker, hockey playoff bracket maker, beer league hockey bracket, hockey bracket generator"
+permalink: /hockey-tournament-bracket/
+---
+
+<style>
+.sport-hero {
+    padding: 7rem 0 3rem;
+    background: var(--gradient-hero);
+    position: relative;
+    overflow: hidden;
+}
+.sport-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(200, 255, 0, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+}
+.sport-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 77, 106, 0.06) 0%, transparent 60%);
+    pointer-events: none;
+}
+.sport-hero-mockup {
+    margin-top: 3rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sport-hero-mockup img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5), 0 0 40px rgba(200, 255, 0, 0.08);
+}
+.quick-facts {
+    padding: 3rem 0;
+    background: var(--bg-light);
+}
+.quick-facts-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.quick-fact {
+    text-align: center;
+    padding: 1.5rem 2rem;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    min-width: 160px;
+}
+.quick-fact-value {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    display: block;
+    letter-spacing: -0.02em;
+}
+.quick-fact-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-weight: 500;
+    margin-top: 0.25rem;
+}
+.sport-content-section {
+    padding: 5rem 0;
+    background: var(--white);
+}
+.sport-content-section.alt {
+    background: var(--bg-light);
+}
+.sport-content-section h2 {
+    font-family: var(--font-display);
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+}
+.sport-content-section p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+    max-width: 760px;
+}
+.sport-content-section p a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.sport-content-section p a:hover {
+    text-decoration: underline;
+}
+.sport-showcase-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+.sport-showcase-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 12px 40px rgba(10, 14, 26, 0.12);
+    border: 1px solid var(--border-color);
+}
+.sport-showcase-text h2 {
+    margin-bottom: 1rem;
+}
+.sport-showcase-text p {
+    max-width: 100%;
+}
+.sport-waitlist {
+    padding: 5rem 0;
+    background: var(--gradient-hero);
+    color: var(--white);
+    text-align: center;
+}
+.sport-waitlist .section-title {
+    color: var(--white);
+}
+.sport-cross-links {
+    padding: 3rem 0;
+    background: var(--bg-light);
+    text-align: center;
+}
+.sport-cross-links p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    max-width: 760px;
+    margin: 0 auto;
+    line-height: 1.75;
+}
+.sport-cross-links p a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.sport-cross-links p a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .sport-hero {
+        padding: 4rem 0 2rem;
+    }
+    .sport-content-section h2 {
+        font-size: 1.75rem;
+    }
+    .sport-hero-mockup {
+        margin-top: 2rem;
+    }
+    .quick-facts-row {
+        gap: 1rem;
+    }
+    .quick-fact {
+        min-width: 130px;
+        padding: 1.25rem 1.5rem;
+    }
+    .sport-showcase-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+</style>
+
+<main class="main-content">
+    <!-- Hero -->
+    <section class="sport-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hockey Tournament Bracket Maker</h1>
+                <p class="hero-subtitle">Build your hockey playoff bracket in seconds — beer league playoffs, rec division championships, or weekend tournaments. Live scoring, automatic advancement, and a bracket every team can follow.</p>
+                <div class="hero-cta-group">
+                    <a href="/waitlist/" class="hero-primary-cta">Join the Waitlist</a>
+                    <a href="/tools/tournament-bracket-generator/" class="hero-secondary-cta">Try the Free Bracket Maker</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Situational Image -->
+    <section class="sport-content-section">
+        <div class="container" style="text-align: center;">
+            <div class="sport-hero-mockup" style="margin-top: 0;">
+                <img src="/assets/images/mockups/situational-05-school-gym.png" alt="Hockey rink with tournament bracket displayed on screen" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Run -->
+    <section class="sport-content-section alt">
+        <div class="container">
+            <h2>How to Run a Hockey Tournament</h2>
+            <p>The NHL playoffs are the gold standard for hockey bracket drama. Sixteen teams enter a four-round series bracket — each round best-of-seven, with the series format ensuring a single fluky game can't eliminate a strong team. Division winners earn the top seeds, the bracket is reseeded after each round, and the Stanley Cup goes to the team that wins 16 games across two months of grinding playoff hockey. Most recreational league organizers can't run a two-month best-of-seven series, but the structure translates perfectly to a single-day or weekend tournament: seed your teams, build the bracket, and let the ice decide.</p>
+            <p>Beer league and recreational hockey tournaments almost always use a format built around ice time availability. A typical weekend tournament books 8 to 16 teams across Friday evening, Saturday, and Sunday morning. Groups (sometimes called pools) play two or three round-robin games on Friday and Saturday to seed into a single elimination bracket on Sunday. This gives every team multiple games, makes the most of ice time, and ensures the Sunday final features the two teams that earned it. If you only have one day, a straight <a href="/8-team-bracket/">8-team single elimination bracket</a> can be completed in a day with four ice slots — quarterfinals, two semifinals, and a final.</p>
+            <p>Game format decisions matter for recreational tournaments. Full-length 3-period games with standard stoppages are rare in beer league tournaments because they're expensive and slow. Most rec tournaments use two 20-minute or 25-minute running-clock periods with a brief intermission. Running clock (clock never stops for icing, offsides, or minor stoppages) keeps each game to about 50 minutes on the ice, making it practical to run four games in a day on a single sheet. Some tournaments use a 3-game guarantee format — three group-stage games plus bracket play — which is more expensive to run but keeps every team engaged for the full event.</p>
+            <p>Seeding in recreational leagues can be tricky because rosters change from season to season and skill levels vary widely within a division. If you have regular-season standings, use winning percentage. If not, use a random draw. The important thing is getting the draw right before teams show up, posting the bracket in the rink and online, and updating it in real time as results come in. A digital bracket that advances winners automatically and posts scores saves the organizer from running back and forth to the whiteboard between periods.</p>
+        </div>
+    </section>
+
+    <!-- Recommended Format -->
+    <section class="quick-facts">
+        <div class="container">
+            <div class="quick-facts-row">
+                <div class="quick-fact">
+                    <span class="quick-fact-value">8–16</span>
+                    <span class="quick-fact-label">Teams</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">SE / DE</span>
+                    <span class="quick-fact-label">Single or Double Elim</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">3–4</span>
+                    <span class="quick-fact-label">Rounds</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">1–2 days</span>
+                    <span class="quick-fact-label">Weekend Format</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="sport-content-section">
+        <div class="container">
+            <div class="sport-showcase-row">
+                <div class="sport-showcase-image">
+                    <img src="/assets/images/mockups/mockup-01-live-scoreboard.png" alt="Live scoreboard integrated into a hockey tournament bracket" loading="lazy">
+                </div>
+                <div class="sport-showcase-text">
+                    <h2>Live Scoring at the Rink</h2>
+                    <p>Rise keeps every game in your hockey bracket updated in real time. Enter the score after each period, and the bracket updates automatically. When the final horn sounds, enter the result and the winner advances to the next round without anyone having to manually redraw anything.</p>
+                    <p>Display the bracket on the scoreboard monitor in the rink lobby so teams waiting for their game can check scores and matchups. Share the bracket link so players who aren't at the rink yet — or family watching from home — can follow the tournament live. No whiteboard, no paper bracket that gets coffee spilled on it, no one shouting results across the lobby. <a href="/features/">See all planned features</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cross-links -->
+    <section class="sport-cross-links">
+        <div class="container">
+            <p>Explore more bracket formats: <a href="/double-elimination-bracket/">Double Elimination</a> · <a href="/8-team-bracket/">8-Team Bracket</a> · <a href="/16-team-bracket/">16-Team Bracket</a> · <a href="/round-robin-generator/">Round Robin Generator</a> · <a href="/basketball-tournament-bracket/">Basketball Bracket</a> · <a href="/volleyball-tournament-bracket/">Volleyball Bracket</a></p>
+        </div>
+    </section>
+
+    <!-- Waitlist -->
+    <section class="sport-waitlist">
+        <div class="container">
+            {% include waitlist-form.html heading="Get early access to Rise's tournament platform" %}
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>What's the best format for a beer league hockey tournament?</h4>
+                    <p>A pool play into single elimination format works best for most recreational hockey tournaments. Divide teams into groups of 3 to 4 and play round-robin games to seed into a knockout bracket. This gives every team multiple games, creates fair seeding, and ensures the final features the teams that earned it. If ice time is limited, a straight <a href="/8-team-bracket/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">8-team single elimination bracket</a> can be completed in a single day with four ice slots.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How long does each hockey tournament game take?</h4>
+                    <p>Recreational tournament games are typically two 20-to-25-minute running-clock periods with a short intermission, totaling about 50 minutes on the ice. Running clock (where the clock keeps running through stoppages) is standard practice for tournament games to keep the schedule on track. Budget 60 to 70 minutes per ice slot including warm-up and zamboni time.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How do you handle tiebreakers in hockey pool play?</h4>
+                    <p>Standard tiebreakers in hockey pool play: head-to-head result first, then goal differential (capped at +/- 5 per game to prevent running up the score), then goals against, then goals for, then a shootout or coin flip. Communicate your tiebreaker rules clearly before the tournament starts to avoid disputes after pool play ends.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I create a hockey bracket right now?</h4>
+                    <p>Yes. Rise's <a href="/tools/tournament-bracket-generator/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">free bracket maker</a> lets you create a single elimination hockey bracket instantly. Add your team names, choose seeded or random ordering, and share the bracket link with every team — no account required.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Build Your Hockey Tournament Bracket</h2>
+            <p>Free, fast, and ready for the opening faceoff. No signup required.</p>
+            <div class="hero-cta-group">
+                <a href="/tools/tournament-bracket-generator/" class="hero-primary-cta">Create Bracket</a>
+                <a href="/waitlist/" class="hero-secondary-cta">Join the Waitlist</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "What's the best format for a beer league hockey tournament?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A pool play into single elimination format works best for most recreational hockey tournaments. Divide teams into groups of 3 to 4 and play round-robin games to seed into a knockout bracket. This gives every team multiple games, creates fair seeding, and ensures the final features the teams that earned it. If ice time is limited, a straight 8-team single elimination bracket can be completed in a single day with four ice slots."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How long does each hockey tournament game take?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Recreational tournament games are typically two 20-to-25-minute running-clock periods with a short intermission, totaling about 50 minutes on the ice. Running clock is standard practice for tournament games to keep the schedule on track. Budget 60 to 70 minutes per ice slot including warm-up and zamboni time."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How do you handle tiebreakers in hockey pool play?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Standard tiebreakers in hockey pool play: head-to-head result first, then goal differential (capped at +/- 5 per game to prevent running up the score), then goals against, then goals for, then a shootout or coin flip. Communicate your tiebreaker rules clearly before the tournament starts to avoid disputes after pool play ends."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I create a hockey bracket right now?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Rise's free bracket maker lets you create a single elimination hockey bracket instantly. Add your team names, choose seeded or random ordering, and share the bracket link with every team — no account required."
+            }
+        }
+    ]
+}
+</script>
