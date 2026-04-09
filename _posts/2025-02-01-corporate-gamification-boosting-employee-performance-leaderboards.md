@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Corporate Gamification: Boosting Employee Performance with Leaderboards"
+title: "Corporate Gamification: Boosting Performance"
 date: 2025-02-01 09:00:00
 categories: business
 author: Rise Global Team
 image: /assets/images/blog-corporate-gamification.jpg
-excerpt: "Discover how workplace gamification transforms company culture, boosts productivity by up to 50%, and drives sales performance with proven strategies from Microsoft and Deloitte."
+excerpt: "Workplace gamification boosts productivity by up to 50% and drives sales performance. Proven strategies from Microsoft and Deloitte."
 redirect_from:
   - /2025/02/01/corporate-gamification-boosting-employee-performance-with-leaderboards/
 ---

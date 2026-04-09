@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "What Is Round Robin? How Round Robin Tournaments Work"
-description: "Round robin gives every team a fair shot by having everyone play everyone else. Here's how the format works, when to use it, and how to run one without drowning in math."
+title: "What Is Round Robin? How the Format Works"
+description: "Round robin means every team plays every other team. Here's how the format works, when to use it, and how to run one."
 author: Rise Team
 permalink: /what-is-round-robin/
-image: /assets/images/blog-round-robin-schedule.png
+image: /assets/images/blog-round-robin-schedule.jpg
 ---
 
 Every team plays every other team. The best record wins. No bracket luck. No early exits over one bad match.
@@ -13,7 +13,7 @@ That's [round robin](https://en.wikipedia.org/wiki/Round-robin_tournament) — t
 
 Here's exactly how it works.
 
-![Round robin schedule and standings table](/assets/images/blog-round-robin-schedule.png)
+![Round robin schedule and standings table](/assets/images/blog-round-robin-schedule.jpg)
 
 ## How Round Robin Works
 
@@ -110,4 +110,4 @@ Rise's free [round robin generator](/round-robin-generator/) builds your schedul
 
 ---
 
-Ready to run a round robin? Use our free [round robin generator](/round-robin-generator/) to build your schedule instantly. Or if you're managing a larger event, try the [bracket maker](/bracket-maker/) for single and double elimination formats. [Join the waitlist](/waitlist/) for live scoring, standings tracking, and everything else Rise is building.
+Ready to run a round robin? Use our free [round robin generator](/round-robin-generator/) to build your schedule instantly. Or if you're managing a larger event, try the [bracket maker](/8-team-bracket/) for single and double elimination formats. [Join the waitlist](/waitlist/) for live scoring, standings tracking, and everything else Rise is building.

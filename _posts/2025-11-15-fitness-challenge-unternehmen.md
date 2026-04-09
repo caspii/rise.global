@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Fitness Challenge im Unternehmen: So motivierst du dein Team zu mehr Bewegung"
+title: "Fitness Challenge im Unternehmen: Team motivieren"
 date: 2025-11-15 10:00:00
 categories: guide
 lang: de

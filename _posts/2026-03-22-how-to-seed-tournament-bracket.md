@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to Seed a Tournament Bracket (Without Making Everyone Angry)"
+title: "How to Seed a Tournament Bracket the Right Way"
 description: "Tournament seeding explained — what it is, why it matters, how to do it right, and what happens when you skip it. A practical guide with an 8-team example."
 author: Rise Team
 image: /assets/images/mockups/mockup-08-team-logos.png

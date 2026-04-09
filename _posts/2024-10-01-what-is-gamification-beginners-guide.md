@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What Is Gamification? A Beginner's Guide with Real-World Examples"
+title: "What Is Gamification? A Beginner's Guide"
 date: 2024-10-01 10:00:00
 categories: guide
 author: Rise Global Team
@@ -126,4 +126,4 @@ Ready to try it? [Create your first leaderboard](https://leaderboarded.com?utm_s
 
 ---
 
-*Have you tried gamification in your workplace or classroom? We'd love to hear what worked and what didn't. And if you're looking for more practical guides, explore our other articles on [classroom management](/blog) and [team building](/blog).*
+*Have you tried gamification in your workplace or classroom? We'd love to hear what worked and what didn't. And if you're looking for more practical guides, explore our other articles on [classroom management](/blog/) and [team building](/blog/).*

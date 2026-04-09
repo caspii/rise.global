@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "What Is Single Elimination? How the Most Common Tournament Format Works"
-description: "Single elimination is the simplest and most dramatic tournament format — one loss and you're out. Here's how it works, when to use it, and why it still dominates competitive play."
+title: "What Is Single Elimination? Format Explained"
+description: "Single elimination is the simplest tournament format — one loss and you're out. Here's how it works and when to use it."
 author: Rise Team
 permalink: /what-is-single-elimination/
-image: /assets/images/blog-single-elimination-bracket.png
+image: /assets/images/blog-single-elimination-bracket.jpg
 ---
 
 One match. One chance. Lose and go home.
@@ -13,7 +13,7 @@ That's [single elimination](https://en.wikipedia.org/wiki/Single-elimination_tou
 
 If you've ever watched a tournament — or entered one — you've almost certainly experienced single elimination. Here's exactly how it works and when it's the right call.
 
-![Single elimination tournament bracket with 8 teams](/assets/images/blog-single-elimination-bracket.png)
+![Single elimination tournament bracket with 8 teams](/assets/images/blog-single-elimination-bracket.jpg)
 
 ## How Single Elimination Works
 

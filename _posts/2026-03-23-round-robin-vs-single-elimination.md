@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Round Robin vs Single Elimination: Which Tournament Format Should You Use?"
+title: "Round Robin vs Single Elimination: How to Choose"
 description: "Round robin is fairer. Single elimination is faster. Here's how to choose the right tournament format — and when double elimination splits the difference."
 author: Rise Team
 image: /assets/images/mockups/mockup-06-round-robin.png

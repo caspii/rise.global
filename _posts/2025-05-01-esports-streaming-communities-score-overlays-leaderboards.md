@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How Esports and Streaming Communities Use Score Overlays and Leaderboards"
+title: "Esports Score Overlays and Leaderboards"
 date: 2025-05-01 09:00:00
 categories: gaming
 author: Rise Global Team
