@@ -13,8 +13,6 @@ That's [round robin](https://en.wikipedia.org/wiki/Round-robin_tournament) — t
 
 Here's exactly how it works.
 
-![Round robin schedule and standings table](/assets/images/blog-round-robin-schedule.png)
-
 ## How Round Robin Works
 
 In a round robin tournament, every participant plays against every other participant exactly once. No one gets an easy bracket path. No one gets unlucky enough to face the strongest team in round one and get sent home early. Everyone earns their standing through the same schedule.

@@ -3,7 +3,7 @@ layout: post
 title: "How to Run a Cornhole Tournament That People Actually Enjoy"
 description: "Everything you need to run a cornhole tournament — format selection, scoring rules, how many boards to bring, time management, and bracket display."
 author: Rise Team
-image: /assets/images/mockups/situational-02-cornhole-phone.png
+image: /assets/images/blog-cornhole-tournament-hero.png
 ---
 
 A cornhole tournament sounds simple. Boards, bags, brackets. How hard can it be?

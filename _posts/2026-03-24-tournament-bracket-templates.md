@@ -12,8 +12,6 @@ Thirty minutes later, someone asks what happens if there's a tie. Then a team dr
 
 Templates are fine. But the right template depends on three things: how many teams you have, how much time you've got, and whether you care more about fairness or speed.
 
-![Four bracket themes showing different visual styles](/assets/images/mockups/mockup-04-custom-themes.png)
-
 ## Picking Your Bracket Size
 
 ### 4 Teams

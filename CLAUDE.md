@@ -84,25 +84,62 @@ When creating blog posts or content for this site:
 
 ## Image Generation Guidelines
 
-When generating images for blog posts or content:
+There are two distinct image types used on Rise. Always identify which type an image is before generating it — they have completely different styles.
 
-### Visual Style
+---
 
-- Always use a bright, colorful cartoon illustration style
-- Use clean lines and vibrant colors
-- Set style to "vivid" for all image generations
-- Maintain consistency across all images on the site
+### Type 1: Schematic Images
+
+Used for: brackets, tournament schedules, standings tables, leaderboards, gamification element diagrams, UI/data visualizations.
+
+These use the **Rise brand style** — dark, bold, graphic illustration derived from the site's design system.
+
+**Color palette (strict):**
+- Background: deep navy `#0a0e1a` to `#141832` — always dark
+- Primary accent: electric lime `#c8ff00` — for key data, lines, UI elements, highlights
+- Secondary accent: hot coral `#ff4d6a` — sparingly, one element per image (e.g. the #1 rank, champion slot)
+- Text/labels: white on dark
+- Never use rainbow, pastel, or colors outside this palette
+
+**Style rules:**
+- Flat graphic / bold infographic illustration — clean geometric shapes, strong outlines
+- No gradients, no textures, no drop shadows, no cartoon aesthetics
+- Data/UI elements should look like real dark-mode interfaces
+- Generous dark negative space — compositions breathe
+
+**Mood:** Competitive, sharp, modern, confident. "Rise. Compete. Win."
+
+**Prompt template:**
+> "Flat graphic illustration on a deep navy dark background (#0a0e1a). [Description using electric lime (#c8ff00) for key elements and hot coral (#ff4d6a) for one accent]. No gradients, no cartoon style, no rainbow colors. Bold, minimal, dark mode sports graphic aesthetic. Wide landscape format."
+
+**Examples:** bracket diagrams, round robin schedule grids, leaderboard UIs, gamification badge/XP layouts.
+
+---
+
+### Type 2: Scene / Use-Case Images
+
+Used for: hero images showing real activities, people competing, product in action at an event, workplace environments.
+
+These are **photorealistic** — they depict actual situations, not data or UI.
+
+**Style rules:**
+- Photorealistic photography aesthetic
+- Natural lighting appropriate to the setting (outdoor daylight, indoor office light)
+- Real people in authentic situations — diverse, candid, active
+- High production quality: sharp focus, good composition, cinematic feel
+- No brand color palette constraints — colors should be natural to the scene
+
+**Mood:** Authentic, energetic, human. Show real competition and real stakes.
+
+**Prompt template:**
+> "Photorealistic [scene description]. [Lighting and environment details]. Authentic, candid atmosphere. High production quality, sharp focus. Wide landscape format."
+
+**Examples:** cornhole tournament on a lawn, office team looking at a screen, athletes competing, event setup shots.
+
+---
 
 ### Image Specifications
 
-- Size: 1792x1024 (landscape format)
-- Quality: HD
-- Style: vivid
+- Format: landscape (wide)
 - Save all images to `/assets/images/` directory
-
-### Content Guidelines
-
-- Images should be relevant to the blog post topic
-- Include diverse representation when showing people
-- Use motivational and positive atmospheres
-- Keep designs clean and professional despite cartoonish style
+- Use `.png` for schematic/diagram images, `.jpg` for scene/photorealistic images

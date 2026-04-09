@@ -10,8 +10,6 @@ Your best team lost their opening match because their star player was stuck in t
 
 That's the fundamental tension between these two formats. One prioritizes time. The other prioritizes fairness. Neither is wrong, but picking the wrong one for your situation will make everyone miserable.
 
-![Round robin schedule with standings table](/assets/images/mockups/mockup-06-round-robin.png)
-
 ## Round Robin: The Fair One
 
 In a [round robin](https://en.wikipedia.org/wiki/Round-robin_tournament), every team plays every other team. No draws of fate, no bracket luck. The team with the best record wins. If you want to know who's *actually* the best, this is how you find out.

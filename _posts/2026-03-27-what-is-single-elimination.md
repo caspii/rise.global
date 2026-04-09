@@ -13,8 +13,6 @@ That's [single elimination](https://en.wikipedia.org/wiki/Single-elimination_tou
 
 If you've ever watched a tournament — or entered one — you've almost certainly experienced single elimination. Here's exactly how it works and when it's the right call.
 
-![Single elimination tournament bracket with 8 teams](/assets/images/blog-single-elimination-bracket.png)
-
 ## How Single Elimination Works
 
 The structure is straightforward. You place all teams into a bracket. In round one, every team plays. Losers are eliminated. Winners advance. You repeat this process until one team remains — that team is the champion.

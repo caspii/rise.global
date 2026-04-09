@@ -12,8 +12,6 @@ Double elimination tournaments give every competitor a second chance without tur
 
 Here's how to run one without losing your mind.
 
-![Double elimination bracket showing winners and losers brackets](/assets/images/mockups/mockup-03-double-elimination.png)
-
 ## The Two-Bracket System
 
 A [double elimination bracket](/double-elimination-bracket/) splits into two parallel paths after round one. Winners stay in the winners bracket. Losers drop to the losers bracket. Lose twice and you're out.
