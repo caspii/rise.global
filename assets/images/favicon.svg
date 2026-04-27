@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#0a0e1a"/>
+  <!-- Three stacked chevrons rising upward -->
+  <!-- Bottom chevron -->
+  <path d="M 120 390 L 256 290 L 392 390 L 392 340 L 256 240 L 120 340 Z" fill="#c8ff00" opacity="0.35"/>
+  <!-- Middle chevron -->
+  <path d="M 120 300 L 256 200 L 392 300 L 392 250 L 256 150 L 120 250 Z" fill="#c8ff00" opacity="0.65"/>
+  <!-- Top chevron -->
+  <path d="M 120 210 L 256 110 L 392 210 L 392 160 L 256 60 L 120 160 Z" fill="#c8ff00"/>
+</svg>
