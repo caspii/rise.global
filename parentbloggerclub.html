@@ -1,0 +1,625 @@
+---
+layout: default
+title: "Parent Blogger Club — The UK's Top Parenting Blogs (2018) — Archive"
+description: "Archive of the Parent Blogger Club leaderboard on rise.global, ranking the UK's most influential parenting bloggers. Released 17 December 2018. Powered by Kred."
+keywords: "parent blogger club, top parenting blogs, parenting bloggers UK, mum blogger leaderboard, dad blogger ranking"
+permalink: /parentbloggerclub/
+---
+
+<style>
+.lb-hero {
+    padding: 6rem 0 3rem;
+    background: var(--gradient-hero);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+.lb-hero::before {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -15%;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(200, 255, 0, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+}
+.lb-hero .container { position: relative; z-index: 1; }
+.lb-hero .archive-tag {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    padding: 0.4rem 0.9rem;
+    border: 1px solid rgba(200, 255, 0, 0.3);
+    border-radius: var(--radius-pill);
+    margin-bottom: 1.5rem;
+}
+.lb-hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    margin-bottom: 1rem;
+    max-width: 900px;
+}
+.lb-hero h1 .accent { color: var(--primary-color); }
+.lb-hero .subtitle {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 720px;
+    line-height: 1.6;
+    margin-bottom: 1.75rem;
+}
+.lb-hero .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.55);
+    font-family: var(--font-display);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.lb-hero .meta-row strong { color: var(--white); font-weight: 700; }
+.lb-intro { padding: 3.5rem 0; background: var(--white); }
+.lb-intro .container { max-width: 760px; }
+.lb-intro p { font-size: 1.05rem; color: var(--text-light); line-height: 1.75; margin-bottom: 1rem; }
+.lb-table-section { padding: 1rem 0 5rem; background: var(--white); }
+.lb-table-wrap { border: 1px solid var(--border-color); border-radius: var(--radius-lg); overflow: hidden; background: var(--white); }
+.lb-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+.lb-table thead th {
+    background: var(--bg-dark); color: var(--white); font-family: var(--font-display);
+    font-weight: 700; font-size: 0.75rem; letter-spacing: 0.1em;
+    text-transform: uppercase; padding: 0.9rem 1rem; text-align: left;
+}
+.lb-table thead th.score-cell { text-align: right; }
+.lb-table tbody tr { border-top: 1px solid var(--border-color); transition: background 0.15s ease; }
+.lb-table tbody tr:hover { background: var(--bg-light); }
+.lb-table tbody tr:nth-child(-n+3) .rank-cell { color: var(--secondary-color); font-weight: 900; }
+.lb-table tbody td { padding: 0.85rem 1rem; vertical-align: top; }
+.rank-cell {
+    font-family: var(--font-display); font-weight: 800; font-size: 1.05rem;
+    color: var(--text-dark); width: 60px; white-space: nowrap;
+}
+.move-cell { width: 70px; }
+.move {
+    display: inline-block; font-family: var(--font-display);
+    font-size: 0.78rem; font-weight: 700; padding: 0.15rem 0.5rem; border-radius: var(--radius-sm);
+}
+.move.up { color: #2a9d4a; background: rgba(0, 214, 143, 0.1); }
+.move.down { color: #b53050; background: rgba(255, 77, 106, 0.08); }
+.move.flat { color: var(--text-muted); }
+.move.new { color: var(--bg-dark); background: var(--primary-color); }
+.name-cell { min-width: 160px; }
+.name-cell strong { color: var(--text-dark); font-weight: 700; }
+.bio-cell { color: var(--text-light); font-size: 0.9rem; line-height: 1.55; word-break: break-word; }
+.score-cell {
+    text-align: right; font-family: var(--font-display); font-weight: 800;
+    color: var(--text-dark); width: 80px; white-space: nowrap;
+}
+.lb-method { padding: 4rem 0; background: var(--bg-light); }
+.lb-method .container { max-width: 760px; }
+.lb-method h2 {
+    font-family: var(--font-display); font-size: 1.6rem; font-weight: 800;
+    color: var(--text-dark); margin-bottom: 1rem; letter-spacing: -0.02em;
+}
+.lb-method p { color: var(--text-light); line-height: 1.75; margin-bottom: 1rem; }
+.lb-cta {
+    padding: 5rem 0; background: var(--gradient-hero); color: var(--white);
+    text-align: center; position: relative; overflow: hidden;
+}
+.lb-cta::before {
+    content: ''; position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%); width: 700px; height: 700px;
+    background: radial-gradient(circle, rgba(200, 255, 0, 0.06) 0%, transparent 60%);
+    pointer-events: none;
+}
+.lb-cta .container { position: relative; z-index: 1; }
+.lb-cta h2 {
+    font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 900; line-height: 1.1; letter-spacing: -0.02em;
+    margin-bottom: 1rem; max-width: 720px; margin-left: auto; margin-right: auto;
+}
+.lb-cta h2 .accent { color: var(--primary-color); }
+.lb-cta p {
+    color: rgba(255, 255, 255, 0.75); font-size: 1.1rem; line-height: 1.65;
+    max-width: 600px; margin: 0 auto 2rem;
+}
+.lb-cta .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.lb-cta .btn-primary {
+    background: var(--gradient-cta); color: var(--bg-dark);
+    padding: 0.95rem 2rem; border-radius: var(--radius-pill);
+    font-family: var(--font-display); font-weight: 800; font-size: 0.95rem;
+    letter-spacing: 0.02em; text-transform: uppercase; text-decoration: none;
+    display: inline-block; transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.lb-cta .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(200, 255, 0, 0.25); }
+@media (max-width: 720px) {
+    .bio-cell { display: none; }
+    .lb-table thead th.bio-col { display: none; }
+}
+</style>
+
+<section class="lb-hero">
+    <div class="container">
+        <span class="archive-tag">Archive · 2018</span>
+        <h1>Parent Blogger Club <span class="accent">— UK Parenting Blogs</span></h1>
+        <p class="subtitle">A historical ranking of the UK's most influential parenting bloggers, originally published on rise.global. Scored on Kred Influence, Kred Outreach, blog posts, and blog comments for the fortnight ending 17 December 2018.</p>
+        <div class="meta-row">
+            <span>Score period: <strong>10 Dec – 17 Dec 2018</strong></span>
+            <span>Released: <strong>17 December 2018</strong></span>
+            <span><strong>59 bloggers</strong> archived</span>
+        </div>
+    </div>
+</section>
+
+<section class="lb-intro">
+    <div class="container">
+        <p>This page is a preserved archive of the <em>Parent Blogger Club</em>, a community leaderboard that ran on rise.global ranking the UK's most influential parenting bloggers each fortnight. The list celebrated mum bloggers, dad bloggers, and family lifestyle creators across travel, food, education, and home life.</p>
+        <p>The 17 December 2018 release captures the community at its peak — Over 40 And A Mum To One holding the top spot, Jenny TheBrickCastle and Zena's Suitcase rounding out the top three, and dozens more familiar names from the UK parenting blog scene. Many of these creators went on to build full-fledged content brands, podcasts, and media careers. We are keeping it online because the original Kiddy Charts and All The Beautiful Things write-ups, plus countless personal blog posts, still cite it.</p>
+    </div>
+</section>
+
+<section class="lb-table-section">
+    <div class="container">
+        <div class="lb-table-wrap">
+            <table class="lb-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Move</th>
+                        <th>Blogger</th>
+                        <th class="bio-col">About</th>
+                        <th class="score-cell">Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+        <tr>
+          <td class="rank-cell">1</td>
+          <td class="move-cell"><span class="move up">▲ 2</span></td>
+          <td class="name-cell"><strong>Over 40 And A Mum To One</strong></td>
+          <td class="bio-cell">Mum of One blogging about my adventures with my 8 year old Monkey son.</td>
+          <td class="score-cell">95.1</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">2</td>
+          <td class="move-cell"><span class="move up">▲ 6</span></td>
+          <td class="name-cell"><strong>Jenny TheBrickCastle</strong></td>
+          <td class="bio-cell">Parent. Skilled at Lego building, dishwashing, mending all things broken or trodden on.. Ninja Pirate Friendly   (aka Jenny)</td>
+          <td class="score-cell">93.4</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">3</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>Zena&#x27;s Suitcase</strong></td>
+          <td class="bio-cell">I travel &amp; sometimes I take the kids. Aiming for our best life, but first coffee. Asda Good Living Ask The Expert columnist. BiBs awards 2018 finalist</td>
+          <td class="score-cell">92.7</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">4</td>
+          <td class="move-cell"><span class="move up">▲ 5</span></td>
+          <td class="name-cell"><strong>Emily Higgins</strong></td>
+          <td class="bio-cell">A parenting, travel &amp; lifestyle blog</td>
+          <td class="score-cell">92.0</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">5</td>
+          <td class="move-cell"><span class="move up">▲ 2</span></td>
+          <td class="name-cell"><strong>A Cornish Mum - Stevie</strong></td>
+          <td class="bio-cell">Blogging about life with a heavy hint of Cornwall, tweens and teens, Type 1 Diabetes and more.</td>
+          <td class="score-cell">91.8</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">6</td>
+          <td class="move-cell"><span class="move up">▲ 18</span></td>
+          <td class="name-cell"><strong>A Moment With Franca</strong></td>
+          <td class="bio-cell">A multi Award Nominated Blog - Finalist MAD Blog Awards Best Use of Videos 2016</td>
+          <td class="score-cell">91.4</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">7</td>
+          <td class="move-cell"><span class="move up">▲ 13</span></td>
+          <td class="name-cell"><strong>Missing Sleep</strong></td>
+          <td class="bio-cell">Sleep deprived mum of two boys (9 &amp; 11) Parenting blog: https://t.co/PU2gDCBAk9 Travel blog: https://t.co/l6RKJx73xs</td>
+          <td class="score-cell">91.3</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">8</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>Colette B</strong></td>
+          <td class="bio-cell">Always planning our next adventure . . .  Award winning family, lifestyle &amp; travel blogger and mum of three. Colette@goingonanadventure.co.uk</td>
+          <td class="score-cell">90.9</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">9</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>Nige Higgins Diydaddy</strong></td>
+          <td class="bio-cell">I&#x27;m a dad of 5 parenting and DIY blogger #10 dad blogger in the uk vuelio</td>
+          <td class="score-cell">90.7</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">10</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>Talya Stone</strong></td>
+          <td class="bio-cell">The truth about motherhood starts here.</td>
+          <td class="score-cell">90.5</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">11</td>
+          <td class="move-cell"><span class="move up">▲ 5</span></td>
+          <td class="name-cell"><strong>Jenny Makes</strong></td>
+          <td class="bio-cell">Blogger at the gingerbread house since 2005, writes about kids, books and makes</td>
+          <td class="score-cell">89.9</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">12</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>Sonia Constant</strong></td>
+          <td class="bio-cell">Award-nominated blogger/vlogger: https://t.co/8qA9WToeOR . Host of #SilentSunday Mother/Photographer &amp; digital officer at @southcambs</td>
+          <td class="score-cell">88.9</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">13</td>
+          <td class="move-cell"><span class="move down">▼ 12</span></td>
+          <td class="name-cell"><strong>Charlotte Mummy Fever</strong></td>
+          <td class="bio-cell">Mum of 4, blogger, social care consultant, skier and marathon runner</td>
+          <td class="score-cell">88.5</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">14</td>
+          <td class="move-cell"><span class="move up">▲ 12</span></td>
+          <td class="name-cell"><strong>Susan Mann</strong></td>
+          <td class="bio-cell">#Scottish IT working mother of two princes &amp; a princess. Award nominated #ParentBlogger #MummyBlogger #Scbwi #nanowrimo aspiring author. Never without my iPhone</td>
+          <td class="score-cell">87.3</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">15</td>
+          <td class="move-cell"><span class="move down">▼ 5</span></td>
+          <td class="name-cell"><strong>Helen Neale</strong></td>
+          <td class="bio-cell">Parenting site editor and digital marketer with Channel Mum, as well as mum of two kids. Minding the Lego, and fuelled by laughter.</td>
+          <td class="score-cell">85.6</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">16</td>
+          <td class="move-cell"><span class="move up">▲ 16</span></td>
+          <td class="name-cell"><strong>Suburban Mum</strong></td>
+          <td class="bio-cell">Working mum with two young boys aged 3 and 6. I blog about my Family and Lifestyle</td>
+          <td class="score-cell">85.3</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">17</td>
+          <td class="move-cell"><span class="move up">▲ 6</span></td>
+          <td class="name-cell"><strong>Catherine Green</strong></td>
+          <td class="bio-cell">SpookyMrsGreen: The Pagan Housewife</td>
+          <td class="score-cell">85.2</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">18</td>
+          <td class="move-cell"><span class="move up">▲ 4</span></td>
+          <td class="name-cell"><strong>Ickle Pickle</strong></td>
+          <td class="bio-cell">The life and travels of a 5 year old little boy told through his eyes. Kaz ❤️UK blogger &amp; mum of 4</td>
+          <td class="score-cell">84.7</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">19</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Briony Any Way To Stay At Home</strong></td>
+          <td class="bio-cell">Mummy blogger, crafter, reviewer, holiday lover &amp; wine drinker</td>
+          <td class="score-cell">84.6</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">20</td>
+          <td class="move-cell"><span class="move up">▲ 18</span></td>
+          <td class="name-cell"><strong>Sharon Powell</strong></td>
+          <td class="bio-cell">Mum to two teens, a preschooler and a baby. UK parent and lifestyle blogger.</td>
+          <td class="score-cell">83.9</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">21</td>
+          <td class="move-cell"><span class="move down">▼ 4</span></td>
+          <td class="name-cell"><strong>Rachel Bustin</strong></td>
+          <td class="bio-cell">A Book, Lifestyle and Parenting blog</td>
+          <td class="score-cell">83.9</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">22</td>
+          <td class="move-cell"><span class="move up">▲ 5</span></td>
+          <td class="name-cell"><strong>Joy Pinkoddy</strong></td>
+          <td class="bio-cell">Blogging/Vlogging and Micro-Blogging about LIFE.</td>
+          <td class="score-cell">83.6</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">23</td>
+          <td class="move-cell"><span class="move up">▲ 12</span></td>
+          <td class="name-cell"><strong>Becky (English Mum)</strong></td>
+          <td class="bio-cell">I&#x27;m a blogger and freelance journalist. My blog, Englishmum.com is an award-winning mix of authentic, family travel experiences; stylish home and lifestyle articles.</td>
+          <td class="score-cell">83.5</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">24</td>
+          <td class="move-cell"><span class="move up">▲ 6</span></td>
+          <td class="name-cell"><strong>Sarah Howe</strong></td>
+          <td class="bio-cell">Mummy blogger, Dietitian, fitness nut and scrapbooker</td>
+          <td class="score-cell">83.3</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">25</td>
+          <td class="move-cell"><span class="move down">▼ 7</span></td>
+          <td class="name-cell"><strong>Emma T - Bubbablue And Me</strong></td>
+          <td class="bio-cell">Farmers wife, mum of one, blogger, plus the day job (whatever that may be).  Loves dancing, photography and talking. Also at @whatabout_dance</td>
+          <td class="score-cell">83.1</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">26</td>
+          <td class="move-cell"><span class="move up">▲ 7</span></td>
+          <td class="name-cell"><strong>Zoe Corkhill</strong></td>
+          <td class="bio-cell">&quot;Mama Geek&quot; family, lifestyle &amp; tech blogger... parent, wife, geek, reader, apple enthusiast, gamer, vlogger.</td>
+          <td class="score-cell">82.8</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">27</td>
+          <td class="move-cell"><span class="move up">▲ 80</span></td>
+          <td class="name-cell"><strong>Pippa Wright</strong></td>
+          <td class="bio-cell">I like Socks, Dr Pepper and being weird. Luckily I have an amazing family who love hanging out and doing weird stuff with me!</td>
+          <td class="score-cell">82.0</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">28</td>
+          <td class="move-cell"><span class="move up">▲ 6</span></td>
+          <td class="name-cell"><strong>Claire Hall (Tin Box Traveller)</strong></td>
+          <td class="bio-cell">Holidays, days out and travel inspiration from Claire, an award-winning Vuelio Top 10 UK #FamilyTravel blogger &amp; Cruising With Kids blog editor</td>
+          <td class="score-cell">81.3</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">29</td>
+          <td class="move-cell"><span class="move up">▲ 13</span></td>
+          <td class="name-cell"><strong>Claire Evans</strong></td>
+          <td class="bio-cell">A family lifestyle blog with heart.</td>
+          <td class="score-cell">81.1</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">30</td>
+          <td class="move-cell"><span class="move down">▼ 5</span></td>
+          <td class="name-cell"><strong>Jayne Sticky Mud And Belly Laughs</strong></td>
+          <td class="bio-cell">Parenting/Lifestyle Blog</td>
+          <td class="score-cell">80.7</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">31</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Stephanie Moore</strong></td>
+          <td class="bio-cell">Home and family lifestyle blogger</td>
+          <td class="score-cell">80.1</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">32</td>
+          <td class="move-cell"><span class="move up">▲ 72</span></td>
+          <td class="name-cell"><strong>Beth Owen</strong></td>
+          <td class="bio-cell">Mum of 2 and Pregnant with baby #3. UK Pregnancy, Parenting &amp; Lifestyle Blogger.</td>
+          <td class="score-cell">79.5</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">33</td>
+          <td class="move-cell"><span class="move up">▲ 6</span></td>
+          <td class="name-cell"><strong>Casey Palmer</strong></td>
+          <td class="bio-cell">Casey Palmer is a thirty-something Canadian Dad from Toronto, ON raising his multiracial family in an urban environment that never quits. Writes on parenting, racial identity, tech and more!</td>
+          <td class="score-cell">78.8</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">34</td>
+          <td class="move-cell"><span class="move up">▲ 39</span></td>
+          <td class="name-cell"><strong>Chelsea And Nate Day</strong></td>
+          <td class="bio-cell">Adventurous family blog with FOUR kids in tow! We believe in living fully. Moments matter.</td>
+          <td class="score-cell">78.3</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">35</td>
+          <td class="move-cell"><span class="move up">▲ 36</span></td>
+          <td class="name-cell"><strong>Fozia S</strong></td>
+          <td class="bio-cell">Mummy to two girls, 12 and 6 (and a cat!) Juggling life as best as I can and trying to blog. Founder @muslimahblogs Contact foz@muslimmummies.com</td>
+          <td class="score-cell">78.1</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">36</td>
+          <td class="move-cell"><span class="move up">▲ 10</span></td>
+          <td class="name-cell"><strong>Relentlessly Purple</strong></td>
+          <td class="bio-cell">Obsessed with Purple. Mum of 2 girls 8 &amp; 4. Crochet addict. Lifestyle/Parenting/Craft/MH Blogger Email: Relentlesslypurple@gmail.com</td>
+          <td class="score-cell">76.9</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">37</td>
+          <td class="move-cell"><span class="move down">▼ 8</span></td>
+          <td class="name-cell"><strong>Cass Cass</strong></td>
+          <td class="bio-cell">Mum to 12 year old boy &amp; 14 year old girl &amp; a wife to a computer geek. I blog about life at https://t.co/agxJdbGHf1 &amp; food at https://t.co/FSiOca3Os2</td>
+          <td class="score-cell">76.2</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">38</td>
+          <td class="move-cell"><span class="move up">▲ 7</span></td>
+          <td class="name-cell"><strong>Annette - 3 Little Buttons Annette</strong></td>
+          <td class="bio-cell">Family and lifestyle blogger &amp; freelance writer. Let&#x27;s go on an adventure... 3littlebuttonsblog@gmail.com #DreamTeam #HappyLittleButtons @HuffPostUK @BritMums</td>
+          <td class="score-cell">75.7</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">39</td>
+          <td class="move-cell"><span class="move up">▲ 206</span></td>
+          <td class="name-cell"><strong>Someone&#x27;s Mum</strong></td>
+          <td class="bio-cell">Danielle Duggins. Award winning and multi-award nominated blogger, writer and neurodiversity advocate. Contact: danielle@someonesmum.co.uk</td>
+          <td class="score-cell">75.5</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">40</td>
+          <td class="move-cell"><span class="move up">▲ 4</span></td>
+          <td class="name-cell"><strong>Katie Davis</strong></td>
+          <td class="bio-cell">A Parenting, Lifestyle and Food Blogger stumbling my way through life and single parentdom</td>
+          <td class="score-cell">75.2</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">41</td>
+          <td class="move-cell"><span class="move down">▼ 26</span></td>
+          <td class="name-cell"><strong>Jenn Worden</strong></td>
+          <td class="bio-cell">Lifestyle #Mom Blogger. Brand Ambassador &amp; Influencer.   #foodie #food #recipe #travel #tech #family #wife #TwitterParty</td>
+          <td class="score-cell">75.2</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">42</td>
+          <td class="move-cell"><span class="move up">▲ 38</span></td>
+          <td class="name-cell"><strong>Frances FranWhingeWhingeWine</strong></td>
+          <td class="bio-cell">Mum of two, tea &amp; biscuit fan. Blogger &amp; freelancer in Kent. Mumsnet &#x27;Best Comic Writer&#x27; award (really). Work with me: fran@whingewhingewine.co.uk</td>
+          <td class="score-cell">75.1</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">43</td>
+          <td class="move-cell"><span class="move down">▼ 31</span></td>
+          <td class="name-cell"><strong>Jaki Jelley</strong></td>
+          <td class="bio-cell">Mrs &amp; Mama. Expert at stepping on Lego &amp; stifling obscenities. Gin fan cliche, social media &amp; blogger sort. Severely lacks patience.</td>
+          <td class="score-cell">75.0</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">44</td>
+          <td class="move-cell"><span class="move down">▼ 8</span></td>
+          <td class="name-cell"><strong>Coombe Mill (Fiona)</strong></td>
+          <td class="bio-cell">Tales from Coombe Mill told by Fiona, wife to Farmer Nick and Mum to our 6 children</td>
+          <td class="score-cell">74.9</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">45</td>
+          <td class="move-cell"><span class="move up">▲ 4</span></td>
+          <td class="name-cell"><strong>Lisa Collins</strong></td>
+          <td class="bio-cell">Imperfect Midwest Mom of Twins, Tween, &amp; Teen | Me Time Encourager | Travel Loving Adventure Seeker | Family Fun Haver | Cocktail Drinker</td>
+          <td class="score-cell">74.9</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">46</td>
+          <td class="move-cell"><span class="move up">▲ 4</span></td>
+          <td class="name-cell"><strong>Mariah Moon</strong></td>
+          <td class="bio-cell">Mom of 2. #Houston #Texas #blogger &amp; #TwitterParty host! #Disney #Travel #Food #Entertainment #Tech #Reviews! Email: mariah@thesimpleparent.com</td>
+          <td class="score-cell">74.8</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">47</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>Jax Blunt</strong></td>
+          <td class="bio-cell">Blogger, parent, geek, reader, writer, still got things to do</td>
+          <td class="score-cell">74.8</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">48</td>
+          <td class="move-cell"><span class="move up">▲ 3</span></td>
+          <td class="name-cell"><strong>Lylia   Rose</strong></td>
+          <td class="bio-cell"></td>
+          <td class="score-cell">74.7</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">49</td>
+          <td class="move-cell"><span class="move up">▲ 3</span></td>
+          <td class="name-cell"><strong>Deborah Lee</strong></td>
+          <td class="bio-cell">Prolific tea drinker • Bookworm • Gym goer • Twice Forbes-listed global influencer • Mother of future England fly half</td>
+          <td class="score-cell">74.6</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">50</td>
+          <td class="move-cell"><span class="move up">▲ 4</span></td>
+          <td class="name-cell"><strong>Umeandthekids Umeandthekids</strong></td>
+          <td class="bio-cell">Lifestyle Blogger | Parenting Advice | Home Decor | Fashion | Social Media Engager | Competition Lover | Kicking Ass in a house full of Teens..</td>
+          <td class="score-cell">74.5</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">51</td>
+          <td class="move-cell"><span class="move up">▲ 4</span></td>
+          <td class="name-cell"><strong>Jennie Edspire</strong></td>
+          <td class="bio-cell">Blogging about parenting and baby loss</td>
+          <td class="score-cell">74.5</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">52</td>
+          <td class="move-cell"><span class="move up">▲ 4</span></td>
+          <td class="name-cell"><strong>Lilinha   Espindula</strong></td>
+          <td class="bio-cell">Food, lifestyle and parenting blogger. Check out our meals, adventures and travels. There is always a reason to smile and be happy! :) x</td>
+          <td class="score-cell">74.5</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">53</td>
+          <td class="move-cell"><span class="move down">▼ 10</span></td>
+          <td class="name-cell"><strong>Sara-Jayne Jones</strong></td>
+          <td class="bio-cell">Disney bride, boymom, wrangler of huskies.</td>
+          <td class="score-cell">74.5</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">54</td>
+          <td class="move-cell"><span class="move up">▲ 3</span></td>
+          <td class="name-cell"><strong>MummyBarrow</strong></td>
+          <td class="bio-cell">Blogger.  Knower of people.   Lover of gin.   Hater of injustice.   Drinker of tea.   Wearer of sensible pants.  Menopausal.</td>
+          <td class="score-cell">74.4</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">55</td>
+          <td class="move-cell"><span class="move up">▲ 3</span></td>
+          <td class="name-cell"><strong>Kara</strong></td>
+          <td class="bio-cell">Mum of 6 from tots to teens and beyond. Supporter of Chelsea FC #TravelBlogger #PBlogger @Britmums BiBs Choice Winner 2017</td>
+          <td class="score-cell">74.4</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">56</td>
+          <td class="move-cell"><span class="move up">▲ 3</span></td>
+          <td class="name-cell"><strong>Cuddle Fairy</strong></td>
+          <td class="bio-cell">Positivity Around Every Corner! Parenting &amp; Lifestyle Blog.</td>
+          <td class="score-cell">74.3</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">57</td>
+          <td class="move-cell"><span class="move up">▲ 3</span></td>
+          <td class="name-cell"><strong>Laura SideStreet</strong></td>
+          <td class="bio-cell">A family lifestyle, interiors and travel blog</td>
+          <td class="score-cell">74.3</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">58</td>
+          <td class="move-cell"><span class="move down">▼ 30</span></td>
+          <td class="name-cell"><strong>Tracey Bowden</strong></td>
+          <td class="bio-cell">Mum to 1, blogger, content writer, aspiring author. Talents include writing (i think) drinking way too much coffee and keeping Cadburys in business #amwriting</td>
+          <td class="score-cell">74.3</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">59=</td>
+          <td class="move-cell"><span class="move up">▲ 2</span></td>
+          <td class="name-cell"><strong>Donna Wishart</strong></td>
+          <td class="bio-cell">Family Lifestyle blogger.</td>
+          <td class="score-cell">74.3</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">59=</td>
+          <td class="move-cell"><span class="move up">▲ 2</span></td>
+          <td class="name-cell"><strong>Emma Harris</strong></td>
+          <td class="bio-cell">Travel &amp; Parent Blogger • Mum to 3 • Enjoys family days out &amp; travel • Next few trips - Europe, Mexico + #SDCC • Contact: methemanandthekids@gmail.com</td>
+          <td class="score-cell">74.3</td>
+        </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="lb-method">
+    <div class="container">
+        <h2>About the methodology</h2>
+        <p>The Parent Blogger Club was a dynamic leaderboard, recomputed every two weeks. Each blogger received a Blogger Score blending four signals: Kred Influence (the likelihood that other accounts re-share or engage with their content), Kred Outreach (the breadth of accounts they actively engaged in return), blog posts published in the period, and blog comments received.</p>
+        <p>The "Move" column shows the change in rank versus the previous fortnight — a snapshot of momentum in a tight-knit community.</p>
+        <p><strong>Note:</strong> This is a static archive of the 59 entries from the 17 December 2018 release. The data is no longer updated. Some bloggers listed have since rebranded, gone dormant, or moved to other platforms; the descriptions reflect the bloggers' own Twitter bios at the time.</p>
+    </div>
+</section>
+
+<section class="lb-cta">
+    <div class="container">
+        <h2>Build your own leaderboard on <span class="accent">Leaderboarded</span></h2>
+        <p>Want to publish a ranking like the Parent Blogger Club? Leaderboarded is the platform behind it — used to score, rank, and showcase the people, brands, and communities that matter most in your niche.</p>
+        <div class="cta-buttons">
+            <a href="https://www.leaderboarded.com?utm_source=rise.global&amp;utm_medium=referral&amp;utm_campaign=parentbloggerclub" class="btn-primary">Make your leaderboard</a>
+        </div>
+    </div>
+</section>

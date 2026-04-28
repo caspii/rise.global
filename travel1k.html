@@ -1,0 +1,2389 @@
+---
+layout: default
+title: "#travel1k — The Top 1000+ Travel Bloggers (2018) — Archive"
+description: "Archive of the #travel1k leaderboard on rise.global, ranking the world's top travel bloggers by social influence. Top 298 entries preserved from the 30 May 2018 release. Powered by Kred."
+keywords: "travel1k, top travel bloggers, most influential travel bloggers, travel blog leaderboard, travel influencer ranking"
+permalink: /travel1k/
+redirect_from:
+  - /travel1k/r/latest/
+  - /travel1k/r/2437589/
+  - /travel1k/r/2574326/
+  - /display/travel1k/
+  - /display/view/5068/2331346/full/
+---
+
+<style>
+.lb-hero {
+    padding: 6rem 0 3rem;
+    background: var(--gradient-hero);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+.lb-hero::before {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -15%;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(200, 255, 0, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+}
+.lb-hero .container { position: relative; z-index: 1; }
+.lb-hero .archive-tag {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    padding: 0.4rem 0.9rem;
+    border: 1px solid rgba(200, 255, 0, 0.3);
+    border-radius: var(--radius-pill);
+    margin-bottom: 1.5rem;
+}
+.lb-hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    margin-bottom: 1rem;
+    max-width: 900px;
+}
+.lb-hero h1 .accent { color: var(--primary-color); }
+.lb-hero .subtitle {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 720px;
+    line-height: 1.6;
+    margin-bottom: 1.75rem;
+}
+.lb-hero .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.55);
+    font-family: var(--font-display);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.lb-hero .meta-row strong { color: var(--white); font-weight: 700; }
+
+.lb-intro {
+    padding: 3.5rem 0;
+    background: var(--white);
+}
+.lb-intro .container { max-width: 760px; }
+.lb-intro p {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    line-height: 1.75;
+    margin-bottom: 1rem;
+}
+
+.lb-table-section {
+    padding: 1rem 0 5rem;
+    background: var(--white);
+}
+.lb-table-wrap {
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: var(--white);
+}
+.lb-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+.lb-table thead th {
+    background: var(--bg-dark);
+    color: var(--white);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.9rem 1rem;
+    text-align: left;
+}
+.lb-table thead th.score-cell { text-align: right; }
+.lb-table tbody tr { border-top: 1px solid var(--border-color); transition: background 0.15s ease; }
+.lb-table tbody tr:hover { background: var(--bg-light); }
+.lb-table tbody tr:nth-child(-n+3) .rank-cell { color: var(--secondary-color); font-weight: 900; }
+.lb-table tbody td { padding: 0.85rem 1rem; vertical-align: top; }
+.rank-cell {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1.05rem;
+    color: var(--text-dark);
+    width: 60px;
+    white-space: nowrap;
+}
+.move-cell { width: 70px; }
+.move {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 0.15rem 0.5rem;
+    border-radius: var(--radius-sm);
+}
+.move.up { color: #2a9d4a; background: rgba(0, 214, 143, 0.1); }
+.move.down { color: #b53050; background: rgba(255, 77, 106, 0.08); }
+.move.flat { color: var(--text-muted); }
+.move.new { color: var(--bg-dark); background: var(--primary-color); }
+.name-cell { min-width: 160px; }
+.name-cell strong { color: var(--text-dark); font-weight: 700; }
+.bio-cell {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.55;
+    word-break: break-word;
+}
+.score-cell {
+    text-align: right;
+    font-family: var(--font-display);
+    font-weight: 800;
+    color: var(--text-dark);
+    width: 80px;
+    white-space: nowrap;
+}
+
+.lb-method {
+    padding: 4rem 0;
+    background: var(--bg-light);
+}
+.lb-method .container { max-width: 760px; }
+.lb-method h2 {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+.lb-method p {
+    color: var(--text-light);
+    line-height: 1.75;
+    margin-bottom: 1rem;
+}
+
+.lb-cta {
+    padding: 5rem 0;
+    background: var(--gradient-hero);
+    color: var(--white);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.lb-cta::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(200, 255, 0, 0.06) 0%, transparent 60%);
+    pointer-events: none;
+}
+.lb-cta .container { position: relative; z-index: 1; }
+.lb-cta h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.lb-cta h2 .accent { color: var(--primary-color); }
+.lb-cta p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.1rem;
+    line-height: 1.65;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+.lb-cta .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.lb-cta .btn-primary {
+    background: var(--gradient-cta);
+    color: var(--bg-dark);
+    padding: 0.95rem 2rem;
+    border-radius: var(--radius-pill);
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.lb-cta .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(200, 255, 0, 0.25);
+}
+
+@media (max-width: 720px) {
+    .bio-cell { display: none; }
+    .lb-table thead th.bio-col { display: none; }
+}
+</style>
+
+<section class="lb-hero">
+    <div class="container">
+        <span class="archive-tag">Archive · 2018</span>
+        <h1>#travel1k — The Top <span class="accent">1000+ Travel Bloggers</span></h1>
+        <p class="subtitle">A historical ranking of the world's most influential travel bloggers, originally published on rise.global. Scored on Kred Influence and Outreach signals for the week ending 30 May 2018.</p>
+        <div class="meta-row">
+            <span>Score period: <strong>23 – 30 May 2018</strong></span>
+            <span>Released: <strong>30 May 2018</strong></span>
+            <span>Top <strong>298 entries</strong> archived</span>
+        </div>
+    </div>
+</section>
+
+<section class="lb-intro">
+    <div class="container">
+        <p>This page is a preserved archive of <em>#travel1k — The Top 1000+ Travel Bloggers</em>, a leaderboard that ran on rise.global through 2018. It tracked the most influential voices in travel blogging each week, blending Kred Influence (reach) and Kred Outreach (engagement) into a single travel1k score.</p>
+        <p>The list captures the golden age of independent travel blogging — Matt Matt holding the #1 spot, Charles McCool of McCool Travel and Rick Griffin in the top three, plus hundreds of family travel, luxury travel, food travel, and adventure travel bloggers shaping the industry. Many of these creators went on to become full-fledged media brands; others became household names in travel media. We are keeping it online because press articles, blogger sites, and travel industry round-ups still cite it.</p>
+    </div>
+</section>
+
+<section class="lb-table-section">
+    <div class="container">
+        <div class="lb-table-wrap">
+            <table class="lb-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Move</th>
+                        <th>Travel Blogger</th>
+                        <th class="bio-col">About</th>
+                        <th class="score-cell">Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+        <tr>
+          <td class="rank-cell">1</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Matt Matt</strong></td>
+          <td class="bio-cell">Award winning travel blogger, writer and photographer specializing in experiential luxury travel.</td>
+          <td class="score-cell">96.84</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">2</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Charles McCool (McCool Travel)</strong></td>
+          <td class="bio-cell">Travel Happiness Ambassador and world&#x27;s savviest traveler. More #travel #funness at https://www.McCoolTravel.com and http://fb.me/mccooltravel .</td>
+          <td class="score-cell">93.82</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">3</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Rick Griffin</strong></td>
+          <td class="bio-cell">Publisher, producer and co-host of Midlife Road Trip. Life is a journey...bring a camera!  Blog: http://midliferoadtrip.tv Instagram: https://www.instagram.com/rickgriffin_/</td>
+          <td class="score-cell">90.62</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">4</td>
+          <td class="move-cell"><span class="move up">▲ 7</span></td>
+          <td class="name-cell"><strong>Andrea Pizzato</strong></td>
+          <td class="bio-cell">Mountain &amp; Travel Blogger: da Venezia alle Dolomiti, passando per Trentino Alto Adige, Tirolo e Baviera.. con qualche deviazione :)</td>
+          <td class="score-cell">87.31</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">5</td>
+          <td class="move-cell"><span class="move up">▲ 10</span></td>
+          <td class="name-cell"><strong>Lisa Ellen Niver</strong></td>
+          <td class="bio-cell">Lisa is an on-camera travel host &amp; writer: USA Today, Wharton Business, www.WeSaidGoTravel.com</td>
+          <td class="score-cell">83.72</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">6</td>
+          <td class="move-cell"><span class="move down">▼ 2</span></td>
+          <td class="name-cell"><strong>Claire Hall (Tin Box Traveller)</strong></td>
+          <td class="bio-cell">A family travel and lifestyle blogger hoping to inspire others to have adventures with their kids</td>
+          <td class="score-cell">83.56</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">7</td>
+          <td class="move-cell"><span class="move down">▼ 2</span></td>
+          <td class="name-cell"><strong>Gregory George</strong></td>
+          <td class="bio-cell">A mature &amp; sophisticated travel blog designed to guide your exploration of the world. Experience travel with us! #TravelWell with #FSTravels!</td>
+          <td class="score-cell">82.63</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">8</td>
+          <td class="move-cell"><span class="move up">▲ 56</span></td>
+          <td class="name-cell"><strong>Sue Reddel</strong></td>
+          <td class="bio-cell">Food Travelist connects food travelers around the world with brands, destinations &amp; experiences.</td>
+          <td class="score-cell">81.37</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">9</td>
+          <td class="move-cell"><span class="move up">▲ 46</span></td>
+          <td class="name-cell"><strong>Eric Stoen</strong></td>
+          <td class="bio-cell">Family travel expert. Award-winning photographer. Writer. 80+ countries. http://bit.ly/1T1tQhq</td>
+          <td class="score-cell">81.08</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">10</td>
+          <td class="move-cell"><span class="move up">▲ 62</span></td>
+          <td class="name-cell"><strong>Melody Pittman</strong></td>
+          <td class="bio-cell">Mother/daughter bloggers showcasing luxury travel, cruising, culture, and eats.</td>
+          <td class="score-cell">79.80</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">11</td>
+          <td class="move-cell"><span class="move up">▲ 3</span></td>
+          <td class="name-cell"><strong>Katie Dillon</strong></td>
+          <td class="bio-cell">Luxury family travel and lifestyle writer and resident of La Jolla, CA.</td>
+          <td class="score-cell">79.67</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">12</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Christina Pfeiffer</strong></td>
+          <td class="bio-cell">All All Digital travel storyteller at https://travel2next.com/ about amazing places around the world</td>
+          <td class="score-cell">78.17</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">13</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Heather Delaney Reese</strong></td>
+          <td class="bio-cell">Traveling 150 days/yr as a family sharing exceptional experiences &amp; adventures http://bit.ly/1SqQRtx</td>
+          <td class="score-cell">77.89</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">14</td>
+          <td class="move-cell"><span class="move down">▼ 4</span></td>
+          <td class="name-cell"><strong>Debra Schroeder</strong></td>
+          <td class="bio-cell">Adventure value luxury writer, travel hacker, personal finance, miles &amp; points expert since 1994. Likes good food, #craftbeer. Travel more, spend less.</td>
+          <td class="score-cell">76.47</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">15</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>Jeana Travels</strong></td>
+          <td class="bio-cell">Adventurous traveler with a passion for people &amp; food. Contact via blog at http://bit.ly/1OrGEzc</td>
+          <td class="score-cell">73.97</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">16</td>
+          <td class="move-cell"><span class="move up">▲ 3</span></td>
+          <td class="name-cell"><strong>A Luxury Travel Blog</strong></td>
+          <td class="bio-cell">Blogging on all things luxury travel at https://t.co/FiuCsxDwaL - please contact us via the blog ( https://t.co/uhfPPGjIiC )</td>
+          <td class="score-cell">73.96</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">17</td>
+          <td class="move-cell"><span class="move up">▲ 4</span></td>
+          <td class="name-cell"><strong>Jackie De Burca</strong></td>
+          <td class="bio-cell">Author of Salvador Dalí at Home. Special interests: the arts, culture and nature</td>
+          <td class="score-cell">73.30</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">18</td>
+          <td class="move-cell"><span class="move up">▲ 4</span></td>
+          <td class="name-cell"><strong>Stef Travel Photographer</strong></td>
+          <td class="bio-cell">Around the globe Between ✈. Travel photographer and blogger for http://MEL365.com</td>
+          <td class="score-cell">73.19</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">19</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>Chef Dennis Littley</strong></td>
+          <td class="bio-cell">Food &amp; Travel Blogger, Chef, Content Creator and Digital Strategist. Eating my way around the World sharing my adventures &amp; my recipes</td>
+          <td class="score-cell">72.90</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">20</td>
+          <td class="move-cell"><span class="move up">▲ 22</span></td>
+          <td class="name-cell"><strong>Jamie Italiane At The Daily Adventures Of Me</strong></td>
+          <td class="bio-cell">I am a travel blogger from New England writing about all the adventures a day can hold near or far.</td>
+          <td class="score-cell">72.36</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">21</td>
+          <td class="move-cell"><span class="move up">▲ 3</span></td>
+          <td class="name-cell"><strong>The GypsyNesters</strong></td>
+          <td class="bio-cell">David &amp; Veronica are experiencing the collision of Baby Boomer and Empty Nester. They&#x27;ve been full time travelers and have been breaking the empty nest rules since 2008.</td>
+          <td class="score-cell">72.30</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">22</td>
+          <td class="move-cell"><span class="move up">▲ 3</span></td>
+          <td class="name-cell"><strong>RoarLoud</strong></td>
+          <td class="bio-cell">Traveling the world to find adventures!   ✈</td>
+          <td class="score-cell">71.86</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">23</td>
+          <td class="move-cell"><span class="move up">▲ 96</span></td>
+          <td class="name-cell"><strong>Julie Dawn Fox</strong></td>
+          <td class="bio-cell">Travel and lifestyle blogger specialising in Portugal. Travel coach, freelance writer &amp; photographer</td>
+          <td class="score-cell">71.44</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">24</td>
+          <td class="move-cell"><span class="move up">▲ 2</span></td>
+          <td class="name-cell"><strong>Sandy N Vyjay Voyager</strong></td>
+          <td class="bio-cell">We are a travel blogger couple. Travelling is our passion. #TravelWriter #SocialMediaInfluencer #TravelBlogger Contact via our blog: https://imvoyager.com/</td>
+          <td class="score-cell">71.26</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">25</td>
+          <td class="move-cell"><span class="move up">▲ 117</span></td>
+          <td class="name-cell"><strong>Mike Shubic</strong></td>
+          <td class="bio-cell">Professional travel video blogger for six years. Publisher of MikesRoadTrip.com</td>
+          <td class="score-cell">70.76</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">26</td>
+          <td class="move-cell"><span class="move down">▼ 19</span></td>
+          <td class="name-cell"><strong>Rhonda Albom</strong></td>
+          <td class="bio-cell">Travel blogger and photographer at AlbomAdventures.com living in New Zealand</td>
+          <td class="score-cell">70.74</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">27</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>BonVoyageurs</strong></td>
+          <td class="bio-cell">#travel #cruise TOP 10 travel experts &amp; influencers on social media. Members National Press Club PTBA NATJA IFWTWA &amp; SATW</td>
+          <td class="score-cell">70.70</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">28</td>
+          <td class="move-cell"><span class="move up">▲ 67</span></td>
+          <td class="name-cell"><strong>Rob 2TravelDads</strong></td>
+          <td class="bio-cell">Blogger for 2TravelDads, a gay dad travel blog, showing our kids the globe for a broad world view</td>
+          <td class="score-cell">70.58</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">29</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Megan   Claire</strong></td>
+          <td class="bio-cell">Adventure travel enthusiast - tweets every hour with the best in adventure travel. Digital nomad blogging everywhere around the world! https://t.co/HhomyAiydW</td>
+          <td class="score-cell">69.91</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">30</td>
+          <td class="move-cell"><span class="move down">▼ 21</span></td>
+          <td class="name-cell"><strong>Julie McCool (Fun In Fairfax VA)</strong></td>
+          <td class="bio-cell">Travel blogger, editor. Active exploring, food and drink, road trips and getaways. Virginia/DC/mid-Atlantic USA expert at https://www.funinfairfaxva.com , https://www.mccooltravel.com</td>
+          <td class="score-cell">69.86</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">31</td>
+          <td class="move-cell"><span class="move up">▲ 6</span></td>
+          <td class="name-cell"><strong>Cacinda Maloney Of Pointsandtravel</strong></td>
+          <td class="bio-cell">A smart #luxury traveler who has traveled every 6 weeks of her life for over 25 years. #luxury #travel #storyteller and one of @Travelocity&#x27;s #Gnomads</td>
+          <td class="score-cell">69.29</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">32</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Travel Esquire</strong></td>
+          <td class="bio-cell">TIME &quot;man of action&quot; and Forbes Top 20 Social Media Influencer, @TravelEsquire is always sharing his passion for travel and adventure! | IFWTWA | Rutgers Universtiy Adjunct | Author</td>
+          <td class="score-cell">69.10</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">33</td>
+          <td class="move-cell"><span class="move down">▼ 16</span></td>
+          <td class="name-cell"><strong>Hi Class Living Magazine @HiClassmag.com</strong></td>
+          <td class="bio-cell">All Luxury Romance Reviewing top resorts, spas and luxury cruises since 1984</td>
+          <td class="score-cell">69.00</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">34</td>
+          <td class="move-cell"><span class="move up">▲ 15</span></td>
+          <td class="name-cell"><strong>Lauren Lauren@Justin+Lauren</strong></td>
+          <td class="bio-cell">#TravelBlogger. #Vegan.  Outdoor and urban adventures.  Loves animals, nature, hiking, coffee, wellness &amp; yoga. Co-owner of @InspireToWander. #PR Friendly.</td>
+          <td class="score-cell">68.63</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">35</td>
+          <td class="move-cell"><span class="move down">▼ 4</span></td>
+          <td class="name-cell"><strong>Steph Parker</strong></td>
+          <td class="bio-cell">Budget Travel Blog focusing on Happier, Healthier Journeys www.bigworldsmallpockets.com</td>
+          <td class="score-cell">68.36</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">36</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>Rossana Wyatt</strong></td>
+          <td class="bio-cell">@IFWTWA Board Member &amp; International Media Trip Chair | Travel, Food &amp; Wine | Twitter Chat Host | Glutenfree |</td>
+          <td class="score-cell">68.29</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">37</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>Christa Thompson</strong></td>
+          <td class="bio-cell">Travel &amp; lifestyle blogger inspired by books, film, TV and myth. Fangirl and unicorn enthusiast.</td>
+          <td class="score-cell">68.14</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">38</td>
+          <td class="move-cell"><span class="move up">▲ 128</span></td>
+          <td class="name-cell"><strong>Giovy Malfiori</strong></td>
+          <td class="bio-cell">Italian traveller, web marketing strategist and professional Blogger.  Freelance worker, citizen of the world</td>
+          <td class="score-cell">68.07</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">39</td>
+          <td class="move-cell"><span class="move up">▲ 4</span></td>
+          <td class="name-cell"><strong>Howard Blount (Backroad Planet / #TBIN)</strong></td>
+          <td class="bio-cell">All All Off the beaten path Road, river, and rail travel adventure man at Backroad Planet. #TBIN founder and admin.</td>
+          <td class="score-cell">67.99</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">40</td>
+          <td class="move-cell"><span class="move up">▲ 49</span></td>
+          <td class="name-cell"><strong>Dave Briggs</strong></td>
+          <td class="bio-cell">Travel blogger at Dave&#x27;s Travel Pages. Freelancer writer and social media manager.</td>
+          <td class="score-cell">67.76</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">41</td>
+          <td class="move-cell"><span class="move up">▲ 5</span></td>
+          <td class="name-cell"><strong>Micki &amp; Charles The Barefoot Nomad</strong></td>
+          <td class="bio-cell">Micki Kosman writes about travel, tech, family and fun with her husband Charles on http://www.thebarefootnomad.com/ .</td>
+          <td class="score-cell">67.62</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">42</td>
+          <td class="move-cell"><span class="move down">▼ 2</span></td>
+          <td class="name-cell"><strong>Anuradha   Goyal</strong></td>
+          <td class="bio-cell">Trying to experience the world first hand. #TravelBlogger #Vegetarian #Bibliophile #Innovation #Author The Mouse Charmers ( https://t.co/duoUcjsEy9 )</td>
+          <td class="score-cell">67.49</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">43</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>Just A Pack</strong></td>
+          <td class="bio-cell">•Travel Writers | Photographers | Full Time Nomads • https://t.co/2YKR6XrYrh • We want to make your dream of affordable &amp; responsible #travel a reality!</td>
+          <td class="score-cell">67.36</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">44</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>NOMADasaurus Travel</strong></td>
+          <td class="bio-cell">Australia&#x27;s top adventure #travel bloggers. Writers &amp; Photographers. 9 years #travelling. Currently: #Australia. Repping @kathmandugear</td>
+          <td class="score-cell">67.30</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">45</td>
+          <td class="move-cell"><span class="move up">▲ 8</span></td>
+          <td class="name-cell"><strong>Nomadic Boys</strong></td>
+          <td class="bio-cell">Nomadic Boys are Stefan and Sebastien, gay couple travelling the world.</td>
+          <td class="score-cell">67.19</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">46</td>
+          <td class="move-cell"><span class="move down">▼ 28</span></td>
+          <td class="name-cell"><strong>Manjulika Pramod</strong></td>
+          <td class="bio-cell">Indian blogger who loves to read, eat, travel and blog in no particular order.</td>
+          <td class="score-cell">66.84</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">47</td>
+          <td class="move-cell"><span class="move up">▲ 24</span></td>
+          <td class="name-cell"><strong>Nomadic   Matt</strong></td>
+          <td class="bio-cell">Nomad, vagabond, and NYT best selling author of How to Travel the World on $50 a Day. I help people realize their travel dreams - without breaking the bank.</td>
+          <td class="score-cell">66.75</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">48</td>
+          <td class="move-cell"><span class="move up">▲ 4</span></td>
+          <td class="name-cell"><strong>Dave &amp; Deb Travel</strong></td>
+          <td class="bio-cell">Adventurers &amp; Speakers, 2017 Forbes Top 10 #Travel Influencer. 2x Winner Best Travel Blog #SATW 9yrs of adventure in 106 countries/7 continent</td>
+          <td class="score-cell">66.65</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">49</td>
+          <td class="move-cell"><span class="move down">▼ 41</span></td>
+          <td class="name-cell"><strong>Deb Debthompson</strong></td>
+          <td class="bio-cell">Collecting experiences through travel &amp; adventures. Loves whiskey &amp; road trips.</td>
+          <td class="score-cell">66.32</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">50</td>
+          <td class="move-cell"><span class="move up">▲ 11</span></td>
+          <td class="name-cell"><strong>Jerome Shaw</strong></td>
+          <td class="bio-cell">Writer, Photographer, Traveler, Teacher.  Editor at TravelBoldly and Brasil2Brazil</td>
+          <td class="score-cell">66.16</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">51</td>
+          <td class="move-cell"><span class="move down">▼ 45</span></td>
+          <td class="name-cell"><strong>Rob+Ann @TravelLatte.net</strong></td>
+          <td class="bio-cell">Rob &amp; Ann are café-loving Pretirement™ Travelers with luxury tastes and workaday budgets, writing with an emphasis on authenticity at TravelLatte.net , on Facebook and Twitter.</td>
+          <td class="score-cell">65.88</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">52</td>
+          <td class="move-cell"><span class="move up">▲ 4</span></td>
+          <td class="name-cell"><strong>Mel MelBTravel</strong></td>
+          <td class="bio-cell">TRAVEL ADVENTURE &amp; HISTORY BLOGGER Aussie in UK showing you the world through my eyes 60+ countries</td>
+          <td class="score-cell">65.82</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">53</td>
+          <td class="move-cell"><span class="move down">▼ 15</span></td>
+          <td class="name-cell"><strong>Zoë Dawes</strong></td>
+          <td class="bio-cell">Slow Globetrotter☂️ Award-winning travel writer. I love unusual culture, history, food and place. 50+ market. Also Presenter &amp; Business Coach @thequirkycoach</td>
+          <td class="score-cell">65.81</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">54</td>
+          <td class="move-cell"><span class="move up">▲ 4</span></td>
+          <td class="name-cell"><strong>Becky (English Mum)</strong></td>
+          <td class="bio-cell">I&#x27;m a blogger and freelance journalist. My blog, Englishmum.com is an award-winning mix of authentic, family travel experiences; stylish home and lifestyle articles.</td>
+          <td class="score-cell">65.80</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">55</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>Verushka Ramasami</strong></td>
+          <td class="bio-cell">A lifestyle blogger from South Africa with a passion for food and travel.A Tourism lecturer with a mild addiction of all things British</td>
+          <td class="score-cell">65.80</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">56</td>
+          <td class="move-cell"><span class="move up">▲ 19</span></td>
+          <td class="name-cell"><strong>Nancy Brown</strong></td>
+          <td class="bio-cell">Travel Writer, luxury hotel expert, equestrian Writing Horseback</td>
+          <td class="score-cell">65.63</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">57</td>
+          <td class="move-cell"><span class="move up">▲ 9</span></td>
+          <td class="name-cell"><strong>Daryl &amp; Mindi Hirsch</strong></td>
+          <td class="bio-cell">Daryl and Mindi are currently traveling the world one meal at a time.</td>
+          <td class="score-cell">65.43</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">58</td>
+          <td class="move-cell"><span class="move up">▲ 32</span></td>
+          <td class="name-cell"><strong>Contented Traveller</strong></td>
+          <td class="bio-cell">Destination and Experience Marketers</td>
+          <td class="score-cell">65.23</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">59</td>
+          <td class="move-cell"><span class="move down">▼ 9</span></td>
+          <td class="name-cell"><strong>Michela Fantinel</strong></td>
+          <td class="bio-cell">Solo traveller. Adventure Seeker. Founder of the Rocky Travel Site. Helping you plan your trip in a simple and smart way.</td>
+          <td class="score-cell">64.64</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">60</td>
+          <td class="move-cell"><span class="move down">▼ 13</span></td>
+          <td class="name-cell"><strong>Luxe Tiffany</strong></td>
+          <td class="bio-cell">Founder of Luxe Tiffany and Luxe Social Media, Tiffany Dowd is a global luxury hotel expert and luxury travel writer offering the best news and tips in travel.</td>
+          <td class="score-cell">64.54</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">61</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>Shivya   Nath</strong></td>
+          <td class="bio-cell">With a home nowhere, I have everywhere to go. Travel blogger. Nomadic. Vegan. Drifter. Featured: BBC, TEDx. Instagram: https://t.co/yIisqimKRZ</td>
+          <td class="score-cell">64.18</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">62</td>
+          <td class="move-cell"><span class="move up">▲ 49</span></td>
+          <td class="name-cell"><strong>João Leitão</strong></td>
+          <td class="bio-cell">Visual Artist &amp; top Adventure Travel Blogger 126+ Countries &amp; 7 Continents http://www.joaoleitao.com</td>
+          <td class="score-cell">64.09</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">63</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>Caz Craig   Makepeace</strong></td>
+          <td class="bio-cell">Travel addicts proving travel does not have to stop after kids. Exploring the US. Travel more &amp; create better memories. https://t.co/i2lMr8bk7Q</td>
+          <td class="score-cell">64.01</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">64</td>
+          <td class="move-cell"><span class="move up">▲ 79</span></td>
+          <td class="name-cell"><strong>Francesca Mazurkiewicz</strong></td>
+          <td class="bio-cell">Chicago-based travel blogger aiming to show that working parents can still enjoy what they fancy in life after having kids.</td>
+          <td class="score-cell">63.55</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">65</td>
+          <td class="move-cell"><span class="move down">▼ 14</span></td>
+          <td class="name-cell"><strong>Dana Freeman</strong></td>
+          <td class="bio-cell">Dana Freeman is an entrepreneur, freelance journalist, and the editor behind Dana Freeman Travels. She is a travel enthusiast from Vermont who is always up for an adventure in a new location.</td>
+          <td class="score-cell">63.54</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">66</td>
+          <td class="move-cell"><span class="move up">▲ 60</span></td>
+          <td class="name-cell"><strong>Elisa Nievas</strong></td>
+          <td class="bio-cell">I love #Travel #Adventure &amp; #Photography  - I write about Luxury #Travel &amp; Lifestyle in my Blog  - I´m a Travel inspirer</td>
+          <td class="score-cell">63.53</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">67</td>
+          <td class="move-cell"><span class="move up">▲ 9</span></td>
+          <td class="name-cell"><strong>Chris   Christensen</strong></td>
+          <td class="bio-cell">Host of the award winning http://t.co/ZVLPJ4eVDq and This Week in Travel podcasts/blog, creator http://t.co/BfS14k2eIp , for brevity:     @AmateurTraveler</td>
+          <td class="score-cell">63.48</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">68</td>
+          <td class="move-cell"><span class="move down">▼ 9</span></td>
+          <td class="name-cell"><strong>Roaming Renegades</strong></td>
+          <td class="bio-cell">Escape the 9-5 and follow us on our round the world trip! http://www.theroamingrenegades.com/ Nic Hilditch-Short and Paul Short</td>
+          <td class="score-cell">63.39</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">69</td>
+          <td class="move-cell"><span class="move down">▼ 2</span></td>
+          <td class="name-cell"><strong>Carl Hedinger</strong></td>
+          <td class="bio-cell">Travel Guides, Life Tips, and More at TravelThroughLife.net . We&#x27;re a hunky dory team who are buckled up and keeping up with this fun-filled journey.</td>
+          <td class="score-cell">63.25</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">70</td>
+          <td class="move-cell"><span class="move down">▼ 2</span></td>
+          <td class="name-cell"><strong>Tammileetips</strong></td>
+          <td class="bio-cell">Travel lifestyle blogger, award winning photographer, chai tea addict, sunset hunter.  Happily married to @parkrangerjohn with 2 cute cats. #travel #recipes</td>
+          <td class="score-cell">63.12</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">71</td>
+          <td class="move-cell"><span class="move down">▼ 8</span></td>
+          <td class="name-cell"><strong>Fabio Nodari</strong></td>
+          <td class="bio-cell">Travel Blogger and professional photographer. My blog: https://www.fabionodariphoto.com/</td>
+          <td class="score-cell">63.01</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">72</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>Keith   Jenkins</strong></td>
+          <td class="bio-cell">Founder of the award-winning Velvet Escape luxury travel blog. CEO @i_ambassador Travel. Nature. People. Music. Sports. Architecture. Airplanes. Photography.</td>
+          <td class="score-cell">62.86</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">73</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>Wayne Dunlap</strong></td>
+          <td class="bio-cell">Experienced traveler (100 countries), Featured speaker, Photojournalist/Blogger, Author</td>
+          <td class="score-cell">62.61</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">74</td>
+          <td class="move-cell"><span class="move up">▲ 62</span></td>
+          <td class="name-cell"><strong>Stefanie Fauquet</strong></td>
+          <td class="bio-cell">Stefanie Fauquet is a Mom, Lifestyle &amp; Travel Blogger and Foodie ✈ Follow her adventures at https://t.co/UhL8fL13TI —Married to dad blogger @Rick_OntheRocks</td>
+          <td class="score-cell">62.57</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">75</td>
+          <td class="move-cell"><span class="move up">▲ 12</span></td>
+          <td class="name-cell"><strong>Chavetas</strong></td>
+          <td class="bio-cell">Award winning #Travelbloggers | +64 Countries &amp; 7 Continents |  Video Maker | www.chavetas.es</td>
+          <td class="score-cell">62.54</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">76</td>
+          <td class="move-cell"><span class="move up">▲ 4</span></td>
+          <td class="name-cell"><strong>Mar Pages</strong></td>
+          <td class="bio-cell">Luxury Travel #Influencer. Love for #Tech &amp; startups. #DigitalMarketing Consultant. 97 countries. ex-Googler #Expat. Author https://t.co/9HzQjzLEph</td>
+          <td class="score-cell">62.41</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">77</td>
+          <td class="move-cell"><span class="move up">▲ 4</span></td>
+          <td class="name-cell"><strong>GlobalGrasshopper</strong></td>
+          <td class="bio-cell">Award-winning travel blog unravelling the secrets of the world&#x27;s most unique, under-the-radar and beautiful places. Ranked No.3 Travel Authority the UK.</td>
+          <td class="score-cell">62.30</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">78</td>
+          <td class="move-cell"><span class="move up">▲ 8</span></td>
+          <td class="name-cell"><strong>Tulips In Holland</strong></td>
+          <td class="bio-cell">Blogger about tulips, Holland, travel &amp; Keukenhof garden see our travel blog.</td>
+          <td class="score-cell">62.11</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">79</td>
+          <td class="move-cell"><span class="move down">▼ 49</span></td>
+          <td class="name-cell"><strong>The Budget Savvy Travelers</strong></td>
+          <td class="bio-cell">SM Influencers. Filmmakers. Producers. 7 Continent Club Members.  CURIOUS? https://goo.gl/2SlMrw</td>
+          <td class="score-cell">61.89</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">80</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>Anita Dykstra</strong></td>
+          <td class="bio-cell">I&#x27;m a travel blogger who runs a blog made to inspire you to explore the world!</td>
+          <td class="score-cell">61.67</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">81</td>
+          <td class="move-cell"><span class="move up">▲ 11</span></td>
+          <td class="name-cell"><strong>Just One Way   Ticket</strong></td>
+          <td class="bio-cell">Top 50 Travel Blogger | Wannabe Photographer  | Social Media Addict | Travels non-stop since 2008 | I write about the things I love. Mostly.</td>
+          <td class="score-cell">61.42</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">82</td>
+          <td class="move-cell"><span class="move up">▲ 9</span></td>
+          <td class="name-cell"><strong>Kim Stuffed Suitcase</strong></td>
+          <td class="bio-cell">Photo-taking mom who loves showing my kids the world is big w/ photos to prove it! Thinks hugs (&amp; wine) really are the best medicine. #familytravel #blogger</td>
+          <td class="score-cell">61.42</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">83</td>
+          <td class="move-cell"><span class="move up">▲ 2</span></td>
+          <td class="name-cell"><strong>Kirsten Maxwell</strong></td>
+          <td class="bio-cell">Family travel expert and social media influencer. Travelocity #Gnomad #TMOM #shebuyscars #Chicago</td>
+          <td class="score-cell">61.35</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">84</td>
+          <td class="move-cell"><span class="move down">▼ 2</span></td>
+          <td class="name-cell"><strong>Kash Bhattacharya</strong></td>
+          <td class="bio-cell">2016 Travel Blogger of the year @natgeotraveller Founder of #luxuryhostels Director of Creative Concepts @i_ambassador Blogger outreach @Toposophy #LFC fan!</td>
+          <td class="score-cell">61.33</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">85</td>
+          <td class="move-cell"><span class="move up">▲ 76</span></td>
+          <td class="name-cell"><strong>Deeptha Doshi</strong></td>
+          <td class="bio-cell">#Travel blogger and photographer at The Globe Trotter | Currently living in the UK. Find me at: https://goo.gl/DcDxwS</td>
+          <td class="score-cell">61.04</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">86</td>
+          <td class="move-cell"><span class="move up">▲ 8</span></td>
+          <td class="name-cell"><strong>Eileen Cotter Wright</strong></td>
+          <td class="bio-cell">Professional travel writer &amp; blogger. American expat in London!</td>
+          <td class="score-cell">60.83</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">87</td>
+          <td class="move-cell"><span class="move up">▲ 16</span></td>
+          <td class="name-cell"><strong>Melinda Crow</strong></td>
+          <td class="bio-cell">#1 scuba-diving, beer-guzzling, wine-sipping, 50+ travel blogging couple at http://FirstRead.Me</td>
+          <td class="score-cell">60.75</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">88</td>
+          <td class="move-cell"><span class="move up">▲ 25</span></td>
+          <td class="name-cell"><strong>Paul Marshman</strong></td>
+          <td class="bio-cell">Baby boomer influencer, writing about travel for over-50s on the move. Read my travel tips, cruising advice and adventures at The Travelling Boomer</td>
+          <td class="score-cell">60.57</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">89</td>
+          <td class="move-cell"><span class="move down">▼ 66</span></td>
+          <td class="name-cell"><strong>David Hogan Jr</strong></td>
+          <td class="bio-cell">Multiple Award-Winning Travel Writer, Blogger, Photographer and Social Media Strategist for Malaysia Asia.</td>
+          <td class="score-cell">60.44</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">90</td>
+          <td class="move-cell"><span class="move down">▼ 56</span></td>
+          <td class="name-cell"><strong>Karyn Locke</strong></td>
+          <td class="bio-cell">#Travel #Beauty #Disney Official account for Sand and Snow...and everywhere in between! https://t.co/NOUjwVdhtj #TMOM #TBIN</td>
+          <td class="score-cell">60.35</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">91</td>
+          <td class="move-cell"><span class="move up">▲ 6</span></td>
+          <td class="name-cell"><strong>Dan @ Points With A Crew</strong></td>
+          <td class="bio-cell">Points With a Crew helps families (especially larger families) learn to travel for free / cheap</td>
+          <td class="score-cell">60.27</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">92</td>
+          <td class="move-cell"><span class="move down">▼ 8</span></td>
+          <td class="name-cell"><strong>Arti Shah</strong></td>
+          <td class="bio-cell">Travel blogger, learner, a firm believer in the magic of simplicity and smile. https://www.facebook.com/myyatradiary</td>
+          <td class="score-cell">60.10</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">93</td>
+          <td class="move-cell"><span class="move down">▼ 45</span></td>
+          <td class="name-cell"><strong>Andrea Petroni</strong></td>
+          <td class="bio-cell">Italian Travel Blogger</td>
+          <td class="score-cell">60.02</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">94</td>
+          <td class="move-cell"><span class="move down">▼ 55</span></td>
+          <td class="name-cell"><strong>Divergent Travelers</strong></td>
+          <td class="bio-cell">Top adventure travel blog featuring the Top 100 Travel Adventures in the world. Award-winning photographers. Media kit ==&gt; http://bit.ly/2iAOKIz</td>
+          <td class="score-cell">59.88</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">95</td>
+          <td class="move-cell"><span class="move down">▼ 54</span></td>
+          <td class="name-cell"><strong>Shobha JustGoPlaces</strong></td>
+          <td class="bio-cell">American expat &amp; family living in London loving  #luxury #travel, #culture and #history.  A bit of a #foodie.  #FamilyTravel  Also at @nylonliving.</td>
+          <td class="score-cell">59.74</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">96</td>
+          <td class="move-cell"><span class="move up">▲ 138</span></td>
+          <td class="name-cell"><strong>Going Awesome Places</strong></td>
+          <td class="bio-cell">Off the beaten path All All An outdoor adventure and experiential travel blog that follows the journey of Will Tang around the world.</td>
+          <td class="score-cell">59.68</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">97</td>
+          <td class="move-cell"><span class="move up">▲ 117</span></td>
+          <td class="name-cell"><strong>Gios Scruffy</strong></td>
+          <td class="bio-cell">Italian Gay Travel Blogger around the World! Travel with me ;)</td>
+          <td class="score-cell">59.63</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">98</td>
+          <td class="move-cell"><span class="move up">▲ 77</span></td>
+          <td class="name-cell"><strong>Dr. WanderingEds</strong></td>
+          <td class="bio-cell">Publisher, Wandering Educators. International Education, #studyabroadbecause, traveler, mermaid</td>
+          <td class="score-cell">59.58</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">99</td>
+          <td class="move-cell"><span class="move up">▲ 6</span></td>
+          <td class="name-cell"><strong>Curb Free W/ CoryLee</strong></td>
+          <td class="bio-cell">Winner of the Lowell Thomas Award for Best Travel Blog in 2017. I’ve visited 26 countries and 6 continents from a wheelchair. ♿️ https://t.co/TBLaGDqDEZ</td>
+          <td class="score-cell">59.51</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">100</td>
+          <td class="move-cell"><span class="move down">▼ 72</span></td>
+          <td class="name-cell"><strong>Amelia Old</strong></td>
+          <td class="bio-cell">Founder &amp; Editor in Chief of Passports from the Heart.Focused on #Travel #Philanthropy #SocialGood #SustainableTourism @LonelyPlanet Pathfinder @ONECampaign CDL</td>
+          <td class="score-cell">59.33</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">101</td>
+          <td class="move-cell"><span class="move down">▼ 36</span></td>
+          <td class="name-cell"><strong>Traveling Bytes</strong></td>
+          <td class="bio-cell">location independent couple slow travels around the world: where we&#x27;ve been, what we&#x27;ve seen https://travelingbytes.com</td>
+          <td class="score-cell">59.20</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">102</td>
+          <td class="move-cell"><span class="move up">▲ 10</span></td>
+          <td class="name-cell"><strong>Carmen Edelson</strong></td>
+          <td class="bio-cell">Luxury Travel Influencer writing about her jetset life, luxury travel tips and adventures</td>
+          <td class="score-cell">59.06</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">103</td>
+          <td class="move-cell"><span class="move down">▼ 5</span></td>
+          <td class="name-cell"><strong>Sue Slaght</strong></td>
+          <td class="bio-cell">Traveler, adventurer, story teller. Laughing with Hubby as we wander the world.</td>
+          <td class="score-cell">58.96</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">104</td>
+          <td class="move-cell"><span class="move up">▲ 146</span></td>
+          <td class="name-cell"><strong>Sabine De Witte</strong></td>
+          <td class="bio-cell">Travel writer on a quest to find the most luxurious places on earth and enjoy the good life</td>
+          <td class="score-cell">58.94</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">105</td>
+          <td class="move-cell"><span class="move down">▼ 9</span></td>
+          <td class="name-cell"><strong>Ami Bhat</strong></td>
+          <td class="bio-cell">Passionate traveler, Crazy Photographer, Energetic sportsplayer &amp; Restless ball of energy</td>
+          <td class="score-cell">58.88</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">106</td>
+          <td class="move-cell"><span class="move up">▲ 11</span></td>
+          <td class="name-cell"><strong>Mark Crone</strong></td>
+          <td class="bio-cell">#TravelTips, #TravelPhoto, #TravelReview, #Ski; principal @plustravelgroup, member @CdnSkiPatrol, contributor @Liftopia, Instagram: marktravel, My Blog:</td>
+          <td class="score-cell">58.52</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">107</td>
+          <td class="move-cell"><span class="move down">▼ 19</span></td>
+          <td class="name-cell"><strong>Mark Wyld</strong></td>
+          <td class="bio-cell">Affordable family travel, no 5 star, Michelin star just value destinations attractions and accommodation for the everyday family</td>
+          <td class="score-cell">58.50</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">108</td>
+          <td class="move-cell"><span class="move down">▼ 6</span></td>
+          <td class="name-cell"><strong>Michele Peterson</strong></td>
+          <td class="bio-cell">Michele Peterson is a travel blogger specializing in food, drink and sun destinations</td>
+          <td class="score-cell">58.09</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">109</td>
+          <td class="move-cell"><span class="move up">▲ 166</span></td>
+          <td class="name-cell"><strong>Nisha Jha</strong></td>
+          <td class="bio-cell">Blogger, Freelance Writer, slow, steady travel www.lemonicks.com Twitter @cemonde IG - jha_nisha</td>
+          <td class="score-cell">58.02</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">110</td>
+          <td class="move-cell"><span class="move down">▼ 4</span></td>
+          <td class="name-cell"><strong>Soumya Nambiar</strong></td>
+          <td class="bio-cell">#Traveler, #Blogger, #Foodie, #Bookworm. #Influencer Facebook: https://t.co/RkMYBgDeuN Instagram: https://t.co/asKFTSpUSQ</td>
+          <td class="score-cell">57.88</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">111</td>
+          <td class="move-cell"><span class="move down">▼ 37</span></td>
+          <td class="name-cell"><strong>Karen Dawkins</strong></td>
+          <td class="bio-cell">Family travel blogger who loves adventure, history and food. Fueled by coffee and chocolate. Still searching for the perfect cupcake.</td>
+          <td class="score-cell">57.86</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">112</td>
+          <td class="move-cell"><span class="move up">▲ 134</span></td>
+          <td class="name-cell"><strong>Gary   Bembridge</strong></td>
+          <td class="bio-cell">Travelled every month for 20+ years * Lots of places, ships &amp; attractions to go * 33,000,000 YouTube channel views * Love Dairy Milk</td>
+          <td class="score-cell">57.63</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">113</td>
+          <td class="move-cell"><span class="move up">▲ 22</span></td>
+          <td class="name-cell"><strong>Lyn Lindfield</strong></td>
+          <td class="bio-cell">We travel, we cycle and we make occasional brief visits home.</td>
+          <td class="score-cell">57.46</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">114</td>
+          <td class="move-cell"><span class="move down">▼ 5</span></td>
+          <td class="name-cell"><strong>Nick &amp; Dariece</strong></td>
+          <td class="bio-cell">Turn travel into a lifestyle! We tweet about living &amp; travelling in exotic places worldwide. Our Vlog: https://t.co/bImGqOdZZR https://t.co/L6VTp8HASs</td>
+          <td class="score-cell">57.25</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">115</td>
+          <td class="move-cell"><span class="move up">▲ 49</span></td>
+          <td class="name-cell"><strong>Zippy Sandler</strong></td>
+          <td class="bio-cell">Global traveler, freelance writer &amp; fun #influencer. Reach over 300K.</td>
+          <td class="score-cell">57.13</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">116</td>
+          <td class="move-cell"><span class="move up">▲ 7</span></td>
+          <td class="name-cell"><strong>Travel? Yes   Please!</strong></td>
+          <td class="bio-cell">Award winning travel photographer,  writer. Sharing inspiration &amp; tips for your next vacation. TMAC member. FB: https://t.co/G4uPShzP9S Insta: @travelyesplease</td>
+          <td class="score-cell">56.88</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">117</td>
+          <td class="move-cell"><span class="move up">▲ 144</span></td>
+          <td class="name-cell"><strong>One Modern Couple</strong></td>
+          <td class="bio-cell">We are Carolann &amp; Macrae, a couple who loves to #travel together &amp; share our experiences both at home &amp; abroad! #Lifestyle #DIY</td>
+          <td class="score-cell">56.87</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">118</td>
+          <td class="move-cell"><span class="move up">▲ 31</span></td>
+          <td class="name-cell"><strong>Calculated   Traveller</strong></td>
+          <td class="bio-cell">Travel Writer Mary Chong w/ Advice Tips Reviews Tech • Stories &amp; Inspiration #Travel • #SATW #IFWTWA #!PW18</td>
+          <td class="score-cell">56.76</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">119</td>
+          <td class="move-cell"><span class="move down">▼ 9</span></td>
+          <td class="name-cell"><strong>A Taste</strong></td>
+          <td class="bio-cell">Wanderlust</td>
+          <td class="score-cell">56.67</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">120</td>
+          <td class="move-cell"><span class="move down">▼ 21</span></td>
+          <td class="name-cell"><strong>Toni | 2 Aussie Travellers</strong></td>
+          <td class="bio-cell">Travel and food bloggers with a focus on the Asia Pacific region.</td>
+          <td class="score-cell">56.57</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">121</td>
+          <td class="move-cell"><span class="move down">▼ 38</span></td>
+          <td class="name-cell"><strong>Nellie Huang</strong></td>
+          <td class="bio-cell">Travel writer and blogger on a mission to visit every country in the world.</td>
+          <td class="score-cell">56.56</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">122</td>
+          <td class="move-cell"><span class="move up">▲ 3</span></td>
+          <td class="name-cell"><strong>Luxe Getaways</strong></td>
+          <td class="bio-cell">A Magazine For Those with a Passion to Travel in Style…</td>
+          <td class="score-cell">56.43</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">123</td>
+          <td class="move-cell"><span class="move down">▼ 23</span></td>
+          <td class="name-cell"><strong>Rashmi Chalukya</strong></td>
+          <td class="bio-cell">3 Mumbaikars (We &amp; our lil angel Chhavi) Travel fanatics &amp; storytellers. 20 countries. Seeking inspiration for life through travel.</td>
+          <td class="score-cell">56.39</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">124</td>
+          <td class="move-cell"><span class="move up">▲ 282</span></td>
+          <td class="name-cell"><strong>Fran Opazo</strong></td>
+          <td class="bio-cell">I&#x27;m a travel journalist and blogger from Chile inspiring others to travel solo.</td>
+          <td class="score-cell">56.28</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">125</td>
+          <td class="move-cell"><span class="move up">▲ 192</span></td>
+          <td class="name-cell"><strong>Ankita &amp; Mohit</strong></td>
+          <td class="bio-cell">We’re Ankita and Mohit, an Indian couple who just can’t seem to get enough of airports. Together, we’ve been to over ten countries in the world and 17 states of India.</td>
+          <td class="score-cell">56.17</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">126</td>
+          <td class="move-cell"><span class="move down">▼ 5</span></td>
+          <td class="name-cell"><strong>Lauren   Manuel</strong></td>
+          <td class="bio-cell">Founder of https://t.co/dnU3ILomlb , freelance travel writer. Co-Founder of https://t.co/7wTseAiEFY Influencer Campaigns,digital marketing &amp;content.;</td>
+          <td class="score-cell">56.15</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">127</td>
+          <td class="move-cell"><span class="move up">▲ 2</span></td>
+          <td class="name-cell"><strong>Ric Gazarian</strong></td>
+          <td class="bio-cell">Join me in my quest to travel to every country in the world. @GAdventures Wanderer.  Producer https://t.co/75ilSmKaYK</td>
+          <td class="score-cell">56.11</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">128</td>
+          <td class="move-cell"><span class="move down">▼ 4</span></td>
+          <td class="name-cell"><strong>Sally Elbassir</strong></td>
+          <td class="bio-cell">Travel and food blogger at Passport and Plates.</td>
+          <td class="score-cell">56.04</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">129</td>
+          <td class="move-cell"><span class="move up">▲ 8</span></td>
+          <td class="name-cell"><strong>Learning Escapes</strong></td>
+          <td class="bio-cell">Mum of 2, coffee lover, Italian expat, curious spirit.  Love family travel and culture in all forms</td>
+          <td class="score-cell">55.76</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">130</td>
+          <td class="move-cell"><span class="move up">▲ 22</span></td>
+          <td class="name-cell"><strong>Carnets De   Traverse</strong></td>
+          <td class="bio-cell">Aesthetic Travelers ⋆ Award-winning Travel Blog ⋆ Leica Photographers https://t.co/djHyZx6WIE</td>
+          <td class="score-cell">55.66</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">131</td>
+          <td class="move-cell"><span class="move up">▲ 8</span></td>
+          <td class="name-cell"><strong>Travel With   Pedro</strong></td>
+          <td class="bio-cell">Former hotel revenue manager, frequent traveller &amp; polyglot. 101 countries &amp; counting.</td>
+          <td class="score-cell">55.62</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">132</td>
+          <td class="move-cell"><span class="move down">▼ 14</span></td>
+          <td class="name-cell"><strong>JohnnyJet</strong></td>
+          <td class="bio-cell">Founder of https://t.co/iJWGZJPFU2 | Forbes Top 10 Travel Influencers for 2017</td>
+          <td class="score-cell">55.57</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">133</td>
+          <td class="move-cell"><span class="move down">▼ 11</span></td>
+          <td class="name-cell"><strong>Sherianne Higgins</strong></td>
+          <td class="bio-cell">Out Of Office Travel Blog: Escape the Office and Travel!</td>
+          <td class="score-cell">55.56</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">134</td>
+          <td class="move-cell"><span class="move up">▲ 181</span></td>
+          <td class="name-cell"><strong>Simone &amp; Dan</strong></td>
+          <td class="bio-cell">Aussie travel &amp; lifestyle blogger, lover of all things water, food, wine &amp; travel ☀️</td>
+          <td class="score-cell">55.51</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">135</td>
+          <td class="move-cell"><span class="move down">▼ 19</span></td>
+          <td class="name-cell"><strong>Backpack   ME</strong></td>
+          <td class="bio-cell">Boy meets girl and they set off to #travel the world! 6 years, 55+ Countries! From: #India and #Portugal. Instagram: https://t.co/wXxXZqkD6A</td>
+          <td class="score-cell">55.50</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">136</td>
+          <td class="move-cell"><span class="move up">▲ 204</span></td>
+          <td class="name-cell"><strong>Alessandra Granata</strong></td>
+          <td class="bio-cell">Italian family travel blogger addicted to outdoor activities and adventures</td>
+          <td class="score-cell">55.48</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">137</td>
+          <td class="move-cell"><span class="move up">▲ 14</span></td>
+          <td class="name-cell"><strong>Sara Essop</strong></td>
+          <td class="bio-cell">I am a travel blogger based in Johannesburg, South Africa</td>
+          <td class="score-cell">55.27</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">138</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>TravelAbouts</strong></td>
+          <td class="bio-cell">Mom of 2, looking to combine work 9-5 with a lot of travel | I post ideas for long weekends &amp; quick escapes in Europe | Follow me on http://t.co/uSWT0VlN49</td>
+          <td class="score-cell">55.13</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">139</td>
+          <td class="move-cell"><span class="move down">▼ 11</span></td>
+          <td class="name-cell"><strong>Blue Sky Traveler</strong></td>
+          <td class="bio-cell">• Travel Writer | Photographer | Storyteller • More pics: https://t.co/brpFDxFhpj • ✨#LuxuryTravel</td>
+          <td class="score-cell">55.08</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">140</td>
+          <td class="move-cell"><span class="move down">▼ 13</span></td>
+          <td class="name-cell"><strong>With Husband In Tow</strong></td>
+          <td class="bio-cell">Professional Eaters. Adventures in Food, Wine &amp; Luxury #Travel http://bit.ly/20bhnwS @husbandintow</td>
+          <td class="score-cell">55.03</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">141</td>
+          <td class="move-cell"><span class="move down">▼ 26</span></td>
+          <td class="name-cell"><strong>Chasing The   Donkey</strong></td>
+          <td class="bio-cell">We are Aussies who live in Croatia &amp; blog about it, the Balkans &amp; Eastern Europe. We cover travel, accomm food &amp; culture. Ranked in the Top 50 Travel Blogs.</td>
+          <td class="score-cell">54.74</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">142</td>
+          <td class="move-cell"><span class="move up">▲ 14</span></td>
+          <td class="name-cell"><strong>Dan Flying Solo</strong></td>
+          <td class="bio-cell">Travel Photographer, Writer &amp; Videographer. 50+ Countries. Sustainable tourism, new people lover, getting lost...</td>
+          <td class="score-cell">54.72</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">143</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>Mariellen   Ward</strong></td>
+          <td class="bio-cell">The transformational travel guide. India specialist. Solo &amp; responsible travel. IG https://t.co/ltx3EHNb3a FB https://t.co/XTwV6Clxhl</td>
+          <td class="score-cell">54.62</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">144</td>
+          <td class="move-cell"><span class="move up">▲ 86</span></td>
+          <td class="name-cell"><strong>HITravelTales.com</strong></td>
+          <td class="bio-cell">We are Michael &amp; Therese • Travel Writers / Photographers • Global Wanderers • Seekers of the road less traveled •</td>
+          <td class="score-cell">54.46</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">145</td>
+          <td class="move-cell"><span class="move down">▼ 110</span></td>
+          <td class="name-cell"><strong>Rebecca Hall</strong></td>
+          <td class="bio-cell">Travel Blogger, HuffPost Travel writer, Rough Guide co-author living in Athens.</td>
+          <td class="score-cell">54.23</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">146</td>
+          <td class="move-cell"><span class="move up">▲ 208</span></td>
+          <td class="name-cell"><strong>Francesca   M</strong></td>
+          <td class="bio-cell">Tri-lingual travel guru and author of the Ultimate Guide to #Martinique! Always seeking my next big adventure!</td>
+          <td class="score-cell">54.19</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">147</td>
+          <td class="move-cell"><span class="move down">▼ 90</span></td>
+          <td class="name-cell"><strong>Wandering Wagars</strong></td>
+          <td class="bio-cell">Kevin and Christina are two working parents who explore the world with their two young  boys.</td>
+          <td class="score-cell">54.04</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">148</td>
+          <td class="move-cell"><span class="move down">▼ 16</span></td>
+          <td class="name-cell"><strong>TravelBoldly</strong></td>
+          <td class="bio-cell">#Travel #adventures large &amp; small. #TravelBoldly #brand by @JeromeShaw FB https://t.co/BEiK7vmgM4 IG https://t.co/LMEb2JfXNX</td>
+          <td class="score-cell">53.99</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">149</td>
+          <td class="move-cell"><span class="move up">▲ 31</span></td>
+          <td class="name-cell"><strong>Linda Fairbairn</strong></td>
+          <td class="bio-cell">♪♫ highlight your holiday adventures forever ♪♫ Love travel memories full of story-map doodles ♥</td>
+          <td class="score-cell">53.81</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">150</td>
+          <td class="move-cell"><span class="move up">▲ 18</span></td>
+          <td class="name-cell"><strong>Janice</strong></td>
+          <td class="bio-cell">Janice: author, blogger, speaker &amp; traveler. Tracey: writer, editor, food &amp; wine fanatic &amp; traveler. Solo Traveler: the site for those who travel alone.</td>
+          <td class="score-cell">53.77</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">151</td>
+          <td class="move-cell"><span class="move up">▲ 84</span></td>
+          <td class="name-cell"><strong>$udeep Sudeep</strong></td>
+          <td class="bio-cell">Traveler, Blogger by hobby,Communications professional,Salsa &amp; Tango Dancer.</td>
+          <td class="score-cell">53.73</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">152</td>
+          <td class="move-cell"><span class="move down">▼ 51</span></td>
+          <td class="name-cell"><strong>Olielo</strong></td>
+          <td class="bio-cell">Top #Travel Influencer and Blogger. Follow us on https://t.co/lzeTJjIfTG ! https://t.co/0PVLj9denZ https://t.co/aUyMG4sMkj #luxury #hotel #lifestyle #fashion</td>
+          <td class="score-cell">53.63</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">153</td>
+          <td class="move-cell"><span class="move up">▲ 16</span></td>
+          <td class="name-cell"><strong>Heidi Siefkas</strong></td>
+          <td class="bio-cell">I&#x27;m an Author,Speaker,&amp;Adventurer.; Follow my tweets &amp; be inspired.My #books #WhenAllBallsDrop #WithNewEyes #CubicletoCuba #adventure #inspiration #chatadventure</td>
+          <td class="score-cell">53.60</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">154</td>
+          <td class="move-cell"><span class="move down">▼ 81</span></td>
+          <td class="name-cell"><strong>Love And   Road</strong></td>
+          <td class="bio-cell">Lovebirds travelling the world on an affordable luxury style! Searching for Stunning Beaches + Yummy Food + Best Coffees | Bloggers, Runners &amp; Thrill Seekers!</td>
+          <td class="score-cell">53.57</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">155</td>
+          <td class="move-cell"><span class="move up">▲ 27</span></td>
+          <td class="name-cell"><strong>Barbara   Weibel</strong></td>
+          <td class="bio-cell">Ran away from corporate life to be a travel writer &amp; photographer Connecting the world through storytelling</td>
+          <td class="score-cell">53.46</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">156</td>
+          <td class="move-cell"><span class="move up">▲ 14</span></td>
+          <td class="name-cell"><strong>John Roberts In The Loop Travel</strong></td>
+          <td class="bio-cell">Travel fit. Travel happy. Travel often.</td>
+          <td class="score-cell">53.38</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">157</td>
+          <td class="move-cell"><span class="move down">▼ 7</span></td>
+          <td class="name-cell"><strong>Marie Julie Gagnon</strong></td>
+          <td class="bio-cell">✈️Collaboratrice #voyage</td>
+          <td class="score-cell">53.32</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">158</td>
+          <td class="move-cell"><span class="move down">▼ 17</span></td>
+          <td class="name-cell"><strong>Meagan Wristen</strong></td>
+          <td class="bio-cell">#Travel writer/blogger, mom of 3, #Texas #Portland, a @travelocity Gnomad. Next Trip: Puerto Vallarta, Norwegian Bliss, Jamaica, TX, Greece. @mommytravels</td>
+          <td class="score-cell">53.23</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">159</td>
+          <td class="move-cell"><span class="move up">▲ 8</span></td>
+          <td class="name-cell"><strong>Alice Teacaketravels</strong></td>
+          <td class="bio-cell">British solo female traveller inspiring women to face their fears, push their boundaries and reach their full potential through #travel!</td>
+          <td class="score-cell">53.22</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">160</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Cedric T.</strong></td>
+          <td class="bio-cell">Blogueur Voyage / Rédacteur Web / Heureux Papa. J’écris et je photographie, ici et là. J&#x27;ai été publié, ici et là. Co-fondateur @TeamGivres et #BattlePhoto.</td>
+          <td class="score-cell">53.05</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">161</td>
+          <td class="move-cell"><span class="move down">▼ 53</span></td>
+          <td class="name-cell"><strong>Angie Silver</strong></td>
+          <td class="bio-cell">London-based lifestyle, food and luxury #travel blogger. Exploring beautiful hotels and destinations. https://t.co/EpTWhrh9me</td>
+          <td class="score-cell">52.87</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">162</td>
+          <td class="move-cell"><span class="move up">▲ 123</span></td>
+          <td class="name-cell"><strong>Aurélie Amiot</strong></td>
+          <td class="bio-cell">Blogueuse voyageuse - Membre @PassDav &amp; @CollectifBV - Auteur d&#x27;un livre chez @Eyrolles sur la photo de voyage : http://t.co/MPZnAIq0T8</td>
+          <td class="score-cell">52.77</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">163</td>
+          <td class="move-cell"><span class="move down">▼ 16</span></td>
+          <td class="name-cell"><strong>The Intl   Wanderer</strong></td>
+          <td class="bio-cell">A live &amp; travel abroad website. With blogs; destination guides, opportunity directories for study; intern; work; volunteer; jobs; things to do; where to stay.</td>
+          <td class="score-cell">52.69</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">164</td>
+          <td class="move-cell"><span class="move up">▲ 56</span></td>
+          <td class="name-cell"><strong>Marysia Maciocha</strong></td>
+          <td class="bio-cell">A Girl with a Scarf addicted to art &amp; red wine. Tweet about photography, travel and her quirky views on life. The Luckiest Girl in the World!</td>
+          <td class="score-cell">52.68</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">165</td>
+          <td class="move-cell"><span class="move down">▼ 8</span></td>
+          <td class="name-cell"><strong>Nicole LaBarge</strong></td>
+          <td class="bio-cell">Travelling the world for 20+ years and hoping to inspire others to do the same.  I am on a quest to visit all 196 UN Nations.</td>
+          <td class="score-cell">52.51</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">166</td>
+          <td class="move-cell"><span class="move down">▼ 18</span></td>
+          <td class="name-cell"><strong>Everybody Hates A Tourist</strong></td>
+          <td class="bio-cell">Traveler, writer, craft beer, street food, wandering, sporting events, value travel</td>
+          <td class="score-cell">52.44</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">167</td>
+          <td class="move-cell"><span class="move down">▼ 74</span></td>
+          <td class="name-cell"><strong>Ana Silva O&#x27;Reilly</strong></td>
+          <td class="bio-cell">Luxury Travel Blogger at mrsoaroundtheworld.com and co-founder of #luxtravelchat</td>
+          <td class="score-cell">52.21</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">168</td>
+          <td class="move-cell"><span class="move up">▲ 6</span></td>
+          <td class="name-cell"><strong>Penny Sadler</strong></td>
+          <td class="bio-cell">Writing about wine, culture &amp; heritage travel for adventurous &amp; sophisticated travelers.</td>
+          <td class="score-cell">51.96</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">169</td>
+          <td class="move-cell"><span class="move down">▼ 38</span></td>
+          <td class="name-cell"><strong>Christy Woodrow</strong></td>
+          <td class="bio-cell">Award-Winning Photographer / Influencer / Avid Surfer / http://ordinarytraveler.com</td>
+          <td class="score-cell">51.95</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">170</td>
+          <td class="move-cell"><span class="move down">▼ 25</span></td>
+          <td class="name-cell"><strong>Madhu Shetty</strong></td>
+          <td class="bio-cell">Travel blogger. Wanderer. Storyteller at https://t.co/SVXR5Pzopn . Also on https://t.co/tntLniTEyO .</td>
+          <td class="score-cell">51.82</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">171</td>
+          <td class="move-cell"><span class="move up">▲ 149</span></td>
+          <td class="name-cell"><strong>Tips For Family Trips</strong></td>
+          <td class="bio-cell">We believe that travel makes families stronger, smarter and happier.</td>
+          <td class="score-cell">51.46</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">172</td>
+          <td class="move-cell"><span class="move down">▼ 58</span></td>
+          <td class="name-cell"><strong>Adventure   Mom</strong></td>
+          <td class="bio-cell">Inspiring people to try something new. I write about Travel, Food, Art, Adventure, Architecture, Nature, &amp; Fun to try solo, with friends, family or on a date.</td>
+          <td class="score-cell">51.37</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">173</td>
+          <td class="move-cell"><span class="move down">▼ 43</span></td>
+          <td class="name-cell"><strong>Raghav Modi</strong></td>
+          <td class="bio-cell">All about travel and food adding a bit of humour every now and then to make the world laugh a little.</td>
+          <td class="score-cell">51.22</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">174</td>
+          <td class="move-cell"><span class="move up">▲ 36</span></td>
+          <td class="name-cell"><strong>Mike Belobradic</strong></td>
+          <td class="bio-cell">Luxury The Finer Side of Travel™: A Luxury Disney Travel Blog specializing in the best of Disney destinations and related global luxury resorts. http://mikebelobradic.com</td>
+          <td class="score-cell">51.15</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">175</td>
+          <td class="move-cell"><span class="move down">▼ 10</span></td>
+          <td class="name-cell"><strong>Kate McCulley</strong></td>
+          <td class="bio-cell">Professional traveler. Bleeding-heart liberal. Inhaler of books. The perfect level of internet famous.</td>
+          <td class="score-cell">51.05</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">176</td>
+          <td class="move-cell"><span class="move up">▲ 51</span></td>
+          <td class="name-cell"><strong>Welcome To   Scotland</strong></td>
+          <td class="bio-cell">Welcome to Scotland! We&#x27;ve got over 16,000 things to see &amp; do, travel news &amp; ideas &amp; exclusive travel blogs to help you plan your ultimate Scottish trip.</td>
+          <td class="score-cell">50.94</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">177</td>
+          <td class="move-cell"><span class="move down">▼ 44</span></td>
+          <td class="name-cell"><strong>MakeTimeToSeeTheWorld</strong></td>
+          <td class="bio-cell">Vicki travels for the highlights, the must do&#x27;s and has a rule to never visit the same place twice</td>
+          <td class="score-cell">50.91</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">178</td>
+          <td class="move-cell"><span class="move down">▼ 20</span></td>
+          <td class="name-cell"><strong>Maria Belfort</strong></td>
+          <td class="bio-cell">UK based Family Travel Blog  Photography | Food | Storytelling</td>
+          <td class="score-cell">50.85</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">179</td>
+          <td class="move-cell"><span class="move down">▼ 33</span></td>
+          <td class="name-cell"><strong>Leigh McAdam</strong></td>
+          <td class="bio-cell">Outdoor and adventure lover, curious traveler. Love filling in the blanks on a map.</td>
+          <td class="score-cell">50.72</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">180</td>
+          <td class="move-cell"><span class="move down">▼ 26</span></td>
+          <td class="name-cell"><strong>Grantourismo Lara&amp;Terence;</strong></td>
+          <td class="bio-cell">Travel / food writer / photographer couple Lara &amp; Terence blog about slow, local &amp; experiential travel #2 travel blog in Australia</td>
+          <td class="score-cell">50.69</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">181</td>
+          <td class="move-cell"><span class="move down">▼ 10</span></td>
+          <td class="name-cell"><strong>Carnet D&#x27;escapades</strong></td>
+          <td class="bio-cell"></td>
+          <td class="score-cell">50.63</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">182</td>
+          <td class="move-cell"><span class="move up">▲ 80</span></td>
+          <td class="name-cell"><strong>Marissa Sutera</strong></td>
+          <td class="bio-cell">Travel blogger. #WITS19 Conference Director. #Wanderful Program Manager. Appreciating the little things at home and around the world.</td>
+          <td class="score-cell">50.57</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">183</td>
+          <td class="move-cell"><span class="move up">▲ 99</span></td>
+          <td class="name-cell"><strong>Cathy Sweeney</strong></td>
+          <td class="bio-cell">Luxury and cultural traveler sharing the best of destinations to inform, entertain, and inspire</td>
+          <td class="score-cell">50.53</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">184</td>
+          <td class="move-cell"><span class="move up">▲ 8</span></td>
+          <td class="name-cell"><strong>Nina *Nina*</strong></td>
+          <td class="bio-cell">traveler | blogger | photographer |  African adventures | instagram safarijunkie</td>
+          <td class="score-cell">50.44</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">185</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Adam Groffman</strong></td>
+          <td class="bio-cell">Globetrotter, blogger, #gaytravel. Contributor to the internet. City guides, queer #hipster, films &amp; fun events.</td>
+          <td class="score-cell">50.40</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">186</td>
+          <td class="move-cell"><span class="move up">▲ 204</span></td>
+          <td class="name-cell"><strong>Tam Warner Minton</strong></td>
+          <td class="bio-cell">An Empty Nest Adventure Travel Blogger is always renewing, revamping, and reinventing life!</td>
+          <td class="score-cell">50.39</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">187</td>
+          <td class="move-cell"><span class="move up">▲ 82</span></td>
+          <td class="name-cell"><strong>Jessica Van Dop</strong></td>
+          <td class="bio-cell">Content creator of beautiful experiences. International traveler &amp; food connoisseur. Always a Marine. Boricua. All about human connections. Views are my own.</td>
+          <td class="score-cell">50.32</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">188</td>
+          <td class="move-cell"><span class="move up">▲ 37</span></td>
+          <td class="name-cell"><strong>Suzanne Jones</strong></td>
+          <td class="bio-cell">Travel blogger who loves exploring and eating her way around the world, camera at the ready.</td>
+          <td class="score-cell">50.22</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">189</td>
+          <td class="move-cell"><span class="move down">▼ 112</span></td>
+          <td class="name-cell"><strong>Chris &amp;   Heather</strong></td>
+          <td class="bio-cell">Avid travelers and &#x27;A Brit and A Southerner&#x27; is a way to inspire others to &quot;Explore the World One Weekend At a Time&quot; with us! #WeekendWanderlust hosts</td>
+          <td class="score-cell">50.04</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">190</td>
+          <td class="move-cell"><span class="move down">▼ 37</span></td>
+          <td class="name-cell"><strong>Gary Arndt</strong></td>
+          <td class="bio-cell">3x Travel Photographer of the Year. Over 120 countries &amp; all 7 continents.</td>
+          <td class="score-cell">50.03</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">191</td>
+          <td class="move-cell"><span class="move up">▲ 187</span></td>
+          <td class="name-cell"><strong>Ladies What Travel</strong></td>
+          <td class="bio-cell">Ladies What Travel focuses on affordable luxury for travellers making the most of their weekends &amp; annual leave.</td>
+          <td class="score-cell">49.97</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">192</td>
+          <td class="move-cell"><span class="move up">▲ 91</span></td>
+          <td class="name-cell"><strong>Nelson Mochilero</strong></td>
+          <td class="bio-cell">All Low Cost Round the World First travel blog in Latinamerica - Mochileros.org (2005) Focus on adventure, backpacking</td>
+          <td class="score-cell">49.96</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">193</td>
+          <td class="move-cell"><span class="move up">▲ 36</span></td>
+          <td class="name-cell"><strong>Haunt Jaunts</strong></td>
+          <td class="bio-cell">A skeleton crew of restless spirits in search of #Paranormal #Horror #Halloween news, events &amp; entertainment. Come jaunt with us! If you dare...</td>
+          <td class="score-cell">49.91</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">194</td>
+          <td class="move-cell"><span class="move down">▼ 15</span></td>
+          <td class="name-cell"><strong>Wander The Map</strong></td>
+          <td class="bio-cell">Outdoor and Urban Adventure Travel. http://www.wanderthemap.com</td>
+          <td class="score-cell">49.80</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">195</td>
+          <td class="move-cell"><span class="move down">▼ 40</span></td>
+          <td class="name-cell"><strong>Karen Bryan</strong></td>
+          <td class="bio-cell">Online Publisher | Photographer | Artist | Editor of the Europe a la Carte Travel Blog &amp; Help Me To Save personal finance site.</td>
+          <td class="score-cell">49.77</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">196</td>
+          <td class="move-cell"><span class="move up">▲ 71</span></td>
+          <td class="name-cell"><strong>HH LifestyleTravel</strong></td>
+          <td class="bio-cell">Travel Blogger : Photographer : Travel Planner : Foodie : Life-hacker : Deal Finder : Wanderer : Francophile</td>
+          <td class="score-cell">49.70</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">197</td>
+          <td class="move-cell"><span class="move down">▼ 34</span></td>
+          <td class="name-cell"><strong>Uncornered Market</strong></td>
+          <td class="bio-cell">World travelers, writers, speakers. Driven by curiosity, guided by respect. Connecting the world through people, food &amp; adventure for 9+ years, 90+ countries.</td>
+          <td class="score-cell">49.56</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">198</td>
+          <td class="move-cell"><span class="move down">▼ 15</span></td>
+          <td class="name-cell"><strong>Sheisaphotographer</strong></td>
+          <td class="bio-cell">#IhlasNewsAgency #journalist #photographer #traveller #blogger https://t.co/D3YNGoqhI4</td>
+          <td class="score-cell">49.55</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">199</td>
+          <td class="move-cell"><span class="move up">▲ 299</span></td>
+          <td class="name-cell"><strong>Travelling Slacker</strong></td>
+          <td class="bio-cell">Jitaditya Narzary is a travel blogger and photographer from India. He is mostly seen in the Himalayas but he&#x27;s also interested in heritage sites and cultural eccentricities of his country.</td>
+          <td class="score-cell">49.53</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">200</td>
+          <td class="move-cell"><span class="move down">▼ 80</span></td>
+          <td class="name-cell"><strong>Linda Bibb</strong></td>
+          <td class="bio-cell">Making #travel fun &amp; easy thru stories &amp; photos of places, #food &amp; #culture. ✈  Real or virtual, enjoy the journey.</td>
+          <td class="score-cell">49.48</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">201</td>
+          <td class="move-cell"><span class="move down">▼ 17</span></td>
+          <td class="name-cell"><strong>Home Grown   Families</strong></td>
+          <td class="bio-cell">Family Centered Living- Sharing our #Parenting moments, #FamilyTravel, and LOVE for all things #Disney!</td>
+          <td class="score-cell">49.46</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">202</td>
+          <td class="move-cell"><span class="move down">▼ 16</span></td>
+          <td class="name-cell"><strong>BALI RD&amp;CPMM12-13Apr;</strong></td>
+          <td class="bio-cell">Independent Financial Planner,Flying&amp;shooting;,gym,movies,food,traveling,politics,writer,parttime blogger @PedasParaaah CP Rony085738132989</td>
+          <td class="score-cell">49.39</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">203</td>
+          <td class="move-cell"><span class="move down">▼ 9</span></td>
+          <td class="name-cell"><strong>Chelsea And Nate Day</strong></td>
+          <td class="bio-cell">Adventurous family blog with FOUR kids in tow! We believe in living fully. Moments matter.</td>
+          <td class="score-cell">49.37</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">204</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Matthew Karsten</strong></td>
+          <td class="bio-cell">Adventure travel blogger &amp; photographer. YouTuber. Sharing our amazing world with you!</td>
+          <td class="score-cell">49.28</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">205</td>
+          <td class="move-cell"><span class="move down">▼ 18</span></td>
+          <td class="name-cell"><strong>LizJarvisUK</strong></td>
+          <td class="bio-cell">Journalist. Editor. Traveller. Activist.</td>
+          <td class="score-cell">49.26</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">206</td>
+          <td class="move-cell"><span class="move down">▼ 18</span></td>
+          <td class="name-cell"><strong>Marcello   Arrambide</strong></td>
+          <td class="bio-cell">I&#x27;m Marcello Arrambide. I travel the world for a living, entrepreneur and stock day trader. I&#x27;ve been to over 90 countries, all 7 continents.</td>
+          <td class="score-cell">49.22</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">207</td>
+          <td class="move-cell"><span class="move down">▼ 16</span></td>
+          <td class="name-cell"><strong>Muhammad Arif   Rahman</strong></td>
+          <td class="bio-cell">Indonesian award-winning Travel Blogger | Travel Planner of @whatravel | Accountant of @DapurGladiesJKT | Email: ariev.rahman@gmail.com</td>
+          <td class="score-cell">49.15</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">208</td>
+          <td class="move-cell"><span class="move down">▼ 19</span></td>
+          <td class="name-cell"><strong>Abigail   King</strong></td>
+          <td class="bio-cell">Doctor turned travel writer. Top U.K. blog on luxury travel with a different perspective. Works w Lonely Planet, Nat Geo. Likes marmite, loves olives.</td>
+          <td class="score-cell">49.03</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">209</td>
+          <td class="move-cell"><span class="move down">▼ 16</span></td>
+          <td class="name-cell"><strong>Prasad Np</strong></td>
+          <td class="bio-cell">Running The Rat Race,Scheming to Swim With The Sharks. Travel Photographer. Angel Investor, Devil&#x27;s advocate. https://t.co/OHPQfIpO9z Team @darterphoto</td>
+          <td class="score-cell">48.92</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">210</td>
+          <td class="move-cell"><span class="move down">▼ 29</span></td>
+          <td class="name-cell"><strong>Meruschka</strong></td>
+          <td class="bio-cell">African travel activist | experience seeker  | arts, culture, music | Joburg  ❤️ |  IG : @mzansigirl #IAmJoburg</td>
+          <td class="score-cell">48.90</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">211</td>
+          <td class="move-cell"><span class="move down">▼ 34</span></td>
+          <td class="name-cell"><strong>Laurel Robbins</strong></td>
+          <td class="bio-cell">Leading adventure travel blogger and co-founder of #AdvTravelChat on Twitter.</td>
+          <td class="score-cell">48.90</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">212</td>
+          <td class="move-cell"><span class="move up">▲ 339</span></td>
+          <td class="name-cell"><strong>Travelpassionate</strong></td>
+          <td class="bio-cell">Travel Blogger covering #luxury #travel, #culture and gastronomy across #Europe #PR friendly Follow me https://t.co/mYTQ8mvchp #travelblogger</td>
+          <td class="score-cell">48.82</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">213</td>
+          <td class="move-cell"><span class="move down">▼ 15</span></td>
+          <td class="name-cell"><strong>DuaRansel</strong></td>
+          <td class="bio-cell">We&#x27;re a nomadic family! Continuously traveling as couple with just 2 backpacks since 2009, no home. And now with our baby Harrison</td>
+          <td class="score-cell">48.81</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">214</td>
+          <td class="move-cell"><span class="move up">▲ 31</span></td>
+          <td class="name-cell"><strong>Geert Leysen</strong></td>
+          <td class="bio-cell">Travel Blogger/Photographer from Belgium, Photographs &amp; Stories from around the world.</td>
+          <td class="score-cell">48.80</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">215</td>
+          <td class="move-cell"><span class="move down">▼ 13</span></td>
+          <td class="name-cell"><strong>Kathryn Burrington</strong></td>
+          <td class="bio-cell">Travel photographer, writer &amp; blogger, discovering new countries, cultures &amp; cuisines. Co-founder @TravelatorMedia @SussexBloggers @BoutiqueTravelB</td>
+          <td class="score-cell">48.78</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">216</td>
+          <td class="move-cell"><span class="move down">▼ 17</span></td>
+          <td class="name-cell"><strong>John Helios</strong></td>
+          <td class="bio-cell"></td>
+          <td class="score-cell">48.76</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">217</td>
+          <td class="move-cell"><span class="move up">▲ 2</span></td>
+          <td class="name-cell"><strong>Travel With Bender</strong></td>
+          <td class="bio-cell">International award-winning #familytravel writer &amp; #travel photographer sharing their firsthand experiences as they explore the world with kids!</td>
+          <td class="score-cell">48.74</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">218</td>
+          <td class="move-cell"><span class="move down">▼ 17</span></td>
+          <td class="name-cell"><strong>Rutavi   Mehta</strong></td>
+          <td class="bio-cell">First Indian #Blogger to participate in World&#x27;s dangerous race- #RickshawRun</td>
+          <td class="score-cell">48.64</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">219</td>
+          <td class="move-cell"><span class="move down">▼ 16</span></td>
+          <td class="name-cell"><strong>Jodi Ettenberg</strong></td>
+          <td class="bio-cell">Writer, Speaker, &amp; Soup Eater. Bylines at @natgeo, @guardian, @bbc_travel &amp; more. Former lawyer. Writing about travel &amp; food while helping celiacs eat safely.</td>
+          <td class="score-cell">48.60</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">220</td>
+          <td class="move-cell"><span class="move down">▼ 14</span></td>
+          <td class="name-cell"><strong>Suitcase Stories</strong></td>
+          <td class="bio-cell">A Luxury Travel Blog; Tips, reviews, guides and stories to inspire travel. Created by nomadic couple, over 3 years full time travel.</td>
+          <td class="score-cell">48.54</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">221</td>
+          <td class="move-cell"><span class="move up">▲ 18</span></td>
+          <td class="name-cell"><strong>The Travel Magazine</strong></td>
+          <td class="bio-cell">Global, mainstream, online travel magazine.</td>
+          <td class="score-cell">48.54</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">222</td>
+          <td class="move-cell"><span class="move down">▼ 17</span></td>
+          <td class="name-cell"><strong>Michael   Hodson</strong></td>
+          <td class="bio-cell">I traveled full time for six and a half years. Much fun. Don&#x27;t do it. My new business is @OnlyInVr. Snapchat at michaelshodson for fun.</td>
+          <td class="score-cell">48.53</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">223</td>
+          <td class="move-cell"><span class="move down">▼ 16</span></td>
+          <td class="name-cell"><strong>Dan   Martin</strong></td>
+          <td class="bio-cell">Head of content at small business network @e_nation, co-founder of arts, culture &amp; lifestyle blog @LStyleDistrict &amp; ambassador for @smwbristol</td>
+          <td class="score-cell">48.51</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">224</td>
+          <td class="move-cell"><span class="move down">▼ 51</span></td>
+          <td class="name-cell"><strong>Kim-Marie Kim-Marie</strong></td>
+          <td class="bio-cell">baby maker, risk taker, shoe lover, world saver, travel freak,</td>
+          <td class="score-cell">48.47</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">225</td>
+          <td class="move-cell"><span class="move down">▼ 49</span></td>
+          <td class="name-cell"><strong>Moi, Mes Souliers...</strong></td>
+          <td class="bio-cell">Travel-addict et gourmande, rédactrice pigiste blogueuse, je tweete #voyage #tourisme. Fondatrice #TUvoyages @6a8voyage https://t.co/Pe8ZlefdBA</td>
+          <td class="score-cell">48.44</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">226</td>
+          <td class="move-cell"><span class="move down">▼ 15</span></td>
+          <td class="name-cell"><strong>Traveling Ted</strong></td>
+          <td class="bio-cell">I blog at Traveling Ted about outdoor adventure travel specializing in hiking, canoeing, international backpacking, and skiing.</td>
+          <td class="score-cell">48.43</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">227</td>
+          <td class="move-cell"><span class="move down">▼ 19</span></td>
+          <td class="name-cell"><strong>Jonathan   Khoo</strong></td>
+          <td class="bio-cell">your wayward son, carrying on / instagram: jonk</td>
+          <td class="score-cell">48.40</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">228</td>
+          <td class="move-cell"><span class="move down">▼ 66</span></td>
+          <td class="name-cell"><strong>Tonya Prater</strong></td>
+          <td class="bio-cell">Travel writer &amp; book author. Avid road tripper &amp; roadside attraction enthusiast. #MOMtravelchat co-host. #Ohio based.  2017-2018 Dollywood Insider. #TBIN</td>
+          <td class="score-cell">48.38</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">229</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>Liz Carlson</strong></td>
+          <td class="bio-cell">Young Adventuress | @nzstuff contributor. Travel blogger and coffee addict. Always looking for adventure.</td>
+          <td class="score-cell">48.31</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">230</td>
+          <td class="move-cell"><span class="move up">▲ 121</span></td>
+          <td class="name-cell"><strong>Jane Dempster-Smith</strong></td>
+          <td class="bio-cell">A travel inspirational lifestyle blog for baby boomers and those who want to travel more</td>
+          <td class="score-cell">48.30</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">231</td>
+          <td class="move-cell"><span class="move down">▼ 19</span></td>
+          <td class="name-cell"><strong>Sticky Fingers</strong></td>
+          <td class="bio-cell">Writer and mum of 2 teens. UK&#x27;s #1 tea drinker. Partial to chocolate too. Owns World&#x27;s Handsomest Dog. Insta: TaraLara</td>
+          <td class="score-cell">48.29</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">232</td>
+          <td class="move-cell"><span class="move down">▼ 19</span></td>
+          <td class="name-cell"><strong>Rob</strong></td>
+          <td class="bio-cell">a gregarious gent who travels, blogs &amp; vlogs</td>
+          <td class="score-cell">48.26</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">233</td>
+          <td class="move-cell"><span class="move down">▼ 33</span></td>
+          <td class="name-cell"><strong>Time Travel Turtle</strong></td>
+          <td class="bio-cell">With everything on his back and all the time in the world. Travel writer and beer lover. Currently in Belize</td>
+          <td class="score-cell">48.20</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">234</td>
+          <td class="move-cell"><span class="move down">▼ 18</span></td>
+          <td class="name-cell"><strong>Carrie   Finley-Bajak</strong></td>
+          <td class="bio-cell">Ready to explore by land, sea, plane, or train. Friend or follow. Let&#x27;s connect. https://t.co/mBijOYiNHH #TTOT Google Certified</td>
+          <td class="score-cell">48.15</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">235</td>
+          <td class="move-cell"><span class="move down">▼ 18</span></td>
+          <td class="name-cell"><strong>Nomadic Samuel</strong></td>
+          <td class="bio-cell">Professional travel blogger at http://t.co/NsxdDDawrC and YouTuber at https://t.co/ymr63Tsxdu Partner in crime with my lovely wife Audrey at @ThatBackpacker</td>
+          <td class="score-cell">48.08</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">236</td>
+          <td class="move-cell"><span class="move up">▲ 468</span></td>
+          <td class="name-cell"><strong>Céline JePapote</strong></td>
+          <td class="bio-cell">Blog voyage pour voyageurs gourmands ! 2nd au Trophée #WeAreTravel2015</td>
+          <td class="score-cell">48.02</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">237</td>
+          <td class="move-cell"><span class="move down">▼ 14</span></td>
+          <td class="name-cell"><strong>Catherine Parker</strong></td>
+          <td class="bio-cell">One mom&#x27;s quest to road trip through the Lower 48 with her three kids.</td>
+          <td class="score-cell">48.00</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">238</td>
+          <td class="move-cell"><span class="move up">▲ 50</span></td>
+          <td class="name-cell"><strong>Linda Thompkins</strong></td>
+          <td class="bio-cell">Caribbean Blogger &amp; Travel Writer.</td>
+          <td class="score-cell">47.96</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">239</td>
+          <td class="move-cell"><span class="move down">▼ 21</span></td>
+          <td class="name-cell"><strong>Nienke Krook</strong></td>
+          <td class="bio-cell">Dutch travel blogger living in London. Culture, nature and food. Also expat life, blogging &amp; Pinterest.</td>
+          <td class="score-cell">47.83</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">240</td>
+          <td class="move-cell"><span class="move down">▼ 19</span></td>
+          <td class="name-cell"><strong>ABANG FADLI Mytravellicious</strong></td>
+          <td class="bio-cell">Top Travel+Foods Blogger from Malaysia. Freelance Travel Writer. Traveler and adventurer. Born in Borneo.</td>
+          <td class="score-cell">47.81</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">241</td>
+          <td class="move-cell"><span class="move down">▼ 17</span></td>
+          <td class="name-cell"><strong>Marla   Meridith</strong></td>
+          <td class="bio-cell">I eat, drink &amp; savor the alpine life. Join me on tasty travels around the world &amp; here in my hometown Telluride, CO. Cookbook release date: 8/18 ❤️</td>
+          <td class="score-cell">47.72</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">242</td>
+          <td class="move-cell"><span class="move down">▼ 108</span></td>
+          <td class="name-cell"><strong>Keryn   Means</strong></td>
+          <td class="bio-cell">Award-winning travel writer and digital influencer #travel #familytravel #adventure #food #culture #style. Co-publisher of print magazine: #TwistTravelMag</td>
+          <td class="score-cell">47.70</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">243</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>Jayne   Gorman</strong></td>
+          <td class="bio-cell">Travelling, Tweeting, Melbourne-living. Affordable luxury travel blogger. Loves boutique hotels &amp; brunches. Londoner living Down Under. Often ✈️✈️</td>
+          <td class="score-cell">47.66</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">244</td>
+          <td class="move-cell"><span class="move down">▼ 13</span></td>
+          <td class="name-cell"><strong>Santa Fe Travelers</strong></td>
+          <td class="bio-cell">The experts on travel to Santa Fe and Northern New Mexico. Also sharing our travels beyond.</td>
+          <td class="score-cell">47.49</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">245</td>
+          <td class="move-cell"><span class="move down">▼ 13</span></td>
+          <td class="name-cell"><strong>Cailin   O&#x27;Neil</strong></td>
+          <td class="bio-cell">Travel, video and food blogger / Snapchat Influencer.</td>
+          <td class="score-cell">47.43</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">246</td>
+          <td class="move-cell"><span class="move down">▼ 13</span></td>
+          <td class="name-cell"><strong>TJ   Vargas</strong></td>
+          <td class="bio-cell"></td>
+          <td class="score-cell">47.34</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">247</td>
+          <td class="move-cell"><span class="move up">▲ 52</span></td>
+          <td class="name-cell"><strong>Getting Stamped</strong></td>
+          <td class="bio-cell">~Travel influencers, writers &amp; photographers ~ Media Kit: bit.ly/1UeZkkB</td>
+          <td class="score-cell">47.31</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">248</td>
+          <td class="move-cell"><span class="move down">▼ 22</span></td>
+          <td class="name-cell"><strong>BlogExpat</strong></td>
+          <td class="bio-cell">BlogExpat.com is a directory for expat blogs, travels and blogs abroad, open to any personal blog of individual living abroad and sharing their expat experience</td>
+          <td class="score-cell">47.23</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">249</td>
+          <td class="move-cell"><span class="move down">▼ 13</span></td>
+          <td class="name-cell"><strong>Girovagate</strong></td>
+          <td class="bio-cell">una viscerale passione per i #viaggi che quando non sono in giro cerco di placare scrivendo sul mio #travel #blog | co-ideatore di #Come2Italy .</td>
+          <td class="score-cell">47.20</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">250</td>
+          <td class="move-cell"><span class="move down">▼ 12</span></td>
+          <td class="name-cell"><strong>Amanda Mouttaki</strong></td>
+          <td class="bio-cell">Amanda is a world traveling food explorer who is always after the next great story.</td>
+          <td class="score-cell">47.17</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">251</td>
+          <td class="move-cell"><span class="move up">▲ 50</span></td>
+          <td class="name-cell"><strong>Laurence Norah</strong></td>
+          <td class="bio-cell">#Photographer &amp; #Travel Blogger @ Finding the Universe &amp; Independent Travel Cats since 2010. Ambassador for Vanguard. Photos featured on Nat Geo.</td>
+          <td class="score-cell">47.09</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">252</td>
+          <td class="move-cell"><span class="move up">▲ 35</span></td>
+          <td class="name-cell"><strong>Tales Of A Traveler</strong></td>
+          <td class="bio-cell">Swati &amp; Sam. Travel Bloggers with a full time Job. We have travelled nook and corners of #India and now on mission to travel all the countries managing our full time IT job. We share travel stories...</td>
+          <td class="score-cell">47.07</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">253</td>
+          <td class="move-cell"><span class="move down">▼ 12</span></td>
+          <td class="name-cell"><strong>Zarah ____</strong></td>
+          <td class="bio-cell">Malaysian | Sabahan | Traveler | Erratic Behavior | Nature Lover | Blogger | Broadcaster by Profession | Animal Lover | Travel Blogger http://ow.ly/xkgSD</td>
+          <td class="score-cell">46.98</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">254</td>
+          <td class="move-cell"><span class="move down">▼ 11</span></td>
+          <td class="name-cell"><strong>R.a.W</strong></td>
+          <td class="bio-cell">Hello! I’m RaW from travel blog https://t.co/T45x20g4jt , 2x Malaysia Tourism Awards winner  //  FB/IG: rambleandwander  //  Email: raw@rambleandwander.com</td>
+          <td class="score-cell">46.86</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">255</td>
+          <td class="move-cell"><span class="move up">▲ 25</span></td>
+          <td class="name-cell"><strong>Liza Pierce</strong></td>
+          <td class="bio-cell">Local Maui Mama Talking Story Online - Maui, Travel, Family, Social Media, Real Estate, @WaileaRealty https://t.co/anKMXNI3xM</td>
+          <td class="score-cell">46.84</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">256</td>
+          <td class="move-cell"><span class="move down">▼ 41</span></td>
+          <td class="name-cell"><strong>Oneika The   Traveller</strong></td>
+          <td class="bio-cell">Jamaican-Canadian Travel Journalist &amp; Host. Correspondent for @TravelChannel. 100 countries visited. #keepitglobal https://t.co/IfkNf9O9Tw</td>
+          <td class="score-cell">46.80</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">257</td>
+          <td class="move-cell"><span class="move down">▼ 5</span></td>
+          <td class="name-cell"><strong>Katie Aune</strong></td>
+          <td class="bio-cell">MN born, runner, sports fanatic. Obsessed w/ travel to weird places &amp; spent a year in the former USSR. @RCFP development director. Opinions are my own.</td>
+          <td class="score-cell">46.78</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">258</td>
+          <td class="move-cell"><span class="move down">▼ 11</span></td>
+          <td class="name-cell"><strong>Andrew Evans</strong></td>
+          <td class="bio-cell">Author of &quot;The Black Penguin&quot; / Travel writer, explorer &amp; original @NatGeo Digital Nomad/ Sometimes I&#x27;m on the TV/ Dog dad/</td>
+          <td class="score-cell">46.75</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">259</td>
+          <td class="move-cell"><span class="move up">▲ 326</span></td>
+          <td class="name-cell"><strong>Travelsewhere</strong></td>
+          <td class="bio-cell">Australian traveller, blogger and photographer focusing on adventure and culture #travel, sharing lesser seen pockets of Europe and the World.</td>
+          <td class="score-cell">46.75</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">260</td>
+          <td class="move-cell"><span class="move down">▼ 153</span></td>
+          <td class="name-cell"><strong>Live Learn Venture</strong></td>
+          <td class="bio-cell">Travel blogger and adventurer currently living and teaching abroad in Asia</td>
+          <td class="score-cell">46.67</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">261</td>
+          <td class="move-cell"><span class="move down">▼ 11</span></td>
+          <td class="name-cell"><strong>TurismoOggi</strong></td>
+          <td class="bio-cell">Turismo Oggi è uno spazio di discussione e confronto su tematiche relative al mondo del #turismo a tutto tondo. The latest #travel news. #Blog #IT #EN</td>
+          <td class="score-cell">46.66</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">262</td>
+          <td class="move-cell"><span class="move up">▲ 11</span></td>
+          <td class="name-cell"><strong>Drew Binsky</strong></td>
+          <td class="bio-cell">I Make Daily Travel Videos</td>
+          <td class="score-cell">46.62</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">263</td>
+          <td class="move-cell"><span class="move down">▼ 10</span></td>
+          <td class="name-cell"><strong>Iheartpolarbears</strong></td>
+          <td class="bio-cell">Aspiring photographer | Blogger  | Grey&#x27;s Anatomy | Chicago PD | L&amp;O; SVU &amp; many others | Polar Bears are my favorite animal. ❤️  #svudiehards</td>
+          <td class="score-cell">46.61</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">264</td>
+          <td class="move-cell"><span class="move down">▼ 9</span></td>
+          <td class="name-cell"><strong>Francesca Turchi</strong></td>
+          <td class="bio-cell"></td>
+          <td class="score-cell">46.55</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">265</td>
+          <td class="move-cell"><span class="move down">▼ 9</span></td>
+          <td class="name-cell"><strong>Cristiano Guidetti</strong></td>
+          <td class="bio-cell">Blogger | Social Media Strategist | TBnet Co-Founder</td>
+          <td class="score-cell">46.50</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">266</td>
+          <td class="move-cell"><span class="move down">▼ 8</span></td>
+          <td class="name-cell"><strong>Leah</strong></td>
+          <td class="bio-cell">Kiwi fitness, running and mum blogger. 2x Mara runner. #Whole30 convert. https://t.co/rsKR3xXN02</td>
+          <td class="score-cell">46.45</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">267</td>
+          <td class="move-cell"><span class="move down">▼ 13</span></td>
+          <td class="name-cell"><strong>Becki Enright</strong></td>
+          <td class="bio-cell">Award winning pro travel blogger. Journeys to change perceptions.</td>
+          <td class="score-cell">46.43</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">268</td>
+          <td class="move-cell"><span class="move down">▼ 190</span></td>
+          <td class="name-cell"><strong>Catherine   Lux</strong></td>
+          <td class="bio-cell">Award winning luxury lifestyle blogger exploring the world through food &amp; good times.  Londoner in Sydney, Australia. *actual surname. https://t.co/lUCK9Spjyt</td>
+          <td class="score-cell">46.42</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">269</td>
+          <td class="move-cell"><span class="move down">▼ 9</span></td>
+          <td class="name-cell"><strong>Sukma K (Dede)</strong></td>
+          <td class="bio-cell">Family man. KeepTraveling and collect memories | #YNWA  EIGER brand Ambassador  Contact: dede079@gmail.com IG: @sukmadede</td>
+          <td class="score-cell">46.39</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">270</td>
+          <td class="move-cell"><span class="move down">▼ 7</span></td>
+          <td class="name-cell"><strong>Yunika Umar</strong></td>
+          <td class="bio-cell">#foodie #baking #books #traveling #blogging #CoffeeAddicts #SocialGeek. https://t.co/VUY72kxNXx In search of weirdness compatibility</td>
+          <td class="score-cell">46.30</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">271</td>
+          <td class="move-cell"><span class="move down">▼ 7</span></td>
+          <td class="name-cell"><strong>Chris-Blog Di   Viaggi</strong></td>
+          <td class="bio-cell">4600km a piedi per #Marta4kids e non sono stanco. Fondatore di https://t.co/2XoPgqFaSn verso un nuovo viaggio</td>
+          <td class="score-cell">46.30</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">272</td>
+          <td class="move-cell"><span class="move down">▼ 7</span></td>
+          <td class="name-cell"><strong>True   Nomads</strong></td>
+          <td class="bio-cell">The internet&#x27;s #1 remote job board.</td>
+          <td class="score-cell">46.26</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">273</td>
+          <td class="move-cell"><span class="move up">▲ 8</span></td>
+          <td class="name-cell"><strong>Colleen Williams</strong></td>
+          <td class="bio-cell">#Travel &amp; #food #blogger. Explore, embrace &amp; enjoy cultures around the world | #Marketing professional | Follow the journey. Also on FB/ Snapchat/Instagram</td>
+          <td class="score-cell">46.25</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">274</td>
+          <td class="move-cell"><span class="move down">▼ 8</span></td>
+          <td class="name-cell"><strong>El Boquerón   Viajero</strong></td>
+          <td class="bio-cell">Blog de viajes en familia</td>
+          <td class="score-cell">46.25</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">275</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>Vagrants Vagrants</strong></td>
+          <td class="bio-cell">For Lovers of Travel.</td>
+          <td class="score-cell">46.24</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">276</td>
+          <td class="move-cell"><span class="move down">▼ 8</span></td>
+          <td class="name-cell"><strong>Tiffany Martel</strong></td>
+          <td class="bio-cell">Tiffany writes about travel, entertainment and cooking.</td>
+          <td class="score-cell">46.16</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">277</td>
+          <td class="move-cell"><span class="move up">▲ 15</span></td>
+          <td class="name-cell"><strong>Audrey Bergner</strong></td>
+          <td class="bio-cell">Travel Host + YouTuber + Foodie | Find me making videos w/ @nomadicsamuel. https://t.co/Fq8Z7eJkrQ</td>
+          <td class="score-cell">46.07</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">278</td>
+          <td class="move-cell"><span class="move down">▼ 7</span></td>
+          <td class="name-cell"><strong>Kaushal Karkhanis</strong></td>
+          <td class="bio-cell">Digital Nomad blogger from India. Slow traveled South America for 10 months. www.ExoticGringo.com</td>
+          <td class="score-cell">46.06</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">279</td>
+          <td class="move-cell"><span class="move down">▼ 7</span></td>
+          <td class="name-cell"><strong>Silvia Badriotto</strong></td>
+          <td class="bio-cell">Amo viaggiare, parlare di social media, marketing del territorio e turistico.</td>
+          <td class="score-cell">45.96</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">280</td>
+          <td class="move-cell"><span class="move down">▼ 6</span></td>
+          <td class="name-cell"><strong>Laura Iancu</strong></td>
+          <td class="bio-cell">Blogger | Photographer | Entrepreneur | Coloring book illustrator | Printable planner designer | FREE course</td>
+          <td class="score-cell">45.92</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">281</td>
+          <td class="move-cell"><span class="move down">▼ 33</span></td>
+          <td class="name-cell"><strong>The   Cultureur</strong></td>
+          <td class="bio-cell">The Cultureur® is for the modern, sophisticated, and cultured global citizen | By @NyssaPChopra | Lawyer, Journalist, Humanitarian | ♥️ hotels,</td>
+          <td class="score-cell">45.91</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">282</td>
+          <td class="move-cell"><span class="move down">▼ 60</span></td>
+          <td class="name-cell"><strong>The Curious Explorers</strong></td>
+          <td class="bio-cell">A British couple who are traveling the world whilst working full time in London, UK.</td>
+          <td class="score-cell">45.82</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">283</td>
+          <td class="move-cell"><span class="move down">▼ 139</span></td>
+          <td class="name-cell"><strong>Martijn &amp; Antonette</strong></td>
+          <td class="bio-cell">outdoor &amp; adventure travel blog | hiking | nature | camping | biking | mountains | Dutch @karitraa ambassador | Tweets in Nederlands &amp; English by @antospaan</td>
+          <td class="score-cell">45.79</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">284</td>
+          <td class="move-cell"><span class="move down">▼ 25</span></td>
+          <td class="name-cell"><strong>Brett Snyder</strong></td>
+          <td class="bio-cell">I write The Cranky Flier, a snarky consumer air travel blog.  Yes, I&#x27;m an airline dork.</td>
+          <td class="score-cell">45.78</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">285</td>
+          <td class="move-cell"><span class="move up">▲ 7</span></td>
+          <td class="name-cell"><strong>Where&#x27;s   Sharon?</strong></td>
+          <td class="bio-cell">Join us as we explore the world with our young kids - and help you travel smarter, cheaper and better with your own kids!!</td>
+          <td class="score-cell">45.76</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">286</td>
+          <td class="move-cell"><span class="move down">▼ 7</span></td>
+          <td class="name-cell"><strong>Ishita B Saha</strong></td>
+          <td class="bio-cell">A Culinary Travel Blog on Dubai, Kolkata &amp; the world beyond... it pens down experiences, with 2 kids in tow! Editor &amp; Co-Founder @foodemagdxb, Dubai&#x27;s emagazine</td>
+          <td class="score-cell">45.66</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">287</td>
+          <td class="move-cell"><span class="move up">▲ 19</span></td>
+          <td class="name-cell"><strong>Katherine   Belarmino</strong></td>
+          <td class="bio-cell">Travel the World, a blog for the everyday working stiff. Trying to #travel the world with limited vacation time. Facebook: http://t.co/u4dRpc1BKE</td>
+          <td class="score-cell">45.65</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">288</td>
+          <td class="move-cell"><span class="move up">▲ 361</span></td>
+          <td class="name-cell"><strong>Travel Me Happy</strong></td>
+          <td class="bio-cell">Je vous emmène en voyage ! Récits, conseils et bons plans aux 4 coins du monde // Photographie &amp; vidéo // Blog voyage créé en 2012</td>
+          <td class="score-cell">45.63</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">289</td>
+          <td class="move-cell"><span class="move down">▼ 45</span></td>
+          <td class="name-cell"><strong>Mike HoneyTrek</strong></td>
+          <td class="bio-cell">In 2011 we quit our jobs and set out on a 500-day honeymoon…and have been traveling ever since.</td>
+          <td class="score-cell">45.62</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">290</td>
+          <td class="move-cell"><span class="move down">▼ 4</span></td>
+          <td class="name-cell"><strong>Esther   JuLee</strong></td>
+          <td class="bio-cell">Local Adventurer // Top 25 Travel Blogger exploring Portland + Beyond</td>
+          <td class="score-cell">45.39</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">291</td>
+          <td class="move-cell"><span class="move up">▲ 51</span></td>
+          <td class="name-cell"><strong>Un Sac Sur Le Dos</strong></td>
+          <td class="bio-cell">French speaking travel blog created in 2013 and award winning in 2015 and 2015 in France and Belgium</td>
+          <td class="score-cell">45.36</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">292</td>
+          <td class="move-cell"><span class="move down">▼ 35</span></td>
+          <td class="name-cell"><strong>Map Trotting</strong></td>
+          <td class="bio-cell">Travel loving couple tweeting about Britain and far beyond. Living a Location Independent lifestyle.</td>
+          <td class="score-cell">45.26</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">293</td>
+          <td class="move-cell"><span class="move down">▼ 53</span></td>
+          <td class="name-cell"><strong>Sarah Carter (ASocialNomad)</strong></td>
+          <td class="bio-cell">Reader, Writer, Ex GM, Skier, Sailor, Fulltime Traveller since May ‘14. 50% ASocialNomad 100% Nomad</td>
+          <td class="score-cell">45.20</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">294</td>
+          <td class="move-cell"><span class="move down">▼ 4</span></td>
+          <td class="name-cell"><strong>Photokatha</strong></td>
+          <td class="bio-cell">#TravelBloggers, #HospitalityReview , #SocialMedia Consultant . Email us at contact@photokatha.in</td>
+          <td class="score-cell">45.17</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">295</td>
+          <td class="move-cell"><span class="move up">▲ 143</span></td>
+          <td class="name-cell"><strong>The World Pursuit</strong></td>
+          <td class="bio-cell">Adventure and Luxury Travel Writers. Photographers. Adventurers. Travel Gurus. Named as top website to plan a safari. #TheWorldPursuit Let us help you travel!</td>
+          <td class="score-cell">45.16</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">296</td>
+          <td class="move-cell"><span class="move up">▲ 42</span></td>
+          <td class="name-cell"><strong>Vicky EatSleepLoveTravel</strong></td>
+          <td class="bio-cell">Multi Award Winning Bloggers | Freelance Travel Writers | Yorkshire Folk | We Go Places, See Things &amp; Write Stuff!</td>
+          <td class="score-cell">45.13</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">297</td>
+          <td class="move-cell"><span class="move down">▼ 8</span></td>
+          <td class="name-cell"><strong>Lee   Abbamonte</strong></td>
+          <td class="bio-cell">Visited Every Country in the World + N &amp; S Pole! Entrepreneur, TV Personality, Travel Writer, Speaker, Sports Fanatic, Maryland Alum, MBA</td>
+          <td class="score-cell">45.10</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">298</td>
+          <td class="move-cell"><span class="move down">▼ 6</span></td>
+          <td class="name-cell"><strong>Stockpiling Moms</strong></td>
+          <td class="bio-cell">#Food #Travel and #Lifestyle blog dedicated to helping busy families make memories – around a table, on vacation, or on the way to soccer. #SPMOMS #SPMOMSTravel</td>
+          <td class="score-cell">45.06</td>
+        </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="lb-method">
+    <div class="container">
+        <h2>About the methodology</h2>
+        <p>#travel1k was a dynamic leaderboard, recomputed weekly on rise.global. Each blogger received a travel1k score derived from Kred — a social authority metric that measured Influence (the likelihood that other accounts re-share, reply to, or engage with you) and Outreach (the breadth of accounts you actively engage in return). The two were blended to surface bloggers who were both reach-strong and genuinely interactive.</p>
+        <p>The "Move" column shows the change in rank versus the previous week — a snapshot of momentum in a fast-moving creator economy.</p>
+        <p><strong>Note:</strong> This is a static archive of the top 298 entries from the 30 May 2018 release. The data is no longer updated. Some bloggers listed have since rebranded, gone dormant, or moved to other platforms; the descriptions reflect the bloggers' own Twitter bios at the time.</p>
+    </div>
+</section>
+
+<section class="lb-cta">
+    <div class="container">
+        <h2>Build your own travel leaderboard on <span class="accent">Leaderboarded</span></h2>
+        <p>Want to publish a ranking like #travel1k? Leaderboarded is the platform behind it — used to score, rank, and showcase the people, brands, and destinations that matter most in your niche.</p>
+        <div class="cta-buttons">
+            <a href="https://www.leaderboarded.com?utm_source=rise.global&amp;utm_medium=referral&amp;utm_campaign=travel1k" class="btn-primary">Make your leaderboard</a>
+        </div>
+    </div>
+</section>

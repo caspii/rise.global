@@ -1,0 +1,908 @@
+---
+layout: default
+title: "The Accounting Top 100 (2023) — Archive"
+description: "Archive of The Accounting Top 100 social media leaderboard on rise.global. The 100 most influential CPAs, tax pros, and accounting firms — release of 29 March 2023. Originally sponsored by Avalara."
+keywords: "accounting top 100, top accountants, accounting influencers, accounting social media leaderboard, top CPAs"
+permalink: /accounting-top-100/
+redirect_from:
+  - /accounting-top-100/r/2684345/1/
+  - /accounting-top-100/p/6198510/r/2603907/
+---
+
+<style>
+.lb-hero {
+    padding: 6rem 0 3rem;
+    background: var(--gradient-hero);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+.lb-hero::before {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -15%;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(200, 255, 0, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+}
+.lb-hero .container { position: relative; z-index: 1; }
+.lb-hero .archive-tag {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    padding: 0.4rem 0.9rem;
+    border: 1px solid rgba(200, 255, 0, 0.3);
+    border-radius: var(--radius-pill);
+    margin-bottom: 1.5rem;
+}
+.lb-hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    margin-bottom: 1rem;
+    max-width: 900px;
+}
+.lb-hero h1 .accent { color: var(--primary-color); }
+.lb-hero .subtitle {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 720px;
+    line-height: 1.6;
+    margin-bottom: 1.75rem;
+}
+.lb-hero .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.55);
+    font-family: var(--font-display);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.lb-hero .meta-row strong { color: var(--white); font-weight: 700; }
+.lb-intro { padding: 3.5rem 0; background: var(--white); }
+.lb-intro .container { max-width: 760px; }
+.lb-intro p { font-size: 1.05rem; color: var(--text-light); line-height: 1.75; margin-bottom: 1rem; }
+.lb-table-section { padding: 1rem 0 5rem; background: var(--white); }
+.lb-table-wrap { border: 1px solid var(--border-color); border-radius: var(--radius-lg); overflow: hidden; background: var(--white); }
+.lb-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+.lb-table thead th {
+    background: var(--bg-dark); color: var(--white); font-family: var(--font-display);
+    font-weight: 700; font-size: 0.75rem; letter-spacing: 0.1em;
+    text-transform: uppercase; padding: 0.9rem 1rem; text-align: left;
+}
+.lb-table thead th.score-cell { text-align: right; }
+.lb-table tbody tr { border-top: 1px solid var(--border-color); transition: background 0.15s ease; }
+.lb-table tbody tr:hover { background: var(--bg-light); }
+.lb-table tbody tr:nth-child(-n+3) .rank-cell { color: var(--secondary-color); font-weight: 900; }
+.lb-table tbody td { padding: 0.85rem 1rem; vertical-align: top; }
+.rank-cell {
+    font-family: var(--font-display); font-weight: 800; font-size: 1.05rem;
+    color: var(--text-dark); width: 60px; white-space: nowrap;
+}
+.move-cell { width: 70px; }
+.move {
+    display: inline-block; font-family: var(--font-display);
+    font-size: 0.78rem; font-weight: 700; padding: 0.15rem 0.5rem; border-radius: var(--radius-sm);
+}
+.move.up { color: #2a9d4a; background: rgba(0, 214, 143, 0.1); }
+.move.down { color: #b53050; background: rgba(255, 77, 106, 0.08); }
+.move.flat { color: var(--text-muted); }
+.move.new { color: var(--bg-dark); background: var(--primary-color); }
+.name-cell { min-width: 160px; }
+.name-cell strong { color: var(--text-dark); font-weight: 700; }
+.bio-cell { color: var(--text-light); font-size: 0.9rem; line-height: 1.55; word-break: break-word; }
+.score-cell {
+    text-align: right; font-family: var(--font-display); font-weight: 800;
+    color: var(--text-dark); width: 80px; white-space: nowrap;
+}
+.lb-method { padding: 4rem 0; background: var(--bg-light); }
+.lb-method .container { max-width: 760px; }
+.lb-method h2 {
+    font-family: var(--font-display); font-size: 1.6rem; font-weight: 800;
+    color: var(--text-dark); margin-bottom: 1rem; letter-spacing: -0.02em;
+}
+.lb-method p { color: var(--text-light); line-height: 1.75; margin-bottom: 1rem; }
+.lb-cta {
+    padding: 5rem 0; background: var(--gradient-hero); color: var(--white);
+    text-align: center; position: relative; overflow: hidden;
+}
+.lb-cta::before {
+    content: ''; position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%); width: 700px; height: 700px;
+    background: radial-gradient(circle, rgba(200, 255, 0, 0.06) 0%, transparent 60%);
+    pointer-events: none;
+}
+.lb-cta .container { position: relative; z-index: 1; }
+.lb-cta h2 {
+    font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 900; line-height: 1.1; letter-spacing: -0.02em;
+    margin-bottom: 1rem; max-width: 720px; margin-left: auto; margin-right: auto;
+}
+.lb-cta h2 .accent { color: var(--primary-color); }
+.lb-cta p {
+    color: rgba(255, 255, 255, 0.75); font-size: 1.1rem; line-height: 1.65;
+    max-width: 600px; margin: 0 auto 2rem;
+}
+.lb-cta .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.lb-cta .btn-primary {
+    background: var(--gradient-cta); color: var(--bg-dark);
+    padding: 0.95rem 2rem; border-radius: var(--radius-pill);
+    font-family: var(--font-display); font-weight: 800; font-size: 0.95rem;
+    letter-spacing: 0.02em; text-transform: uppercase; text-decoration: none;
+    display: inline-block; transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.lb-cta .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(200, 255, 0, 0.25); }
+@media (max-width: 720px) {
+    .bio-cell { display: none; }
+    .lb-table thead th.bio-col { display: none; }
+}
+</style>
+
+<section class="lb-hero">
+    <div class="container">
+        <span class="archive-tag">Archive · 2023</span>
+        <h1>The <span class="accent">Accounting Top 100</span></h1>
+        <p class="subtitle">A historical ranking of the 100 most influential people in accounting on social media, originally published on rise.global and sponsored by Avalara. Score period 15 – 29 March 2023.</p>
+        <div class="meta-row">
+            <span>Score period: <strong>15 Mar – 29 Mar 2023</strong></span>
+            <span>Released: <strong>29 March 2023</strong></span>
+            <span>Top <strong>100 entries</strong> archived</span>
+        </div>
+    </div>
+</section>
+
+<section class="lb-intro">
+    <div class="container">
+        <p>This page is a preserved archive of <em>The Accounting Top 100</em>, a social media leaderboard that ran on rise.global, ranking the 100 most influential CPAs, tax professionals, accounting firms, and educators by their reach and engagement online.</p>
+        <p>The leaderboard was originally sponsored by <strong>Avalara</strong>, the tax compliance software company, and frequently cited by Accounting Today, CPA Practice Advisor, and the broader accounting press. The 29 March 2023 release captures a moment when the profession was actively wrestling with the talent crisis, the rise of AI in tax, and the ongoing modernization of firm management — themes reflected throughout the rankings. We are keeping it online because press articles, firm websites, and industry round-ups still link to it.</p>
+    </div>
+</section>
+
+<section class="lb-table-section">
+    <div class="container">
+        <div class="lb-table-wrap">
+            <table class="lb-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Move</th>
+                        <th>Accountant</th>
+                        <th class="bio-col">About</th>
+                        <th class="score-cell">Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+        <tr>
+          <td class="rank-cell">1</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Kim Bryant CPA</strong></td>
+          <td class="bio-cell">Kim Bryant is a CPA specializing is working with small businesses, helping them save on taxes and increase their wealth.</td>
+          <td class="score-cell">46</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">2</td>
+          <td class="move-cell"><span class="move up">▲ 7</span></td>
+          <td class="name-cell"><strong>Brian Streig, CPA</strong></td>
+          <td class="bio-cell">CPA focusing on tax.  Most of my tweets are related to #TaxTwiter or about Austin, Breckenridge, Italy, tattoos, food and my puppy. He/Him</td>
+          <td class="score-cell">46</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">3</td>
+          <td class="move-cell"><span class="move up">▲ 12</span></td>
+          <td class="name-cell"><strong>Matthew J.</strong></td>
+          <td class="bio-cell">Small town tax professional working with individuals and small businesses to help save tax dollars and make better futures.</td>
+          <td class="score-cell">46</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">4</td>
+          <td class="move-cell"><span class="move up">▲ 2</span></td>
+          <td class="name-cell"><strong>Jason Staats</strong></td>
+          <td class="bio-cell">I talk tech &amp; AI for the accounting profession</td>
+          <td class="score-cell">46</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">5</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>Logan Graf</strong></td>
+          <td class="bio-cell">Pioneering the tax landscape one tweet at a time.</td>
+          <td class="score-cell">45</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">6</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>Kelly Phillips Erb</strong></td>
+          <td class="bio-cell">Tax lawyer, writer, coffee drinker, dirt lover, baker, sports mom. Former southerner who converted mostly for the snow.</td>
+          <td class="score-cell">45</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">7</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>Travis Raml, CPA</strong></td>
+          <td class="bio-cell">I&#x27;m a Solutions and Growth focused CPA with over 20 years of accounting, tax, consulting (advisory + CFO) exp. My ultimate goal is to help clients achieve New Levels of Growth, Profits, &amp; Wealth.</td>
+          <td class="score-cell">45</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">8</td>
+          <td class="move-cell"><span class="move up">▲ 3</span></td>
+          <td class="name-cell"><strong>Nicole Davis</strong></td>
+          <td class="bio-cell">Wife to 1, mom to 5 and CPA to many | Speaker | Coach | I share my journey of being a firm owner with the hubs and 5 children | #FirmManagement #WomenTalking</td>
+          <td class="score-cell">44</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">9</td>
+          <td class="move-cell"><span class="move up">▲ 42</span></td>
+          <td class="name-cell"><strong>Matt Metras</strong></td>
+          <td class="bio-cell">Dad into taxes, tattoos, and tequila, not typically at the same time. WICSD Board of Ed. Cryptocurrency taxes / Enrolled Agent</td>
+          <td class="score-cell">43</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">10</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Sabrina Cook</strong></td>
+          <td class="bio-cell">CPA. Runner. Mom.</td>
+          <td class="score-cell">43</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">11</td>
+          <td class="move-cell"><span class="move down">▼ 6</span></td>
+          <td class="name-cell"><strong>Davidleary</strong></td>
+          <td class="bio-cell">exploring, challenging, influencing, #SmallBiz Ecosystem Evangelist, co-host @cloudacctpod, husband, dad, ex-@Intuit. ❤️&#x27;s: @BuffaloBills, madden,</td>
+          <td class="score-cell">42</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">12</td>
+          <td class="move-cell"><span class="move up">▲ 18</span></td>
+          <td class="name-cell"><strong>Justin Miller</strong></td>
+          <td class="bio-cell">Partner and National Director of Wealth Planning at Evercore, Tax Prof. at GGU Law, and ACTEC Fellow. Opinions are my own. Not legal or tax advice.</td>
+          <td class="score-cell">41</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">13</td>
+          <td class="move-cell"><span class="move up">▲ 4</span></td>
+          <td class="name-cell"><strong>Nayo Carter-Gray, EA</strong></td>
+          <td class="bio-cell">Virtual Accountant who loves a corny joke, funky glasses, and is passionate about #technology. Host of @TYFVirtual #ForbesTop100MustFollowTaxTwitterAccounts</td>
+          <td class="score-cell">41</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">14</td>
+          <td class="move-cell"><span class="move up">▲ 15</span></td>
+          <td class="name-cell"><strong>Vimal (vic) Bava</strong></td>
+          <td class="bio-cell">CPA | Success Coach - Helping other professionals &quot;GROW&quot; in their journey! &quot;The Backpack CPA&quot;</td>
+          <td class="score-cell">41</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">15</td>
+          <td class="move-cell"><span class="move down">▼ 7</span></td>
+          <td class="name-cell"><strong>Jeremy Wells, PhD, CPA, EA</strong></td>
+          <td class="bio-cell"></td>
+          <td class="score-cell">41</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">16</td>
+          <td class="move-cell"><span class="move up">▲ 5</span></td>
+          <td class="name-cell"><strong>Lorilyn Wilson</strong></td>
+          <td class="bio-cell">SMB Tax &amp; Accounting Expert | Honorary Matt</td>
+          <td class="score-cell">41</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">17</td>
+          <td class="move-cell"><span class="move new">NEW</span></td>
+          <td class="name-cell"><strong>Josh Youngblood, E.a.</strong></td>
+          <td class="bio-cell">Enrolled Agent - loves solving problems.</td>
+          <td class="score-cell">41</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">18</td>
+          <td class="move-cell"><span class="move down">▼ 2</span></td>
+          <td class="name-cell"><strong>Paul Caron</strong></td>
+          <td class="bio-cell">TaxProf Blog: The #1 tax and legal education blog on the Internet.  Dean and Tax Professor at Pepperdine Caruso Law School</td>
+          <td class="score-cell">41</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">19</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>Scott Ingram CPA, CA</strong></td>
+          <td class="bio-cell">Data-driven former CPA, CA and current Toronto REALTOR® offering balanced views of the market — not an &quot;only goes up&quot; industry hype man</td>
+          <td class="score-cell">41</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">20</td>
+          <td class="move-cell"><span class="move up">▲ 8</span></td>
+          <td class="name-cell"><strong>Della Hudson</strong></td>
+          <td class="bio-cell">Author of The Numbers Business: how to build a successful cloud accountancy practice. Speaker, writer, consultant</td>
+          <td class="score-cell">40</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">21</td>
+          <td class="move-cell"><span class="move up">▲ 6</span></td>
+          <td class="name-cell"><strong>Kay Bell</strong></td>
+          <td class="bio-cell">Kay&#x27;s an award-winning journalist, blogger and author who&#x27;s been writing about taxes for two-plus decades.</td>
+          <td class="score-cell">40</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">22</td>
+          <td class="move-cell"><span class="move up">▲ 24</span></td>
+          <td class="name-cell"><strong>Ben Wann</strong></td>
+          <td class="bio-cell">EEAT Niche site owner x10- Content &amp; SEO  I help true subject matter experts become #1 on Google. https://t.co/Bq7LAuClWm</td>
+          <td class="score-cell">40</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">23</td>
+          <td class="move-cell"><span class="move down">▼ 9</span></td>
+          <td class="name-cell"><strong>Rick Telberg</strong></td>
+          <td class="bio-cell">Live links to breaking news for tax, accounting and finance professionals. Upgrade to premium and start profiting today https://t.co/u5Z9L4XT0g</td>
+          <td class="score-cell">39</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">24</td>
+          <td class="move-cell"><span class="move up">▲ 41</span></td>
+          <td class="name-cell"><strong>Jeremy Stephens</strong></td>
+          <td class="bio-cell">A licensed CPA in TX BS in Math -Dallas Baptist Univ Grad Certificate in Adult Education -Sam Houston State  IPT Sales Tax School 2 &amp; NYU Institute on State &amp; Local Taxation</td>
+          <td class="score-cell">39</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">25</td>
+          <td class="move-cell"><span class="move down">▼ 22</span></td>
+          <td class="name-cell"><strong>Blake   Oliver</strong></td>
+          <td class="bio-cell">CPA and Co-host @cloudacctpod</td>
+          <td class="score-cell">38</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">26</td>
+          <td class="move-cell"><span class="move down">▼ 4</span></td>
+          <td class="name-cell"><strong>Dr Amanda</strong></td>
+          <td class="bio-cell">I&#x27;m an Aussie accounting academic based in Sydney. I love helping students understand how the study of accounting fits in to their future career path.</td>
+          <td class="score-cell">38</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">27</td>
+          <td class="move-cell"><span class="move up">▲ 5</span></td>
+          <td class="name-cell"><strong>Sean Stein Smith   CPA</strong></td>
+          <td class="bio-cell">@LehmanCollege Prof, @WallStreetBTC Board, @GildedFinance Board, @NJBIZ Power 50 @NYSSCPA 40 under 40 @NJCPA Ovation Award @AIER Fellow @ForbesCrypto</td>
+          <td class="score-cell">38</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">28</td>
+          <td class="move-cell"><span class="move up">▲ 6</span></td>
+          <td class="name-cell"><strong>Craig Hausz, CPA CFP</strong></td>
+          <td class="bio-cell">Visionary CPA that wants to make the world better through financial advisory to growth minded entrepreneurs and high net worth families.</td>
+          <td class="score-cell">37</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">29</td>
+          <td class="move-cell"><span class="move up">▲ 2</span></td>
+          <td class="name-cell"><strong>Sherrell T.</strong></td>
+          <td class="bio-cell">Virtual #Accountant &amp; #RockstarBookkeeper @nitramfinancial | #HubDocTop50 | #AccountingTop100 | Luvs #creativity #interiordesign #designbuild &amp; the beach</td>
+          <td class="score-cell">37</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">30</td>
+          <td class="move-cell"><span class="move down">▼ 18</span></td>
+          <td class="name-cell"><strong>Jean-Yves Gonin</strong></td>
+          <td class="bio-cell">Director @PwC_France • Future Trends, EmergingTech, AR, VR, Entertainment, HealthTech, FashionTech, RetailTech, Startup, Finance &amp; more</td>
+          <td class="score-cell">37</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">31</td>
+          <td class="move-cell"><span class="move down">▼ 8</span></td>
+          <td class="name-cell"><strong>Greg Zbylut</strong></td>
+          <td class="bio-cell">SuperLawyer. CA Certified Specialist in Tax. Award-winning Actor.  Dashingly good-looking tax advisor to the rich and famous. One of these is not true. IL/CA</td>
+          <td class="score-cell">37</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">32</td>
+          <td class="move-cell"><span class="move down">▼ 13</span></td>
+          <td class="name-cell"><strong>Anders Liu-Lindberg</strong></td>
+          <td class="bio-cell">Leading advisor to senior Finance and FP&amp;A; leaders on how to succeed with business partnering | Entrepreneur | #FinanceMaster</td>
+          <td class="score-cell">37</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">33</td>
+          <td class="move-cell"><span class="move up">▲ 14</span></td>
+          <td class="name-cell"><strong>George Papadopoulos</strong></td>
+          <td class="bio-cell">Independent Fee Only Certified Financial Planner (CFP) &amp; CPA. I provide top quality personal finance advice. Wall Street Journal Expert panelist.</td>
+          <td class="score-cell">37</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">34</td>
+          <td class="move-cell"><span class="move up">▲ 65</span></td>
+          <td class="name-cell"><strong>Kyle Johnson</strong></td>
+          <td class="bio-cell">Saving the world one tax return at a time as a #CPA!</td>
+          <td class="score-cell">36</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">35</td>
+          <td class="move-cell"><span class="move down">▼ 2</span></td>
+          <td class="name-cell"><strong>Byron Patrick, CPA</strong></td>
+          <td class="bio-cell">Just a guy with some amazingly smart friends. VP, Client Success at B3Method Institute.</td>
+          <td class="score-cell">36</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">36</td>
+          <td class="move-cell"><span class="move up">▲ 237</span></td>
+          <td class="name-cell"><strong>Joey   Havens</strong></td>
+          <td class="bio-cell">Author of Leading with Significance, Christian, Pops to my grandkids, Father, Husband, CPA, Everything Ole Miss, Read my #beBetter blog https://t.co/PhbmVXxBDk</td>
+          <td class="score-cell">36</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">37</td>
+          <td class="move-cell"><span class="move up">▲ 22</span></td>
+          <td class="name-cell"><strong>Chris Hervochon, CPA, CVA</strong></td>
+          <td class="bio-cell">Dad. Husband. Future-focused #CPA helping #marketing agencies be more profitable &amp; efficient. Talking about CAS (or CAAS) on @CPAAdvisoryShow. #AccountingTop100</td>
+          <td class="score-cell">36</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">38</td>
+          <td class="move-cell"><span class="move down">▼ 18</span></td>
+          <td class="name-cell"><strong>Deborah Fox, CPA</strong></td>
+          <td class="bio-cell">Dual Licensed CPA in Texas and in Florida. Tax  Focused because it can save money for everyone. Teaches IRS Compliance &amp; Strategy for new Small Business Owners.</td>
+          <td class="score-cell">36</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">39</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>Kristen Keats</strong></td>
+          <td class="bio-cell">Founder of Breakaway BA. Life goal: Bring Joy to Accounting</td>
+          <td class="score-cell">35</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">40</td>
+          <td class="move-cell"><span class="move up">▲ 3</span></td>
+          <td class="name-cell"><strong>Caleb L. Jenkins, EA, CQP</strong></td>
+          <td class="bio-cell">Young Leader in Accounting Profession | Top 10 QuickBooks ProAdvisor | Volunteer for #SALTProgram.</td>
+          <td class="score-cell">35</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">41</td>
+          <td class="move-cell"><span class="move down">▼ 6</span></td>
+          <td class="name-cell"><strong>Carl Reader</strong></td>
+          <td class="bio-cell"></td>
+          <td class="score-cell">34</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">42</td>
+          <td class="move-cell"><span class="move down">▼ 17</span></td>
+          <td class="name-cell"><strong>Ed Zollars, CPA</strong></td>
+          <td class="bio-cell">Tax CPA &amp; CPE Lecturer for Kaplan Financial Education.  Author of material on Current Federal Tax Developments website @edzollars@mastodon.world</td>
+          <td class="score-cell">34</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">43</td>
+          <td class="move-cell"><span class="move down">▼ 30</span></td>
+          <td class="name-cell"><strong>Kylie Parker</strong></td>
+          <td class="bio-cell">Own @lotusaccts @lotushomeau @lotusbeachhouse Wrote @planningplanb Business Manager @oneworldcharter</td>
+          <td class="score-cell">34</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">44</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>Luke Templin</strong></td>
+          <td class="bio-cell">I&#x27;ve grown 4 CAS/coaching offerings into over 6 figures, including my own at a2advisers.com . I&#x27;m guiding others to do the same, so they can do what they love.</td>
+          <td class="score-cell">33</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">45</td>
+          <td class="move-cell"><span class="move up">▲ 4</span></td>
+          <td class="name-cell"><strong>Edkless</strong></td>
+          <td class="bio-cell">Meta-consultant, business iconoclast, #Sage colleague, author, talk radio host at #asktsoe and senior fellow at the #VeraSage Institute.</td>
+          <td class="score-cell">33</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">46</td>
+          <td class="move-cell"><span class="move down">▼ 4</span></td>
+          <td class="name-cell"><strong>Alison Ball</strong></td>
+          <td class="bio-cell">Director of Marketing and Influencer Strategy for Liscio CX.  Loves to help people increase their influence!  Life is too short for mean people.</td>
+          <td class="score-cell">33</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">47</td>
+          <td class="move-cell"><span class="move up">▲ 35</span></td>
+          <td class="name-cell"><strong>Bill Sheridan</strong></td>
+          <td class="bio-cell">Cuba, NY, native. University at Buffalo alum. Adopted son of Baltimore and St. Louis. Speaker, author, and one of accounting&#x27;s Most Influential People for 2016.</td>
+          <td class="score-cell">33</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">48</td>
+          <td class="move-cell"><span class="move up">▲ 21</span></td>
+          <td class="name-cell"><strong>Sanjay K Sah</strong></td>
+          <td class="bio-cell">Accountant, Consultant, Advisor, Small Business Expert, Multi-Award Winner</td>
+          <td class="score-cell">32</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">49</td>
+          <td class="move-cell"><span class="move up">▲ 239</span></td>
+          <td class="name-cell"><strong>Aynsley Damery</strong></td>
+          <td class="bio-cell">CEO @clarity_hq | we help busy accountants thrive by realising the full potential of their team, their firm and their clients | ex @KPMG &amp; @tayabalitomlin</td>
+          <td class="score-cell">32</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">50</td>
+          <td class="move-cell"><span class="move down">▼ 11</span></td>
+          <td class="name-cell"><strong>Gene   Marks</strong></td>
+          <td class="bio-cell">SMB columnist covering pub policy, tech, workplace for @Guardian, @TheHill, @PhillyInquirer, @WashTimes, @Forbes, @Entrepreneur.  President https://t.co/UA9636Gd6t .</td>
+          <td class="score-cell">31</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">51</td>
+          <td class="move-cell"><span class="move up">▲ 34</span></td>
+          <td class="name-cell"><strong>Natalie Lennon</strong></td>
+          <td class="bio-cell"></td>
+          <td class="score-cell">31</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">52</td>
+          <td class="move-cell"><span class="move up">▲ 39</span></td>
+          <td class="name-cell"><strong>Alan FitzGerald</strong></td>
+          <td class="bio-cell">Independent Fractional CTO | &#x27;The Software Whisperer&#x27; | Cold water swimmer | Guitar enthusiast | 5 x Marathon Runner (now just very tired)</td>
+          <td class="score-cell">31</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">53</td>
+          <td class="move-cell"><span class="move up">▲ 5</span></td>
+          <td class="name-cell"><strong>Wayne Schmidt</strong></td>
+          <td class="bio-cell">Sales | Marketing | Websites. Launched Xero Australia. 35+ years in the accounting industry. www.wayne-schmidt.com</td>
+          <td class="score-cell">31</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">54</td>
+          <td class="move-cell"><span class="move up">▲ 58</span></td>
+          <td class="name-cell"><strong>Anthony Scaffeo, CPA</strong></td>
+          <td class="bio-cell"></td>
+          <td class="score-cell">30</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">55</td>
+          <td class="move-cell"><span class="move new">NEW</span></td>
+          <td class="name-cell"><strong>Tyler S</strong></td>
+          <td class="bio-cell">Founder https://t.co/tY8PuOvuRn . I write all my tweets. We help you to create your dream accounting firm - Add $100K+/Yr ⭐️⭐️⭐️⭐️⭐️ rating from 87+ firm owners</td>
+          <td class="score-cell">30</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">56</td>
+          <td class="move-cell"><span class="move up">▲ 27</span></td>
+          <td class="name-cell"><strong>Amanda Wilkie</strong></td>
+          <td class="bio-cell">She/her. A passion for emerging technologies and decades of strategic experience - preparing the accounting profession for the 4th Industrial Revolution.</td>
+          <td class="score-cell">30</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">57</td>
+          <td class="move-cell"><span class="move up">▲ 136</span></td>
+          <td class="name-cell"><strong>Mark Lee</strong></td>
+          <td class="bio-cell">Accountancy focused Futurist, Influencer, Speaker, Mentor, Author, Debunker</td>
+          <td class="score-cell">30</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">58</td>
+          <td class="move-cell"><span class="move down">▼ 6</span></td>
+          <td class="name-cell"><strong>Kelly Gonsalves</strong></td>
+          <td class="bio-cell">1/2 woman 1/2 amazing, 100% ProAdvisor • top 10 #quickbooks #proadvisor in the world • intuit trainer writer • top 50 cloud accountant • d//d</td>
+          <td class="score-cell">29</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">59</td>
+          <td class="move-cell"><span class="move up">▲ 25</span></td>
+          <td class="name-cell"><strong>Marc Staut</strong></td>
+          <td class="bio-cell"></td>
+          <td class="score-cell">29</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">60</td>
+          <td class="move-cell"><span class="move down">▼ 20</span></td>
+          <td class="name-cell"><strong>Dan Chodan</strong></td>
+          <td class="bio-cell"></td>
+          <td class="score-cell">28</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">61</td>
+          <td class="move-cell"><span class="move down">▼ 37</span></td>
+          <td class="name-cell"><strong>Megan Genest Tarnow</strong></td>
+          <td class="bio-cell">Ferociously committed to helping nonprofits with rock-solid, actionable financials</td>
+          <td class="score-cell">28</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">62</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>Heather Smith</strong></td>
+          <td class="bio-cell">Accounting Apps Newsletter http://heathersmithAU.com Cloud Stories podcast</td>
+          <td class="score-cell">28</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">63</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>Brad Garland, CPA</strong></td>
+          <td class="bio-cell">#CPA at @BrandBlackwell #TaxTwitter Serve @CFHuntsville @TEDxHuntsville Founder @bnicove @RocketCitySGO</td>
+          <td class="score-cell">28</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">64</td>
+          <td class="move-cell"><span class="move up">▲ 7</span></td>
+          <td class="name-cell"><strong>Jon Hubbard</strong></td>
+          <td class="bio-cell">Shareholder &amp; Consultant @ThinkPlanGrow, Consultant to the Accounting Profession, Helping Firms Grow, StoryBrand Certified Guide</td>
+          <td class="score-cell">28</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">65</td>
+          <td class="move-cell"><span class="move up">▲ 2</span></td>
+          <td class="name-cell"><strong>Robin Hall</strong></td>
+          <td class="bio-cell">I am the President &amp; Principal Consultant at VARC Solutions, specializing in QuickBooks training and consulting.</td>
+          <td class="score-cell">27</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">66</td>
+          <td class="move-cell"><span class="move up">▲ 60</span></td>
+          <td class="name-cell"><strong>Ted Williams CPA CA</strong></td>
+          <td class="bio-cell">Using my experience to guide you with a sound financial plan. I love my work, family and golf. Views are mine, of course. Albertan.</td>
+          <td class="score-cell">27</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">67</td>
+          <td class="move-cell"><span class="move up">▲ 20</span></td>
+          <td class="name-cell"><strong>Tracy Shannon Levey</strong></td>
+          <td class="bio-cell">All Things #Tax, #Accounting &amp; #Finance. Forbes Top 100 Must-Follow for Tax 2021. Co-Founder @parkertax Opinions are my own.</td>
+          <td class="score-cell">26</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">68</td>
+          <td class="move-cell"><span class="move down">▼ 11</span></td>
+          <td class="name-cell"><strong>Jeff Levine CPA CFP®</strong></td>
+          <td class="bio-cell">&quot;Lead Fin Plan Nerd&quot;, https://t.co/mQhLEvNLAj | Chief Planning Officer, Buckingham Wealth Partners | Relentless learner/educator | Dad x 3 + husband | Opinions are my own</td>
+          <td class="score-cell">26</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">69</td>
+          <td class="move-cell"><span class="move up">▲ 33</span></td>
+          <td class="name-cell"><strong>Rachel Vaughn, CPA</strong></td>
+          <td class="bio-cell">Tax CPA, Gamecock/wrestling mom, fan of Vandy and Cubs, Thistle Farmer and WCS parent. Spurs up &amp; Anchor Down.</td>
+          <td class="score-cell">26</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">70</td>
+          <td class="move-cell"><span class="move down">▼ 20</span></td>
+          <td class="name-cell"><strong>Shay</strong></td>
+          <td class="bio-cell">CEO/Founder of Shay CPA P.C. CPA, Quickbooks ProAdvisor, Deep expertise in Early Stage Tech Company Accounting, Tax Compliance, and R&amp;D; Tax Credits.</td>
+          <td class="score-cell">25</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">71</td>
+          <td class="move-cell"><span class="move up">▲ 38</span></td>
+          <td class="name-cell"><strong>Sharon Perry, CPA,CA</strong></td>
+          <td class="bio-cell">Small Business Advocate. Accounting &amp; Tax Wizard. QBO Master. Clan Matriarch. Community Champion. Big</td>
+          <td class="score-cell">25</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">72</td>
+          <td class="move-cell"><span class="move up">▲ 7</span></td>
+          <td class="name-cell"><strong>Sandra Wiley</strong></td>
+          <td class="bio-cell">Consultant to the accounting industry; expertise includes HR, training and management</td>
+          <td class="score-cell">25</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">73</td>
+          <td class="move-cell"><span class="move down">▼ 20</span></td>
+          <td class="name-cell"><strong>Lucia Pacioli</strong></td>
+          <td class="bio-cell">Tax manager at a CPA firm, name meant to be confused with the author of the math encyclopedia. Run by @ _lizzieg_</td>
+          <td class="score-cell">25</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">74</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>Ron   Baker</strong></td>
+          <td class="bio-cell">Quest: To bury the billable hour and timesheets. Founder of VeraSage Institute. Radio Talk-Show Host, The Soul of Enterprise, on @VoiceAmericaTRN</td>
+          <td class="score-cell">25</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">75</td>
+          <td class="move-cell"><span class="move up">▲ 20</span></td>
+          <td class="name-cell"><strong>Rachel Fisch</strong></td>
+          <td class="bio-cell">Accounting &amp; Tax for Real Estate Agents &amp; Brokers, Technology advocate, former @Deloitte &amp; @Sage_Canada, Inaugural member @accountingsalon, 80s Music Nut</td>
+          <td class="score-cell">25</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">76</td>
+          <td class="move-cell"><span class="move up">▲ 2</span></td>
+          <td class="name-cell"><strong>Keith Jones, CPA TheCPATaxProblemSolver</strong></td>
+          <td class="bio-cell">I help GOOD folks solve IRS tax problems and get on the road to financial freedom!</td>
+          <td class="score-cell">25</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">77</td>
+          <td class="move-cell"><span class="move up">▲ 42</span></td>
+          <td class="name-cell"><strong>Kristen Nies Ciraldo</strong></td>
+          <td class="bio-cell">bookkeeping + systems + guidance for restaurants | bars | specialty shops  #yummyorder | #mathforfood #kickassquality | #whyrestaurants</td>
+          <td class="score-cell">25</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">78</td>
+          <td class="move-cell"><span class="move down">▼ 10</span></td>
+          <td class="name-cell"><strong>Shayna   Chapman</strong></td>
+          <td class="bio-cell">CPA.CITP, CGMA, Tech addict. Founder &amp; Chief Strategist of Shaynaco LLC. Tax and CAS for small businesses and real estate. Gummy bear aficionado.</td>
+          <td class="score-cell">25</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">79</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>Jeff Beckley, CPA</strong></td>
+          <td class="bio-cell">CPA, tax professional--helping you make sense of arcane U.S. and state tax law.</td>
+          <td class="score-cell">25</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">80</td>
+          <td class="move-cell"><span class="move up">▲ 56</span></td>
+          <td class="name-cell"><strong>John Bly</strong></td>
+          <td class="bio-cell">Leader, Business Enthusiast, Author, Speaker. Regional Managing Partner of the South Atlantic of @Aprio. Past-EO Global Board Member, @ypo, CPA, #M&amp;A;</td>
+          <td class="score-cell">24</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">81</td>
+          <td class="move-cell"><span class="move down">▼ 33</span></td>
+          <td class="name-cell"><strong>Karen Reyburn</strong></td>
+          <td class="bio-cell">Owner of @weare_pf. She/her. Author of The Accountant Marketer, due late 2023. Dual British-American citizen. Coffee, whisky, faith, magic, walking.✨Slytherin</td>
+          <td class="score-cell">24</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">82</td>
+          <td class="move-cell"><span class="move up">▲ 15</span></td>
+          <td class="name-cell"><strong>Jackie Meyer,CPA,CTC</strong></td>
+          <td class="bio-cell">Jackie is a CPA and Certified Tax Coach, helping executives and accounting firms realize their highest return on investment in taxes and firm of the future technology.</td>
+          <td class="score-cell">24</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">83</td>
+          <td class="move-cell"><span class="move down">▼ 9</span></td>
+          <td class="name-cell"><strong>Shane Sullivan</strong></td>
+          <td class="bio-cell">CPA and Senior Accountant</td>
+          <td class="score-cell">24</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">84</td>
+          <td class="move-cell"><span class="move up">▲ 54</span></td>
+          <td class="name-cell"><strong>Amyvettercpa</strong></td>
+          <td class="bio-cell">Keynote Speaker- CPA,Yogi, &amp; Technologist, TEDx Speaker, Breaking Beliefs Podcast host-https://t.co/Ah6Hj3xwB9</td>
+          <td class="score-cell">24</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">85</td>
+          <td class="move-cell"><span class="move up">▲ 5</span></td>
+          <td class="name-cell"><strong>L. Gary Boomer</strong></td>
+          <td class="bio-cell">Founder &amp; Visionary at BCI  with a focus on leadership, talent, technology, processes and growth for leading CPA firms and their clients. Think, Plan, Grow!®</td>
+          <td class="score-cell">24</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">86</td>
+          <td class="move-cell"><span class="move up">▲ 20</span></td>
+          <td class="name-cell"><strong>JimBourke</strong></td>
+          <td class="bio-cell">CPA/Managing Director of Advisory Services @ Withum Global Technology &amp; Advisory Leader @ HLB International Accounting Today Top 100/CPA Global Thought Leader</td>
+          <td class="score-cell">24</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">87</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>Jennifer Wilson</strong></td>
+          <td class="bio-cell">Driving change in the CPA profession:  empowering Next Gen clients and talent and helping firm leaders create firms that young people want to own.</td>
+          <td class="score-cell">24</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">88</td>
+          <td class="move-cell"><span class="move up">▲ 8</span></td>
+          <td class="name-cell"><strong>TaxMama®</strong></td>
+          <td class="bio-cell">Award winning author - Top 100 accountant and tax blog - dean of TaxMama&#x27;s® #EnrolledAgent (EA) Time for Self-Study! https://t.co/QzmlivtwVY</td>
+          <td class="score-cell">24</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">89</td>
+          <td class="move-cell"><span class="move down">▼ 45</span></td>
+          <td class="name-cell"><strong>Mike Piper</strong></td>
+          <td class="bio-cell">I write about retirement planning. CPA. Also created this: https://t.co/9TrNsSZ1vw</td>
+          <td class="score-cell">24</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">90</td>
+          <td class="move-cell"><span class="move up">▲ 45</span></td>
+          <td class="name-cell"><strong>Jacob I.</strong></td>
+          <td class="bio-cell">CEO at @oberlanderandco  Advisor &amp; Fractional CFO for growing business</td>
+          <td class="score-cell">24</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">91</td>
+          <td class="move-cell"><span class="move down">▼ 2</span></td>
+          <td class="name-cell"><strong>Arianna Campbell</strong></td>
+          <td class="bio-cell">I use my passion for process improvement and professional development to help make accounting firms successful and future ready.</td>
+          <td class="score-cell">24</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">92</td>
+          <td class="move-cell"><span class="move up">▲ 18</span></td>
+          <td class="name-cell"><strong>Brian Tankersley</strong></td>
+          <td class="bio-cell">CPA, CITP, CGMA.  Consultant, Speaker - K2 Enterprises, Father, Husband, Beekeeper.</td>
+          <td class="score-cell">23</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">93</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Heather Robinson</strong></td>
+          <td class="bio-cell">She/her. #MarketingManager for @thinkplangrow Focusing on developing marketing strategy &amp; brand awareness! #AccountingMarketing</td>
+          <td class="score-cell">23</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">94</td>
+          <td class="move-cell"><span class="move up">▲ 33</span></td>
+          <td class="name-cell"><strong>Jeff Breeden</strong></td>
+          <td class="bio-cell">Tax Consulting partner with Rubin Brown in Las Vegas.  I find joy in solving sticky problems. My twins and wife keep me grounded. #LLV16 All views are my own.</td>
+          <td class="score-cell">23</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">95</td>
+          <td class="move-cell"><span class="move down">▼ 69</span></td>
+          <td class="name-cell"><strong>Jacob Schroeder</strong></td>
+          <td class="bio-cell">CPA, entrepreneur, Founder Ascend Consulting, 2017/2018 Intuit Accountants Council member, Co-Founder Ideation: Think Forward, Co-Founder Hydda Living</td>
+          <td class="score-cell">23</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">96</td>
+          <td class="move-cell"><span class="move down">▼ 32</span></td>
+          <td class="name-cell"><strong>Hitendra Patil</strong></td>
+          <td class="bio-cell">Top 100 Most Influential People in Accounting 2017-22⭐ Bestselling Author - Client Accounting Services (CAS), Accountaneur</td>
+          <td class="score-cell">22</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">97</td>
+          <td class="move-cell"><span class="move up">▲ 76</span></td>
+          <td class="name-cell"><strong>Tom Wheelwright</strong></td>
+          <td class="bio-cell">Tom Wheelwright, CPA is an international speaker and worldwide authority on cutting taxes and building wealth.</td>
+          <td class="score-cell">22</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">98</td>
+          <td class="move-cell"><span class="move down">▼ 17</span></td>
+          <td class="name-cell"><strong>Chris Cicalese, CPA</strong></td>
+          <td class="bio-cell">» Associate Partner @AlloyCPAs &amp; Former Pine Valley Caddy » Helping Pro Athletes, Amusement/Ent Industry, &amp; traditional biz</td>
+          <td class="score-cell">22</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">99</td>
+          <td class="move-cell"><span class="move down">▼ 24</span></td>
+          <td class="name-cell"><strong>April Walker</strong></td>
+          <td class="bio-cell">CPA. Mom. Wife. Ironman. Tar Heel. Love learning and all things tax.</td>
+          <td class="score-cell">21</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">100</td>
+          <td class="move-cell"><span class="move down">▼ 62</span></td>
+          <td class="name-cell"><strong>Nerd Enterprises Inc</strong></td>
+          <td class="bio-cell">I&#x27;m a teacher and a CFO which means I can communicate complex financial concepts in terms that make them easy to understand. #QuickBooksOnline #Accounting #CFO</td>
+          <td class="score-cell">21</td>
+        </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="lb-method">
+    <div class="container">
+        <h2>About the methodology</h2>
+        <p>The Accounting Top 100 was recomputed every two weeks. Each person received a Power Score based on their social media activity and engagement during the score period, with weighting designed to favour authentic professional conversation over raw follower counts.</p>
+        <p>The "Move" column shows the change in rank versus the previous bulletin — useful for spotting rising voices in the profession.</p>
+        <p><strong>Note:</strong> This is a static archive of the 29 March 2023 release. The data is no longer updated. The descriptions reflect each person's own Twitter bio at the time.</p>
+    </div>
+</section>
+
+<section class="lb-cta">
+    <div class="container">
+        <h2>Build your own leaderboard on <span class="accent">Leaderboarded</span></h2>
+        <p>Want to publish a ranking like The Accounting Top 100? Leaderboarded is the platform behind it — used to score, rank, and showcase the people, firms, and brands that matter most in your profession.</p>
+        <div class="cta-buttons">
+            <a href="https://www.leaderboarded.com?utm_source=rise.global&amp;utm_medium=referral&amp;utm_campaign=accounting-top-100" class="btn-primary">Make your leaderboard</a>
+        </div>
+    </div>
+</section>

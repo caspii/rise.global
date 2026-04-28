@@ -1,0 +1,908 @@
+---
+layout: default
+title: "The 100 Most Influential Blockchain People (2018) — Archive"
+description: "Archive of the 100 Most Influential Blockchain People leaderboard on rise.global. Vitalik Buterin, Joseph Lubin, Don Tapscott and 97 more — week ending 9 May 2018. Powered by Klout and Twitter signals."
+keywords: "blockchain people, blockchain influencers, top blockchain people, most influential blockchain people, blockchain leaderboard"
+permalink: /top-fintech-people/
+redirect_from:
+  - /top-fintech-people/r/latest/
+  - /top-fintech-people/p/2246701/r/2571685/
+---
+
+<style>
+.lb-hero {
+    padding: 6rem 0 3rem;
+    background: var(--gradient-hero);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+.lb-hero::before {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -15%;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(200, 255, 0, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+}
+.lb-hero .container { position: relative; z-index: 1; }
+.lb-hero .archive-tag {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    padding: 0.4rem 0.9rem;
+    border: 1px solid rgba(200, 255, 0, 0.3);
+    border-radius: var(--radius-pill);
+    margin-bottom: 1.5rem;
+}
+.lb-hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    margin-bottom: 1rem;
+    max-width: 900px;
+}
+.lb-hero h1 .accent { color: var(--primary-color); }
+.lb-hero .subtitle {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 720px;
+    line-height: 1.6;
+    margin-bottom: 1.75rem;
+}
+.lb-hero .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.55);
+    font-family: var(--font-display);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.lb-hero .meta-row strong { color: var(--white); font-weight: 700; }
+.lb-intro { padding: 3.5rem 0; background: var(--white); }
+.lb-intro .container { max-width: 760px; }
+.lb-intro p { font-size: 1.05rem; color: var(--text-light); line-height: 1.75; margin-bottom: 1rem; }
+.lb-table-section { padding: 1rem 0 5rem; background: var(--white); }
+.lb-table-wrap { border: 1px solid var(--border-color); border-radius: var(--radius-lg); overflow: hidden; background: var(--white); }
+.lb-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+.lb-table thead th {
+    background: var(--bg-dark); color: var(--white); font-family: var(--font-display);
+    font-weight: 700; font-size: 0.75rem; letter-spacing: 0.1em;
+    text-transform: uppercase; padding: 0.9rem 1rem; text-align: left;
+}
+.lb-table thead th.score-cell { text-align: right; }
+.lb-table tbody tr { border-top: 1px solid var(--border-color); transition: background 0.15s ease; }
+.lb-table tbody tr:hover { background: var(--bg-light); }
+.lb-table tbody tr:nth-child(-n+3) .rank-cell { color: var(--secondary-color); font-weight: 900; }
+.lb-table tbody td { padding: 0.85rem 1rem; vertical-align: top; }
+.rank-cell {
+    font-family: var(--font-display); font-weight: 800; font-size: 1.05rem;
+    color: var(--text-dark); width: 60px; white-space: nowrap;
+}
+.move-cell { width: 70px; }
+.move {
+    display: inline-block; font-family: var(--font-display);
+    font-size: 0.78rem; font-weight: 700; padding: 0.15rem 0.5rem; border-radius: var(--radius-sm);
+}
+.move.up { color: #2a9d4a; background: rgba(0, 214, 143, 0.1); }
+.move.down { color: #b53050; background: rgba(255, 77, 106, 0.08); }
+.move.flat { color: var(--text-muted); }
+.move.new { color: var(--bg-dark); background: var(--primary-color); }
+.name-cell { min-width: 160px; }
+.name-cell strong { color: var(--text-dark); font-weight: 700; }
+.bio-cell { color: var(--text-light); font-size: 0.9rem; line-height: 1.55; word-break: break-word; }
+.score-cell {
+    text-align: right; font-family: var(--font-display); font-weight: 800;
+    color: var(--text-dark); width: 80px; white-space: nowrap;
+}
+.lb-method { padding: 4rem 0; background: var(--bg-light); }
+.lb-method .container { max-width: 760px; }
+.lb-method h2 {
+    font-family: var(--font-display); font-size: 1.6rem; font-weight: 800;
+    color: var(--text-dark); margin-bottom: 1rem; letter-spacing: -0.02em;
+}
+.lb-method p { color: var(--text-light); line-height: 1.75; margin-bottom: 1rem; }
+.lb-cta {
+    padding: 5rem 0; background: var(--gradient-hero); color: var(--white);
+    text-align: center; position: relative; overflow: hidden;
+}
+.lb-cta::before {
+    content: ''; position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%); width: 700px; height: 700px;
+    background: radial-gradient(circle, rgba(200, 255, 0, 0.06) 0%, transparent 60%);
+    pointer-events: none;
+}
+.lb-cta .container { position: relative; z-index: 1; }
+.lb-cta h2 {
+    font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 900; line-height: 1.1; letter-spacing: -0.02em;
+    margin-bottom: 1rem; max-width: 720px; margin-left: auto; margin-right: auto;
+}
+.lb-cta h2 .accent { color: var(--primary-color); }
+.lb-cta p {
+    color: rgba(255, 255, 255, 0.75); font-size: 1.1rem; line-height: 1.65;
+    max-width: 600px; margin: 0 auto 2rem;
+}
+.lb-cta .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.lb-cta .btn-primary {
+    background: var(--gradient-cta); color: var(--bg-dark);
+    padding: 0.95rem 2rem; border-radius: var(--radius-pill);
+    font-family: var(--font-display); font-weight: 800; font-size: 0.95rem;
+    letter-spacing: 0.02em; text-transform: uppercase; text-decoration: none;
+    display: inline-block; transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.lb-cta .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(200, 255, 0, 0.25); }
+@media (max-width: 720px) {
+    .bio-cell { display: none; }
+    .lb-table thead th.bio-col { display: none; }
+}
+</style>
+
+<section class="lb-hero">
+    <div class="container">
+        <span class="archive-tag">Archive · 2018</span>
+        <h1>The 100 Most Influential <span class="accent">Blockchain People</span></h1>
+        <p class="subtitle">A historical ranking of the 100 most influential individuals shaping the blockchain conversation, originally published on rise.global. Scored on Klout and Twitter signals for the week ending 9 May 2018.</p>
+        <div class="meta-row">
+            <span>Score period: <strong>2 May – 9 May 2018</strong></span>
+            <span>Released: <strong>9 May 2018</strong></span>
+            <span>Top <strong>100 entries</strong> archived</span>
+        </div>
+    </div>
+</section>
+
+<section class="lb-intro">
+    <div class="container">
+        <p>This page is a preserved archive of <em>The 100 Most Influential Blockchain People</em>, a leaderboard that ran on rise.global through 2017 and 2018. It tracked the people driving the blockchain conversation each week — founders, investors, journalists, and researchers — blending Klout authority scores with Twitter list inclusion to surface those with both reach and curated relevance.</p>
+        <p>The list is a snapshot of an extraordinary moment in crypto: Vitalik Buterin at #1, Joseph Lubin at #2, Don Tapscott at #3, with Tim Draper, Andreas M. Antonopoulos, Roger Ver, Charlie Lee, Brock Pierce and Charles Hoskinson all in the top 25. Names that would later become near-mythic in the industry. We are keeping it online because press, academic papers, and industry reports continue to cite it.</p>
+    </div>
+</section>
+
+<section class="lb-table-section">
+    <div class="container">
+        <div class="lb-table-wrap">
+            <table class="lb-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Move</th>
+                        <th>Person</th>
+                        <th class="bio-col">About</th>
+                        <th class="score-cell">Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+        <tr>
+          <td class="rank-cell">1</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Vitalik Buterin</strong></td>
+          <td class="bio-cell">See https://t.co/iBNSW4KCSO Not giving away ETH. For inquiries about me advising your ICO, please email: noreply@buterin.com</td>
+          <td class="score-cell">50</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">2</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Joseph Lubin</strong></td>
+          <td class="bio-cell">Co-founder of @ethereumproject &amp; Founder of @ConsenSys. Building the decentralized Web 3.0 on #Ethereum.</td>
+          <td class="score-cell">50</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">3</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>Don Tapscott</strong></td>
+          <td class="bio-cell">Media theorist. Author. Adjunct Professor. Hammond B3 player.      Co-founder of the @BlockchainRI.</td>
+          <td class="score-cell">49</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">4</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>Max Keiser</strong></td>
+          <td class="bio-cell">@KeiserReport Rules! | Join #MaxCoin Telegram Group: https://t.co/QcnwNRuZvL | Join Max + Stacy Telegram group https://t.co/9iHo0c9Zj6</td>
+          <td class="score-cell">49</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">5</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Marc Andreessen</strong></td>
+          <td class="bio-cell"></td>
+          <td class="score-cell">48</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">6</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Gilles Babinet</strong></td>
+          <td class="bio-cell">Digital Champion @ France European Commission ; entrepreneur- bigdata, blockchain, #AI, Educ @captain_Dash ex. Chairman at @cnnum ; Afrique &amp; numérique</td>
+          <td class="score-cell">48</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">7</td>
+          <td class="move-cell"><span class="move up">▲ 93</span></td>
+          <td class="name-cell"><strong>Tim Draper</strong></td>
+          <td class="bio-cell">Founder of @DFJvc, @drapervc, @Draper_U, @IYS_Org.</td>
+          <td class="score-cell">47</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">8</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>Jim Marous</strong></td>
+          <td class="bio-cell">Co-publisher of The Financial Brand and the owner and publisher of the Digital Banking Report.</td>
+          <td class="score-cell">47</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">9</td>
+          <td class="move-cell"><span class="move up">▲ 2</span></td>
+          <td class="name-cell"><strong>Ran Neuner</strong></td>
+          <td class="bio-cell">CNBC Cryptotrader host. Cryptoman,Founder ONCHAIN CAPITAL,Cereal Entrepreneur,Bored member. Accumulating BTC - I am not a genius! youtube: https://t.co/WlU2BmVZiL</td>
+          <td class="score-cell">46</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">10</td>
+          <td class="move-cell"><span class="move down">▼ 2</span></td>
+          <td class="name-cell"><strong>Thomas Power</strong></td>
+          <td class="bio-cell">Board Member @9Spokes Professional Speaker #AI #Blockchain #Crypto #GDPR #FinTech #ICO #IoT #OpenBanking #SaaS thomas.power@9spokes.com @WhatsApp +447875695012</td>
+          <td class="score-cell">46</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">11</td>
+          <td class="move-cell"><span class="move down">▼ 2</span></td>
+          <td class="name-cell"><strong>Charlie Lee</strong></td>
+          <td class="bio-cell">Creator of Litecoin. Cryptocurrency Enthusiast. Director of Engineering at Coinbase.</td>
+          <td class="score-cell">45</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">12</td>
+          <td class="move-cell"><span class="move down">▼ 2</span></td>
+          <td class="name-cell"><strong>Brett King</strong></td>
+          <td class="bio-cell">Founder/CEO of Moven, Bestselling Author, Radio Show Host, Innovator of the Year</td>
+          <td class="score-cell">45</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">13</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>John   McAfee</strong></td>
+          <td class="bio-cell">For my followers: I alert you to what is worthy of me working with. For my trolls: I shill shitcoins.</td>
+          <td class="score-cell">44</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">14</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Naval Ravikant</strong></td>
+          <td class="bio-cell">Present.</td>
+          <td class="score-cell">44</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">15</td>
+          <td class="move-cell"><span class="move down">▼ 2</span></td>
+          <td class="name-cell"><strong>Vinny Lingham</strong></td>
+          <td class="bio-cell">CEO @CivicKey ($CVC), building global blockchain ID platform. General Partner @multicoincap/@newtownpartners Expect Crypto/Bitcoin tweets, often sarcastically.</td>
+          <td class="score-cell">43</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">16</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Roger Ver</strong></td>
+          <td class="bio-cell">World&#x27;s first Investor in Bitcoin startups including https://t.co/by6ZmukKd4 , https://t.co/dTLdWRhiXj , https://t.co/PLTxag4smR , BitPay, Kraken, Purse.io &amp; interested in Voluntaryism</td>
+          <td class="score-cell">43</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">17</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Brock   Pierce</strong></td>
+          <td class="bio-cell">(Re)start, ONE, Blockchain Capital, EOS, DNA, Tether, Chairman Bitcoin Foundation, Mastercoin - Working to positively impact the lives of billions of people</td>
+          <td class="score-cell">42</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">18</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Michael Mainelli</strong></td>
+          <td class="bio-cell">scientist financier trying to promote societal advance through better finance and technology</td>
+          <td class="score-cell">42</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">19</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Adryenn Ashley</strong></td>
+          <td class="bio-cell">#blockchain Founder https://t.co/viz1oGeMVq . #crypto #bitcoin #otc #ico Award winning Film/TV, Red Carpets, Social Influencer starting global conversations that matter</td>
+          <td class="score-cell">41</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">20</td>
+          <td class="move-cell"><span class="move down">▼ 5</span></td>
+          <td class="name-cell"><strong>Andreas M. Antonopoulos</strong></td>
+          <td class="bio-cell">Bitcoin, open blockchains, security. entrepreneur, coder, atheist, pacifist, pilot. Author of: Mastering Bitcoin, The Internet of Money, Mastering Ethereum.</td>
+          <td class="score-cell">41</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">21</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>Dinis Guarda</strong></td>
+          <td class="bio-cell">CEO Founder author @intelligenthq @lifescihq @ztudium @blockchainage @HedgeThink @tradersdna advisor @glancetechinc #tech #blockchain #Fintech #crypto #AI #healthcare</td>
+          <td class="score-cell">40</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">22</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Erik   Voorhees</strong></td>
+          <td class="bio-cell">Toward peace, markets, and Bitcoin.  CEO of ShapeShift. Blog at https://t.co/NWtf7N3O6u</td>
+          <td class="score-cell">40</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">23</td>
+          <td class="move-cell"><span class="move down">▼ 2</span></td>
+          <td class="name-cell"><strong>Sally Eaves</strong></td>
+          <td class="bio-cell">CTO and thought leader in emergent technology, intrapreneurship, online media and navigating digital disruption to sustainably support business success, educational development and social innovation.</td>
+          <td class="score-cell">39</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">24</td>
+          <td class="move-cell"><span class="move up">▲ 2</span></td>
+          <td class="name-cell"><strong>Ross   Gerber</strong></td>
+          <td class="bio-cell">Co-Founder &amp; #CEO, #InvestmentAdvisor. #Stock market #investor #Fintech app: https://t.co/FpDEbFc6bf #Tech #entertainment Disclaimer - https://t.co/yTYGH9zoht</td>
+          <td class="score-cell">39</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">25</td>
+          <td class="move-cell"><span class="move up">▲ 3</span></td>
+          <td class="name-cell"><strong>Jackson Palmer</strong></td>
+          <td class="bio-cell">Product + data geek at @Adobe by day. Creator of @dogecoin, YouTuber ( https://t.co/mO8kCAL85P ) Opinions my own. Get in touch: inquiries@ummjackson.com</td>
+          <td class="score-cell">38</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">26</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>Tuur Demeester</strong></td>
+          <td class="bio-cell">Economist &amp; investor. Mostly Bitcoin.</td>
+          <td class="score-cell">38</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">27</td>
+          <td class="move-cell"><span class="move down">▼ 2</span></td>
+          <td class="name-cell"><strong>Bruce Porter Jr.</strong></td>
+          <td class="bio-cell">American #Entrepreneur, athlete, globetrotter living in #Washington #DC @EmmeGirls COO @GlobalBoost CEO. #Blockchain $BSTY #Gold #ModelBuzz #veterans</td>
+          <td class="score-cell">37</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">28</td>
+          <td class="move-cell"><span class="move up">▲ 3</span></td>
+          <td class="name-cell"><strong>Meltem Demirors</strong></td>
+          <td class="bio-cell">i don&#x27;t sleep, i wait. building @CoinSharesCo treasury. investing w/ athena &amp; 3.0 capital. teaching @MIT @UniofOxford. formerly @dcgco.</td>
+          <td class="score-cell">37</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">29</td>
+          <td class="move-cell"><span class="move down">▼ 5</span></td>
+          <td class="name-cell"><strong>Warren Whitlock</strong></td>
+          <td class="bio-cell">Publish at https://t.co/h98q1XR79h Influencer in blockchain, ico, social media, tech and marketing.  Futurist, Advisor, Author and friend</td>
+          <td class="score-cell">36</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">30</td>
+          <td class="move-cell"><span class="move down">▼ 7</span></td>
+          <td class="name-cell"><strong>Tiff Hayden</strong></td>
+          <td class="bio-cell">Elliptic curves &amp; weapons of math destruction. #Bitcoin #BitcoinCash #XRP Community Manager at @Edgesecure</td>
+          <td class="score-cell">36</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">31</td>
+          <td class="move-cell"><span class="move up">▲ 7</span></td>
+          <td class="name-cell"><strong>Jimmy Song</strong></td>
+          <td class="bio-cell">Bitcoin Educator, Developer and Entrepreneur/PGP Fingerprint: C1D7 97BE 7D10 5291 228C  D70C FAA6 17E3 2679 E455</td>
+          <td class="score-cell">35</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">32</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>Stacy Herbert</strong></td>
+          <td class="bio-cell">@KeiserReport @HeisenbergCap Skin in the bitcoin game since 2011. Commentator, evangelizer, investor and student. Gold, Silver, Bitcoin.</td>
+          <td class="score-cell">35</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">33</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>Brian Armstrong</strong></td>
+          <td class="bio-cell">Co-founder &amp; CEO at @Coinbase. Building an open financial system for the world. Join us: https://t.co/8O8g0LLXHg</td>
+          <td class="score-cell">34</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">34</td>
+          <td class="move-cell"><span class="move down">▼ 2</span></td>
+          <td class="name-cell"><strong>Barry Silbert</strong></td>
+          <td class="bio-cell">Founder/CEO @DCGco, parent of @GrayscaleInvest, @GenesisTrading @CoinDesk &amp; investor in 100+ cos, $BTC $ETC $ZEC $MANA $ZEN, etc.</td>
+          <td class="score-cell">34</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">35</td>
+          <td class="move-cell"><span class="move up">▲ 2</span></td>
+          <td class="name-cell"><strong>Nick Szabo</strong></td>
+          <td class="bio-cell">Blockchain, cryptocurrency, and smart contracts pioneer. (RT/Fav/Follow does not imply endorsement). Blog: http://t.co/4Kr3OJmRUN</td>
+          <td class="score-cell">33</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">36</td>
+          <td class="move-cell"><span class="move up">▲ 12</span></td>
+          <td class="name-cell"><strong>Elizabeth Stark</strong></td>
+          <td class="bio-cell">big fan of the internet. like building things. cofounder @lightning labs, fellow @coincenter. taught @stanford + @yalelawtech.</td>
+          <td class="score-cell">33</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">37</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>Emin Gün Sirer</strong></td>
+          <td class="bio-cell">Prof @Cornell, co-director @ https://t.co/hzEhWhTa3j , system builder. Passionate about Dist Sys, OSes, Blockchains, NoSQL, and Bitcoin.</td>
+          <td class="score-cell">32</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">38</td>
+          <td class="move-cell"><span class="move up">▲ 3</span></td>
+          <td class="name-cell"><strong>Adam Back</strong></td>
+          <td class="bio-cell">cypherpunk, cryptographer, privacy/ecash, inventor hashcash (used in Bitcoin mining) PhD Comp Sci https://t.co/L69Em1yrDX Co-Founder/CEO https://t.co/U8UjWqEPo3</td>
+          <td class="score-cell">32</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">39</td>
+          <td class="move-cell"><span class="move down">▼ 6</span></td>
+          <td class="name-cell"><strong>Chris Skinner</strong></td>
+          <td class="bio-cell">Always looking ahead</td>
+          <td class="score-cell">31</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">40</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Laura   Shin</strong></td>
+          <td class="bio-cell">Crypto/blockchain journalist; Host of https://t.co/EAGPgMme32 &amp; https://t.co/JyhZR6fv1x Disclosure: I own BTC &amp; ETH; Email https://t.co/VNEFDfySQe</td>
+          <td class="score-cell">31</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">41</td>
+          <td class="move-cell"><span class="move up">▲ 5</span></td>
+          <td class="name-cell"><strong>Michael Parsons</strong></td>
+          <td class="bio-cell">Blockchain/Digital Currency Advisor &amp; Presenter | Chartered Accountant &amp; Banking professional</td>
+          <td class="score-cell">30</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">42</td>
+          <td class="move-cell"><span class="move up">▲ 3</span></td>
+          <td class="name-cell"><strong>Jeff Berwick</strong></td>
+          <td class="bio-cell">The Dollar Vigilante with Jeff Berwick is your source for surviving and prospering during and after the dollar collapse. Visit https://t.co/XG6oRftey8</td>
+          <td class="score-cell">30</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">43</td>
+          <td class="move-cell"><span class="move down">▼ 8</span></td>
+          <td class="name-cell"><strong>Simon Dixon</strong></td>
+          <td class="bio-cell">Investment Banker turned Bitcoiner. Wrote book &#x27;Bank to the Future&#x27;. Co-founder Online Investment Platform @BankToTheFuture - over $350m invested in #FinTech</td>
+          <td class="score-cell">29</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">44</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Nathaniel Popper</strong></td>
+          <td class="bio-cell">writing about technology and finance for @nytimes; author of Digital Gold, a history of Bitcoin; nathaniel.popper@nytimes.com ; dm me for signal or pgp</td>
+          <td class="score-cell">29</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">45</td>
+          <td class="move-cell"><span class="move down">▼ 6</span></td>
+          <td class="name-cell"><strong>Daniel   Roberts</strong></td>
+          <td class="bio-cell">senior writer @YahooFinance: sports; tech; media; bitcoin; rabbit holes. host of Sportsbook. @fortunemagazine alum. Boston fan. droberts at oath dot com.</td>
+          <td class="score-cell">28</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">46</td>
+          <td class="move-cell"><span class="move down">▼ 10</span></td>
+          <td class="name-cell"><strong>Sebastian Meunier</strong></td>
+          <td class="bio-cell">I help FIs transform their businesses through innovation #Fintech #Insurtech #Regtech</td>
+          <td class="score-cell">28</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">47</td>
+          <td class="move-cell"><span class="move up">▲ 2</span></td>
+          <td class="name-cell"><strong>Mark Van Rijmenam</strong></td>
+          <td class="bio-cell">Mark van Rijmenam is founder of dscvr.it and datafloq, an internationally renowned big data and blockchain expert, author and speaker.</td>
+          <td class="score-cell">27</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">48</td>
+          <td class="move-cell"><span class="move down">▼ 6</span></td>
+          <td class="name-cell"><strong>Gavin Andresen</strong></td>
+          <td class="bio-cell">Husband, father, geek.</td>
+          <td class="score-cell">27</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">49</td>
+          <td class="move-cell"><span class="move down">▼ 6</span></td>
+          <td class="name-cell"><strong>Simon Cocking</strong></td>
+          <td class="bio-cell">Senior editor @Irish_TechNews  #1 Irish tech site | Editor in chief @TodayCrypto | #TEDx @sundaybusiness @IrishTimes @SouthernStarIRL #blockchain #FinTech #ICO</td>
+          <td class="score-cell">26</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">50</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>David M. Brear</strong></td>
+          <td class="bio-cell"></td>
+          <td class="score-cell">26</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">51</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Oliver Bussmann</strong></td>
+          <td class="bio-cell">Oliver Bussmann is a Global FinTech Executive, Advisor, Keynote #Speaker and Blogger. Top 10 #FinTech #Blockchain #ICO Influencer.</td>
+          <td class="score-cell">25</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">52</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Safaraz Ali</strong></td>
+          <td class="bio-cell">Founder of #Pathway2Grow: Business #Networking Group. CEO of @PathwayGroup</td>
+          <td class="score-cell">25</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">53</td>
+          <td class="move-cell"><span class="move up">▲ 8</span></td>
+          <td class="name-cell"><strong>Alexander Tapscott</strong></td>
+          <td class="bio-cell">Jetlag is for wimps. https://t.co/9M7mPSw7TJ</td>
+          <td class="score-cell">24</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">54</td>
+          <td class="move-cell"><span class="move down">▼ 7</span></td>
+          <td class="name-cell"><strong>Michael Casey</strong></td>
+          <td class="bio-cell">Blockchain nerd @MediaLab. Chairman Advisory Brd @CoinDesk. Ex-@WSJ columnist. Speaker. Author. The Truth Machine w/ @Paulvigna out Feb: https://t.co/kwDakRt01w</td>
+          <td class="score-cell">24</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">55</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>Prof Bill Buchanan OBE</strong></td>
+          <td class="bio-cell">Prof @edinburghnapier Probe edges of science in Cyber/e-Health. Serial innovator. Believer in fairness, justice &amp; freedom. Crypto Geek. EU Citizen. Cyber Punk.</td>
+          <td class="score-cell">23</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">56</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>William Mougayar</strong></td>
+          <td class="bio-cell">Author, The Business Blockchain. Producer, Token Summit. Venture investor &amp; Advisor. Founder, Startup Management. Mentor, Entrepreneur, Speaker. Thought Leader.</td>
+          <td class="score-cell">23</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">57</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Dr. Julian Hosp</strong></td>
+          <td class="bio-cell">Co-Founder TenX, Blockchain Expert, Medical Doctor, Professional Athlete, Bestselling Author and Keynote-Speaker</td>
+          <td class="score-cell">22</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">58</td>
+          <td class="move-cell"><span class="move down">▼ 5</span></td>
+          <td class="name-cell"><strong>Antonio Selas</strong></td>
+          <td class="bio-cell">Lawyer (Partner) lecturer/speaker: Top #Blockchain #ICO #Crypto #FinTech #InsurTech #RegTech #Antitrust #Competition #IP #Patents #Payments #PSD2 #Trademarks</td>
+          <td class="score-cell">22</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">59</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Michael   Terpin</strong></td>
+          <td class="bio-cell">#entrepreneur/#advisor/#investor in #blockchain since 2013, run Transform Group (#1 PR/advisory firm, 75 ICOs), #CoinAgenda, #BitAngels. Founded Marketwire.</td>
+          <td class="score-cell">21</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">60</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Pierre Tran</strong></td>
+          <td class="bio-cell">Journaliste consultant formateur</td>
+          <td class="score-cell">21</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">61</td>
+          <td class="move-cell"><span class="move up">▲ 10</span></td>
+          <td class="name-cell"><strong>Michael Novogratz</strong></td>
+          <td class="bio-cell">Galaxy Digital</td>
+          <td class="score-cell">20</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">62</td>
+          <td class="move-cell"><span class="move down">▼ 4</span></td>
+          <td class="name-cell"><strong>Simon Taylor</strong></td>
+          <td class="bio-cell">How to fix a bank in 100 days author and fintech networker. Behind the scenes in the barclays accelerator.</td>
+          <td class="score-cell">20</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">63</td>
+          <td class="move-cell"><span class="move up">▲ 3</span></td>
+          <td class="name-cell"><strong>Charlotte Halkett</strong></td>
+          <td class="bio-cell">MD #buzzvault currently bringing home #insurance revolution. Veteran of the #insurtech business world, #actuary, #innovation freak, #blockchain enthusiast and motor #telematics expert.</td>
+          <td class="score-cell">19</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">64</td>
+          <td class="move-cell"><span class="move up">▲ 3</span></td>
+          <td class="name-cell"><strong>Camila Russo</strong></td>
+          <td class="bio-cell">Markets reporter and blogger for Bloomberg News in New York, focusing on crypto and LatAm. Previously, Madrid and Buenos Aires. Usual disclaimers. Chilena.</td>
+          <td class="score-cell">19</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">65</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>David G.W. Birch</strong></td>
+          <td class="bio-cell">In the future, everyone will be famous for 15 megabytes.</td>
+          <td class="score-cell">18</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">66</td>
+          <td class="move-cell"><span class="move down">▼ 10</span></td>
+          <td class="name-cell"><strong>Jihan Wu</strong></td>
+          <td class="bio-cell">Co-founder of BITMAIN.  Studied Economics and Psychology in Peking University.</td>
+          <td class="score-cell">18</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">67</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>Sydes Jokes</strong></td>
+          <td class="bio-cell">We don&#x27;t stop laughing because we grow old.   We grow old because we stop laughing.</td>
+          <td class="score-cell">17</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">68</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Jon Matonis</strong></td>
+          <td class="bio-cell">Economist. Founding Director at Bitcoin Foundation</td>
+          <td class="score-cell">17</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">69</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Alejandro De La Torre</strong></td>
+          <td class="bio-cell">VP Business Operations @ BTC.com</td>
+          <td class="score-cell">16</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">70</td>
+          <td class="move-cell"><span class="move up">▲ 4</span></td>
+          <td class="name-cell"><strong>Takashi Mochizuki</strong></td>
+          <td class="bio-cell">Tech reporter | The Wall Street Journal | Tokyo | takashi.mochizuki@wsj.com</td>
+          <td class="score-cell">16</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">71</td>
+          <td class="move-cell"><span class="move down">▼ 6</span></td>
+          <td class="name-cell"><strong>Gerald Celente</strong></td>
+          <td class="bio-cell">Gerald Celente, Publisher of The Trends Journal has earned the reputation as “today’s most trusted name in trends” for accurate &amp; timely forecasts since 1980.</td>
+          <td class="score-cell">15</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">72</td>
+          <td class="move-cell"><span class="move down">▼ 9</span></td>
+          <td class="name-cell"><strong>Sunny   Ray</strong></td>
+          <td class="bio-cell">Taking #Bitcoin &amp; #Blockchain to Billions. Founder @Unocoin &amp; @Fintech_Canada. Advisor to @PaycaseFin, @UdotCASH, @BankToTheFuture, and @PolymathNetwork.</td>
+          <td class="score-cell">15</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">73</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Gary Nuttall</strong></td>
+          <td class="bio-cell">London-based #InsTech &amp; #Fintech enthusiast. Founder of http://www.distlytics.com . #Blockchain enthusiast</td>
+          <td class="score-cell">14</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">74</td>
+          <td class="move-cell"><span class="move down">▼ 4</span></td>
+          <td class="name-cell"><strong>Neha Narula</strong></td>
+          <td class="bio-cell">I work on scaling systems and platforms for the internet. Director of Digital Currency @medialab. PhD from @MIT_CSAIL, formerly @digg, @google.</td>
+          <td class="score-cell">14</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">75</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>Fred Ehrsam</strong></td>
+          <td class="bio-cell">Systems. Previously co-founder @coinbase.</td>
+          <td class="score-cell">13</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">76</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>Jeff Garzik</strong></td>
+          <td class="bio-cell">Husband, father, builder, Co-founder @BloqInc, @Space__Chain &amp; others, proud son of a USMC F-4 pilot.</td>
+          <td class="score-cell">13</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">77</td>
+          <td class="move-cell"><span class="move up">▲ 2</span></td>
+          <td class="name-cell"><strong>Anne   Connelly</strong></td>
+          <td class="bio-cell">Faculty at @singularityu | Blockchain | Humanitarian</td>
+          <td class="score-cell">12</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">78</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>Michael Gastauer</strong></td>
+          <td class="bio-cell">Entrepreneur, Investor, Philanthropist</td>
+          <td class="score-cell">12</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">79</td>
+          <td class="move-cell"><span class="move up">▲ 2</span></td>
+          <td class="name-cell"><strong>Kumar Gaurav</strong></td>
+          <td class="bio-cell">Extraordinary status (O1) by U.S. Government. Chairman Auxesis Group, Founder &amp; CEO Cashaa.</td>
+          <td class="score-cell">11</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">80</td>
+          <td class="move-cell"><span class="move down">▼ 4</span></td>
+          <td class="name-cell"><strong>Anthony Diiorio</strong></td>
+          <td class="bio-cell">Creating the digital tools that enable you to take control of your life. CEO &amp; Founder Decentral &amp; Jaxx, Co-founder Ethereum.</td>
+          <td class="score-cell">11</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">81</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>Gavin Wood</strong></td>
+          <td class="bio-cell">Founder of Parity Technologies. Co-Founder of Ethereum. Building Polkadot. Blockchain bloke. All things Web 3.0</td>
+          <td class="score-cell">10</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">82</td>
+          <td class="move-cell"><span class="move up">▲ 4</span></td>
+          <td class="name-cell"><strong>Ismail Malik</strong></td>
+          <td class="bio-cell">Founder @BlockchainLab | Smart Contracts for the Internet of Everything #BleStack #Blockchain #SocialTrading #Ledgers #Gamification #ValueWeb #Sidechains</td>
+          <td class="score-cell">10</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">83</td>
+          <td class="move-cell"><span class="move up">▲ 5</span></td>
+          <td class="name-cell"><strong>Susanne Chishti</strong></td>
+          <td class="bio-cell">CEO @FINTECHcircle @FTC_Institute  @WealthTECHBook @InsurTECH_Book Co-Founder @TheFINTECHBook @FTCinnovate #FINTECH Conference Speaker #blockchain #Diversity</td>
+          <td class="score-cell">9</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">84</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>Hansjörg Leichsenring</strong></td>
+          <td class="bio-cell">Blogger, Author, Keynote Speaker, Manager and Consultant for Banking,</td>
+          <td class="score-cell">9</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">85</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>Wences Cesares</strong></td>
+          <td class="bio-cell">CEO, Xapo</td>
+          <td class="score-cell">8</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">86</td>
+          <td class="move-cell"><span class="move down">▼ 6</span></td>
+          <td class="name-cell"><strong>Diana Biggs</strong></td>
+          <td class="bio-cell">Working at the intersection of finance &amp; tech (fin. inclusion, digital currency)</td>
+          <td class="score-cell">8</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">87</td>
+          <td class="move-cell"><span class="move up">▲ 2</span></td>
+          <td class="name-cell"><strong>Vinay Gupta</strong></td>
+          <td class="bio-cell">Launched $30bn @Ethereum. CEO of @mattereum Forbes profile https://t.co/JpEu6eHMOf Humanitarian designer https://t.co/QiIBKKUyRq</td>
+          <td class="score-cell">7</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">88</td>
+          <td class="move-cell"><span class="move up">▲ 5</span></td>
+          <td class="name-cell"><strong>Toni Lane</strong></td>
+          <td class="bio-cell">blockchain o.g. lover. founder: https://t.co/oYqaZjM97c . co-founder: @cointelegraph. faith in humanity, idealistic realist, peace warrior. Empowered Woman.</td>
+          <td class="score-cell">7</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">89</td>
+          <td class="move-cell"><span class="move down">▼ 2</span></td>
+          <td class="name-cell"><strong>Emily   Spaven</strong></td>
+          <td class="bio-cell">UK News Editor @LinkedIn. Former Editor @uktnofficial (formerly TechCityNews). Ex-@CoinDesk &amp; @Google employee. Interested in tech and business.</td>
+          <td class="score-cell">6</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">90</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>Janina Lowisz</strong></td>
+          <td class="bio-cell">Bringing #blockchain technology to everyday consumers. @CashaaLtd @Auxesisgroup #CAS #teamblockchain</td>
+          <td class="score-cell">6</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">91</td>
+          <td class="move-cell"><span class="move down">▼ 8</span></td>
+          <td class="name-cell"><strong>Tony Gallippi</strong></td>
+          <td class="bio-cell">Co-founder and Executive Chairman of BitPay, Inc.</td>
+          <td class="score-cell">5</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">92</td>
+          <td class="move-cell"><span class="move down">▼ 14</span></td>
+          <td class="name-cell"><strong>Sir Mark Walport</strong></td>
+          <td class="bio-cell">Tweets from the UK Government Chief Scientific Adviser and the Government Office for Science. Most tweets by officials. Direct quotes will be signed &quot;PV&quot;</td>
+          <td class="score-cell">5</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">93</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>Jose Pagliery</strong></td>
+          <td class="bio-cell">@CNN investigative reporter ⚔ firearms, hackers, security ⚔ Author of *Bitcoin and the Future of Money* ⚔ PGP: https://t.co/P1F6OpRNq2</td>
+          <td class="score-cell">4</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">94</td>
+          <td class="move-cell"><span class="move down">▼ 2</span></td>
+          <td class="name-cell"><strong>Paolo Tasca</strong></td>
+          <td class="bio-cell">Executive Director of the Centre for Blockchain Technologies at University College London (UCL CBT).</td>
+          <td class="score-cell">4</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">95</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>Rob Gill</strong></td>
+          <td class="bio-cell">Economist▪️Trader▪️Entrepreneur▪️Investor▪️Financial Adviser▪️Fintech &amp; Blockchain Enthusiast▪️Volunteer▪️Pro EU▪️Husband, Father &amp; Arsenal Fan</td>
+          <td class="score-cell">3</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">96</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Kathryn Haun</strong></td>
+          <td class="bio-cell">Advise companies &amp; funds. Teach @StanfordGSB. Board of Directors @Coinbase @HackerOne. Fmr fed prosecutor @JusticeDepartment alum @Stanford @USSupremeCourt w/AK</td>
+          <td class="score-cell">3</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">97</td>
+          <td class="move-cell"><span class="move down">▼ 2</span></td>
+          <td class="name-cell"><strong>Kristian T. Sorensen</strong></td>
+          <td class="bio-cell">Co-founder @Norfico, the first agency in the Nordics combining strategic advisory with professional communication focusing on #fintech, #regtech &amp; #insurtech</td>
+          <td class="score-cell">2</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">98</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Dean Demellweek</strong></td>
+          <td class="bio-cell">Digital Innovation Strategist Covering Emerging Technologies &amp; Business Model Innovation | Blockchain Tech Thought Leader | Author</td>
+          <td class="score-cell">2</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">99</td>
+          <td class="move-cell"><span class="move down">▼ 2</span></td>
+          <td class="name-cell"><strong>Valery Vavilov</strong></td>
+          <td class="bio-cell">Co-founder and CEO at #Bitfury Group</td>
+          <td class="score-cell">1</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">100</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>Melanie Swan</strong></td>
+          <td class="bio-cell">The brain as a DAC, potentiation as a demurrage currency. Philosopher, futurist, entrepreneur, trader, traveler, blockchain researcher, information theorist</td>
+          <td class="score-cell">1</td>
+        </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="lb-method">
+    <div class="container">
+        <h2>About the methodology</h2>
+        <p>The leaderboard was recomputed weekly by rise.global. Each person was given a Power Score derived from Klout (a now-retired social authority metric) and the count of Twitter lists they appeared on, weighted to balance raw reach with curated relevance.</p>
+        <p>The "Move" column shows the change in rank versus the previous week — a snapshot of momentum within an industry that, in 2018, was moving very fast.</p>
+        <p><strong>Note:</strong> This is a static archive. The data is frozen at the 9 May 2018 release and is no longer updated. The descriptions reflect each person's own Twitter bio at the time. The original URL slug ("top-fintech-people") is retained for backlink continuity, but the leaderboard itself was always titled "The 100 Most Influential Blockchain People".</p>
+    </div>
+</section>
+
+<section class="lb-cta">
+    <div class="container">
+        <h2>Build your own leaderboard on <span class="accent">Leaderboarded</span></h2>
+        <p>Want to publish a ranking like this one? Leaderboarded is the platform behind it — used to score, rank, and showcase the people and companies that matter in your industry.</p>
+        <div class="cta-buttons">
+            <a href="https://www.leaderboarded.com?utm_source=rise.global&amp;utm_medium=referral&amp;utm_campaign=top-fintech-people" class="btn-primary">Make your leaderboard</a>
+        </div>
+    </div>
+</section>

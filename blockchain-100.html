@@ -1,0 +1,1013 @@
+---
+layout: default
+title: "The 100 Most Influential Blockchain Companies (2018) — Archive"
+description: "Archive of the Blockchain 100 leaderboard published by Richtopia on rise.global, ranking the 100 most influential blockchain companies for the week ending 9 May 2018. Powered by Klout and Twitter signals."
+keywords: "blockchain 100, top blockchain companies, most influential blockchain companies, blockchain leaderboard, blockchain influencer ranking"
+permalink: /blockchain-100/
+---
+
+<style>
+.lb-hero {
+    padding: 6rem 0 3rem;
+    background: var(--gradient-hero);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+.lb-hero::before {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -15%;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(200, 255, 0, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+}
+.lb-hero .container { position: relative; z-index: 1; }
+.lb-hero .archive-tag {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    padding: 0.4rem 0.9rem;
+    border: 1px solid rgba(200, 255, 0, 0.3);
+    border-radius: var(--radius-pill);
+    margin-bottom: 1.5rem;
+}
+.lb-hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    margin-bottom: 1rem;
+    max-width: 900px;
+}
+.lb-hero h1 .accent { color: var(--primary-color); }
+.lb-hero .subtitle {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 720px;
+    line-height: 1.6;
+    margin-bottom: 1.75rem;
+}
+.lb-hero .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.55);
+    font-family: var(--font-display);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.lb-hero .meta-row strong { color: var(--white); font-weight: 700; }
+
+.lb-intro {
+    padding: 3.5rem 0;
+    background: var(--white);
+}
+.lb-intro .container { max-width: 760px; }
+.lb-intro p {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    line-height: 1.75;
+    margin-bottom: 1rem;
+}
+
+.lb-table-section {
+    padding: 1rem 0 5rem;
+    background: var(--white);
+}
+.lb-table-wrap {
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: var(--white);
+}
+.lb-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+.lb-table thead th {
+    background: var(--bg-dark);
+    color: var(--white);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.9rem 1rem;
+    text-align: left;
+}
+.lb-table thead th.score-cell { text-align: right; }
+.lb-table tbody tr { border-top: 1px solid var(--border-color); transition: background 0.15s ease; }
+.lb-table tbody tr:hover { background: var(--bg-light); }
+.lb-table tbody tr:nth-child(-n+3) .rank-cell { color: var(--secondary-color); font-weight: 900; }
+.lb-table tbody td { padding: 0.85rem 1rem; vertical-align: top; }
+.rank-cell {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1.05rem;
+    color: var(--text-dark);
+    width: 60px;
+    white-space: nowrap;
+}
+.move-cell { width: 70px; }
+.move {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 0.15rem 0.5rem;
+    border-radius: var(--radius-sm);
+}
+.move.up { color: #2a9d4a; background: rgba(0, 214, 143, 0.1); }
+.move.down { color: #b53050; background: rgba(255, 77, 106, 0.08); }
+.move.flat { color: var(--text-muted); }
+.move.new { color: var(--bg-dark); background: var(--primary-color); }
+.name-cell { min-width: 160px; }
+.name-cell strong { color: var(--text-dark); font-weight: 700; }
+.bio-cell {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.55;
+    word-break: break-word;
+}
+.score-cell {
+    text-align: right;
+    font-family: var(--font-display);
+    font-weight: 800;
+    color: var(--text-dark);
+    width: 70px;
+    white-space: nowrap;
+}
+
+.lb-method {
+    padding: 4rem 0;
+    background: var(--bg-light);
+}
+.lb-method .container { max-width: 760px; }
+.lb-method h2 {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+.lb-method p {
+    color: var(--text-light);
+    line-height: 1.75;
+    margin-bottom: 1rem;
+}
+
+.lb-cta {
+    padding: 5rem 0;
+    background: var(--gradient-hero);
+    color: var(--white);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.lb-cta::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(200, 255, 0, 0.06) 0%, transparent 60%);
+    pointer-events: none;
+}
+.lb-cta .container { position: relative; z-index: 1; }
+.lb-cta h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.lb-cta h2 .accent { color: var(--primary-color); }
+.lb-cta p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.1rem;
+    line-height: 1.65;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+.lb-cta .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.lb-cta .btn-primary {
+    background: var(--gradient-cta);
+    color: var(--bg-dark);
+    padding: 0.95rem 2rem;
+    border-radius: var(--radius-pill);
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.lb-cta .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(200, 255, 0, 0.25);
+}
+.lb-cta .btn-secondary {
+    background: transparent;
+    color: var(--white);
+    padding: 0.95rem 2rem;
+    border-radius: var(--radius-pill);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+.lb-cta .btn-secondary:hover { border-color: var(--primary-color); color: var(--primary-color); }
+
+@media (max-width: 720px) {
+    .bio-cell { display: none; }
+    .lb-table thead th.bio-col { display: none; }
+}
+</style>
+
+<section class="lb-hero">
+    <div class="container">
+        <span class="archive-tag">Archive · 2018</span>
+        <h1>The 100 Most Influential <span class="accent">Blockchain Companies</span></h1>
+        <p class="subtitle">A historical ranking of the 100 most influential blockchain companies, originally published on rise.global by <strong>Richtopia</strong>. Scored on Klout and Twitter signals for the week ending 9 May 2018.</p>
+        <div class="meta-row">
+            <span>Published by <strong>Richtopia</strong></span>
+            <span>Score period: <strong>2 May – 9 May 2018</strong></span>
+            <span>Released: <strong>9 May 2018</strong></span>
+        </div>
+    </div>
+</section>
+
+<section class="lb-intro">
+    <div class="container">
+        <p>This page is a preserved archive of the <em>Blockchain 100</em> leaderboard that ran on rise.global between 2017 and 2018. It tracked the 100 most influential blockchain companies on social media each week, blending Klout authority scores with Twitter list inclusion to surface the projects shaping the conversation.</p>
+        <p>The leaderboard captured a remarkable moment in crypto history — Ethereum reclaiming the top spot from Coinbase, Kraken jumping 13 places, Pantera Capital climbing 11, and now-defunct exchanges like Coincheck still in the mix. Names that would later become household: Binance at #11, Cardano at #28, Tezos at #59, IOTA at #88. We are keeping it online because too many press articles, blogs, and academic sources still cite it.</p>
+    </div>
+</section>
+
+<section class="lb-table-section">
+    <div class="container">
+        <div class="lb-table-wrap">
+            <table class="lb-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Move</th>
+                        <th>Company</th>
+                        <th class="bio-col">Description</th>
+                        <th class="score-cell">Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+        <tr>
+          <td class="rank-cell">1</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>Ethereum</strong></td>
+          <td class="bio-cell">Open source platform to write and distribute decentralized applications.</td>
+          <td class="score-cell">50</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">2</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>Coinbase</strong></td>
+          <td class="bio-cell">Our mission is to create an open financial system for the world.  Founded by @brian_armstrong @fehrsam Help: @coinbasesupport</td>
+          <td class="score-cell">49</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">3</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Blockchain</strong></td>
+          <td class="bio-cell">Building an open, fair and accessible financial future, one piece of software at a time. Need help? @AskBlockchain for support.</td>
+          <td class="score-cell">49</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">4</td>
+          <td class="move-cell"><span class="move up">▲ 5</span></td>
+          <td class="name-cell"><strong>Bittrex</strong></td>
+          <td class="bio-cell">Bittrex is a U.S.-based blockchain platform providing real-time trading and industry-leading security. For customer support visit: https://t.co/rJPECIJR8t</td>
+          <td class="score-cell">48</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">5</td>
+          <td class="move-cell"><span class="move up">▲ 13</span></td>
+          <td class="name-cell"><strong>Kraken Exchange</strong></td>
+          <td class="bio-cell">Join traders from around the world benefiting from our intuitive platform. Tweet @krakensupport for help and email press@kraken.com for media inquiries.</td>
+          <td class="score-cell">48</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">6</td>
+          <td class="move-cell"><span class="move up">▲ 16</span></td>
+          <td class="name-cell"><strong>Stellar</strong></td>
+          <td class="bio-cell">Money could move like email. Stellar is a free, open-source network that lets anyone build low-cost financial products for their community.</td>
+          <td class="score-cell">47</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">7</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>CoinDesk</strong></td>
+          <td class="bio-cell">The latest news, prices, charts, guides and analysis from the world leader in bitcoin, crypto and blockchain tech.</td>
+          <td class="score-cell">47</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">8</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>Kik Interactive,   Inc</strong></td>
+          <td class="bio-cell">Kik lets you connect with friends, groups, and the world around you through chat. Just ask, “What’s your Kik?” https://t.co/BaTL20oY6l</td>
+          <td class="score-cell">46</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">9</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>CoinTelegraph</strong></td>
+          <td class="bio-cell">High-tech finance, Bitcoin and blockchain news, analysis and review. Our Facebook page: https://t.co/gC6s0iSIUc</td>
+          <td class="score-cell">46</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">10</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>Ripple</strong></td>
+          <td class="bio-cell">Global real-time settlement.</td>
+          <td class="score-cell">45</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">11</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>Binance</strong></td>
+          <td class="bio-cell">Exchange the World</td>
+          <td class="score-cell">45</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">12</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>Pymnts</strong></td>
+          <td class="bio-cell">What&#x27;s next in payments and commerce™ https://t.co/zjz3XBNeHU ; https://t.co/pPam69AB1V ; https://t.co/UiytUAp0QN ; https://t.co/n6sqFzK3Ip</td>
+          <td class="score-cell">44</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">13</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>Bitcoin Magazine</strong></td>
+          <td class="bio-cell">The original source of information, news and commentary about #Bitcoin, the #blockchain and digital currencies.</td>
+          <td class="score-cell">44</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">14</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>Bitfinex.com</strong></td>
+          <td class="bio-cell">Bitfinex is the world&#x27;s leading digital asset trading platform.</td>
+          <td class="score-cell">43</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">15</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>ShapeShift.io</strong></td>
+          <td class="bio-cell">Exchange between digital assets instantly, no account required. https://t.co/unnJSrOxTO</td>
+          <td class="score-cell">43</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">16</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>EOS</strong></td>
+          <td class="bio-cell">Retweets, links, likes and follows are not endorsements. The views of third parties are their own, and do not reflect the views of https://t.co/Eo23rGyajN .</td>
+          <td class="score-cell">42</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">17</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>BitPay</strong></td>
+          <td class="bio-cell">The world leader in bitcoin payments. Accept bitcoin, spend &amp; store bitcoin securely, build with bitcoin technology. media@bitpay.com | https://t.co/V1itnKlovM</td>
+          <td class="score-cell">42</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">18</td>
+          <td class="move-cell"><span class="move up">▲ 3</span></td>
+          <td class="name-cell"><strong>DASH</strong></td>
+          <td class="bio-cell">Dash [DASH] is a secure, blockchain-based global financial network which offers private transactions. Quite simply, Dash is Digital Cash! See website for info.</td>
+          <td class="score-cell">41</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">19</td>
+          <td class="move-cell"><span class="move up">▲ 9</span></td>
+          <td class="name-cell"><strong>Blockstream</strong></td>
+          <td class="bio-cell">We believe in the potential of bitcoin and blockchain technology to have a significant, positive social impact.</td>
+          <td class="score-cell">41</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">20</td>
+          <td class="move-cell"><span class="move up">▲ 10</span></td>
+          <td class="name-cell"><strong>Poloniex Exchange</strong></td>
+          <td class="bio-cell">Based in the United States, Poloniex is a leading cryptocurrency exchange offering a wide variety of digital assets.</td>
+          <td class="score-cell">40</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">21</td>
+          <td class="move-cell"><span class="move down">▼ 9</span></td>
+          <td class="name-cell"><strong>Syscoin</strong></td>
+          <td class="bio-cell">The first cryptocurrency to provide the world&#x27;s first decentralized marketplace and much more! Assets! Masternodes! Zerconfirmation transactions! (Z-DAG).</td>
+          <td class="score-cell">40</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">22</td>
+          <td class="move-cell"><span class="move down">▼ 2</span></td>
+          <td class="name-cell"><strong>NEM</strong></td>
+          <td class="bio-cell">Official Site: https://t.co/WNOcSNLHpH Forum: https://t.co/sa9k63ioNo Facebook: https://t.co/IhWeAPnkO6 Reddit https://t.co/ujeuEOfDXm</td>
+          <td class="score-cell">39</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">23</td>
+          <td class="move-cell"><span class="move up">▲ 4</span></td>
+          <td class="name-cell"><strong>OmiseGO</strong></td>
+          <td class="bio-cell">Scaling Ethereum with the PoS OMG blockchain: the 100% public plasma.io decentralized exchange. &amp; building an open-source fiat/crypto wallet SDK to access it.</td>
+          <td class="score-cell">39</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">24</td>
+          <td class="move-cell"><span class="move up">▲ 5</span></td>
+          <td class="name-cell"><strong>BitFlyer</strong></td>
+          <td class="bio-cell">「ビットコインは、ビットフライヤー」  bitFlyerは国内最大の仮想通貨・ブロックチェーン企業です。 「bitFlyer」 https://t.co/yVNKdH7Znp 「miyabi」https://...</td>
+          <td class="score-cell">38</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">25</td>
+          <td class="move-cell"><span class="move down">▼ 6</span></td>
+          <td class="name-cell"><strong>NEO Smart Economy</strong></td>
+          <td class="bio-cell">The official Twitter feed for NEO (was Antshares) || #Blockchain with #SmartContracts + #DigitalAssets = #SmartEconomy</td>
+          <td class="score-cell">38</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">26</td>
+          <td class="move-cell"><span class="move down">▼ 2</span></td>
+          <td class="name-cell"><strong>Cashaa</strong></td>
+          <td class="bio-cell">Next Generation Banking Platform for the Next Billion</td>
+          <td class="score-cell">37</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">27</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>Bancor</strong></td>
+          <td class="bio-cell">Bancor is a decentralized liquidity network that provides users with a simple, low-cost way to convert tokens directly from their wallets. — Not giving away ETH</td>
+          <td class="score-cell">37</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">28</td>
+          <td class="move-cell"><span class="move up">▲ 4</span></td>
+          <td class="name-cell"><strong>Cardano Community</strong></td>
+          <td class="bio-cell">A decentralized blockchain / cryptocurrency project based on peer-reviewed research and the highly secure Haskell coding language | managed by: @CardanoStiftung</td>
+          <td class="score-cell">36</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">29</td>
+          <td class="move-cell"><span class="move down">▼ 6</span></td>
+          <td class="name-cell"><strong>Lisk</strong></td>
+          <td class="bio-cell">Blockchain application platform that inspires, enables and supports developers to build decentralized applications written in JavaScript.</td>
+          <td class="score-cell">36</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">30</td>
+          <td class="move-cell"><span class="move down">▼ 15</span></td>
+          <td class="name-cell"><strong>Coincheck</strong></td>
+          <td class="bio-cell">The largest cryptocurrency exchange in Japan. Buy, sell and trade cryptocurrency with ease.</td>
+          <td class="score-cell">35</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">31</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Stratisplatform</strong></td>
+          <td class="bio-cell">Stratis is a powerful and flexible Blockchain Development Platform designed for the needs of real world enterprise and financial services.</td>
+          <td class="score-cell">35</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">32</td>
+          <td class="move-cell"><span class="move up">▲ 6</span></td>
+          <td class="name-cell"><strong>Monero</strong></td>
+          <td class="bio-cell">Monero (#xmr) is a secure, private, untraceable cryptocurrency based on the CryptoNote protocol. Why settle for less? | For inquiries, contact dev@getmonero.org</td>
+          <td class="score-cell">34</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">33</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Humaniq</strong></td>
+          <td class="bio-cell">#Fintech startup using #blockchain &amp; #biometrics to connect 2b unbanked people, mainly without ID, to the global economy. Our #cryptocurrency is the #HMQ token.</td>
+          <td class="score-cell">34</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">34</td>
+          <td class="move-cell"><span class="move up">▲ 2</span></td>
+          <td class="name-cell"><strong>Mesosphere</strong></td>
+          <td class="bio-cell">Build better data-driven applications with Mesosphere DC/OS. The best way to run containers &amp; big data—on any infrastructure you choose. Built on @ApacheMesos.</td>
+          <td class="score-cell">33</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">35</td>
+          <td class="move-cell"><span class="move up">▲ 2</span></td>
+          <td class="name-cell"><strong>Circle</strong></td>
+          <td class="bio-cell">Making money go around. Among friends, between currencies, around the corner and across the globe. Super easy. Totally free. Need help? Tweet @askcircle</td>
+          <td class="score-cell">33</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">36</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>Bitstamp</strong></td>
+          <td class="bio-cell">We support the exchange of currencies, information, ideas and trust. Help: @SupportBitstamp, media inquiries: press@bitstamp.net .</td>
+          <td class="score-cell">32</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">37</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>QtumOfficial</strong></td>
+          <td class="bio-cell">Qtum is a decentralized #Blockchain application platform capable of running Smart Contracts on multiple virtual machines, with Proof-of-Stake consensus.</td>
+          <td class="score-cell">32</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">38</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>Gemini</strong></td>
+          <td class="bio-cell">Gemini is a next generation digital asset exchange and custodian that allows customers to buy, sell, and store digital assets. https://t.co/u9H1C909hF</td>
+          <td class="score-cell">31</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">39</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>Augur</strong></td>
+          <td class="bio-cell">An open-source, decentralized, peer-to-peer oracle and prediction market platform built on the Ethereum blockchain. Discord: https://t.co/xvxBP2Se5d</td>
+          <td class="score-cell">31</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">40</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>TenX Wallet</strong></td>
+          <td class="bio-cell">We make cryptocurrencies spendable anytime anywhere as you travel with the TenX wallet app and debit card.</td>
+          <td class="score-cell">30</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">41</td>
+          <td class="move-cell"><span class="move up">▲ 2</span></td>
+          <td class="name-cell"><strong>Genesis Mining</strong></td>
+          <td class="bio-cell">The world&#x27;s leading and most transparent hashpower provider for Bitcoin and Altcoins. Reliable &amp; Customer Oriented.</td>
+          <td class="score-cell">30</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">42</td>
+          <td class="move-cell"><span class="move up">▲ 11</span></td>
+          <td class="name-cell"><strong>Pantera Capital</strong></td>
+          <td class="bio-cell">Investment fund focused exclusively on digital currency and blockchain tech. Subscribe: http://t.co/Vxq2aRrqbT</td>
+          <td class="score-cell">29</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">43</td>
+          <td class="move-cell"><span class="move up">▲ 3</span></td>
+          <td class="name-cell"><strong>Storj</strong></td>
+          <td class="bio-cell">Storj (pronounced storage) is an open source decentralized cloud storage platform where anyone can sell their extra hard drive space for STORJ tokens.</td>
+          <td class="score-cell">29</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">44</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>MaidSafe</strong></td>
+          <td class="bio-cell">Privacy. Security. Freedom</td>
+          <td class="score-cell">28</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">45</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>Coinfirm</strong></td>
+          <td class="bio-cell">The #Blockchain AML/CTF platform #Regtech Also the creator of @Trudatum and @AMLT_Token</td>
+          <td class="score-cell">28</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">46</td>
+          <td class="move-cell"><span class="move up">▲ 3</span></td>
+          <td class="name-cell"><strong>Factom</strong></td>
+          <td class="bio-cell">Factom is a system for securing millions of realtime records using blockchain technology.  *NOTE: We do not operate any Telegram groups or conduct giveaways.</td>
+          <td class="score-cell">27</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">47</td>
+          <td class="move-cell"><span class="move up">▲ 5</span></td>
+          <td class="name-cell"><strong>R3</strong></td>
+          <td class="bio-cell">R3 is an enterprise software firm working with an ecosystem of over 200 financial institutions, regulators, professional services firms and technology companies</td>
+          <td class="score-cell">27</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">48</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>Uphold</strong></td>
+          <td class="bio-cell">Digitizing money, providing instant &amp; secure #financial services. Serving 184 countries, 30+ currencies, $BTC, $ETH, $Dash, $LTC. $BAT, $BCH, $BTG, $XRP</td>
+          <td class="score-cell">26</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">49</td>
+          <td class="move-cell"><span class="move down">▼ 4</span></td>
+          <td class="name-cell"><strong>BitGo</strong></td>
+          <td class="bio-cell">Making digital currencies usable for business.</td>
+          <td class="score-cell">26</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">50</td>
+          <td class="move-cell"><span class="move up">▲ 4</span></td>
+          <td class="name-cell"><strong>BitShares</strong></td>
+          <td class="bio-cell">BitShares - The Decentralised Exchange</td>
+          <td class="score-cell">25</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">51</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>BitFury</strong></td>
+          <td class="bio-cell">The Bitfury Group is the leading full-service blockchain technology company. We are a global team of experts in technology, business, communications &amp; security.</td>
+          <td class="score-cell">24</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">52</td>
+          <td class="move-cell"><span class="move up">▲ 6</span></td>
+          <td class="name-cell"><strong>CryptoCompare</strong></td>
+          <td class="bio-cell">We are your entry point into the digital currency space. Live charts &amp; prices, guides, mining, exchanges, wallets, portfolios and much more. #BTC #ETH #Crypto</td>
+          <td class="score-cell">24</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">53</td>
+          <td class="move-cell"><span class="move up">▲ 10</span></td>
+          <td class="name-cell"><strong>Digix</strong></td>
+          <td class="bio-cell">The Smart Asset Company</td>
+          <td class="score-cell">23</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">54</td>
+          <td class="move-cell"><span class="move down">▼ 4</span></td>
+          <td class="name-cell"><strong>Boost VC</strong></td>
+          <td class="bio-cell">We are a Family of Founders making Sci-Fi a Reality! #VR/#AR #blockchain/#crypto #bots #space #AI #drones 200+ companies funded - https://t.co/77BJJmCs8s</td>
+          <td class="score-cell">23</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">55</td>
+          <td class="move-cell"><span class="move down">▼ 4</span></td>
+          <td class="name-cell"><strong>Huobi</strong></td>
+          <td class="bio-cell">The leading global digital asset exchange, welcome to follow my partner @huobi_pro . Telegram:https://t.co/RMOpbxtwJN</td>
+          <td class="score-cell">22</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">56</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>Bitcoin   Foundation</strong></td>
+          <td class="bio-cell">The oldest and largest Bitcoin advocacy organization. We provide co-ordination &amp; raise awareness of the benefits, uses &amp; technology requirements of Bitcoin.</td>
+          <td class="score-cell">22</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">57</td>
+          <td class="move-cell"><span class="move down">▼ 2</span></td>
+          <td class="name-cell"><strong>STOX</strong></td>
+          <td class="bio-cell">#Stox is an open source, Ethereum based prediction market platform where people can trade the outcome of events in almost any imaginable category.#stx,#stx_coin</td>
+          <td class="score-cell">21</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">58</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>Auxesis Group</strong></td>
+          <td class="bio-cell">Auxesis is India’s leading Blockchain development company with R&amp;D; centres in India and U.K. #Blockchain #Smartcontract</td>
+          <td class="score-cell">21</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">59</td>
+          <td class="move-cell"><span class="move down">▼ 2</span></td>
+          <td class="name-cell"><strong>Tezos</strong></td>
+          <td class="bio-cell">Tezos is a self-amending cryptographic ledger. It achieves consensus not just about the state of a ledger, but about the state of its own protocol.</td>
+          <td class="score-cell">20</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">60</td>
+          <td class="move-cell"><span class="move up">▲ 4</span></td>
+          <td class="name-cell"><strong>Exmo</strong></td>
+          <td class="bio-cell">A Universal Cryptocurrency Platform. Low commissions, convenient API User-friendly interface. Secure Wallet 24/h support service. Since 2014.</td>
+          <td class="score-cell">20</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">61</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>ICONOMI</strong></td>
+          <td class="bio-cell">First global digital asset management platform based on Ethereum technology.</td>
+          <td class="score-cell">19</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">62</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>Blockchain Age</strong></td>
+          <td class="bio-cell">The Global Leader in #Blockchain #Research and #Consultancy. Powered by @Richtopia &amp; @IntelligentHQ. Founded by @DerinCag &amp; @DinisGuarda.</td>
+          <td class="score-cell">19</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">63</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>Livecoin</strong></td>
+          <td class="bio-cell">http://t.co/TPvVMAZlcE is a modern stock exchange</td>
+          <td class="score-cell">18</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">64</td>
+          <td class="move-cell"><span class="move up">▲ 2</span></td>
+          <td class="name-cell"><strong>BTC.com</strong></td>
+          <td class="bio-cell">Secure and trusted #Bitcoin and #BitcoinCash wallet. Open-source and fully featured mining pool. Block explorer. For support, email: support@btc.com</td>
+          <td class="score-cell">18</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">65</td>
+          <td class="move-cell"><span class="move up">▲ 7</span></td>
+          <td class="name-cell"><strong>CryptoPay</strong></td>
+          <td class="bio-cell">We are a global #payment gateway that provides #BTC / #LTC wallets, #crypto #exchange &amp; prepaid cards. Follow us!</td>
+          <td class="score-cell">17</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">66</td>
+          <td class="move-cell"><span class="move up">▲ 4</span></td>
+          <td class="name-cell"><strong>Bitwala</strong></td>
+          <td class="bio-cell">We are going to offer together with our partner bank blockchain banking in mid 2018. Pre register today! Account managed by Safaru B.V.</td>
+          <td class="score-cell">17</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">67</td>
+          <td class="move-cell"><span class="move down">▼ 2</span></td>
+          <td class="name-cell"><strong>Synereo</strong></td>
+          <td class="bio-cell">Developing Attention Economy Solutions for the Decentralized Future.</td>
+          <td class="score-cell">16</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">68</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>Tierion</strong></td>
+          <td class="bio-cell">Blockchain proof engine. Create a universally verifiable proof of any data, file, or business process.</td>
+          <td class="score-cell">16</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">69</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>Provenance</strong></td>
+          <td class="bio-cell">We use tech to power transparent businesses &amp; traceable products. Look beyond the label. #origin #impact #blockchain</td>
+          <td class="score-cell">15</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">70</td>
+          <td class="move-cell"><span class="move up">▲ 5</span></td>
+          <td class="name-cell"><strong>Digital Asset</strong></td>
+          <td class="bio-cell">Secure modern infrastructure to power the future of financial applications.</td>
+          <td class="score-cell">15</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">71</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>B9   Lab</strong></td>
+          <td class="bio-cell">B9lab delivers quality instructor-led education, training and talent in #blockchain and decentralised applications.</td>
+          <td class="score-cell">14</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">72</td>
+          <td class="move-cell"><span class="move down">▼ 5</span></td>
+          <td class="name-cell"><strong>Coinscrum</strong></td>
+          <td class="bio-cell">Educating, Debating, Connecting - bitcoin networking in the UK since 2012</td>
+          <td class="score-cell">14</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">73</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>BOScoin</strong></td>
+          <td class="bio-cell">#BOScoin is a Self-Evolving Cryptocurrency Platform #Blockchain #Cryptocurrency #Fintech #Decentralized</td>
+          <td class="score-cell">13</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">74</td>
+          <td class="move-cell"><span class="move up">▲ 2</span></td>
+          <td class="name-cell"><strong>Tendermint</strong></td>
+          <td class="bio-cell">Tendermint is a BFT-based consensus protocol, comprising of 1/2 a blockchain &amp; powers the @Cosmos Hub. The other 1/2 is whatever app you can dream up. #BUIDL</td>
+          <td class="score-cell">13</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">75</td>
+          <td class="move-cell"><span class="move down">▼ 2</span></td>
+          <td class="name-cell"><strong>Purse</strong></td>
+          <td class="bio-cell">Use Crypto to get the Best Deals online. Open source: @bcoin. Support: support@purse.io Media: media@purse.io</td>
+          <td class="score-cell">12</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">76</td>
+          <td class="move-cell"><span class="move up">▲ 2</span></td>
+          <td class="name-cell"><strong>Tether</strong></td>
+          <td class="bio-cell">Bringing real-world currency to the Blockchain</td>
+          <td class="score-cell">12</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">77</td>
+          <td class="move-cell"><span class="move up">▲ 2</span></td>
+          <td class="name-cell"><strong>Point Nine   Capital</strong></td>
+          <td class="bio-cell">Berlin based early stage venture capital firm focused on SaaS and digital marketplaces.</td>
+          <td class="score-cell">11</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">78</td>
+          <td class="move-cell"><span class="move up">▲ 3</span></td>
+          <td class="name-cell"><strong>KeeeX</strong></td>
+          <td class="bio-cell">Build a World of #Trust! Universal embedded protection for trusting the source &amp; integrity of every file #FakeNews #Blockchain #Traceability #Cybersecurity</td>
+          <td class="score-cell">11</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">79</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>Paymium</strong></td>
+          <td class="bio-cell">Money Over IP - Paymium, the European exchange since 2010 (Bitcoin-Central) - Buy and sell #Bitcoins, Accept #Bitcoin payments. Sign-up: https://t.co/6hbOwvtktW</td>
+          <td class="score-cell">10</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">80</td>
+          <td class="move-cell"><span class="move up">▲ 2</span></td>
+          <td class="name-cell"><strong>GoCoin.com</strong></td>
+          <td class="bio-cell">http://t.co/qTySkzzzVQ digital  currency payments platform for eCommerce, online gaming and charitable giving accepting Bitcoin and emerging alt. currencies.</td>
+          <td class="score-cell">10</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">81</td>
+          <td class="move-cell"><span class="move up">▲ 2</span></td>
+          <td class="name-cell"><strong>Xapo</strong></td>
+          <td class="bio-cell">The World&#x27;s Secure Bitcoin Wallet</td>
+          <td class="score-cell">9</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">82</td>
+          <td class="move-cell"><span class="move down">▼ 5</span></td>
+          <td class="name-cell"><strong>Filament</strong></td>
+          <td class="bio-cell">Enabling the future of IoT. #Blocklet #BlockletChip</td>
+          <td class="score-cell">9</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">83</td>
+          <td class="move-cell"><span class="move up">▲ 7</span></td>
+          <td class="name-cell"><strong>Monax</strong></td>
+          <td class="bio-cell">A platform to build legal products for tomorrow&#x27;s businesses</td>
+          <td class="score-cell">8</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">84</td>
+          <td class="move-cell"><span class="move up">▲ 2</span></td>
+          <td class="name-cell"><strong>Coinify</strong></td>
+          <td class="bio-cell">Buy and sell bitcoin or accept blockchain payments using Coinify.  Follow @CoinifyStatus for customer updates. Need help? Visit https://t.co/PJgMMtZf9o</td>
+          <td class="score-cell">8</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">85</td>
+          <td class="move-cell"><span class="move up">▲ 3</span></td>
+          <td class="name-cell"><strong>Slock.it</strong></td>
+          <td class="bio-cell">~Not giving away free ETH~ Home of the Universal Sharing Network &amp; the Ethereum Computer</td>
+          <td class="score-cell">7</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">86</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>Elliptic</strong></td>
+          <td class="bio-cell">We identify illicit activity on the Bitcoin blockchain, for financial institutions and law enforcement agencies.</td>
+          <td class="score-cell">7</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">87</td>
+          <td class="move-cell"><span class="move down">▼ 3</span></td>
+          <td class="name-cell"><strong>SETL.io</strong></td>
+          <td class="bio-cell"></td>
+          <td class="score-cell">6</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">88</td>
+          <td class="move-cell"><span class="move up">▲ 3</span></td>
+          <td class="name-cell"><strong>IoTa</strong></td>
+          <td class="bio-cell">IOTA is a promising solution to infrastructure challenges faced by the IoT (Internet of Things) #tangle #iot #m2m #fintech #blockchain #iota #bitcoin</td>
+          <td class="score-cell">6</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">89</td>
+          <td class="move-cell"><span class="move up">▲ 3</span></td>
+          <td class="name-cell"><strong>Bitaccess</strong></td>
+          <td class="bio-cell">We make bitcoin simple. Buy or sell bitcoin at one of our Bitcoin Teller Machines around the world. Buy bitcoin at 6,000 retail locations within Canada.</td>
+          <td class="score-cell">5</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">90</td>
+          <td class="move-cell"><span class="move down">▼ 5</span></td>
+          <td class="name-cell"><strong>Bittylicious</strong></td>
+          <td class="bio-cell">Cryptocurrency Trading including Bitcoin and Ethereum - Fast, Secure and UK based</td>
+          <td class="score-cell">5</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">91</td>
+          <td class="move-cell"><span class="move down">▼ 2</span></td>
+          <td class="name-cell"><strong>Netki</strong></td>
+          <td class="bio-cell">Netki&#x27;s Digital Identity Certificates allow Financial Institutions to build compliant #blockchain platforms &amp; applications</td>
+          <td class="score-cell">4</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">92</td>
+          <td class="move-cell"><span class="move up">▲ 3</span></td>
+          <td class="name-cell"><strong>BlockchainUniversity</strong></td>
+          <td class="bio-cell">Blockchain tech education &amp; events. #BlockSummitJP https://t.co/8G4yjZhdwI * Women in Tech Diversity launching #WiTD https://t.co/XTOan1qGcK …</td>
+          <td class="score-cell">4</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">93</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>Bitt</strong></td>
+          <td class="bio-cell">Use Bitt to send &amp; receive money in the Caribbean faster, cheaper, and smarter than any other financial service.</td>
+          <td class="score-cell">3</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">94</td>
+          <td class="move-cell"><span class="move down">▼ 1</span></td>
+          <td class="name-cell"><strong>Fintricity</strong></td>
+          <td class="bio-cell">We are consultants at the forefront of #innovation, taking an agile, business-first approach to digital transformation, #bigdata, #blockchain &amp; disruptive #tech</td>
+          <td class="score-cell">3</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">95</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>FollowMyVote</strong></td>
+          <td class="bio-cell">Follow My Vote is improving the integrity standards of voting systems used in elections worldwide by developing end-2-end verifiable blockchain voting software.</td>
+          <td class="score-cell">2</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">96</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>Hijro</strong></td>
+          <td class="bio-cell">(formerly Fluent) The financial operating network for global trade built on #blockchain technology. Visit our blog at https://t.co/VPpoNBGpfg</td>
+          <td class="score-cell">2</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">97</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>MONEYTIS</strong></td>
+          <td class="bio-cell">The best way to send money abroad.</td>
+          <td class="score-cell">1</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">98</td>
+          <td class="move-cell"><span class="move up">▲ 1</span></td>
+          <td class="name-cell"><strong>WePesa</strong></td>
+          <td class="bio-cell">The Blockchain for Group buying | Full stack platform with Decentralised ID &amp; Credit ratings engine thats leverages users trading history.</td>
+          <td class="score-cell">1</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">99</td>
+          <td class="move-cell"><span class="move down">▼ 74</span></td>
+          <td class="name-cell"><strong>Bitcoin News</strong></td>
+          <td class="bio-cell">Breaking News: Bitcoin, Blockchain &amp; Beyond #bitcoin #blockchain #ethereum #cryptocurrency #VC #crypto #trading #TA #charts #ico #altcoins $btc $eth</td>
+          <td class="score-cell">0</td>
+        </tr>
+        <tr>
+          <td class="rank-cell">100</td>
+          <td class="move-cell"><span class="move flat">—</span></td>
+          <td class="name-cell"><strong>OpenLedger</strong></td>
+          <td class="bio-cell">All-in-one decentralized exchange with 100K transactions per second, the speed of NASDAQ. Top secure vault style wallet with multisig accounts.</td>
+          <td class="score-cell">0</td>
+        </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="lb-method">
+    <div class="container">
+        <h2>About the methodology</h2>
+        <p>The Blockchain 100 was a dynamic leaderboard, recomputed weekly and published by Richtopia on rise.global. Each company was given a Power Score derived from Klout (a now-retired social authority metric) and the count of Twitter lists the account appeared on, weighted to balance reach with curated relevance.</p>
+        <p>The "Move" column shows the change in rank versus the previous week — a snapshot of momentum within an industry that, in 2018, was moving very fast.</p>
+        <p><strong>Note:</strong> This is a static archive. The data is frozen at the 9 May 2018 release and is no longer updated. Some companies listed have since rebranded, merged, or shut down; the descriptions reflect the companies' own Twitter bios at the time.</p>
+    </div>
+</section>
+
+<section class="lb-cta">
+    <div class="container">
+        <h2>Build your own leaderboard on <span class="accent">Leaderboarded</span></h2>
+        <p>Want to publish a ranking like this one? Leaderboarded is the platform behind the Blockchain 100 — used to score, rank, and showcase the people and companies that matter in your industry.</p>
+        <div class="cta-buttons">
+            <a href="https://www.leaderboarded.com?utm_source=rise.global&amp;utm_medium=referral&amp;utm_campaign=blockchain-100" class="btn-primary">Make your leaderboard</a>
+        </div>
+    </div>
+</section>
