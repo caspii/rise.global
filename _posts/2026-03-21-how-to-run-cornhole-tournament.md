@@ -6,74 +6,76 @@ author: Rise Team
 image: /assets/images/blog-cornhole-tournament-hero.png
 ---
 
-A cornhole tournament sounds simple. Boards, bags, brackets. How hard can it be?
+A cornhole tournament looks easy on paper. Boards, bags, brackets. How hard can it be?
 
-Then 24 teams show up, you have 4 sets of boards, nobody remembers cancellation scoring, and you're doing bracket math on the back of a napkin while someone asks for the third time when they play next.
+Then 24 teams arrive, you brought 4 sets of boards, and someone is asking — for the third time — when they play next while you do bracket math on a napkin. Half the players don't remember how cancellation scoring works. The first two matches finish at the same time and the next two haven't been told they're up.
 
-Running a great cornhole tournament isn't about cornhole. It's about logistics. The throwing part takes care of itself.
+Running a good cornhole tournament is barely about cornhole. The throwing part runs itself. The hard parts are logistics — format choice, board capacity, time management, and getting information to participants without them having to track you down.
 
 ![Outdoor cornhole tournament setup with boards and bean bags](/assets/images/mockups/blog-cornhole-setup.jpg)
 
-## Choose Your Format First
+## Pick Your Format
 
-This decision drives everything else — how long the event runs, how many boards you need, and whether anyone goes home angry.
+This is the first decision and it affects everything else. Total event length, number of boards, whether anyone goes home grumpy.
 
-**[Double elimination](https://en.wikipedia.org/wiki/Double-elimination_tournament)** is the standard for competitive cornhole, and the [ACL (American Cornhole League)](https://www.iplaycornhole.com/) uses it for a reason. Every team gets a second chance. One bad game doesn't end your day. If you've got 16 teams and a full day, [double elimination](/double-elimination-bracket/) is the move. Expect about 30 matches.
+**[Double elimination](https://en.wikipedia.org/wiki/Double-elimination_tournament)** is the standard for serious cornhole, and the [ACL](https://www.iplaycornhole.com/) uses it for good reason. Every team gets a second chance through the losers bracket. One bad game doesn't end your day. With 16 teams and a full day to play, [double elimination](/double-elimination-bracket/) is the right call. You're looking at around 30 matches.
 
-**Single elimination** works for casual events and large fields. Got 32 teams at a charity fundraiser? You don't have time for double elimination. An [8-team bracket](/8-team-bracket/) runs 7 matches. Quick, clean, done.
+**Single elimination** is for casual events and large fields. Got 32 teams at a charity fundraiser with a four-hour window? You don't have time for double elimination. An [8-team bracket](/8-team-bracket/) wraps in 7 matches. Quick, clean, gets everyone home before dinner.
 
-**Round robin** is ideal for smaller groups (6-8 teams) where everyone wants maximum playing time. Use it for league nights or when the social aspect matters more than the competition. A [round robin generator](/round-robin-generator/) handles the scheduling.
+**Round robin** suits smaller groups (6-8 teams) where the social side matters more than the competition. League nights, casual gatherings, end-of-summer barbecues. Use a [round robin generator](/round-robin-generator/) to handle the schedule.
 
-## ACL Scoring Rules (The Quick Version)
+## ACL Scoring (The Quick Version)
 
-Bag on the board: 1 point. Bag in the hole: 3 points. Game goes to 21 points.
+Bag on the board: 1 point. Bag in the hole: 3 points. Game ends at 21.
 
-Here's the part people mess up: [cancellation scoring](https://en.wikipedia.org/wiki/Cornhole#Scoring). You don't add up both teams' points each round. You *cancel* them. If Team A scores 5 and Team B scores 3, only Team A gets 2 points added to the running total.
+The bit that trips people up is [cancellation scoring](https://en.wikipedia.org/wiki/Cornhole#Scoring). You don't add both teams' points each round. You cancel them. If Team A scores 5 in a frame and Team B scores 3, only Team A adds to the running total — and only by 2, the difference. If both teams scored 5, neither gets anything that frame.
 
-Demonstrate this before the first match. Literally walk up to a board, throw a few bags, and show everyone how the math works. You'll save yourself 45 minutes of mid-game arguments.
+Demonstrate this before the first match starts. Walk up to a board, throw a few bags, run through how the math works out loud. Five minutes of demonstration saves 45 minutes of mid-game arguments later.
 
-A few more rules worth announcing: bags that hit the ground first and slide onto the board don't count. Bags hanging off the edge but not touching the ground do count. And the team that scored last throws first in the next frame.
+A few other rules worth announcing up front. Bags that hit the ground and slide onto the board don't count. Bags hanging off the edge but not touching the ground do count. The team that scored last in a frame throws first in the next one.
 
-## How Many Boards Do You Need?
+## How Many Boards
 
-This is the bottleneck that kills most cornhole tournaments. More boards means more simultaneous matches, which means faster completion.
+Boards are the bottleneck that decides how long your event takes. More boards means more simultaneous matches means faster completion. Cheaping out here turns a four-hour event into an eight-hour one.
 
-For 8-12 teams: 2 sets of boards minimum, 3 is better. With 2 boards and double elimination, expect 4-5 hours for 8 teams. With 3 boards, you're done in 3.
+For 8-12 teams: two sets of boards is the minimum, three is better. With two boards and double elimination, an 8-team event runs about 4-5 hours. Three boards cuts it to roughly 3.
 
-For 16 teams: 4 sets of boards. Anything less and you're looking at an 8+ hour day with double elimination.
+For 16 teams: four boards. Anything fewer pushes you into 8+ hours with double elimination, which is fine if that's the plan and not fine if it isn't.
 
-For 32 teams: 6-8 sets. At this scale, you also need dedicated scorekeepers or a digital system — organizers can't be everywhere.
+For 32 teams: six to eight boards. At this scale you also need dedicated scorekeepers or a digital tracking system, because organisers can't be at every board at once.
 
-If you're buying boards, regulation size is 2 feet by 4 feet, set 27 feet apart (front to front). Don't skimp on this distance. Twenty feet apart plays completely differently and your experienced players will notice immediately.
+If you're buying boards for the event, regulation is 2 feet by 4 feet, set 27 feet apart front-to-front. Don't shorten the distance. Twenty feet plays completely differently and your serious players will notice immediately.
 
 ![Person controlling bracket from phone at cornhole tournament](/assets/images/mockups/situational-02-cornhole-phone.png)
 
 ## Time Management
 
-The killer of cornhole tournaments isn't bad weather or missing equipment. It's dead time between matches.
+The thing that drags out cornhole tournaments isn't bad weather or missing equipment. It's dead time between matches.
 
-Each game to 21 takes about 15-20 minutes. Add 5 minutes for transition — teams finding their boards, getting settled, arguing about who throws first. So budget 25 minutes per match slot.
+A game to 21 takes about 15-20 minutes of actual play. Add five minutes for transition — finding the right boards, getting settled, sorting out who throws first. Budget 25 minutes per match slot.
 
-Here's the trick that saves the most time: don't wait for all matches in a round to finish before starting the next round. As soon as a match ends and the next matchup is known, get those teams on the board. Losers bracket matches can run while winners bracket matches are still going. This requires a digital bracket or a very organized paper system, but it can cut your total event time by 30%.
+The biggest single time-saver is parallel match flow. Don't wait for every match in a round to finish before starting the next round. The moment a board frees up and the next matchup is known, get those teams playing. Losers bracket matches can run alongside winners bracket matches. This requires either a digital bracket or a very organised paper system, but done well it cuts total event time by around 30%.
 
-Post the full schedule or bracket somewhere everyone can see it. A TV or large monitor works perfectly — participants check it themselves instead of hunting you down. This is exactly what Rise's [TV display mode](/features/) is built for. Mount a screen near the boards, connect it, and the bracket stays current as you enter scores from your phone.
+Post the bracket somewhere everyone can see it. A TV or large monitor near the boards works well — players check it themselves instead of asking you. Rise's [TV display mode](/features/) is built for this. Mount a screen, plug it in, and the bracket stays current as you enter scores from your phone.
 
 ## Day-Of Checklist
 
-Arrive an hour early. Set up boards and verify the 27-foot distance. Test the surface — are the boards too slick? Too grippy? Adjust if needed.
+Arrive an hour early. Set up boards and verify the 27-foot distance. Test the surface — too slick, too grippy, uneven? Adjust before players arrive.
 
-Registration should happen online before the event if possible. Day-of registration with 20+ teams is chaos. Have a clear check-in process with a cutoff time. If a team isn't there by the cutoff, they forfeit their spot.
+Run registration online before the day if you can. Day-of registration with 20+ teams is a mess. If you have to do day-of, set a clear cutoff time and stick to it. Teams not present by the cutoff forfeit.
 
-Assign someone other than yourself to handle disputes. You'll be too busy managing the bracket. Pick someone who knows the rules and whose authority people will accept — ideally a respected player who isn't competing.
+Assign someone other than yourself to handle disputes. You'll be busy with the bracket. Pick someone who knows the rules and whose authority players will accept — ideally a respected player who isn't competing.
 
-Have bags available to borrow. Someone always forgets theirs. Regulation bags are 6 inches square and weigh 15-16 ounces. Having a few backup sets prevents delays.
+Have spare bags. Someone always forgets theirs. Regulation bags are 6 inches square and weigh between 15 and 16 ounces. A few backup sets prevents matches from being delayed while someone runs to their car.
 
 ![Tournament bracket on TV display at an event](/assets/images/mockups/mockup-05-tv-display-v2.png)
 
-## Keep People Engaged Between Matches
+## Keeping People Engaged
 
-The biggest risk to your tournament isn't logistical failure. It's boredom. Teams that aren't playing need something to do. A few things that work: a side challenge board for casual throws, food and drinks (obviously), and a visible bracket or leaderboard that gives people a reason to watch other matches.
+The biggest risk to a tournament isn't logistics. It's boredom. Teams that aren't currently playing need something to do or they wander off.
 
-[Cornhole tournament brackets](/cornhole-tournament-bracket/) on Rise update live as scores come in. Participants follow the bracket on their phones, see upcoming matchups, and know exactly when they play next — without asking you. That alone makes the event feel organized and professional, even if behind the scenes you're figuring it out as you go.
+A side challenge board for casual throws. Food and drinks (obviously). A visible bracket or leaderboard that gives spectators a reason to follow other matches. People will watch a match they're not in if they know the winner plays them next, or if they have something at stake in who advances.
+
+[Cornhole tournament brackets](/cornhole-tournament-bracket/) on Rise update live as scores come in. Players follow the bracket on their phones, see their next matchup, and know when they're up — without having to ask. That alone makes the event feel organised, even when behind the scenes you're improvising.
 
 [Join the waitlist](/waitlist/) to try Rise at your next tournament.
