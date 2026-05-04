@@ -108,4 +108,4 @@ Rise's free [round robin generator](/round-robin-generator/) builds your schedul
 
 ---
 
-Ready to run a round robin? Use our free [round robin generator](/round-robin-generator/) to build your schedule instantly. Or if you're managing a larger event, try the [bracket maker](/bracket-maker/) for single and double elimination formats. [Join the waitlist](/waitlist/) for live scoring, standings tracking, and everything else Rise is building.
+Ready to run a round robin? Use our free [round robin generator](/round-robin-generator/) to build your schedule instantly. Or if you're managing a larger event, try the [bracket maker](/tools/tournament-bracket-generator/) for single and double elimination formats. [Join the waitlist](/waitlist/) for live scoring, standings tracking, and everything else Rise is building.
