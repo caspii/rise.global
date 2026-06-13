@@ -91,8 +91,10 @@ permalink: /404.html
      On GitHub Pages the browser URL stays the requested path even though 404.html
      is served, so location.pathname is the real URL the visitor asked for.
      Remove once the 404 sources are mapped. */
-  (function () {
-    if (typeof fathom === 'undefined') return;
-    fathom.trackEvent('404: ' + location.pathname + location.search);
-  })();
+  /* Fathom's script.js is deferred, so it isn't ready during parse — wait for load. */
+  window.addEventListener('load', function () {
+    if (window.fathom && typeof fathom.trackEvent === 'function') {
+      fathom.trackEvent('404: ' + location.pathname + location.search);
+    }
+  });
 </script>
