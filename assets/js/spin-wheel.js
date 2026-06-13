@@ -157,6 +157,7 @@ function shareWheelLink() {
 (function() {
     var state = decodeStateFromURL();
     if (state && state.options) {
+        trackEvent('Spin Wheel: Open Shared');
         document.getElementById('options-input').value = state.options;
     }
     updateWheel();

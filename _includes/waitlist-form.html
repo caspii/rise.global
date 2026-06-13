@@ -2,7 +2,7 @@
     {% if include.heading %}
     <h3>{{ include.heading }}</h3>
     {% endif %}
-    <a href="/waitlist/" class="waitlist-cta-button">Join the Waitlist</a>
+    <a href="/waitlist/" class="waitlist-cta-button" onclick="trackEvent('Waitlist: CTA Click')">Join the Waitlist</a>
 </div>
 
 <style>

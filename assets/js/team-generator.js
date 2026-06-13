@@ -17,6 +17,7 @@ document.getElementById('split-mode').addEventListener('change', function() {
 (function() {
     var state = decodeStateFromURL();
     if (state && state.names) {
+        trackEvent('Team Generator: Open Shared');
         document.getElementById('names-input').value = state.names;
         if (state.mode) document.getElementById('split-mode').value = state.mode;
         if (state.value) document.getElementById('split-value').value = state.value;

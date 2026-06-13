@@ -24,7 +24,13 @@ permalink: /waitlist/
 <main class="main-content">
     <h1 class="visually-hidden">Join the Waitlist — Get Early Access to Rise Pro</h1>
     <section class="waitlist-page">
-        <div data-tf-live="01KMJRH922TQNA5TCY8D0228BW"></div>
+        <div data-tf-live="01KMJRH922TQNA5TCY8D0228BW" data-tf-on-submit="riseWaitlistSubmit"></div>
         <script src="//embed.typeform.com/next/embed.js"></script>
+        <script>
+          /* Typeform fires this on successful submission (must be on global scope) */
+          function riseWaitlistSubmit() {
+            if (typeof fathom !== 'undefined') { fathom.trackEvent('Waitlist: Submit'); }
+          }
+        </script>
     </section>
 </main>

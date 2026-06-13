@@ -282,6 +282,7 @@ function escapeXml(str) {
 (function() {
     var state = decodeStateFromURL();
     if (state && state.names) {
+        trackEvent('Bracket: Open Shared');
         document.getElementById('bracket-names-input').value = state.names;
         if (state.order) document.getElementById('bracket-order').value = state.order;
         generateBracket();
