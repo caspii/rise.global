@@ -180,6 +180,15 @@ permalink: /round-robin-generator/
         </div>
     </section>
 
+    <!-- Round robin schedules by team count -->
+    <section class="rr-content-section">
+        <div class="container">
+            <h2>Round Robin Schedules by Team Count</h2>
+            <p>Need the fixture list right now? Each page below has the complete, printable round robin schedule for that number of teams — every matchup, every round.</p>
+            <p style="line-height: 2;">{% assign rr_sizes = "4,5,6,7,8,9,10,11,12,14,16" | split: "," %}{% capture rr_links %}{% for size in rr_sizes %}<a href="/{{ size }}-team-round-robin/">{{ size }}-Team Round Robin</a>~SEP~{% endfor %}{% endcapture %}{{ rr_links | split: "~SEP~" | join: " · " }}</p>
+        </div>
+    </section>
+
     <!-- FAQ -->
     <section class="faq">
         <div class="container">

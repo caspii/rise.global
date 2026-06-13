@@ -1,0 +1,346 @@
+---
+layout: default
+title: "Softball Tournament Bracket — Free Double Elimination Bracket Maker"
+description: "Create a softball tournament bracket in seconds. Double elimination, pool play into bracket, 8-32 teams, seeding and standings. Free bracket maker from Rise."
+keywords: "softball tournament bracket, softball bracket, softball double elimination bracket, slow pitch softball tournament, softball pool play"
+permalink: /softball-tournament-bracket/
+---
+
+<style>
+.sport-hero {
+    padding: 7rem 0 3rem;
+    background: var(--gradient-hero);
+    position: relative;
+    overflow: hidden;
+}
+.sport-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(200, 255, 0, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+}
+.sport-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 77, 106, 0.06) 0%, transparent 60%);
+    pointer-events: none;
+}
+.sport-hero-mockup {
+    margin-top: 3rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sport-hero-mockup img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5), 0 0 40px rgba(200, 255, 0, 0.08);
+}
+.quick-facts {
+    padding: 3rem 0;
+    background: var(--bg-light);
+}
+.quick-facts-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.quick-fact {
+    text-align: center;
+    padding: 1.5rem 2rem;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    min-width: 160px;
+}
+.quick-fact-value {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    display: block;
+    letter-spacing: -0.02em;
+}
+.quick-fact-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-weight: 500;
+    margin-top: 0.25rem;
+}
+.sport-content-section {
+    padding: 5rem 0;
+    background: var(--white);
+}
+.sport-content-section.alt {
+    background: var(--bg-light);
+}
+.sport-content-section h2 {
+    font-family: var(--font-display);
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+}
+.sport-content-section p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+    max-width: 760px;
+}
+.sport-content-section p a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.sport-content-section p a:hover {
+    text-decoration: underline;
+}
+.sport-showcase-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+.sport-showcase-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 12px 40px rgba(10, 14, 26, 0.12);
+    border: 1px solid var(--border-color);
+}
+.sport-showcase-text h2 {
+    margin-bottom: 1rem;
+}
+.sport-showcase-text p {
+    max-width: 100%;
+}
+.sport-waitlist {
+    padding: 5rem 0;
+    background: var(--gradient-hero);
+    color: var(--white);
+    text-align: center;
+}
+.sport-waitlist .section-title {
+    color: var(--white);
+}
+.sport-cross-links {
+    padding: 3rem 0;
+    background: var(--bg-light);
+    text-align: center;
+}
+.sport-cross-links p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    max-width: 760px;
+    margin: 0 auto;
+    line-height: 1.75;
+}
+.sport-cross-links p a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.sport-cross-links p a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .sport-hero {
+        padding: 4rem 0 2rem;
+    }
+    .sport-content-section h2 {
+        font-size: 1.75rem;
+    }
+    .sport-hero-mockup {
+        margin-top: 2rem;
+    }
+    .quick-facts-row {
+        gap: 1rem;
+    }
+    .quick-fact {
+        min-width: 130px;
+        padding: 1.25rem 1.5rem;
+    }
+    .sport-showcase-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+</style>
+
+<main class="main-content">
+    <!-- Hero -->
+    <section class="sport-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Softball Tournament Bracket Maker</h1>
+                <p class="hero-subtitle">Build your softball bracket in seconds — double elimination with an "if necessary" final, pool play into a bracket, and a shared link the whole complex can follow between innings.</p>
+                <div class="hero-cta-group">
+                    <a href="/tools/tournament-bracket-generator/" class="hero-primary-cta">Try the Free Bracket Maker</a>
+                    <a href="/waitlist/" class="hero-secondary-cta">Join the Waitlist</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Situational Image -->
+    <section class="sport-content-section">
+        <div class="container" style="text-align: center;">
+            <div class="sport-hero-mockup" style="margin-top: 0;">
+                <img src="/assets/images/mockups/mockup-07-group-to-knockout.png" alt="Softball tournament pool play feeding into a double elimination bracket" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Run -->
+    <section class="sport-content-section alt">
+        <div class="container">
+            <h2>How to Run a Softball Tournament</h2>
+            <p>Softball is the home of <strong>double elimination</strong>. Slow-pitch and fast-pitch weekend tournaments almost universally use it because a single loss to a hot bat shouldn't end your weekend — every team gets a trip through the losers' bracket before they're out. The format produces the classic "if necessary" game: if a team that came up through the losers' bracket beats the undefeated team in the final, the two play one more deciding game, because the winners'-bracket team hadn't lost yet. Build that into your schedule so the final slot isn't a surprise.</p>
+            <p>For larger weekend tournaments — 16, 24, or 32 teams — the common structure is <strong>pool play seeding into a bracket</strong>. Saturday is round robin pool games that don't eliminate anyone but set the seeds; Sunday is a single or double elimination championship bracket using those seeds. This guarantees every team at least three or four games on day one regardless of results, which is what travel teams and rec leagues are paying entry fees for. For a smaller one-day event of 8 teams, straight double elimination is simpler and finishes in a day.</p>
+            <p>Seeding comes from pool-play record (wins first, then run differential, then head-to-head as tiebreaks) or from a prior season's standings for league tournaments. Spread the top seeds across the bracket so the two strongest teams can only meet in the final. Decide your tiebreak rules and run-rule (e.g. 10 runs after 5 innings) before the first pitch and put them on the bracket sheet — disputes over a pool tiebreak at 9pm under the lights are how tournaments run late.</p>
+            <p>The operational headache at a multi-field complex is always the same: which team is on which diamond, and who's up next. With pool games and bracket games running across four or six fields, the scorer's table becomes a bottleneck. Post the live bracket and pool standings on a screen and share a link so every team can see their next game and field from the dugout, instead of walking to the table to ask after every game.</p>
+        </div>
+    </section>
+
+    <!-- Recommended Format -->
+    <section class="quick-facts">
+        <div class="container">
+            <div class="quick-facts-row">
+                <div class="quick-fact">
+                    <span class="quick-fact-value">8–32</span>
+                    <span class="quick-fact-label">Teams</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">DE</span>
+                    <span class="quick-fact-label">Double Elimination</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">Pool→Bracket</span>
+                    <span class="quick-fact-label">For 16+ teams</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">1–2 days</span>
+                    <span class="quick-fact-label">Typical length</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="sport-content-section">
+        <div class="container">
+            <div class="sport-showcase-row">
+                <div class="sport-showcase-image">
+                    <img src="/assets/images/mockups/mockup-03-double-elimination.png" alt="Softball double elimination bracket with winners and losers brackets" loading="lazy">
+                </div>
+                <div class="sport-showcase-text">
+                    <h2>Double Elimination, Built In</h2>
+                    <p>Rise tracks the winners' and losers' brackets side by side and advances teams automatically as you enter scores — including the "if necessary" deciding game when a losers'-bracket team wins the final. No more redrawing the losers' side by hand every time a favorite drops a game.</p>
+                    <p>Across a six-field complex, the live bracket and pool standings show on a screen at the table and on every coach's phone, so the next matchup and field are never a question. <a href="/double-elimination-bracket/">See how double elimination works</a> or <a href="/features/">see all planned features</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cross-links -->
+    <section class="sport-cross-links">
+        <div class="container">
+            <p>Explore more formats: <a href="/double-elimination-bracket/">Double Elimination Brackets</a> · <a href="/round-robin-generator/">Round Robin Generator</a> · <a href="/16-team-bracket/">16-Team Bracket</a> · <a href="/32-team-bracket/">32-Team Bracket</a> · <a href="/volleyball-tournament-bracket/">Volleyball Bracket</a> · <a href="/cornhole-tournament-bracket/">Cornhole Bracket</a></p>
+        </div>
+    </section>
+
+    <!-- Waitlist -->
+    <section class="sport-waitlist">
+        <div class="container">
+            {% include waitlist-form.html heading="Get early access to Rise's tournament platform" %}
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>What format do softball tournaments use?</h4>
+                    <p>Double elimination is the standard for softball — every team has to lose twice to be eliminated, which produces the classic "if necessary" final. Larger weekend tournaments (16+ teams) usually run pool play on day one to set seeds, then a single or double elimination championship <a href="/double-elimination-bracket/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">bracket</a> on day two.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How many games in a double elimination softball bracket?</h4>
+                    <p>An 8-team double elimination bracket runs 14-15 games (the extra game is the "if necessary" final). A 16-team bracket is 30-31 games. Because softball games take longer than most sports, plan two or more diamonds running simultaneously so a 16-team event finishes in a day.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How do you seed a softball tournament?</h4>
+                    <p>Seed from pool-play record — wins first, then run differential, then head-to-head as tiebreaks — or from prior league standings. Place the top seeds on opposite sides of the bracket so the two best teams can only meet in the final. For a casual event with no records, Rise can draw the bracket randomly.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I create a softball bracket right now?</h4>
+                    <p>Yes. Rise's <a href="/tools/tournament-bracket-generator/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">free bracket maker</a> creates a single elimination softball bracket instantly — add team names, choose seeded or random ordering, and share the link with every coach. For day-one seeding games, use the <a href="/round-robin-generator/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">round robin generator</a>. No account required.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Build Your Softball Bracket</h2>
+            <p>Free, fast, and ready for the diamond. No signup required.</p>
+            <div class="hero-cta-group">
+                <a href="/tools/tournament-bracket-generator/" class="hero-primary-cta">Create Bracket</a>
+                <a href="/waitlist/" class="hero-secondary-cta">Join the Waitlist</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "What format do softball tournaments use?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Double elimination is the standard for softball — every team has to lose twice to be eliminated, which produces the classic \"if necessary\" final. Larger weekend tournaments (16+ teams) usually run pool play on day one to set seeds, then a single or double elimination championship bracket on day two."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How many games in a double elimination softball bracket?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "An 8-team double elimination bracket runs 14-15 games (the extra game is the \"if necessary\" final). A 16-team bracket is 30-31 games. Because softball games take longer than most sports, plan two or more diamonds running simultaneously so a 16-team event finishes in a day."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How do you seed a softball tournament?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Seed from pool-play record — wins first, then run differential, then head-to-head as tiebreaks — or from prior league standings. Place the top seeds on opposite sides of the bracket so the two best teams can only meet in the final. For a casual event with no records, Rise can draw the bracket randomly."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I create a softball bracket right now?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Rise's free bracket maker creates a single elimination softball bracket instantly — add team names, choose seeded or random ordering, and share the link with every coach. For day-one seeding games, use the round robin generator. No account required."
+            }
+        }
+    ]
+}
+</script>

@@ -1,0 +1,346 @@
+---
+layout: default
+title: "Pickleball Tournament Bracket — Free Bracket & Round Robin Maker"
+description: "Create a pickleball tournament bracket in seconds. Round robin pools, medal brackets, skill divisions, and DUPR seeding. Free bracket maker from Rise."
+keywords: "pickleball bracket, pickleball tournament bracket, pickleball round robin, pickleball tournament format, pickleball draw"
+permalink: /pickleball-tournament-bracket/
+---
+
+<style>
+.sport-hero {
+    padding: 7rem 0 3rem;
+    background: var(--gradient-hero);
+    position: relative;
+    overflow: hidden;
+}
+.sport-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(200, 255, 0, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+}
+.sport-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 77, 106, 0.06) 0%, transparent 60%);
+    pointer-events: none;
+}
+.sport-hero-mockup {
+    margin-top: 3rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sport-hero-mockup img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5), 0 0 40px rgba(200, 255, 0, 0.08);
+}
+.quick-facts {
+    padding: 3rem 0;
+    background: var(--bg-light);
+}
+.quick-facts-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.quick-fact {
+    text-align: center;
+    padding: 1.5rem 2rem;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    min-width: 160px;
+}
+.quick-fact-value {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    display: block;
+    letter-spacing: -0.02em;
+}
+.quick-fact-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-weight: 500;
+    margin-top: 0.25rem;
+}
+.sport-content-section {
+    padding: 5rem 0;
+    background: var(--white);
+}
+.sport-content-section.alt {
+    background: var(--bg-light);
+}
+.sport-content-section h2 {
+    font-family: var(--font-display);
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+}
+.sport-content-section p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+    max-width: 760px;
+}
+.sport-content-section p a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.sport-content-section p a:hover {
+    text-decoration: underline;
+}
+.sport-showcase-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+.sport-showcase-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 12px 40px rgba(10, 14, 26, 0.12);
+    border: 1px solid var(--border-color);
+}
+.sport-showcase-text h2 {
+    margin-bottom: 1rem;
+}
+.sport-showcase-text p {
+    max-width: 100%;
+}
+.sport-waitlist {
+    padding: 5rem 0;
+    background: var(--gradient-hero);
+    color: var(--white);
+    text-align: center;
+}
+.sport-waitlist .section-title {
+    color: var(--white);
+}
+.sport-cross-links {
+    padding: 3rem 0;
+    background: var(--bg-light);
+    text-align: center;
+}
+.sport-cross-links p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    max-width: 760px;
+    margin: 0 auto;
+    line-height: 1.75;
+}
+.sport-cross-links p a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.sport-cross-links p a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .sport-hero {
+        padding: 4rem 0 2rem;
+    }
+    .sport-content-section h2 {
+        font-size: 1.75rem;
+    }
+    .sport-hero-mockup {
+        margin-top: 2rem;
+    }
+    .quick-facts-row {
+        gap: 1rem;
+    }
+    .quick-fact {
+        min-width: 130px;
+        padding: 1.25rem 1.5rem;
+    }
+    .sport-showcase-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+</style>
+
+<main class="main-content">
+    <!-- Hero -->
+    <section class="sport-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Pickleball Tournament Bracket Maker</h1>
+                <p class="hero-subtitle">Run your pickleball tournament the way the sport actually plays — round robin pools into a medal bracket, skill divisions, and a shared link every player can follow from the next court over.</p>
+                <div class="hero-cta-group">
+                    <a href="/tools/tournament-bracket-generator/" class="hero-primary-cta">Try the Free Bracket Maker</a>
+                    <a href="/waitlist/" class="hero-secondary-cta">Join the Waitlist</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Situational Image -->
+    <section class="sport-content-section">
+        <div class="container" style="text-align: center;">
+            <div class="sport-hero-mockup" style="margin-top: 0;">
+                <img src="/assets/images/mockups/mockup-06-round-robin.png" alt="Pickleball round robin pool standings and medal bracket on a phone and a screen" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Run -->
+    <section class="sport-content-section alt">
+        <div class="container">
+            <h2>How to Run a Pickleball Tournament</h2>
+            <p>Pickleball is the fastest-growing sport in the country, and most tournaments don't run on a single elimination bracket the way other sports do. The format players expect is <strong>round robin pool play feeding into a medal bracket</strong>. Everyone is grouped into pools of 4 to 6 teams, plays every other team in their pool, and the top finishers advance to a knockout round that decides gold, silver, and bronze. This guarantees every entrant a stack of games — nobody drives to a tournament and goes home after one loss — which is exactly why round robin dominates in pickleball.</p>
+            <p>The first decision is divisions. Pickleball events are almost always split by <strong>skill level</strong> (DUPR or the 3.0 / 3.5 / 4.0 / 4.5 self-rating scale) and often by age and event type (men's doubles, women's doubles, mixed doubles, and singles). Each division runs as its own bracket. A 3.5 mixed doubles draw and a 4.0 men's doubles draw are separate events with separate standings, so plan court time for each. Most rec-center and club tournaments run several divisions across a single day, with pool play in the morning and medal brackets in the afternoon.</p>
+            <p>For seeding, DUPR ratings are the modern standard — seed teams by combined DUPR so the strongest pairs are spread across different pools and don't meet until the medal round. If you don't have ratings, seed by the self-rated skill level and randomize within it. Games are typically to 11, win by 2, with medal-round matches often best two of three. Keep the pools small enough that a pool finishes in one rotation: with 5 courts and pools of 5, a full round robin pool plays out in about 90 minutes.</p>
+            <p>The logistics that trip up first-time organizers are court assignment and standings. With multiple divisions sharing a handful of courts, players constantly ask "which court am I on and who's next?" Post the pool standings and the medal bracket where everyone can see them, and share a link so players can check their next match from the bench instead of crowding the desk. Auto-computed standings (wins, then point differential as the tiebreak) save you from recalculating a pool by hand every time a score comes in.</p>
+        </div>
+    </section>
+
+    <!-- Recommended Format -->
+    <section class="quick-facts">
+        <div class="container">
+            <div class="quick-facts-row">
+                <div class="quick-fact">
+                    <span class="quick-fact-value">Pool→Bracket</span>
+                    <span class="quick-fact-label">Round robin + medal round</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">4–6</span>
+                    <span class="quick-fact-label">Teams per pool</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">11</span>
+                    <span class="quick-fact-label">Points per game (win by 2)</span>
+                </div>
+                <div class="quick-fact">
+                    <span class="quick-fact-value">Skill</span>
+                    <span class="quick-fact-label">3.0 / 3.5 / 4.0 divisions</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="sport-content-section">
+        <div class="container">
+            <div class="sport-showcase-row">
+                <div class="sport-showcase-image">
+                    <img src="/assets/images/mockups/mockup-05-tv-display-v2.png" alt="Pickleball pool standings and bracket on a TV screen at a rec center" loading="lazy">
+                </div>
+                <div class="sport-showcase-text">
+                    <h2>Standings and Brackets on Every Court</h2>
+                    <p>Pickleball tournaments live and die on standings. With multiple pools and divisions running at once, players need to know who's winning their pool, who advances, and which court they're on next. Rise shows live pool standings and the medal bracket on a TV at the desk and on every player's phone, so the front table stops being a bottleneck.</p>
+                    <p>Round robin pools compute their own standings — wins first, point differential as the tiebreak — and the qualifiers drop straight into the medal bracket. Share one link and the whole event follows along from the bench. <a href="/round-robin-generator/">Try the round robin generator</a> or <a href="/features/">see all planned features</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cross-links -->
+    <section class="sport-cross-links">
+        <div class="container">
+            <p>Explore more formats: <a href="/round-robin-generator/">Round Robin Generator</a> · <a href="/double-elimination-bracket/">Double Elimination Brackets</a> · <a href="/8-team-bracket/">8-Team Bracket</a> · <a href="/16-team-bracket/">16-Team Bracket</a> · <a href="/cornhole-tournament-bracket/">Cornhole Bracket</a> · <a href="/ping-pong-tournament-bracket/">Ping Pong Bracket</a></p>
+        </div>
+    </section>
+
+    <!-- Waitlist -->
+    <section class="sport-waitlist">
+        <div class="container">
+            {% include waitlist-form.html heading="Get early access to Rise's tournament platform" %}
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>What's the best format for a pickleball tournament?</h4>
+                    <p>Round robin pool play into a medal bracket is the pickleball standard. Group entrants into pools of 4-6 teams, have everyone play everyone in their pool, then advance the top finishers to a single or double elimination medal round for gold, silver, and bronze. This guarantees every team multiple games. For a small event of 4-6 teams, a single <a href="/round-robin-generator/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">round robin</a> with no bracket is often enough.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How do you seed a pickleball bracket?</h4>
+                    <p>Seed by DUPR rating if you have it — combine each pair's ratings and spread the top teams across different pools so they don't meet before the medal round. Without DUPR, seed by the self-rated skill level (3.0 / 3.5 / 4.0 / 4.5) and randomize within each level. Rise can also draw the bracket randomly if your event has no ratings at all.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What are skill brackets in pickleball?</h4>
+                    <p>Pickleball events are split into divisions by skill so players compete against others of similar ability. The common bands are 3.0, 3.5, 4.0, 4.5, and 5.0, often combined with age groups and event type (men's doubles, women's doubles, mixed doubles, singles). Each division runs as its own bracket with its own standings, so a 3.5 mixed draw and a 4.0 men's draw are separate events.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I create a pickleball bracket right now?</h4>
+                    <p>Yes. Rise's <a href="/tools/tournament-bracket-generator/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">free bracket maker</a> creates a single elimination pickleball bracket instantly — add your team names, choose seeded or random ordering, and share the link with every player. For pool play, use the <a href="/round-robin-generator/" style="color: var(--secondary-color); text-decoration: none; font-weight: 600;">round robin generator</a>. No account required.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Build Your Pickleball Bracket</h2>
+            <p>Free, fast, and ready for the courts. No signup required.</p>
+            <div class="hero-cta-group">
+                <a href="/tools/tournament-bracket-generator/" class="hero-primary-cta">Create Bracket</a>
+                <a href="/waitlist/" class="hero-secondary-cta">Join the Waitlist</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "What's the best format for a pickleball tournament?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Round robin pool play into a medal bracket is the pickleball standard. Group entrants into pools of 4-6 teams, have everyone play everyone in their pool, then advance the top finishers to a single or double elimination medal round for gold, silver, and bronze. This guarantees every team multiple games. For a small event of 4-6 teams, a single round robin with no bracket is often enough."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How do you seed a pickleball bracket?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Seed by DUPR rating if you have it — combine each pair's ratings and spread the top teams across different pools so they don't meet before the medal round. Without DUPR, seed by the self-rated skill level (3.0 / 3.5 / 4.0 / 4.5) and randomize within each level. Rise can also draw the bracket randomly if your event has no ratings at all."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What are skill brackets in pickleball?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pickleball events are split into divisions by skill so players compete against others of similar ability. The common bands are 3.0, 3.5, 4.0, 4.5, and 5.0, often combined with age groups and event type (men's doubles, women's doubles, mixed doubles, singles). Each division runs as its own bracket with its own standings."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I create a pickleball bracket right now?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Rise's free bracket maker creates a single elimination pickleball bracket instantly — add your team names, choose seeded or random ordering, and share the link with every player. For pool play, use the round robin generator. No account required."
+            }
+        }
+    ]
+}
+</script>
