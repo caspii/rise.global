@@ -84,3 +84,15 @@ permalink: /404.html
     text-decoration: underline;
 }
 </style>
+
+<script>
+  /* Temporary 404 diagnostic: fire a Fathom event with the requested path so every
+     dead URL shows up as its own row in Fathom → Events ("404: /the-url").
+     On GitHub Pages the browser URL stays the requested path even though 404.html
+     is served, so location.pathname is the real URL the visitor asked for.
+     Remove once the 404 sources are mapped. */
+  (function () {
+    if (typeof fathom === 'undefined') return;
+    fathom.trackEvent('404: ' + location.pathname + location.search);
+  })();
+</script>
