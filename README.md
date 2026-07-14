@@ -1,5 +1,8 @@
 # Rise Global - Free Online Tools
 
+> [!IMPORTANT]
+> **This repository is archived.** The rise.global site has been ported to the KeepTheScore (KTS) monorepo, which is now where it is developed and deployed. The GitHub Pages setup (deploy workflow and `CNAME` custom-domain binding) has been removed from this repo, and nothing is served from it anymore.
+
 A Jekyll-based site hosting free, client-side tools for teams, teachers, and event organizers. Built to leverage rise.global's existing domain authority.
 
 ## Overview
@@ -60,7 +63,7 @@ node --test test/*.test.js
 
 ## Deployment
 
-The site is configured to automatically deploy to GitHub Pages when changes are pushed to the `main` branch.
+Deployment from this repository has been retired. The site was previously published to GitHub Pages on pushes to `main`; it is now built and deployed from the KTS monorepo.
 
 ## Structure
 

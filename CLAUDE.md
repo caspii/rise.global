@@ -2,6 +2,8 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+> **Note:** This repository is archived. The rise.global site has been ported to the KeepTheScore (KTS) monorepo; nothing is developed or deployed from here anymore.
+
 ## Project Overview
 
 This is a Jekyll static website for **Rise** (rise.global), a pre-launch/waitlist site for a modern tournament bracket platform. The primary CTA is the waitlist at `/waitlist/`, with a secondary CTA pointing to the free bracket tool. Brand voice is energetic, not corporate: "Rise. Compete. Win."
